@@ -15,7 +15,9 @@
     {
       "tag": "Farewell",
       "patterns": "goodbye",
-      "responses":  "See ya Later"
+      "responses":  [
+        "See ya Later", 
+        "Bye"]
     }
   ]
 }
