@@ -16,7 +16,7 @@ class ChatApplication:
         self.window = Tk()
         self._setup_main_window()
         self.window.mainloop()
-
+        self._insert_message(msg = "Hi there! How are you?",sender = "{bot_name: ")
     
     #def run(self):
         
@@ -68,12 +68,12 @@ class ChatApplication:
 
         self.msg_entry.delete(0, END)
         msg1 = f"{sender}: {msg}\n"
-        self.text_widget.configure(state=NORMAL)
+        self.text_widget.configure(cursor="arrow", state=NORMAL)
         self.text_widget.insert(END, msg1)
         self.text_widget.configure(state=DISABLED)
 
         msg2 = f"{bot_name}: {get_response(msg)}\n"
-        self.text_widget.configure(state=NORMAL)
+        self.text_widget.configure(cursor="arrow", state=NORMAL)
         self.text_widget.insert(END, msg2)
         self.text_widget.configure(state=DISABLED)
 
