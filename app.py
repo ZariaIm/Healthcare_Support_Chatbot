@@ -15,14 +15,16 @@ class ChatApplication:
     def __init__(self):
         self.window = Tk()
         self._setup_main_window()
-    
-    def run(self):
         self.window.mainloop()
-
+        self._insert_message(msg = "Hi there! How are you?",sender = "{bot_name: ")
+    
+    #def run(self):
+        
     def _setup_main_window(self):
-        self.window.title("Chat")
+        self.window.title("Healthcare Support Bot")
         self.window.resizable(width=False, height=False)
         self.window.configure(width=470, height=550, bg=BG_COLOR)
+        
 
         # head label
         head_label = Label(self.window, bg=BG_COLOR, fg=TEXT_COLOR, text="Welcome",font=FONT_BOLD, pady=10)
@@ -58,27 +60,29 @@ class ChatApplication:
     
     def _on_enter_pressed(self, event):
         msg = self.msg_entry.get()
-        self._insert_message(msg, "You")
+        self._insert_message(msg, "You: ")
     
     def _insert_message(self, msg, sender):
         if not msg:
             return
 
         self.msg_entry.delete(0, END)
-        msg1 = f"{sender}: {msg}"
+        msg1 = f"{sender}: {msg}\n"
         self.text_widget.configure(cursor="arrow", state=NORMAL)
         self.text_widget.insert(END, msg1)
         self.text_widget.configure(state=DISABLED)
 
-        msg2 = f"{bot_name}: {get_response(msg)}\n\n"
+        msg2 = f"{bot_name}: {get_response(msg)}\n"
         self.text_widget.configure(cursor="arrow", state=NORMAL)
         self.text_widget.insert(END, msg2)
         self.text_widget.configure(state=DISABLED)
 
-        self.text_widget.see(END)
+        #scroll to the end, always see last message
+        self.text_widget.see(END) 
 
 
 
 if __name__ == "__main__":
+    print("Let's chat!")
     app = ChatApplication()
-    app.run
+    #app.run
