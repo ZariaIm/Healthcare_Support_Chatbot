@@ -35,7 +35,8 @@
             "patterns": [
                 "hi",
                 "hey",
-                "how are you"
+                "how are you",
+                "hello"
             ],
             "responses": [
                 "Hello there! My name is Sam. What can I do for you?",
