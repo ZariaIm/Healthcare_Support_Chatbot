@@ -2,7 +2,7 @@ from os import stat
 from tkinter import *
 from tkinter.font import Font
 from chat import get_response, bot_name
-
+print("testing")
 BG_GRAY = "#ABB289"
 BG_COLOR = "#17202A"
 TEXT_COLOR = "#EAECEE"
