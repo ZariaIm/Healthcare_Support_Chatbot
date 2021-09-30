@@ -11,7 +11,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = "data.pth"
+FILE = "chatbot.pth"
 data = torch.load(FILE)
 
 input_size = data["input_size"]
@@ -28,6 +28,7 @@ model.eval()
 bot_name = "Sam"
 
 def get_response(msg):
+    
     sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
@@ -35,13 +36,17 @@ def get_response(msg):
 
     output = model(X)
     _, predicted = torch.max(output, dim=1)
-
+    # print(predicted)
+    # print(labels)
     label = labels[predicted.item()]
-
+    label = [label == i for i in labels]
+    label = [label.index(i) for i in label if i == True]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    if prob.item() > 0.75:
+    if prob.item() > 0.6:
+        ctr = 0
         for intent in intents['intents']:
-            if label == intent["labels"]:
-                return random.choice(intent['responses'])    
+            if label == [ctr]:
+                return random.choice(intent['responses'])
+            ctr +=1
     return "I do not understand..."

@@ -1,15 +1,33 @@
 {
     "intents": [
         {
-            "labels": "greeting",
+            "labels": "telling symptoms",
             "patterns": [
-                "hi",
-                "hey",
-                "how are you"
+                "i have",
+                "I feel",
+                "I think i have",
+                "I feel sick",
+                "maybe i have"
             ],
             "responses": [
-                "Hello there! My name is Sam. What can I do for you?",
-                "Hi, what can I do for you?"
+                "Do you have any other symptoms?",
+                "What other sorts of symptoms are you experiencing",
+                "I'm sorry to hear it, do you have any other symptoms?"
+            ]
+        },
+        {
+            "labels": "asking about disease for themself",
+            "patterns": [
+                "i have",
+                "I think i have",
+                "I feel sick",
+                "maybe i have"
+            ],
+            "responses": [
+                "Can you tell me your symptoms",
+                "What sort of symptoms are you experiencing",
+                "What symptoms do you have",
+                "what symptoms are you experiencing"
             ]
         },
         {
@@ -25,913 +43,1178 @@
             ]
         },
         {
-            "labels": "Farewell",
-            "patterns": "goodbye",
+            "labels": "intro",
+            "patterns": [
+                "tell me about yourself",
+                "what do you do",
+                "who are you"
+            ],
             "responses": [
-                "See ya Later",
-                "Bye"
+                "I help you figure out what might possibly be the problem",
+                "Someone to talk to to learn about diseases"
+            ]
+        },
+        {
+            "labels": "anger",
+            "patterns": [
+                "i hate you",
+                "I'm so angry",
+                "why are you so stupid",
+                "you're not worth anything",
+                "you're so stupid"
+            ],
+            "responses": [
+                "oh okay",
+                "fair enough",
+                "I'm sorry you feel that way"
             ]
         },
         {
             "labels": "describe_Drug Reaction",
             "patterns": [
                 "can you tell me about Drug Reaction?",
-                "what do you know about Drug Reaction?"
+                "what do you know about Drug Reaction?",
+                "what is Drug Reaction?",
+                "explain Drug Reaction?"
             ],
-            "responses": "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs."
+            "responses": [
+                "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs.",
+                "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs."
+            ]
         },
         {
             "labels": "precaution_Drug Reaction",
             "patterns": [
                 "what should i do about Drug Reaction?",
                 "what can i do if i have Drug Reaction?",
-                "what do i do if i have Drug Reaction"
+                "what do i do if i have Drug Reaction",
+                "i have Drug Reaction"
             ],
             "responses": [
-                "stop irritation",
-                "consult nearest hospital",
-                "stop taking drug",
-                "follow up"
+                "You could stop irritation",
+                "You could consult nearest hospital",
+                "You could stop taking drug",
+                "You could follow up"
             ]
         },
         {
             "labels": "describe_Malaria",
             "patterns": [
                 "can you tell me about Malaria?",
-                "what do you know about Malaria?"
+                "what do you know about Malaria?",
+                "what is Malaria?",
+                "explain Malaria?"
             ],
-            "responses": "An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type."
+            "responses": [
+                "An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type.",
+                "An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type."
+            ]
         },
         {
             "labels": "precaution_Malaria",
             "patterns": [
                 "what should i do about Malaria?",
                 "what can i do if i have Malaria?",
-                "what do i do if i have Malaria"
+                "what do i do if i have Malaria",
+                "i have Malaria"
             ],
             "responses": [
-                "Consult nearest hospital",
-                "avoid oily food",
-                "avoid non veg food",
-                "keep mosquitos out"
+                "You could Consult nearest hospital",
+                "You could avoid oily food",
+                "You could avoid non veg food",
+                "You could keep mosquitos out"
             ]
         },
         {
             "labels": "describe_Allergy",
             "patterns": [
                 "can you tell me about Allergy?",
-                "what do you know about Allergy?"
+                "what do you know about Allergy?",
+                "what is Allergy?",
+                "explain Allergy?"
             ],
-            "responses": "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens."
+            "responses": [
+                "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens.",
+                "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens."
+            ]
         },
         {
             "labels": "precaution_Allergy",
             "patterns": [
                 "what should i do about Allergy?",
                 "what can i do if i have Allergy?",
-                "what do i do if i have Allergy"
+                "what do i do if i have Allergy",
+                "i have Allergy"
             ],
             "responses": [
-                "apply calamine",
-                "cover area with bandage",
-                "<NA>",
-                "use ice to compress itching"
+                "You could apply calamine",
+                "You could cover area with bandage",
+                "You could <NA>",
+                "You could use ice to compress itching"
             ]
         },
         {
             "labels": "describe_Hypothyroidism",
             "patterns": [
                 "can you tell me about Hypothyroidism?",
-                "what do you know about Hypothyroidism?"
+                "what do you know about Hypothyroidism?",
+                "what is Hypothyroidism?",
+                "explain Hypothyroidism?"
             ],
-            "responses": "Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone."
+            "responses": [
+                "Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone.",
+                "Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone."
+            ]
         },
         {
             "labels": "precaution_Hypothyroidism",
             "patterns": [
                 "what should i do about Hypothyroidism?",
                 "what can i do if i have Hypothyroidism?",
-                "what do i do if i have Hypothyroidism"
+                "what do i do if i have Hypothyroidism",
+                "i have Hypothyroidism"
             ],
             "responses": [
-                "reduce stress",
-                "exercise",
-                "eat healthy",
-                "get proper sleep"
+                "You could reduce stress",
+                "You could exercise",
+                "You could eat healthy",
+                "You could get proper sleep"
             ]
         },
         {
             "labels": "describe_Psoriasis",
             "patterns": [
                 "can you tell me about Psoriasis?",
-                "what do you know about Psoriasis?"
+                "what do you know about Psoriasis?",
+                "what is Psoriasis?",
+                "explain Psoriasis?"
             ],
-            "responses": "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family."
+            "responses": [
+                "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family.",
+                "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family."
+            ]
         },
         {
             "labels": "precaution_Psoriasis",
             "patterns": [
                 "what should i do about Psoriasis?",
                 "what can i do if i have Psoriasis?",
-                "what do i do if i have Psoriasis"
+                "what do i do if i have Psoriasis",
+                "i have Psoriasis"
             ],
             "responses": [
-                "wash hands with warm soapy water",
-                "stop bleeding using pressure",
-                "consult doctor",
-                "salt baths"
+                "You could wash hands with warm soapy water",
+                "You could stop bleeding using pressure",
+                "You could consult doctor",
+                "You could salt baths"
             ]
         },
         {
             "labels": "describe_GERD",
             "patterns": [
                 "can you tell me about GERD?",
-                "what do you know about GERD?"
+                "what do you know about GERD?",
+                "what is GERD?",
+                "explain GERD?"
             ],
-            "responses": "Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter (LES), the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD."
+            "responses": [
+                "Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter (LES), the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD.",
+                "Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter (LES), the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD."
+            ]
         },
         {
             "labels": "precaution_GERD",
             "patterns": [
                 "what should i do about GERD?",
                 "what can i do if i have GERD?",
-                "what do i do if i have GERD"
+                "what do i do if i have GERD",
+                "i have GERD"
             ],
             "responses": [
-                "avoid fatty spicy food",
-                "avoid lying down after eating",
-                "maintain healthy weight",
-                "exercise"
+                "You could avoid fatty spicy food",
+                "You could avoid lying down after eating",
+                "You could maintain healthy weight",
+                "You could exercise"
             ]
         },
         {
             "labels": "describe_Chronic cholestasis",
             "patterns": [
                 "can you tell me about Chronic cholestasis?",
-                "what do you know about Chronic cholestasis?"
+                "what do you know about Chronic cholestasis?",
+                "what is Chronic cholestasis?",
+                "explain Chronic cholestasis?"
             ],
-            "responses": "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases"
+            "responses": [
+                "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases",
+                "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases"
+            ]
         },
         {
             "labels": "precaution_Chronic cholestasis",
             "patterns": [
                 "what should i do about Chronic cholestasis?",
                 "what can i do if i have Chronic cholestasis?",
-                "what do i do if i have Chronic cholestasis"
+                "what do i do if i have Chronic cholestasis",
+                "i have Chronic cholestasis"
             ],
             "responses": [
-                "cold baths",
-                "anti itch medicine",
-                "consult doctor",
-                "eat healthy"
+                "You could cold baths",
+                "You could anti itch medicine",
+                "You could consult doctor",
+                "You could eat healthy"
             ]
         },
         {
             "labels": "describe_hepatitis A",
             "patterns": [
                 "can you tell me about hepatitis A?",
-                "what do you know about hepatitis A?"
+                "what do you know about hepatitis A?",
+                "what is hepatitis A?",
+                "explain hepatitis A?"
             ],
-            "responses": "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect your liver's ability to function."
+            "responses": [
+                "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect your liver's ability to function.",
+                "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect your liver's ability to function."
+            ]
         },
         {
             "labels": "precaution_hepatitis A",
             "patterns": [
                 "what should i do about hepatitis A?",
                 "what can i do if i have hepatitis A?",
-                "what do i do if i have hepatitis A"
+                "what do i do if i have hepatitis A",
+                "i have hepatitis A"
             ],
             "responses": [
-                "Consult nearest hospital",
-                "wash hands through",
-                "avoid fatty spicy food",
-                "medication"
+                "You could Consult nearest hospital",
+                "You could wash hands through",
+                "You could avoid fatty spicy food",
+                "You could medication"
             ]
         },
         {
             "labels": "describe_Osteoarthristis",
             "patterns": [
                 "can you tell me about Osteoarthristis?",
-                "what do you know about Osteoarthristis?"
+                "what do you know about Osteoarthristis?",
+                "what is Osteoarthristis?",
+                "explain Osteoarthristis?"
             ],
-            "responses": "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time."
+            "responses": [
+                "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time.",
+                "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time."
+            ]
         },
         {
             "labels": "precaution_Osteoarthristis",
             "patterns": [
                 "what should i do about Osteoarthristis?",
                 "what can i do if i have Osteoarthristis?",
-                "what do i do if i have Osteoarthristis"
+                "what do i do if i have Osteoarthristis",
+                "i have Osteoarthristis"
             ],
             "responses": [
-                "acetaminophen",
-                "consult nearest hospital",
-                "follow up",
-                "salt baths"
+                "You could acetaminophen",
+                "You could consult nearest hospital",
+                "You could follow up",
+                "You could salt baths"
             ]
         },
         {
             "labels": "describe_(vertigo) Paroymsal  Positional Vertigo",
             "patterns": [
                 "can you tell me about (vertigo) Paroymsal  Positional Vertigo?",
-                "what do you know about (vertigo) Paroymsal  Positional Vertigo?"
+                "what do you know about (vertigo) Paroymsal  Positional Vertigo?",
+                "what is (vertigo) Paroymsal  Positional Vertigo?",
+                "explain (vertigo) Paroymsal  Positional Vertigo?"
             ],
-            "responses": "Benign paroxysmal positional vertigo (BPPV) is one of the most common causes of vertigo \u2014 the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness."
+            "responses": [
+                "Benign paroxysmal positional vertigo (BPPV) is one of the most common causes of vertigo \u2014 the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness.",
+                "Benign paroxysmal positional vertigo (BPPV) is one of the most common causes of vertigo \u2014 the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness."
+            ]
         },
         {
             "labels": "precaution_(vertigo) Paroymsal  Positional Vertigo",
             "patterns": [
                 "what should i do about (vertigo) Paroymsal  Positional Vertigo?",
                 "what can i do if i have (vertigo) Paroymsal  Positional Vertigo?",
-                "what do i do if i have (vertigo) Paroymsal  Positional Vertigo"
+                "what do i do if i have (vertigo) Paroymsal  Positional Vertigo",
+                "i have (vertigo) Paroymsal  Positional Vertigo"
             ],
             "responses": [
-                "lie down",
-                "avoid sudden change in body",
-                "avoid abrupt head movment",
-                "relax"
+                "You could lie down",
+                "You could avoid sudden change in body",
+                "You could avoid abrupt head movment",
+                "You could relax"
             ]
         },
         {
             "labels": "describe_Hypoglycemia",
             "patterns": [
                 "can you tell me about Hypoglycemia?",
-                "what do you know about Hypoglycemia?"
+                "what do you know about Hypoglycemia?",
+                "what is Hypoglycemia?",
+                "explain Hypoglycemia?"
             ],
-            "responses": " Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions \u2014 many rare \u2014 can cause low blood sugar in people who don't have diabetes."
+            "responses": [
+                " Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions \u2014 many rare \u2014 can cause low blood sugar in people who don't have diabetes.",
+                " Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions \u2014 many rare \u2014 can cause low blood sugar in people who don't have diabetes."
+            ]
         },
         {
             "labels": "precaution_Hypoglycemia",
             "patterns": [
                 "what should i do about Hypoglycemia?",
                 "what can i do if i have Hypoglycemia?",
-                "what do i do if i have Hypoglycemia"
+                "what do i do if i have Hypoglycemia",
+                "i have Hypoglycemia"
             ],
             "responses": [
-                "lie down on side",
-                "check in pulse",
-                "drink sugary drinks",
-                "consult doctor"
+                "You could lie down on side",
+                "You could check in pulse",
+                "You could drink sugary drinks",
+                "You could consult doctor"
             ]
         },
         {
             "labels": "describe_Acne",
             "patterns": [
                 "can you tell me about Acne?",
-                "what do you know about Acne?"
+                "what do you know about Acne?",
+                "what is Acne?",
+                "explain Acne?"
             ],
-            "responses": "Acne vulgaris is the formation of comedones, papules, pustules, nodules, and/or cysts as a result of obstruction and inflammation of pilosebaceous units (hair follicles and their accompanying sebaceous gland). Acne develops on the face and upper trunk. It most often affects adolescents."
+            "responses": [
+                "Acne vulgaris is the formation of comedones, papules, pustules, nodules, and/or cysts as a result of obstruction and inflammation of pilosebaceous units (hair follicles and their accompanying sebaceous gland). Acne develops on the face and upper trunk. It most often affects adolescents.",
+                "Acne vulgaris is the formation of comedones, papules, pustules, nodules, and/or cysts as a result of obstruction and inflammation of pilosebaceous units (hair follicles and their accompanying sebaceous gland). Acne develops on the face and upper trunk. It most often affects adolescents."
+            ]
         },
         {
             "labels": "precaution_Acne",
             "patterns": [
                 "what should i do about Acne?",
                 "what can i do if i have Acne?",
-                "what do i do if i have Acne"
+                "what do i do if i have Acne",
+                "i have Acne"
             ],
             "responses": [
-                "bath twice",
-                "avoid fatty spicy food",
-                "drink plenty of water",
-                "avoid too many products"
+                "You could bath twice",
+                "You could avoid fatty spicy food",
+                "You could drink plenty of water",
+                "You could avoid too many products"
             ]
         },
         {
             "labels": "describe_Diabetes",
             "patterns": [
                 "can you tell me about Diabetes?",
-                "what do you know about Diabetes?"
+                "what do you know about Diabetes?",
+                "what is Diabetes?",
+                "explain Diabetes?"
             ],
-            "responses": "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy."
+            "responses": [
+                "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy.",
+                "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy."
+            ]
         },
         {
             "labels": "precaution_Diabetes",
             "patterns": [
                 "what should i do about Diabetes?",
                 "what can i do if i have Diabetes?",
-                "what do i do if i have Diabetes"
+                "what do i do if i have Diabetes",
+                "i have Diabetes"
             ],
             "responses": [
-                "have balanced diet",
-                "exercise",
-                "consult doctor",
-                "follow up"
+                "You could have balanced diet",
+                "You could exercise",
+                "You could consult doctor",
+                "You could follow up"
             ]
         },
         {
             "labels": "describe_Impetigo",
             "patterns": [
                 "can you tell me about Impetigo?",
-                "what do you know about Impetigo?"
+                "what do you know about Impetigo?",
+                "what is Impetigo?",
+                "explain Impetigo?"
             ],
-            "responses": "Impetigo (im-puh-TIE-go) is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child's nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts."
+            "responses": [
+                "Impetigo (im-puh-TIE-go) is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child's nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts.",
+                "Impetigo (im-puh-TIE-go) is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child's nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts."
+            ]
         },
         {
             "labels": "precaution_Impetigo",
             "patterns": [
                 "what should i do about Impetigo?",
                 "what can i do if i have Impetigo?",
-                "what do i do if i have Impetigo"
+                "what do i do if i have Impetigo",
+                "i have Impetigo"
             ],
             "responses": [
-                "soak affected area in warm water",
-                "use antibiotics",
-                "remove scabs with wet compressed cloth",
-                "consult doctor"
+                "You could soak affected area in warm water",
+                "You could use antibiotics",
+                "You could remove scabs with wet compressed cloth",
+                "You could consult doctor"
             ]
         },
         {
             "labels": "describe_Hypertension",
             "patterns": [
                 "can you tell me about Hypertension?",
-                "what do you know about Hypertension?"
+                "what do you know about Hypertension?",
+                "what is Hypertension?",
+                "explain Hypertension?"
             ],
-            "responses": "Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms."
+            "responses": [
+                "Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms.",
+                "Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms."
+            ]
         },
         {
             "labels": "precaution_Hypertension",
             "patterns": [
                 "what should i do about Hypertension?",
                 "what can i do if i have Hypertension?",
-                "what do i do if i have Hypertension"
+                "what do i do if i have Hypertension",
+                "i have Hypertension"
             ],
             "responses": [
-                "meditation",
-                "salt baths",
-                "reduce stress",
-                "get proper sleep"
+                "You could meditation",
+                "You could salt baths",
+                "You could reduce stress",
+                "You could get proper sleep"
             ]
         },
         {
             "labels": "describe_Peptic ulcer diseae",
             "patterns": [
                 "can you tell me about Peptic ulcer diseae?",
-                "what do you know about Peptic ulcer diseae?"
+                "what do you know about Peptic ulcer diseae?",
+                "what is Peptic ulcer diseae?",
+                "explain Peptic ulcer diseae?"
             ],
-            "responses": "Peptic ulcer disease (PUD) is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer."
+            "responses": [
+                "Peptic ulcer disease (PUD) is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer.",
+                "Peptic ulcer disease (PUD) is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer."
+            ]
         },
         {
             "labels": "precaution_Peptic ulcer diseae",
             "patterns": [
                 "what should i do about Peptic ulcer diseae?",
                 "what can i do if i have Peptic ulcer diseae?",
-                "what do i do if i have Peptic ulcer diseae"
+                "what do i do if i have Peptic ulcer diseae",
+                "i have Peptic ulcer diseae"
             ],
             "responses": [
-                "avoid fatty spicy food",
-                "consume probiotic food",
-                "eliminate milk",
-                "limit alcohol"
+                "You could avoid fatty spicy food",
+                "You could consume probiotic food",
+                "You could eliminate milk",
+                "You could limit alcohol"
             ]
         },
         {
             "labels": "describe_Dimorphic hemorrhoids(piles)",
             "patterns": [
                 "can you tell me about Dimorphic hemorrhoids(piles)?",
-                "what do you know about Dimorphic hemorrhoids(piles)?"
+                "what do you know about Dimorphic hemorrhoids(piles)?",
+                "what is Dimorphic hemorrhoids(piles)?",
+                "explain Dimorphic hemorrhoids(piles)?"
             ],
-            "responses": "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease ."
+            "responses": [
+                "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease .",
+                "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease ."
+            ]
         },
         {
             "labels": "precaution_Dimorphic hemorrhoids(piles)",
             "patterns": [
                 "what should i do about Dimorphic hemorrhoids(piles)?",
                 "what can i do if i have Dimorphic hemorrhoids(piles)?",
-                "what do i do if i have Dimorphic hemorrhoids(piles)"
+                "what do i do if i have Dimorphic hemorrhoids(piles)",
+                "i have Dimorphic hemorrhoids(piles)"
             ],
             "responses": [
-                "avoid fatty spicy food",
-                "consume witch hazel",
-                "warm bath with epsom salt",
-                "consume alovera juice"
+                "You could avoid fatty spicy food",
+                "You could consume witch hazel",
+                "You could warm bath with epsom salt",
+                "You could consume alovera juice"
             ]
         },
         {
             "labels": "describe_Common Cold",
             "patterns": [
                 "can you tell me about Common Cold?",
-                "what do you know about Common Cold?"
+                "what do you know about Common Cold?",
+                "what is Common Cold?",
+                "explain Common Cold?"
             ],
-            "responses": "The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold."
+            "responses": [
+                "The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold.",
+                "The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold."
+            ]
         },
         {
             "labels": "precaution_Common Cold",
             "patterns": [
                 "what should i do about Common Cold?",
                 "what can i do if i have Common Cold?",
-                "what do i do if i have Common Cold"
+                "what do i do if i have Common Cold",
+                "i have Common Cold"
             ],
             "responses": [
-                "drink vitamin c rich drinks",
-                "take vapour",
-                "avoid cold food",
-                "keep fever in check"
+                "You could drink vitamin c rich drinks",
+                "You could take vapour",
+                "You could avoid cold food",
+                "You could keep fever in check"
             ]
         },
         {
             "labels": "describe_Chicken pox",
             "patterns": [
                 "can you tell me about Chicken pox?",
-                "what do you know about Chicken pox?"
+                "what do you know about Chicken pox?",
+                "what is Chicken pox?",
+                "explain Chicken pox?"
             ],
-            "responses": "Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters."
+            "responses": [
+                "Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters.",
+                "Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters."
+            ]
         },
         {
             "labels": "precaution_Chicken pox",
             "patterns": [
                 "what should i do about Chicken pox?",
                 "what can i do if i have Chicken pox?",
-                "what do i do if i have Chicken pox"
+                "what do i do if i have Chicken pox",
+                "i have Chicken pox"
             ],
             "responses": [
-                "use neem in bathing ",
-                "consume neem leaves",
-                "take vaccine",
-                "avoid public places"
+                "You could use neem in bathing ",
+                "You could consume neem leaves",
+                "You could take vaccine",
+                "You could avoid public places"
             ]
         },
         {
             "labels": "describe_Cervical spondylosis",
             "patterns": [
                 "can you tell me about Cervical spondylosis?",
-                "what do you know about Cervical spondylosis?"
+                "what do you know about Cervical spondylosis?",
+                "what is Cervical spondylosis?",
+                "explain Cervical spondylosis?"
             ],
-            "responses": "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs)."
+            "responses": [
+                "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs).",
+                "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs)."
+            ]
         },
         {
             "labels": "precaution_Cervical spondylosis",
             "patterns": [
                 "what should i do about Cervical spondylosis?",
                 "what can i do if i have Cervical spondylosis?",
-                "what do i do if i have Cervical spondylosis"
+                "what do i do if i have Cervical spondylosis",
+                "i have Cervical spondylosis"
             ],
             "responses": [
-                "use heating pad or cold pack",
-                "exercise",
-                "take otc pain reliver",
-                "consult doctor"
+                "You could use heating pad or cold pack",
+                "You could exercise",
+                "You could take otc pain reliver",
+                "You could consult doctor"
             ]
         },
         {
             "labels": "describe_Hyperthyroidism",
             "patterns": [
                 "can you tell me about Hyperthyroidism?",
-                "what do you know about Hyperthyroidism?"
+                "what do you know about Hyperthyroidism?",
+                "what is Hyperthyroidism?",
+                "explain Hyperthyroidism?"
             ],
-            "responses": "Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat."
+            "responses": [
+                "Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat.",
+                "Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat."
+            ]
         },
         {
             "labels": "precaution_Hyperthyroidism",
             "patterns": [
                 "what should i do about Hyperthyroidism?",
                 "what can i do if i have Hyperthyroidism?",
-                "what do i do if i have Hyperthyroidism"
+                "what do i do if i have Hyperthyroidism",
+                "i have Hyperthyroidism"
             ],
             "responses": [
-                "eat healthy",
-                "massage",
-                "use lemon balm",
-                "take radioactive iodine treatment"
+                "You could eat healthy",
+                "You could massage",
+                "You could use lemon balm",
+                "You could take radioactive iodine treatment"
             ]
         },
         {
             "labels": "describe_Urinary tract infection",
             "patterns": [
                 "can you tell me about Urinary tract infection?",
-                "what do you know about Urinary tract infection?"
+                "what do you know about Urinary tract infection?",
+                "what is Urinary tract infection?",
+                "explain Urinary tract infection?"
             ],
-            "responses": "Urinary tract infection: An infection of the kidney, ureter, bladder, or urethra. Abbreviated UTI. Not everyone with a UTI has symptoms, but common symptoms include a frequent urge to urinate and pain or burning when urinating."
+            "responses": [
+                "Urinary tract infection: An infection of the kidney, ureter, bladder, or urethra. Abbreviated UTI. Not everyone with a UTI has symptoms, but common symptoms include a frequent urge to urinate and pain or burning when urinating.",
+                "Urinary tract infection: An infection of the kidney, ureter, bladder, or urethra. Abbreviated UTI. Not everyone with a UTI has symptoms, but common symptoms include a frequent urge to urinate and pain or burning when urinating."
+            ]
         },
         {
             "labels": "precaution_Urinary tract infection",
             "patterns": [
                 "what should i do about Urinary tract infection?",
                 "what can i do if i have Urinary tract infection?",
-                "what do i do if i have Urinary tract infection"
+                "what do i do if i have Urinary tract infection",
+                "i have Urinary tract infection"
             ],
             "responses": [
-                "drink plenty of water",
-                "increase vitamin c intake",
-                "drink cranberry juice",
-                "take probiotics"
+                "You could drink plenty of water",
+                "You could increase vitamin c intake",
+                "You could drink cranberry juice",
+                "You could take probiotics"
             ]
         },
         {
             "labels": "describe_Varicose veins",
             "patterns": [
                 "can you tell me about Varicose veins?",
-                "what do you know about Varicose veins?"
+                "what do you know about Varicose veins?",
+                "what is Varicose veins?",
+                "explain Varicose veins?"
             ],
-            "responses": "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs."
+            "responses": [
+                "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs.",
+                "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs."
+            ]
         },
         {
             "labels": "precaution_Varicose veins",
             "patterns": [
                 "what should i do about Varicose veins?",
                 "what can i do if i have Varicose veins?",
-                "what do i do if i have Varicose veins"
+                "what do i do if i have Varicose veins",
+                "i have Varicose veins"
             ],
             "responses": [
-                "lie down flat and raise the leg high",
-                "use oinments",
-                "use vein compression",
-                "dont stand still for long"
+                "You could lie down flat and raise the leg high",
+                "You could use oinments",
+                "You could use vein compression",
+                "You could dont stand still for long"
             ]
         },
         {
             "labels": "describe_AIDS",
             "patterns": [
                 "can you tell me about AIDS?",
-                "what do you know about AIDS?"
+                "what do you know about AIDS?",
+                "what is AIDS?",
+                "explain AIDS?"
             ],
-            "responses": "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease."
+            "responses": [
+                "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease.",
+                "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease."
+            ]
         },
         {
             "labels": "precaution_AIDS",
             "patterns": [
                 "what should i do about AIDS?",
                 "what can i do if i have AIDS?",
-                "what do i do if i have AIDS"
+                "what do i do if i have AIDS",
+                "i have AIDS"
             ],
             "responses": [
-                "avoid open cuts",
-                "wear ppe if possible",
-                "consult doctor",
-                "follow up"
+                "You could avoid open cuts",
+                "You could wear ppe if possible",
+                "You could consult doctor",
+                "You could follow up"
             ]
         },
         {
             "labels": "describe_Paralysis (brain hemorrhage)",
             "patterns": [
                 "can you tell me about Paralysis (brain hemorrhage)?",
-                "what do you know about Paralysis (brain hemorrhage)?"
+                "what do you know about Paralysis (brain hemorrhage)?",
+                "what is Paralysis (brain hemorrhage)?",
+                "explain Paralysis (brain hemorrhage)?"
             ],
-            "responses": "Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body."
+            "responses": [
+                "Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body.",
+                "Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body."
+            ]
         },
         {
             "labels": "precaution_Paralysis (brain hemorrhage)",
             "patterns": [
                 "what should i do about Paralysis (brain hemorrhage)?",
                 "what can i do if i have Paralysis (brain hemorrhage)?",
-                "what do i do if i have Paralysis (brain hemorrhage)"
+                "what do i do if i have Paralysis (brain hemorrhage)",
+                "i have Paralysis (brain hemorrhage)"
             ],
             "responses": [
-                "massage",
-                "eat healthy",
-                "exercise",
-                "consult doctor"
+                "You could massage",
+                "You could eat healthy",
+                "You could exercise",
+                "You could consult doctor"
             ]
         },
         {
             "labels": "describe_Typhoid",
             "patterns": [
                 "can you tell me about Typhoid?",
-                "what do you know about Typhoid?"
+                "what do you know about Typhoid?",
+                "what is Typhoid?",
+                "explain Typhoid?"
             ],
-            "responses": "An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is not usually severe."
+            "responses": [
+                "An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is not usually severe.",
+                "An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is not usually severe."
+            ]
         },
         {
             "labels": "precaution_Typhoid",
             "patterns": [
                 "what should i do about Typhoid?",
                 "what can i do if i have Typhoid?",
-                "what do i do if i have Typhoid"
+                "what do i do if i have Typhoid",
+                "i have Typhoid"
             ],
             "responses": [
-                "eat high calorie vegitables",
-                "antiboitic therapy",
-                "consult doctor",
-                "medication"
+                "You could eat high calorie vegitables",
+                "You could antiboitic therapy",
+                "You could consult doctor",
+                "You could medication"
             ]
         },
         {
             "labels": "describe_Hepatitis B",
             "patterns": [
                 "can you tell me about Hepatitis B?",
-                "what do you know about Hepatitis B?"
+                "what do you know about Hepatitis B?",
+                "what is Hepatitis B?",
+                "explain Hepatitis B?"
             ],
-            "responses": "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus."
+            "responses": [
+                "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus.",
+                "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus."
+            ]
         },
         {
             "labels": "precaution_Hepatitis B",
             "patterns": [
                 "what should i do about Hepatitis B?",
                 "what can i do if i have Hepatitis B?",
-                "what do i do if i have Hepatitis B"
+                "what do i do if i have Hepatitis B",
+                "i have Hepatitis B"
             ],
             "responses": [
-                "consult nearest hospital",
-                "vaccination",
-                "eat healthy",
-                "medication"
+                "You could consult nearest hospital",
+                "You could vaccination",
+                "You could eat healthy",
+                "You could medication"
             ]
         },
         {
             "labels": "describe_Fungal infection",
             "patterns": [
                 "can you tell me about Fungal infection?",
-                "what do you know about Fungal infection?"
+                "what do you know about Fungal infection?",
+                "what is Fungal infection?",
+                "explain Fungal infection?"
             ],
-            "responses": "In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle. Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body. Like many microbes, there are helpful fungi and harmful fungi."
+            "responses": [
+                "In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle. Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body. Like many microbes, there are helpful fungi and harmful fungi.",
+                "In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle. Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body. Like many microbes, there are helpful fungi and harmful fungi."
+            ]
         },
         {
             "labels": "precaution_Fungal infection",
             "patterns": [
                 "what should i do about Fungal infection?",
                 "what can i do if i have Fungal infection?",
-                "what do i do if i have Fungal infection"
+                "what do i do if i have Fungal infection",
+                "i have Fungal infection"
             ],
             "responses": [
-                "bath twice",
-                "use detol or neem in bathing water",
-                "keep infected area dry",
-                "use clean cloths"
+                "You could bath twice",
+                "You could use detol or neem in bathing water",
+                "You could keep infected area dry",
+                "You could use clean cloths"
             ]
         },
         {
             "labels": "describe_Hepatitis C",
             "patterns": [
                 "can you tell me about Hepatitis C?",
-                "what do you know about Hepatitis C?"
+                "what do you know about Hepatitis C?",
+                "what is Hepatitis C?",
+                "explain Hepatitis C?"
             ],
-            "responses": "Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer."
+            "responses": [
+                "Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer.",
+                "Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer."
+            ]
         },
         {
             "labels": "precaution_Hepatitis C",
             "patterns": [
                 "what should i do about Hepatitis C?",
                 "what can i do if i have Hepatitis C?",
-                "what do i do if i have Hepatitis C"
+                "what do i do if i have Hepatitis C",
+                "i have Hepatitis C"
             ],
             "responses": [
-                "Consult nearest hospital",
-                "vaccination",
-                "eat healthy",
-                "medication"
+                "You could Consult nearest hospital",
+                "You could vaccination",
+                "You could eat healthy",
+                "You could medication"
             ]
         },
         {
             "labels": "describe_Migraine",
             "patterns": [
                 "can you tell me about Migraine?",
-                "what do you know about Migraine?"
+                "what do you know about Migraine?",
+                "what is Migraine?",
+                "explain Migraine?"
             ],
-            "responses": "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities."
+            "responses": [
+                "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities.",
+                "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities."
+            ]
         },
         {
             "labels": "precaution_Migraine",
             "patterns": [
                 "what should i do about Migraine?",
                 "what can i do if i have Migraine?",
-                "what do i do if i have Migraine"
+                "what do i do if i have Migraine",
+                "i have Migraine"
             ],
             "responses": [
-                "meditation",
-                "reduce stress",
-                "use poloroid glasses in sun",
-                "consult doctor"
+                "You could meditation",
+                "You could reduce stress",
+                "You could use poloroid glasses in sun",
+                "You could consult doctor"
             ]
         },
         {
             "labels": "describe_Bronchial Asthma",
             "patterns": [
                 "can you tell me about Bronchial Asthma?",
-                "what do you know about Bronchial Asthma?"
+                "what do you know about Bronchial Asthma?",
+                "what is Bronchial Asthma?",
+                "explain Bronchial Asthma?"
             ],
-            "responses": "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working."
+            "responses": [
+                "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working.",
+                "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working."
+            ]
         },
         {
             "labels": "precaution_Bronchial Asthma",
             "patterns": [
                 "what should i do about Bronchial Asthma?",
                 "what can i do if i have Bronchial Asthma?",
-                "what do i do if i have Bronchial Asthma"
+                "what do i do if i have Bronchial Asthma",
+                "i have Bronchial Asthma"
             ],
             "responses": [
-                "switch to loose cloothing",
-                "take deep breaths",
-                "get away from trigger",
-                "seek help"
+                "You could switch to loose cloothing",
+                "You could take deep breaths",
+                "You could get away from trigger",
+                "You could seek help"
             ]
         },
         {
             "labels": "describe_Alcoholic hepatitis",
             "patterns": [
                 "can you tell me about Alcoholic hepatitis?",
-                "what do you know about Alcoholic hepatitis?"
+                "what do you know about Alcoholic hepatitis?",
+                "what is Alcoholic hepatitis?",
+                "explain Alcoholic hepatitis?"
             ],
-            "responses": "Alcoholic hepatitis is a diseased, inflammatory condition of the liver caused by heavy alcohol consumption over an extended period of time. It's also aggravated by binge drinking and ongoing alcohol use. If you develop this condition, you must stop drinking alcohol"
+            "responses": [
+                "Alcoholic hepatitis is a diseased, inflammatory condition of the liver caused by heavy alcohol consumption over an extended period of time. It's also aggravated by binge drinking and ongoing alcohol use. If you develop this condition, you must stop drinking alcohol",
+                "Alcoholic hepatitis is a diseased, inflammatory condition of the liver caused by heavy alcohol consumption over an extended period of time. It's also aggravated by binge drinking and ongoing alcohol use. If you develop this condition, you must stop drinking alcohol"
+            ]
         },
         {
             "labels": "precaution_Alcoholic hepatitis",
             "patterns": [
                 "what should i do about Alcoholic hepatitis?",
                 "what can i do if i have Alcoholic hepatitis?",
-                "what do i do if i have Alcoholic hepatitis"
+                "what do i do if i have Alcoholic hepatitis",
+                "i have Alcoholic hepatitis"
             ],
             "responses": [
-                "stop alcohol consumption",
-                "consult doctor",
-                "medication",
-                "follow up"
+                "You could stop alcohol consumption",
+                "You could consult doctor",
+                "You could medication",
+                "You could follow up"
             ]
         },
         {
             "labels": "describe_Jaundice",
             "patterns": [
                 "can you tell me about Jaundice?",
-                "what do you know about Jaundice?"
+                "what do you know about Jaundice?",
+                "what is Jaundice?",
+                "explain Jaundice?"
             ],
-            "responses": "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it"
+            "responses": [
+                "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it",
+                "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it"
+            ]
         },
         {
             "labels": "precaution_Jaundice",
             "patterns": [
                 "what should i do about Jaundice?",
                 "what can i do if i have Jaundice?",
-                "what do i do if i have Jaundice"
+                "what do i do if i have Jaundice",
+                "i have Jaundice"
             ],
             "responses": [
-                "drink plenty of water",
-                "consume milk thistle",
-                "eat fruits and high fiberous food",
-                "medication"
+                "You could drink plenty of water",
+                "You could consume milk thistle",
+                "You could eat fruits and high fiberous food",
+                "You could medication"
             ]
         },
         {
             "labels": "describe_Hepatitis E",
             "patterns": [
                 "can you tell me about Hepatitis E?",
-                "what do you know about Hepatitis E?"
+                "what do you know about Hepatitis E?",
+                "what is Hepatitis E?",
+                "explain Hepatitis E?"
             ],
-            "responses": "A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease."
+            "responses": [
+                "A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease.",
+                "A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease."
+            ]
         },
         {
             "labels": "precaution_Hepatitis E",
             "patterns": [
                 "what should i do about Hepatitis E?",
                 "what can i do if i have Hepatitis E?",
-                "what do i do if i have Hepatitis E"
+                "what do i do if i have Hepatitis E",
+                "i have Hepatitis E"
             ],
             "responses": [
-                "stop alcohol consumption",
-                "rest",
-                "consult doctor",
-                "medication"
+                "You could stop alcohol consumption",
+                "You could rest",
+                "You could consult doctor",
+                "You could medication"
             ]
         },
         {
             "labels": "describe_Dengue",
             "patterns": [
                 "can you tell me about Dengue?",
-                "what do you know about Dengue?"
+                "what do you know about Dengue?",
+                "what is Dengue?",
+                "explain Dengue?"
             ],
-            "responses": "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever."
+            "responses": [
+                "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever.",
+                "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever."
+            ]
         },
         {
             "labels": "precaution_Dengue",
             "patterns": [
                 "what should i do about Dengue?",
                 "what can i do if i have Dengue?",
-                "what do i do if i have Dengue"
+                "what do i do if i have Dengue",
+                "i have Dengue"
             ],
             "responses": [
-                "drink papaya leaf juice",
-                "avoid fatty spicy food",
-                "keep mosquitos away",
-                "keep hydrated"
+                "You could drink papaya leaf juice",
+                "You could avoid fatty spicy food",
+                "You could keep mosquitos away",
+                "You could keep hydrated"
             ]
         },
         {
             "labels": "describe_Hepatitis D",
             "patterns": [
                 "can you tell me about Hepatitis D?",
-                "what do you know about Hepatitis D?"
+                "what do you know about Hepatitis D?",
+                "what is Hepatitis D?",
+                "explain Hepatitis D?"
             ],
-            "responses": "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus (HDV)."
+            "responses": [
+                "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus (HDV).",
+                "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus (HDV)."
+            ]
         },
         {
             "labels": "precaution_Hepatitis D",
             "patterns": [
                 "what should i do about Hepatitis D?",
                 "what can i do if i have Hepatitis D?",
-                "what do i do if i have Hepatitis D"
+                "what do i do if i have Hepatitis D",
+                "i have Hepatitis D"
             ],
             "responses": [
-                "consult doctor",
-                "medication",
-                "eat healthy",
-                "follow up"
+                "You could consult doctor",
+                "You could medication",
+                "You could eat healthy",
+                "You could follow up"
             ]
         },
         {
             "labels": "describe_Heart attack",
             "patterns": [
                 "can you tell me about Heart attack?",
-                "what do you know about Heart attack?"
+                "what do you know about Heart attack?",
+                "what is Heart attack?",
+                "explain Heart attack?"
             ],
-            "responses": "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle."
+            "responses": [
+                "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle.",
+                "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle."
+            ]
         },
         {
             "labels": "precaution_Heart attack",
             "patterns": [
                 "what should i do about Heart attack?",
                 "what can i do if i have Heart attack?",
-                "what do i do if i have Heart attack"
+                "what do i do if i have Heart attack",
+                "i have Heart attack"
             ],
             "responses": [
-                "call ambulance",
-                "chew or swallow asprin",
-                "keep calm",
-                "<NA>"
+                "You could call ambulance",
+                "You could chew or swallow asprin",
+                "You could keep calm",
+                "You could <NA>"
             ]
         },
         {
             "labels": "describe_Pneumonia",
             "patterns": [
                 "can you tell me about Pneumonia?",
-                "what do you know about Pneumonia?"
+                "what do you know about Pneumonia?",
+                "what is Pneumonia?",
+                "explain Pneumonia?"
             ],
-            "responses": "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe."
+            "responses": [
+                "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe.",
+                "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe."
+            ]
         },
         {
             "labels": "precaution_Pneumonia",
             "patterns": [
                 "what should i do about Pneumonia?",
                 "what can i do if i have Pneumonia?",
-                "what do i do if i have Pneumonia"
+                "what do i do if i have Pneumonia",
+                "i have Pneumonia"
             ],
             "responses": [
-                "consult doctor",
-                "medication",
-                "rest",
-                "follow up"
+                "You could consult doctor",
+                "You could medication",
+                "You could rest",
+                "You could follow up"
             ]
         },
         {
             "labels": "describe_Arthritis",
             "patterns": [
                 "can you tell me about Arthritis?",
-                "what do you know about Arthritis?"
+                "what do you know about Arthritis?",
+                "what is Arthritis?",
+                "explain Arthritis?"
             ],
-            "responses": "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis."
+            "responses": [
+                "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis.",
+                "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis."
+            ]
         },
         {
             "labels": "precaution_Arthritis",
             "patterns": [
                 "what should i do about Arthritis?",
                 "what can i do if i have Arthritis?",
-                "what do i do if i have Arthritis"
+                "what do i do if i have Arthritis",
+                "i have Arthritis"
             ],
             "responses": [
-                "exercise",
-                "use hot and cold therapy",
-                "try acupuncture",
-                "massage"
+                "You could exercise",
+                "You could use hot and cold therapy",
+                "You could try acupuncture",
+                "You could massage"
             ]
         },
         {
             "labels": "describe_Gastroenteritis",
             "patterns": [
                 "can you tell me about Gastroenteritis?",
-                "what do you know about Gastroenteritis?"
+                "what do you know about Gastroenteritis?",
+                "what is Gastroenteritis?",
+                "explain Gastroenteritis?"
             ],
-            "responses": "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting ."
+            "responses": [
+                "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting .",
+                "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting ."
+            ]
         },
         {
             "labels": "precaution_Gastroenteritis",
             "patterns": [
                 "what should i do about Gastroenteritis?",
                 "what can i do if i have Gastroenteritis?",
-                "what do i do if i have Gastroenteritis"
+                "what do i do if i have Gastroenteritis",
+                "i have Gastroenteritis"
             ],
             "responses": [
-                "stop eating solid food for while",
-                "try taking small sips of water",
-                "rest",
-                "ease back into eating"
+                "You could stop eating solid food for while",
+                "You could try taking small sips of water",
+                "You could rest",
+                "You could ease back into eating"
             ]
         },
         {
             "labels": "describe_Tuberculosis",
             "patterns": [
                 "can you tell me about Tuberculosis?",
-                "what do you know about Tuberculosis?"
+                "what do you know about Tuberculosis?",
+                "what is Tuberculosis?",
+                "explain Tuberculosis?"
             ],
-            "responses": "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis."
+            "responses": [
+                "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis.",
+                "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis."
+            ]
         },
         {
             "labels": "precaution_Tuberculosis",
             "patterns": [
                 "what should i do about Tuberculosis?",
                 "what can i do if i have Tuberculosis?",
-                "what do i do if i have Tuberculosis"
+                "what do i do if i have Tuberculosis",
+                "i have Tuberculosis"
             ],
             "responses": [
-                "cover mouth",
-                "consult doctor",
-                "medication",
-                "rest"
+                "You could cover mouth",
+                "You could consult doctor",
+                "You could medication",
+                "You could rest"
             ]
         }
     ]

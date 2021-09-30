@@ -46,13 +46,23 @@ for row in range(len(df_description)):
     precaution3 = df_precaution.Precaution_3[row]
     precaution4 = df_precaution.Precaution_4[row]
     add = {"labels":f"describe_{disease}",
-            "patterns": [f"can you tell me about {disease}?",f"what do you know about {disease}?"],
-            "responses": f"{description}"
+            "patterns": [
+                f"can you tell me about {disease}?",
+                f"what do you know about {disease}?",
+                f"what is {disease}?",
+                f"explain {disease}?"
+                ],
+            "responses": [f"{description}",f"{description}"]
             }
     write_json(add)
     add = {"labels":f"precaution_{disease}",
-            "patterns": [f"what should i do about {disease}?",f"what can i do if i have {disease}?", f"what do i do if i have {disease}"],
-            "responses": [f"{precaution1}",f"{precaution2}",f"{precaution3}",f"{precaution4}"]
+            "patterns": [
+                f"what should i do about {disease}?",
+                f"what can i do if i have {disease}?", 
+                f"what do i do if i have {disease}",
+                f"i have {disease}",
+                ],
+            "responses": [f"You could {precaution1}",f"You could {precaution2}",f"You could {precaution3}",f"You could {precaution4}"]
             }
     write_json(add)
 

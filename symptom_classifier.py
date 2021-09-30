@@ -87,7 +87,7 @@ dataset = SymptomDataset()
 print("Created Dataset")
 # Hyper-parameters 
 num_epochs = 20
-batch_size = 6
+batch_size = 100
 learning_rate = 0.0001
 input_size = len(all_words)
 hidden_size = 8
