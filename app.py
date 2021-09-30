@@ -1,7 +1,7 @@
 from os import stat
 from tkinter import *
 from tkinter.font import Font
-from chat import get_response, bot_name
+from chat import get_response, bot_name, write_json
 
 BG_GRAY = "#ABB289"
 BG_COLOR = "#17202A"
