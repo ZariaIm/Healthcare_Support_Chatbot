@@ -1,3 +1,4 @@
+from shutil import which
 import numpy as np
 import nltk
 #nltk.download('punkt')
@@ -39,5 +40,30 @@ def bag_of_words(tokenized_sentence, words):
     for idx, w in enumerate(words):
         if w in sentence_words: 
             bag[idx] = 1
+
+    return bag
+
+def bag_of_words_modx(tokenized_sentence, words):
+    # initialize bag with 0 for each word
+    bag = np.zeros(len(words), dtype=np.float32)
+    for idx, w in enumerate(words):
+        for _, word in enumerate(tokenized_sentence):
+            #print(w)
+            #print(word)
+            if w in word: 
+                bag[idx] = 1
+                #print("bagged")
+
+    return bag
+
+def bag_of_words_mody(word, words):
+    # initialize bag with 0 for each word
+    bag = np.zeros(len(words), dtype=np.float32)
+    for idx, w in enumerate(words):
+        #print(w)
+        #print(word)
+        if word in w: 
+            bag[idx] = 1
+            #print("bagged")
 
     return bag

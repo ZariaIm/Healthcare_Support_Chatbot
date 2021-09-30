@@ -53,7 +53,8 @@ for (pattern_sentence, tag) in xy:
 
 X_train = np.array(X_train)
 y_train = np.array(y_train)
-
+print(type(X_train))
+print(X_train.shape)
 # Hyper-parameters 
 num_epochs = 1000
 batch_size = 8
@@ -97,9 +98,11 @@ for epoch in range(num_epochs):
     for (words, labels) in train_loader:
         words = words.to(device)
         labels = labels.to(dtype=torch.long).to(device)
-        
+        print("words", words.shape)
         # Forward pass
         outputs = model(words)
+        print("output",outputs.shape, outputs)
+        print("label",labels.shape, labels)
         # if y would be one-hot, we must apply
         # labels = torch.max(labels, 1)[1]
         loss = criterion(outputs, labels)
