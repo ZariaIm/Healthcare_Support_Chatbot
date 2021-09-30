@@ -92,10 +92,10 @@
                 "i have Drug Reaction"
             ],
             "responses": [
-                "You could stop irritation",
-                "You could consult nearest hospital",
-                "You could stop taking drug",
-                "You could follow up"
+                "If you have Drug Reaction, you could stop irritation",
+                "If you have Drug Reaction, you could consult nearest hospital",
+                "If you have Drug Reaction, you could stop taking drug",
+                "If you have Drug Reaction, you could follow up"
             ]
         },
         {
@@ -120,10 +120,10 @@
                 "i have Malaria"
             ],
             "responses": [
-                "You could Consult nearest hospital",
-                "You could avoid oily food",
-                "You could avoid non veg food",
-                "You could keep mosquitos out"
+                "If you have Malaria, you could Consult nearest hospital",
+                "If you have Malaria, you could avoid oily food",
+                "If you have Malaria, you could avoid non veg food",
+                "If you have Malaria, you could keep mosquitos out"
             ]
         },
         {
@@ -148,10 +148,10 @@
                 "i have Allergy"
             ],
             "responses": [
-                "You could apply calamine",
-                "You could cover area with bandage",
-                "You could <NA>",
-                "You could use ice to compress itching"
+                "If you have Allergy, you could apply calamine",
+                "If you have Allergy, you could cover area with bandage",
+                "If you have Allergy, you could <NA>",
+                "If you have Allergy, you could use ice to compress itching"
             ]
         },
         {
@@ -176,10 +176,10 @@
                 "i have Hypothyroidism"
             ],
             "responses": [
-                "You could reduce stress",
-                "You could exercise",
-                "You could eat healthy",
-                "You could get proper sleep"
+                "If you have Hypothyroidism, you could reduce stress",
+                "If you have Hypothyroidism, you could exercise",
+                "If you have Hypothyroidism, you could eat healthy",
+                "If you have Hypothyroidism, you could get proper sleep"
             ]
         },
         {
@@ -204,10 +204,10 @@
                 "i have Psoriasis"
             ],
             "responses": [
-                "You could wash hands with warm soapy water",
-                "You could stop bleeding using pressure",
-                "You could consult doctor",
-                "You could salt baths"
+                "If you have Psoriasis, you could wash hands with warm soapy water",
+                "If you have Psoriasis, you could stop bleeding using pressure",
+                "If you have Psoriasis, you could consult doctor",
+                "If you have Psoriasis, you could salt baths"
             ]
         },
         {
@@ -232,10 +232,10 @@
                 "i have GERD"
             ],
             "responses": [
-                "You could avoid fatty spicy food",
-                "You could avoid lying down after eating",
-                "You could maintain healthy weight",
-                "You could exercise"
+                "If you have GERD, you could avoid fatty spicy food",
+                "If you have GERD, you could avoid lying down after eating",
+                "If you have GERD, you could maintain healthy weight",
+                "If you have GERD, you could exercise"
             ]
         },
         {
@@ -260,10 +260,10 @@
                 "i have Chronic cholestasis"
             ],
             "responses": [
-                "You could cold baths",
-                "You could anti itch medicine",
-                "You could consult doctor",
-                "You could eat healthy"
+                "If you have Chronic cholestasis, you could cold baths",
+                "If you have Chronic cholestasis, you could anti itch medicine",
+                "If you have Chronic cholestasis, you could consult doctor",
+                "If you have Chronic cholestasis, you could eat healthy"
             ]
         },
         {
@@ -288,10 +288,10 @@
                 "i have hepatitis A"
             ],
             "responses": [
-                "You could Consult nearest hospital",
-                "You could wash hands through",
-                "You could avoid fatty spicy food",
-                "You could medication"
+                "If you have hepatitis A, you could Consult nearest hospital",
+                "If you have hepatitis A, you could wash hands through",
+                "If you have hepatitis A, you could avoid fatty spicy food",
+                "If you have hepatitis A, you could medication"
             ]
         },
         {
@@ -316,10 +316,10 @@
                 "i have Osteoarthristis"
             ],
             "responses": [
-                "You could acetaminophen",
-                "You could consult nearest hospital",
-                "You could follow up",
-                "You could salt baths"
+                "If you have Osteoarthristis, you could acetaminophen",
+                "If you have Osteoarthristis, you could consult nearest hospital",
+                "If you have Osteoarthristis, you could follow up",
+                "If you have Osteoarthristis, you could salt baths"
             ]
         },
         {
@@ -344,10 +344,10 @@
                 "i have (vertigo) Paroymsal  Positional Vertigo"
             ],
             "responses": [
-                "You could lie down",
-                "You could avoid sudden change in body",
-                "You could avoid abrupt head movment",
-                "You could relax"
+                "If you have (vertigo) Paroymsal  Positional Vertigo, you could lie down",
+                "If you have (vertigo) Paroymsal  Positional Vertigo, you could avoid sudden change in body",
+                "If you have (vertigo) Paroymsal  Positional Vertigo, you could avoid abrupt head movment",
+                "If you have (vertigo) Paroymsal  Positional Vertigo, you could relax"
             ]
         },
         {
@@ -372,10 +372,10 @@
                 "i have Hypoglycemia"
             ],
             "responses": [
-                "You could lie down on side",
-                "You could check in pulse",
-                "You could drink sugary drinks",
-                "You could consult doctor"
+                "If you have Hypoglycemia, you could lie down on side",
+                "If you have Hypoglycemia, you could check in pulse",
+                "If you have Hypoglycemia, you could drink sugary drinks",
+                "If you have Hypoglycemia, you could consult doctor"
             ]
         },
         {
@@ -400,10 +400,10 @@
                 "i have Acne"
             ],
             "responses": [
-                "You could bath twice",
-                "You could avoid fatty spicy food",
-                "You could drink plenty of water",
-                "You could avoid too many products"
+                "If you have Acne, you could bath twice",
+                "If you have Acne, you could avoid fatty spicy food",
+                "If you have Acne, you could drink plenty of water",
+                "If you have Acne, you could avoid too many products"
             ]
         },
         {
@@ -428,10 +428,10 @@
                 "i have Diabetes"
             ],
             "responses": [
-                "You could have balanced diet",
-                "You could exercise",
-                "You could consult doctor",
-                "You could follow up"
+                "If you have Diabetes, you could have balanced diet",
+                "If you have Diabetes, you could exercise",
+                "If you have Diabetes, you could consult doctor",
+                "If you have Diabetes, you could follow up"
             ]
         },
         {
@@ -456,10 +456,10 @@
                 "i have Impetigo"
             ],
             "responses": [
-                "You could soak affected area in warm water",
-                "You could use antibiotics",
-                "You could remove scabs with wet compressed cloth",
-                "You could consult doctor"
+                "If you have Impetigo, you could soak affected area in warm water",
+                "If you have Impetigo, you could use antibiotics",
+                "If you have Impetigo, you could remove scabs with wet compressed cloth",
+                "If you have Impetigo, you could consult doctor"
             ]
         },
         {
@@ -484,10 +484,10 @@
                 "i have Hypertension"
             ],
             "responses": [
-                "You could meditation",
-                "You could salt baths",
-                "You could reduce stress",
-                "You could get proper sleep"
+                "If you have Hypertension, you could meditation",
+                "If you have Hypertension, you could salt baths",
+                "If you have Hypertension, you could reduce stress",
+                "If you have Hypertension, you could get proper sleep"
             ]
         },
         {
@@ -512,10 +512,10 @@
                 "i have Peptic ulcer diseae"
             ],
             "responses": [
-                "You could avoid fatty spicy food",
-                "You could consume probiotic food",
-                "You could eliminate milk",
-                "You could limit alcohol"
+                "If you have Peptic ulcer diseae, you could avoid fatty spicy food",
+                "If you have Peptic ulcer diseae, you could consume probiotic food",
+                "If you have Peptic ulcer diseae, you could eliminate milk",
+                "If you have Peptic ulcer diseae, you could limit alcohol"
             ]
         },
         {
@@ -540,10 +540,10 @@
                 "i have Dimorphic hemorrhoids(piles)"
             ],
             "responses": [
-                "You could avoid fatty spicy food",
-                "You could consume witch hazel",
-                "You could warm bath with epsom salt",
-                "You could consume alovera juice"
+                "If you have Dimorphic hemorrhoids(piles), you could avoid fatty spicy food",
+                "If you have Dimorphic hemorrhoids(piles), you could consume witch hazel",
+                "If you have Dimorphic hemorrhoids(piles), you could warm bath with epsom salt",
+                "If you have Dimorphic hemorrhoids(piles), you could consume alovera juice"
             ]
         },
         {
@@ -568,10 +568,10 @@
                 "i have Common Cold"
             ],
             "responses": [
-                "You could drink vitamin c rich drinks",
-                "You could take vapour",
-                "You could avoid cold food",
-                "You could keep fever in check"
+                "If you have Common Cold, you could drink vitamin c rich drinks",
+                "If you have Common Cold, you could take vapour",
+                "If you have Common Cold, you could avoid cold food",
+                "If you have Common Cold, you could keep fever in check"
             ]
         },
         {
@@ -596,10 +596,10 @@
                 "i have Chicken pox"
             ],
             "responses": [
-                "You could use neem in bathing ",
-                "You could consume neem leaves",
-                "You could take vaccine",
-                "You could avoid public places"
+                "If you have Chicken pox, you could use neem in bathing ",
+                "If you have Chicken pox, you could consume neem leaves",
+                "If you have Chicken pox, you could take vaccine",
+                "If you have Chicken pox, you could avoid public places"
             ]
         },
         {
@@ -624,10 +624,10 @@
                 "i have Cervical spondylosis"
             ],
             "responses": [
-                "You could use heating pad or cold pack",
-                "You could exercise",
-                "You could take otc pain reliver",
-                "You could consult doctor"
+                "If you have Cervical spondylosis, you could use heating pad or cold pack",
+                "If you have Cervical spondylosis, you could exercise",
+                "If you have Cervical spondylosis, you could take otc pain reliver",
+                "If you have Cervical spondylosis, you could consult doctor"
             ]
         },
         {
@@ -652,10 +652,10 @@
                 "i have Hyperthyroidism"
             ],
             "responses": [
-                "You could eat healthy",
-                "You could massage",
-                "You could use lemon balm",
-                "You could take radioactive iodine treatment"
+                "If you have Hyperthyroidism, you could eat healthy",
+                "If you have Hyperthyroidism, you could massage",
+                "If you have Hyperthyroidism, you could use lemon balm",
+                "If you have Hyperthyroidism, you could take radioactive iodine treatment"
             ]
         },
         {
@@ -680,10 +680,10 @@
                 "i have Urinary tract infection"
             ],
             "responses": [
-                "You could drink plenty of water",
-                "You could increase vitamin c intake",
-                "You could drink cranberry juice",
-                "You could take probiotics"
+                "If you have Urinary tract infection, you could drink plenty of water",
+                "If you have Urinary tract infection, you could increase vitamin c intake",
+                "If you have Urinary tract infection, you could drink cranberry juice",
+                "If you have Urinary tract infection, you could take probiotics"
             ]
         },
         {
@@ -708,10 +708,10 @@
                 "i have Varicose veins"
             ],
             "responses": [
-                "You could lie down flat and raise the leg high",
-                "You could use oinments",
-                "You could use vein compression",
-                "You could dont stand still for long"
+                "If you have Varicose veins, you could lie down flat and raise the leg high",
+                "If you have Varicose veins, you could use oinments",
+                "If you have Varicose veins, you could use vein compression",
+                "If you have Varicose veins, you could dont stand still for long"
             ]
         },
         {
@@ -736,10 +736,10 @@
                 "i have AIDS"
             ],
             "responses": [
-                "You could avoid open cuts",
-                "You could wear ppe if possible",
-                "You could consult doctor",
-                "You could follow up"
+                "If you have AIDS, you could avoid open cuts",
+                "If you have AIDS, you could wear ppe if possible",
+                "If you have AIDS, you could consult doctor",
+                "If you have AIDS, you could follow up"
             ]
         },
         {
@@ -764,10 +764,10 @@
                 "i have Paralysis (brain hemorrhage)"
             ],
             "responses": [
-                "You could massage",
-                "You could eat healthy",
-                "You could exercise",
-                "You could consult doctor"
+                "If you have Paralysis (brain hemorrhage), you could massage",
+                "If you have Paralysis (brain hemorrhage), you could eat healthy",
+                "If you have Paralysis (brain hemorrhage), you could exercise",
+                "If you have Paralysis (brain hemorrhage), you could consult doctor"
             ]
         },
         {
@@ -792,10 +792,10 @@
                 "i have Typhoid"
             ],
             "responses": [
-                "You could eat high calorie vegitables",
-                "You could antiboitic therapy",
-                "You could consult doctor",
-                "You could medication"
+                "If you have Typhoid, you could eat high calorie vegitables",
+                "If you have Typhoid, you could antiboitic therapy",
+                "If you have Typhoid, you could consult doctor",
+                "If you have Typhoid, you could medication"
             ]
         },
         {
@@ -820,10 +820,10 @@
                 "i have Hepatitis B"
             ],
             "responses": [
-                "You could consult nearest hospital",
-                "You could vaccination",
-                "You could eat healthy",
-                "You could medication"
+                "If you have Hepatitis B, you could consult nearest hospital",
+                "If you have Hepatitis B, you could vaccination",
+                "If you have Hepatitis B, you could eat healthy",
+                "If you have Hepatitis B, you could medication"
             ]
         },
         {
@@ -848,10 +848,10 @@
                 "i have Fungal infection"
             ],
             "responses": [
-                "You could bath twice",
-                "You could use detol or neem in bathing water",
-                "You could keep infected area dry",
-                "You could use clean cloths"
+                "If you have Fungal infection, you could bath twice",
+                "If you have Fungal infection, you could use detol or neem in bathing water",
+                "If you have Fungal infection, you could keep infected area dry",
+                "If you have Fungal infection, you could use clean cloths"
             ]
         },
         {
@@ -876,10 +876,10 @@
                 "i have Hepatitis C"
             ],
             "responses": [
-                "You could Consult nearest hospital",
-                "You could vaccination",
-                "You could eat healthy",
-                "You could medication"
+                "If you have Hepatitis C, you could Consult nearest hospital",
+                "If you have Hepatitis C, you could vaccination",
+                "If you have Hepatitis C, you could eat healthy",
+                "If you have Hepatitis C, you could medication"
             ]
         },
         {
@@ -904,10 +904,10 @@
                 "i have Migraine"
             ],
             "responses": [
-                "You could meditation",
-                "You could reduce stress",
-                "You could use poloroid glasses in sun",
-                "You could consult doctor"
+                "If you have Migraine, you could meditation",
+                "If you have Migraine, you could reduce stress",
+                "If you have Migraine, you could use poloroid glasses in sun",
+                "If you have Migraine, you could consult doctor"
             ]
         },
         {
@@ -932,10 +932,10 @@
                 "i have Bronchial Asthma"
             ],
             "responses": [
-                "You could switch to loose cloothing",
-                "You could take deep breaths",
-                "You could get away from trigger",
-                "You could seek help"
+                "If you have Bronchial Asthma, you could switch to loose cloothing",
+                "If you have Bronchial Asthma, you could take deep breaths",
+                "If you have Bronchial Asthma, you could get away from trigger",
+                "If you have Bronchial Asthma, you could seek help"
             ]
         },
         {
@@ -960,10 +960,10 @@
                 "i have Alcoholic hepatitis"
             ],
             "responses": [
-                "You could stop alcohol consumption",
-                "You could consult doctor",
-                "You could medication",
-                "You could follow up"
+                "If you have Alcoholic hepatitis, you could stop alcohol consumption",
+                "If you have Alcoholic hepatitis, you could consult doctor",
+                "If you have Alcoholic hepatitis, you could medication",
+                "If you have Alcoholic hepatitis, you could follow up"
             ]
         },
         {
@@ -988,10 +988,10 @@
                 "i have Jaundice"
             ],
             "responses": [
-                "You could drink plenty of water",
-                "You could consume milk thistle",
-                "You could eat fruits and high fiberous food",
-                "You could medication"
+                "If you have Jaundice, you could drink plenty of water",
+                "If you have Jaundice, you could consume milk thistle",
+                "If you have Jaundice, you could eat fruits and high fiberous food",
+                "If you have Jaundice, you could medication"
             ]
         },
         {
@@ -1016,10 +1016,10 @@
                 "i have Hepatitis E"
             ],
             "responses": [
-                "You could stop alcohol consumption",
-                "You could rest",
-                "You could consult doctor",
-                "You could medication"
+                "If you have Hepatitis E, you could stop alcohol consumption",
+                "If you have Hepatitis E, you could rest",
+                "If you have Hepatitis E, you could consult doctor",
+                "If you have Hepatitis E, you could medication"
             ]
         },
         {
@@ -1044,10 +1044,10 @@
                 "i have Dengue"
             ],
             "responses": [
-                "You could drink papaya leaf juice",
-                "You could avoid fatty spicy food",
-                "You could keep mosquitos away",
-                "You could keep hydrated"
+                "If you have Dengue, you could drink papaya leaf juice",
+                "If you have Dengue, you could avoid fatty spicy food",
+                "If you have Dengue, you could keep mosquitos away",
+                "If you have Dengue, you could keep hydrated"
             ]
         },
         {
@@ -1072,10 +1072,10 @@
                 "i have Hepatitis D"
             ],
             "responses": [
-                "You could consult doctor",
-                "You could medication",
-                "You could eat healthy",
-                "You could follow up"
+                "If you have Hepatitis D, you could consult doctor",
+                "If you have Hepatitis D, you could medication",
+                "If you have Hepatitis D, you could eat healthy",
+                "If you have Hepatitis D, you could follow up"
             ]
         },
         {
@@ -1100,10 +1100,10 @@
                 "i have Heart attack"
             ],
             "responses": [
-                "You could call ambulance",
-                "You could chew or swallow asprin",
-                "You could keep calm",
-                "You could <NA>"
+                "If you have Heart attack, you could call ambulance",
+                "If you have Heart attack, you could chew or swallow asprin",
+                "If you have Heart attack, you could keep calm",
+                "If you have Heart attack, you could <NA>"
             ]
         },
         {
@@ -1128,10 +1128,10 @@
                 "i have Pneumonia"
             ],
             "responses": [
-                "You could consult doctor",
-                "You could medication",
-                "You could rest",
-                "You could follow up"
+                "If you have Pneumonia, you could consult doctor",
+                "If you have Pneumonia, you could medication",
+                "If you have Pneumonia, you could rest",
+                "If you have Pneumonia, you could follow up"
             ]
         },
         {
@@ -1156,10 +1156,10 @@
                 "i have Arthritis"
             ],
             "responses": [
-                "You could exercise",
-                "You could use hot and cold therapy",
-                "You could try acupuncture",
-                "You could massage"
+                "If you have Arthritis, you could exercise",
+                "If you have Arthritis, you could use hot and cold therapy",
+                "If you have Arthritis, you could try acupuncture",
+                "If you have Arthritis, you could massage"
             ]
         },
         {
@@ -1184,10 +1184,10 @@
                 "i have Gastroenteritis"
             ],
             "responses": [
-                "You could stop eating solid food for while",
-                "You could try taking small sips of water",
-                "You could rest",
-                "You could ease back into eating"
+                "If you have Gastroenteritis, you could stop eating solid food for while",
+                "If you have Gastroenteritis, you could try taking small sips of water",
+                "If you have Gastroenteritis, you could rest",
+                "If you have Gastroenteritis, you could ease back into eating"
             ]
         },
         {
@@ -1212,10 +1212,10 @@
                 "i have Tuberculosis"
             ],
             "responses": [
-                "You could cover mouth",
-                "You could consult doctor",
-                "You could medication",
-                "You could rest"
+                "If you have Tuberculosis, you could cover mouth",
+                "If you have Tuberculosis, you could consult doctor",
+                "If you have Tuberculosis, you could medication",
+                "If you have Tuberculosis, you could rest"
             ]
         }
     ]

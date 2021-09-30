@@ -27,7 +27,7 @@ df_precaution = pd.read_csv("datasets/symptom_precaution.csv", dtype = "string")
 # function to add to JSON
 def write_json(new_data, filename='intents.json'):
     with open(filename,'r+') as file:
-          # First we load existing data into a dict.
+        # First we load existing data into a dict.
         file_data = json.load(file)
         # Join new_data with file_data inside emp_details
         file_data["intents"].append(new_data)
@@ -62,7 +62,11 @@ for row in range(len(df_description)):
                 f"what do i do if i have {disease}",
                 f"i have {disease}",
                 ],
-            "responses": [f"You could {precaution1}",f"You could {precaution2}",f"You could {precaution3}",f"You could {precaution4}"]
+            "responses": [
+            f"If you have {disease}, you could {precaution1}",
+            f"If you have {disease}, you could {precaution2}",
+            f"If you have {disease}, you could {precaution3}",
+            f"If you have {disease}, you could {precaution4}"]
             }
     write_json(add)
 
