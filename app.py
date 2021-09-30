@@ -1,7 +1,7 @@
 from os import stat
 from tkinter import *
 from tkinter.font import Font
-from chat import get_response, bot_name, write_json
+from chat import get_response, bot_name
 
 BG_GRAY = "#ABB289"
 BG_COLOR = "#17202A"
@@ -17,7 +17,7 @@ class ChatApplication:
         self._setup_main_window()
         self.window.mainloop()
         #self._insert_message(msg = "Hi there! How are you?",sender = "{bot_name: ")
-    
+
     #def run(self):
         
     def _setup_main_window(self):
