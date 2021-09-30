@@ -13,17 +13,27 @@ with open('intents.json', 'r') as json_data:
 
 FILE = "chatbot.pth"
 data = torch.load(FILE)
-
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]
 all_words = data['all_words']
 labels = data['labels']
 model_state = data["model_state"]
+model_c = NeuralNet(input_size, hidden_size, output_size).to(device)
+model_c.load_state_dict(model_state)
+model_c.eval()
 
-model = NeuralNet(input_size, hidden_size, output_size).to(device)
-model.load_state_dict(model_state)
-model.eval()
+FILE = "model_symptoms.pth"
+data = torch.load(FILE)
+input_size = data["input_size"]
+hidden_size = data["hidden_size"]
+output_size = data["output_size"]
+all_words = data['all_words']
+labels = data['labels']
+model_state = data["model_state"]
+model_s = NeuralNet(input_size, hidden_size, output_size).to(device)
+model_s.load_state_dict(model_state)
+model_s.eval()
 
 bot_name = "Sam"
 
@@ -41,11 +51,15 @@ def write_json(new_data, filename='storedSymptoms.json'):
 def get_response(msg):
     
     sentence = tokenize(msg)
+    check = bag_of_words(sentence, full_list_of_symptoms)
+    if sum(check)>0:
+        print("symptom identified")
+
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
 
-    output = model(X)
+    output = model_c(X)
     _, predicted = torch.max(output, dim=1)
     # print(predicted)
     # print(labels)

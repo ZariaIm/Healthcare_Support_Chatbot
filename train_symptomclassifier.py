@@ -9,6 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 import pandas as pd
+from createAllWords import all_symptoms, diseases, ignore_words, df_test, df_train
 
 #column 1: labels/diseases/Y-train
 #column 2: input/symptoms/X-train
@@ -16,47 +17,7 @@ import pandas as pd
 #print(type(df.Symptom_2[3]))#4th row of symptom 2 - retrieves the class 'str'
 
 
-#read dataset and cast values as strings
-df = pd.read_csv("datasets/dataset.csv", dtype = "string") #4920 rows  x 18 cols
-df = df.fillna(" ")
 
-#Create all words array, diseases array
-all_words = [] #list type
-diseases = []
-ignore_words = ['?', '.', '!']
-
-
-for i in range(1,18):
-    c_name = f"Symptom_{i}"
-    for word in df[c_name]:
-        all_words.extend(tokenize(' '.join(word.split("_"))))
-all_words = [stem(w) for w in all_words if w not in ignore_words]
-#remove duplicates from list and sort
-#sets are easier for comparing too
-all_words = sorted(set(all_words))
-#print(all_words)
-print("Collected all symptoms")
-
-
-for value in df["Disease"].str.split(","):
-    diseases.extend(value)
-# all_words.pop(0)#remove " "
-diseases = sorted(set(diseases))
-#list comprehension to remove letters
-temp = [] # temporary array
-[temp.append(x) for x in diseases if len(x)>1]
-diseases = (temp)
-print(len(diseases))
-print("Collected all diseases")
-
-#Loop through each list of symptoms for the label -  treat the row almost like a sentence
-#create training data from random rows using random.choice (set the seed)
-#create df_test by dropping rows from original - make results reproducible
-np.random.seed(42)
-# sample without replacement
-test_ix = np.random.choice(df.index, 354, replace=False)
-df_test = df.iloc[test_ix] # 354 rows x 18 cols
-df_train = df.drop(test_ix) # 4566 rows x 18 cols
 
 
 class SymptomDataset(Dataset):
@@ -73,7 +34,7 @@ class SymptomDataset(Dataset):
         list_of_symptoms = []
         for i in range(17):
             list_of_symptoms.extend(tokenize(' '.join(self.x_data[idx,i].split("_"))))
-        x_bagged = bag_of_words(list_of_symptoms, all_words)
+        x_bagged = bag_of_words(list_of_symptoms, all_symptoms)
         #print(x_bagged)
         y_bagged = self.y_data[idx]
         #print(y_bagged.shape)
@@ -89,7 +50,7 @@ print("Created Dataset")
 num_epochs = 40
 batch_size = 100
 learning_rate = 0.001
-input_size = len(all_words)
+input_size = len(all_symptoms)
 hidden_size = 8
 output_size = len(diseases)
 
@@ -141,7 +102,7 @@ data = {
 "input_size": input_size,
 "hidden_size": hidden_size,
 "output_size": output_size,
-"all_words": all_words,
+"all_words": all_symptoms,
 "labels": labels
 }
 
