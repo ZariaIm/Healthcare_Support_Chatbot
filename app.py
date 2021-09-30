@@ -1,8 +1,8 @@
 from os import stat
 from tkinter import *
 from tkinter.font import Font
-from chat import get_response, bot_name, write_json
-print("testing")
+from chat import get_response, bot_name
+
 BG_GRAY = "#ABB289"
 BG_COLOR = "#17202A"
 TEXT_COLOR = "#EAECEE"
@@ -12,7 +12,6 @@ FONT_BOLD = "HELVETICA 13 bold"
 
 class ChatApplication:
 
-    print("test")
     def __init__(self):
         self.window = Tk()
         self._setup_main_window()
