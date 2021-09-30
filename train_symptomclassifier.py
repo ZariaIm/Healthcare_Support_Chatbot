@@ -9,16 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 import pandas as pd
-from createAllWords import all_symptoms, diseases, ignore_words, df_test, df_train
-
-#column 1: labels/diseases/Y-train
-#column 2: input/symptoms/X-train
-#print(df[['Symptom_2','Symptom_3']]) # indexes both columns by name
-#print(type(df.Symptom_2[3]))#4th row of symptom 2 - retrieves the class 'str'
-
-
-
-
+from createAllWords import all_symptoms, labels, ignore_words, df_test, df_train
 
 class SymptomDataset(Dataset):
 
@@ -52,7 +43,7 @@ batch_size = 100
 learning_rate = 0.001
 input_size = len(all_symptoms)
 hidden_size = 8
-output_size = len(diseases)
+output_size = len(labels)
 
 print("Preparing to set up the neural network")
 print(f" --- input size: {input_size}; output_size: {output_size} --- ")
@@ -73,28 +64,17 @@ print("Model Initialised. Entering Training Loop.")
 #Train the model
 for epoch in range(num_epochs):
     for (words,labels) in train_loader:
-        #words is a list
-        #labels is a tuple
-        #print(words.shape) # should be [8,137]
-        #print(labels)
         # Forward pass
-        outputs = model(words)
+        outputs = model(words) #[batch_size,41]
         labels = labels.squeeze(0)
         # for one hot encoding
-        labels = torch.max(labels, 1)[1]
-        #print(outputs.shape) # should be [8,41]
-        #print(labels.shape, labels) # should [41]
+        labels = torch.max(labels, 1)[1] #[41]
         loss = criterion(outputs, labels)
-        
         # Backward and optimize
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-        
-    #if (epoch+1) % 100 == 0:
     print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
-
-
 print(f'final loss: {loss.item():.4f}')
 
 data = {

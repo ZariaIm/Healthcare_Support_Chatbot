@@ -4,6 +4,7 @@ from tkinter import Label
 import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
+from createAllWords import labels
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open('storedSymptoms.json', "w") as outfile:
@@ -39,8 +40,7 @@ bot_name = "Sam"
 
 def write_json(new_data, filename='storedSymptoms.json'):
     # Serializing json 
-    json_object = json.dumps(new_data, indent = 4)
-    
+    json_object = json.dumps(new_data,separators = (",", "."))
     # Writing to sample.json
     with open(filename, "a") as outfile:
         outfile.write(json_object)
@@ -66,19 +66,20 @@ def get_response(msg):
     label = [label.index(i) for i in label if i == True]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
- 
+    #list_of_symptoms = ['ulcer'] #testing instead of loading from file
     if prob.item() > 0.6:
         ctr = 0
+        if label == [0]:
+            with open('storedSymptoms.json', 'r') as json_data:
+                list_of_symptoms = json.load(json_data)
+            symptom_bag = bag_of_words(list_of_symptoms, all_symptoms)
+            output_s = model_s(torch.FloatTensor(symptom_bag).unsqueeze(0))
+            _, predicted_s = torch.max(output_s, dim=1)
+            disease = labels[predicted_s]
+            return f"You may have {disease}."
         for intent in intents['intents']:
             if label == [ctr]:
                  return random.choice(intent['responses'])
             ctr +=1
     return "I do not understand..."
-
-    if Label == sympt:
-        write_json(Label, filename='storedSymptoms.json')
-        
-
-    #  if Label == sympt:
-    #    write_json(Label, filename='storedSymptoms.json')
     

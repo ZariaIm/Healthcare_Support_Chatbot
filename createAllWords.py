@@ -60,7 +60,7 @@ y_train = np.array(y_train)
 
 #Create all words array, diseases array
 all_symptoms = [] #list type
-diseases = []
+labels = []
 ignore_words = ['?', '.', '!']
 
 #read dataset and cast values as strings
@@ -89,12 +89,11 @@ print("Collected all symptoms")
 
 
 for value in df["Disease"].str.split(","):
-    diseases.extend(value)
+    labels.extend(value)
 
-diseases = sorted(set(diseases))
+labels = sorted(set(labels))
 #list comprehension to remove letters
 temp = [] # temporary array
-[temp.append(x) for x in diseases if len(x)>1]
-diseases = (temp)
-print(len(diseases))
+[temp.append(x) for x in labels if len(x)>1]
+labels = (temp)
 print("Collected all diseases")

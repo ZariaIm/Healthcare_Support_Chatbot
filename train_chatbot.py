@@ -53,7 +53,7 @@ for epoch in range(num_epochs):
     for (word, label) in train_loader:
         word = word.to(device)
         label = label.to(dtype=torch.long).to(device)
-        #print("words", words.shape)
+        #print("words", word)
         # Forward pass
         output = model(word)
         #print("output",outputs.shape)

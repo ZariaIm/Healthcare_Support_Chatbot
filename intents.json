@@ -1,33 +1,13 @@
 {
     "intents": [
-        {
-            "labels": "telling symptoms",
+                {
+            "labels": "tell me now",
             "patterns": [
-                "i have",
-                "I feel",
-                "I think i have",
+                "what do you think i have?",
+                "what is it?",
+                "why am i sick?",
                 "I feel sick",
-                "maybe i have"
-            ],
-            "responses": [
-                "Do you have any other symptoms?",
-                "What other sorts of symptoms are you experiencing",
-                "I'm sorry to hear it, do you have any other symptoms?"
-            ]
-        },
-        {
-            "labels": "asking about disease for themself",
-            "patterns": [
-                "i have",
-                "I think i have",
-                "I feel sick",
-                "maybe i have"
-            ],
-            "responses": [
-                "Can you tell me your symptoms",
-                "What sort of symptoms are you experiencing",
-                "What symptoms do you have",
-                "what symptoms are you experiencing"
+                "am i sick?"
             ]
         },
         {
