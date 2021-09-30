@@ -14,54 +14,51 @@ with open('intents.json', 'r') as f:
     intents = json.load(f)
 
 all_words = []
-tags = []
+labels = []
 xy = []
 # loop through each sentence in our intents patterns
 for intent in intents['intents']:
-    tag = intent['tag']
+    label = intent['labels']
     # add to tag list
-    tags.append(tag)
+    labels.append(label)
     for pattern in intent['patterns']:
         # tokenize each word in the sentence
         w = tokenize(pattern)
         # add to our words list
         all_words.extend(w)
         # add to xy pair
-        xy.append((w, tag))
+        xy.append((w, label))
 
 # stem and lower each word
 ignore_words = ['?', '.', '!']
 all_words = [stem(w) for w in all_words if w not in ignore_words]
 # remove duplicates and sort
 all_words = sorted(set(all_words))
-tags = sorted(set(tags))
+labels = sorted(set(labels))
 
-print(len(xy), "patterns")
-print(len(tags), "tags:", tags)
-print(len(all_words), "unique stemmed words:", all_words)
 
 # create training data
 X_train = []
 y_train = []
-for (pattern_sentence, tag) in xy:
+for (pattern_sentence, label) in xy:
     # X: bag of words for each pattern_sentence
-    bag = bag_of_words(pattern_sentence, all_words)
+    bag = bag_of_words((pattern_sentence), all_words)
     X_train.append(bag)
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
-    label = tags.index(tag)
+    label = labels.index(label)
     y_train.append(label)
 
 X_train = np.array(X_train)
 y_train = np.array(y_train)
-print(type(X_train))
-print(X_train.shape)
+#print(type(X_train))
+#print(X_train.shape)
 # Hyper-parameters 
 num_epochs = 1000
 batch_size = 8
-learning_rate = 0.001
+learning_rate = 2e-5
 input_size = len(X_train[0])
 hidden_size = 8
-output_size = len(tags)
+output_size = len(labels)
 print(input_size, output_size)
 
 class ChatDataset(Dataset):
@@ -98,11 +95,11 @@ for epoch in range(num_epochs):
     for (words, labels) in train_loader:
         words = words.to(device)
         labels = labels.to(dtype=torch.long).to(device)
-        print("words", words.shape)
+        #print("words", words.shape)
         # Forward pass
         outputs = model(words)
-        print("output",outputs.shape, outputs)
-        print("label",labels.shape, labels)
+        #print("output",outputs.shape, outputs)
+        #print("label",labels.shape, labels)
         # if y would be one-hot, we must apply
         # labels = torch.max(labels, 1)[1]
         loss = criterion(outputs, labels)
@@ -112,8 +109,7 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
         
-    if (epoch+1) % 100 == 0:
-        print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
+    print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
 
 
 print(f'final loss: {loss.item():.4f}')
@@ -124,10 +120,10 @@ data = {
 "hidden_size": hidden_size,
 "output_size": output_size,
 "all_words": all_words,
-"tags": tags
+"labels": labels
 }
 
-FILE = "data.pth"
+FILE = "chatbot.pth"
 torch.save(data, FILE)
 
 print(f'training complete. file saved to {FILE}')

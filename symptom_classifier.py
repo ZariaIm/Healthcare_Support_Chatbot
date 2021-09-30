@@ -87,8 +87,8 @@ dataset = SymptomDataset()
 print("Created Dataset")
 # Hyper-parameters 
 num_epochs = 20
-batch_size = 8
-learning_rate = 0.01
+batch_size = 6
+learning_rate = 0.0001
 input_size = len(all_words)
 hidden_size = 8
 output_size = len(diseases)
@@ -114,15 +114,15 @@ for epoch in range(num_epochs):
     for (words,labels) in train_loader:
         #words is a list
         #labels is a tuple
-        print(words.shape) # should be [8,137]
+        #print(words.shape) # should be [8,137]
         #print(labels)
         # Forward pass
         outputs = model(words)
         labels = labels.squeeze(0)
         # for one hot encoding
         labels = torch.max(labels, 1)[1]
-        print(outputs.shape) # should be [8,41]
-        print(labels.shape, labels) # should [41]
+        #print(outputs.shape) # should be [8,41]
+        #print(labels.shape, labels) # should [41]
         loss = criterion(outputs, labels)
         
         # Backward and optimize
