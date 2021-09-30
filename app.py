@@ -16,9 +16,6 @@ class ChatApplication:
         self.window = Tk()
         self._setup_main_window()
         self.window.mainloop()
-        #self._insert_message(msg = "Hi there! How are you?",sender = "{bot_name: ")
-
-    #def run(self):
         
     def _setup_main_window(self):
         self.window.title("Healthcare Support Bot")

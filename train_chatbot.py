@@ -9,6 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 from createAllWords import all_words, labels, X_train, y_train, ignore_words
+import createIntents
 
 # Hyper-parameters 
 num_epochs = 300
@@ -16,8 +17,8 @@ batch_size = 8
 learning_rate = 0.001
 input_size = len(X_train[0])
 hidden_size = 8
-output_size = len(labels)
-#print(input_size, output_size)
+output_size = len(y_train)
+print(input_size, output_size)
 
 class ChatDataset(Dataset):
 
@@ -56,8 +57,6 @@ for epoch in range(num_epochs):
         #print("words", word)
         # Forward pass
         output = model(word)
-        #print("output",outputs.shape)
-        #print("label",labels.shape)
         # if y would be one-hot, we must apply
         # labels = torch.max(labels, 1)[1]
         loss = criterion(output, label)

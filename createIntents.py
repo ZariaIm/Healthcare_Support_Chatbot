@@ -1,16 +1,11 @@
 import random
 import json
-
 import torch
-
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
-
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
-
 import pandas as pd
 
 #column 1: labels/diseases/Y-train
@@ -18,10 +13,15 @@ import pandas as pd
 #print(df[['Symptom_2','Symptom_3']]) # indexes both columns by name
 #print(type(df.Symptom_2[3]))#4th row of symptom 2 - retrieves the class 'str'
 
+print("Clearing previous intents")
+with open("intents.json",'w') as file:
+        json.dump({"intents":[]}, file)
 
 #read dataset and cast values as strings
 df_description = pd.read_csv("datasets/symptom_description.csv", dtype = "string")
 df_precaution = pd.read_csv("datasets/symptom_precaution.csv", dtype = "string")
+df = pd.read_csv("datasets/dataset.csv", dtype = "string") #4920 rows  x 18 cols
+df = df.fillna(" ")
 
 #each intent in intents has labels, patterns and responses
 # function to add to JSON
@@ -36,8 +36,54 @@ def write_json(new_data, filename='intents.json'):
         # convert back to json.
         json.dump(file_data, file, indent = 4)
  
-    # python object to be appended
 
+#################################################################
+#Make sure this one is first (it doesn't need responses)
+#responses edited directly in chat.py
+add = {
+            "labels": "ask disease",
+            "patterns": [
+                "what do you think i have?",
+                "what is it?",
+                "why am i sick?",
+                "I feel sick",
+                "am i sick?"
+            ]
+        }
+write_json(add)
+#################################################################
+add = {
+            "labels": "greeting",
+            "patterns": [
+                "hi",
+                "hey",
+                "how are you",
+                "hello"
+            ],
+            "responses": [
+                "Hello there! My name is Sam. What can I do for you?",
+                "Hi, what can I do for you?"
+            ]
+        }
+write_json(add)
+
+add = {
+            "labels": "intro",
+            "patterns": [
+                "tell me about yourself",
+                "what do you do",
+                "who are you"
+            ],
+            "responses": [
+                "I help you figure out what might possibly be the problem",
+                "Someone to talk to to learn about diseases"
+            ]
+        }
+write_json(add)
+
+##################################################################
+#using the disease descriptions and precautions data
+#we should probably edit some of the actual data to make it more readable
 for row in range(len(df_description)):
     disease = (df_description.Disease[row])
     description = (df_description.Description[row])
@@ -55,6 +101,11 @@ for row in range(len(df_description)):
             "responses": [f"{description}",f"{description}"]
             }
     write_json(add)
+    add = {"labels":f"identify_{disease}",
+            "patterns": [f"{description}",f"{description}"],
+            "responses": [f"Are you talking about {disease}",f"I think that's {disease}"]
+            }
+    write_json(add)
     add = {"labels":f"precaution_{disease}",
             "patterns": [
                 f"what should i do about {disease}?",
@@ -69,5 +120,4 @@ for row in range(len(df_description)):
             f"If you have {disease}, you could {precaution4}"]
             }
     write_json(add)
-
-   
+##################################################################

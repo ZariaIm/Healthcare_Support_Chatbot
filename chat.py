@@ -8,6 +8,7 @@ from createAllWords import labels
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
+print("Clearing previous symptoms")
 with open("storedSymptoms.json",'w') as file:
         json.dump({"symptoms":[]}, file)
 
@@ -59,12 +60,12 @@ def get_response(msg):
         if word in all_symptoms:
             add = {"symptom":f"{word}"}
             write_json(add)
-            print("symptom saved")
+            print("Symptom was stored")
    
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
-
+    #Predicting intent for chatbot
     output = model_c(X)
     _, predicted = torch.max(output, dim=1)
     label = labels_c[predicted.item()]
@@ -77,8 +78,13 @@ def get_response(msg):
     if prob.item() > 0.75:
         ctr = 0
         if label == [0]:
+            list_of_symptoms = []
             with open('storedSymptoms.json', 'r') as json_data:
-                list_of_symptoms = json.load(json_data)
+                file_data = json.load(json_data)
+                symptoms = file_data["symptoms"]
+                for pair in symptoms:
+                    list_of_symptoms.append(pair["symptom"])
+            ############To do: remove duplicates before passing
             symptom_bag = bag_of_words(list_of_symptoms, all_symptoms)
             output_s = model_s(torch.FloatTensor(symptom_bag).unsqueeze(0))
             _, predicted_s = torch.max(output_s, dim=1)
