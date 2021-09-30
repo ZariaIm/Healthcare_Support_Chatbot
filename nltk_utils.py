@@ -34,35 +34,16 @@ def bag_of_words(tokenized_sentence, words):
     bog   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
     """
     # stem each word
-    sentence_words = [stem(word) for word in tokenized_sentence]
+    if len(tokenized_sentence)>1:
+        sentence_words = [stem(word) for word in tokenized_sentence]
+    else:
+        sentence_words = stem(tokenized_sentence)
     # initialize bag with 0 for each word
     bag = np.zeros(len(words), dtype=np.float32)
     for idx, w in enumerate(words):
+        #print("all words",w)
+        #print("input",sentence_words)
         if w in sentence_words: 
-            bag[idx] = 1
-
-    return bag
-
-def bag_of_words_modx(tokenized_sentence, words):
-    # initialize bag with 0 for each word
-    bag = np.zeros(len(words), dtype=np.float32)
-    for idx, w in enumerate(words):
-        for _, word in enumerate(tokenized_sentence):
-            #print(w)
-            #print(word)
-            if w in word: 
-                bag[idx] = 1
-                #print("bagged")
-
-    return bag
-
-def bag_of_words_mody(word, words):
-    # initialize bag with 0 for each word
-    bag = np.zeros(len(words), dtype=np.float32)
-    for idx, w in enumerate(words):
-        #print(w)
-        #print(word)
-        if word in w: 
             bag[idx] = 1
             #print("bagged")
 

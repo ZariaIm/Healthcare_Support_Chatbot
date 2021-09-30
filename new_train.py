@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
-from nltk_utils import bag_of_words, bag_of_words_modx, bag_of_words_mody, tokenize, stem
+from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 import pandas as pd
 
@@ -17,32 +17,36 @@ import pandas as pd
 
 
 #read dataset and cast values as strings
-
 df = pd.read_csv("datasets/dataset.csv", dtype = "string") #4920 rows  x 18 cols
 df = df.fillna(" ")
 
 #Create all words array, diseases array
 all_words = [] #list type
 diseases = []
-#stem_all_words = []
+ignore_words = ['?', '.', '!']
+
+
 for i in range(1,18):
     c_name = f"Symptom_{i}"
-    #print(c_name)
-    for value in df[c_name]:
-        #print(value)
-        all_words.extend(tokenize(value))
-print("Collected all symptoms")
-for value in df["Disease"].str.split(","):
-    diseases.extend(value)
+    for word in df[c_name]:
+        all_words.extend(tokenize(' '.join(word.split("_"))))
+all_words = [stem(w) for w in all_words if w not in ignore_words]
 #remove duplicates from list and sort
 #sets are easier for comparing too
 all_words = sorted(set(all_words))
+#print(all_words)
+print("Collected all symptoms")
+
+
+for value in df["Disease"].str.split(","):
+    diseases.extend(value)
 # all_words.pop(0)#remove " "
 diseases = sorted(set(diseases))
 #list comprehension to remove letters
 temp = [] # temporary array
 [temp.append(x) for x in diseases if len(x)>1]
 diseases = (temp)
+print(len(diseases))
 print("Collected all diseases")
 
 #Loop through each list of symptoms for the label -  treat the row almost like a sentence
@@ -55,40 +59,24 @@ df_training = df.iloc[train_ix] # 354 rows x 18 cols
 df_test = df.drop(train_ix) # 4566 rows x 18 cols
 
 
-# x_data = np.array(df_training.iloc[:,1:18])
-# y_data = np.array(df_training["Disease"])
-
-#     # support indexing such that dataset[i] can be used to get i-th sample
-# idx = 7
-# list_of_symptoms = []
-# for i in range(17):
-#     list_of_symptoms.append(tokenize(x_data[idx,i]))
-# y_out =  (y_data[idx])
-# x_out = list_of_symptoms
-# print("x returned shape",len(x_out))
-# print(x_out)
-# print("all words",len(all_words))
-# print(all_words)
-# x_bagged = bag_of_words_mod(x_out, all_words)
-# print("x bagged",x_bagged)
-# # we can call len(dataset) to return the size
-# sizeof_x_train = np.array(df_training.shape[0])
-
 class SymptomDataset(Dataset):
 
     def __init__(self):
         self.x_data = np.array(df_training.iloc[:,1:18])
-        self.y_data = np.array(df_training["Disease"])
+        #get dummies creates one hot encoding from pandas data
+        self.y_data = np.array(pd.get_dummies(df_training["Disease"]))
+        #print(self.y_data)
 
         
     # support indexing such that dataset[i] can be used to get i-th sample
     def __getitem__(self, idx):
         list_of_symptoms = []
         for i in range(17):
-            list_of_symptoms.append(tokenize(self.x_data[idx,i]))
-        x_out = list_of_symptoms
-        x_bagged = bag_of_words_modx(x_out, all_words)
-        y_bagged = bag_of_words_mody(self.y_data[idx], diseases)
+            list_of_symptoms.extend(tokenize(' '.join(self.x_data[idx,i].split("_"))))
+        x_bagged = bag_of_words(list_of_symptoms, all_words)
+        #print(x_bagged)
+        y_bagged = self.y_data[idx]
+        #print(y_bagged.shape)
         return x_bagged, y_bagged
 
     # we can call len(dataset) to return the size
@@ -98,9 +86,9 @@ class SymptomDataset(Dataset):
 dataset = SymptomDataset()
 print("Created Dataset")
 # Hyper-parameters 
-num_epochs = 1000
+num_epochs = 20
 batch_size = 8
-learning_rate = 0.001
+learning_rate = 0.01
 input_size = len(all_words)
 hidden_size = 8
 output_size = len(diseases)
@@ -112,14 +100,7 @@ train_loader = DataLoader(dataset=dataset,
                           batch_size=batch_size,
                           shuffle=True,
                           num_workers=0)
-#ctr = 0
-#for (words,labels) in train_loader:
-    #ctr+=1
-    #print(ctr)
-    #print(words.shape)
-    #print(words.shape)
-    #print(labels.shape)
-  #  print("loop")
+
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -133,14 +114,15 @@ for epoch in range(num_epochs):
     for (words,labels) in train_loader:
         #words is a list
         #labels is a tuple
-        #print(words.shape) # should be [8,137]
+        print(words.shape) # should be [8,137]
         #print(labels)
         # Forward pass
         outputs = model(words)
-        # if y would be one-hot, we must apply (didn't work ??)
+        labels = labels.squeeze(0)
+        # for one hot encoding
         labels = torch.max(labels, 1)[1]
-        #print(outputs.shape, outputs) # should be [8,41]
-        #print(labels.shape, labels) # should [41]
+        print(outputs.shape) # should be [8,41]
+        print(labels.shape, labels) # should [41]
         loss = criterion(outputs, labels)
         
         # Backward and optimize
@@ -154,16 +136,16 @@ for epoch in range(num_epochs):
 
 print(f'final loss: {loss.item():.4f}')
 
-# data = {
-# "model_state": model.state_dict(),
-# "input_size": input_size,
-# "hidden_size": hidden_size,
-# "output_size": output_size,
-# "all_words": all_words,
-# "tags": tags
-# }
+data = {
+"model_state": model.state_dict(),
+"input_size": input_size,
+"hidden_size": hidden_size,
+"output_size": output_size,
+"all_words": all_words,
+"labels": labels
+}
 
-# FILE = "model.pth"
-# torch.save(data, FILE)
+FILE = "model_symptoms.pth"
+torch.save(data, FILE)
 
-# print(f'training complete. file saved to {FILE}')
+print(f'training complete. file saved to {FILE}')
