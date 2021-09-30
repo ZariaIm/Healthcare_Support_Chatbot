@@ -54,17 +54,17 @@ print("Collected all diseases")
 #create df_test by dropping rows from original - make results reproducible
 np.random.seed(42)
 # sample without replacement
-train_ix = np.random.choice(df.index, 354, replace=False)
-df_training = df.iloc[train_ix] # 354 rows x 18 cols
-df_test = df.drop(train_ix) # 4566 rows x 18 cols
+test_ix = np.random.choice(df.index, 354, replace=False)
+df_test = df.iloc[test_ix] # 354 rows x 18 cols
+df_train = df.drop(test_ix) # 4566 rows x 18 cols
 
 
 class SymptomDataset(Dataset):
 
     def __init__(self):
-        self.x_data = np.array(df_training.iloc[:,1:18])
+        self.x_data = np.array(df_train.iloc[:,1:18])
         #get dummies creates one hot encoding from pandas data
-        self.y_data = np.array(pd.get_dummies(df_training["Disease"]))
+        self.y_data = np.array(pd.get_dummies(df_train["Disease"]))
         #print(self.y_data)
 
         
@@ -86,9 +86,9 @@ class SymptomDataset(Dataset):
 dataset = SymptomDataset()
 print("Created Dataset")
 # Hyper-parameters 
-num_epochs = 20
+num_epochs = 40
 batch_size = 100
-learning_rate = 0.0001
+learning_rate = 0.001
 input_size = len(all_words)
 hidden_size = 8
 output_size = len(diseases)
