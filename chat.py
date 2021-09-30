@@ -8,7 +8,7 @@ from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-from train_symptomclassifier import all_words as sympt
+from createAllWords import all_symptoms
 
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
@@ -53,7 +53,7 @@ def write_json(new_data, filename='storedSymptoms.json'):
 def get_response(msg):
     
     sentence = tokenize(msg)
-    check = bag_of_words(sentence, full_list_of_symptoms)
+    check = bag_of_words(sentence, all_symptoms)
     if sum(check)>0:
         print("symptom identified")
 
