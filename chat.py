@@ -1,5 +1,6 @@
 import random
 import json
+from tkinter import Label
 
 import torch
 
@@ -7,6 +8,7 @@ from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+from train_symptomclassifier import all_words as sympt
 
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
@@ -42,7 +44,7 @@ def write_json(new_data, filename='storedSymptoms.json'):
         # First we load existing data into a dict.
         file_data = json.load(file)
         # Join new_data with file_data inside emp_details
-        file_data["intents"].append(new_data)
+        file_data["storedSymptoms"].append(new_data)
         # Sets file's current position at offset.
         file.seek(0)
         # convert back to json.
@@ -61,17 +63,28 @@ def get_response(msg):
 
     output = model_c(X)
     _, predicted = torch.max(output, dim=1)
-    # print(predicted)
-    # print(labels)
+    
     label = labels[predicted.item()]
     label = [label == i for i in labels]
     label = [label.index(i) for i in label if i == True]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
+   
+  
+
+    
     if prob.item() > 0.6:
         ctr = 0
         for intent in intents['intents']:
             if label == [ctr]:
-                return random.choice(intent['responses'])
+                 return random.choice(intent['responses'])
             ctr +=1
     return "I do not understand..."
+
+    if Label == sympt:
+        write_json(Label, filename='storedSymptoms.json')
+        
+
+    #  if Label == sympt:
+    #    write_json(Label, filename='storedSymptoms.json')
+    
