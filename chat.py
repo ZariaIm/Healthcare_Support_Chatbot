@@ -7,10 +7,9 @@ from nltk_utils import bag_of_words, tokenize
 from createAllWords import labels
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-with open('storedSymptoms.json', "w") as outfile:
-        outfile.write("")
-with open('intents.json', 'r') as json_data:
-    intents = json.load(json_data)
+
+with open("storedSymptoms.json",'w') as file:
+        json.dump({"symptoms":[]}, file)
 
 FILE = "chatbot.pth"
 data = torch.load(FILE)
@@ -39,11 +38,18 @@ model_s.eval()
 bot_name = "Sam"
 
 def write_json(new_data, filename='storedSymptoms.json'):
-    # Serializing json 
-    json_object = json.dumps(new_data,separators = (",", "."))
-    # Writing to sample.json
-    with open(filename, "a") as outfile:
-        outfile.write(json_object)
+    with open(filename,'r+') as file:
+        # First we load existing data into a dict.
+        file_data = json.load(file)
+        # Join new_data with file_data inside emp_details
+        file_data["symptoms"].append(new_data)
+        # Sets file's current position at offset.
+        file.seek(0)
+        # convert back to json.
+        json.dump(file_data, file, indent = 4)
+
+with open('intents.json', 'r') as json_data:
+    intents = json.load(json_data)
 
 def get_response(msg):
     
@@ -51,7 +57,8 @@ def get_response(msg):
     check = bag_of_words(sentence, all_symptoms)
     for word in sentence:
         if word in all_symptoms:
-            write_json(word)
+            add = {"symptom":f"{word}"}
+            write_json(add)
             print("symptom saved")
    
     X = bag_of_words(sentence, all_words)
@@ -60,14 +67,14 @@ def get_response(msg):
 
     output = model_c(X)
     _, predicted = torch.max(output, dim=1)
-    
     label = labels_c[predicted.item()]
     label = [label == i for i in labels_c]
     label = [label.index(i) for i in label if i == True]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
+
     #list_of_symptoms = ['ulcer'] #testing instead of loading from file
-    if prob.item() > 0.6:
+    if prob.item() > 0.75:
         ctr = 0
         if label == [0]:
             with open('storedSymptoms.json', 'r') as json_data:
