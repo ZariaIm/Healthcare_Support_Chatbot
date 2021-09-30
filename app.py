@@ -12,6 +12,7 @@ FONT_BOLD = "HELVETICA 13 bold"
 
 class ChatApplication:
 
+    print("test")
     def __init__(self):
         self.window = Tk()
         self._setup_main_window()
