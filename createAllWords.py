@@ -5,21 +5,20 @@ import pandas as pd
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-
 from nltk_utils import bag_of_words, tokenize, stem
 
 with open('intents.json', 'r') as f:
     intents = json.load(f)
 
 all_words = []
-labels = []
+chat_labels = []
 
 xy = []
 # loop through each sentence in our intents patterns
 for intent in intents['intents']:
     label = intent['labels']
     # add to tag list
-    labels.append(label)
+    chat_labels.append(label)
     for pattern in intent['patterns']:
         # tokenize each word in the sentence
         w = tokenize(pattern)
@@ -49,7 +48,7 @@ for (pattern_sentence, label) in xy:
     bag = bag_of_words(pattern_sentence, all_words)
     X_train.append(bag)
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
-    tag = labels.index(label)
+    tag = chat_labels.index(label)
     y_train.append(tag)
 
 X_train = np.array(X_train)
@@ -60,8 +59,6 @@ y_train = np.array(y_train)
 
 #Create all words array, diseases array
 all_symptoms = [] #list type
-labels = []
-ignore_words = ['?', '.', '!']
 
 #read dataset and cast values as strings
 df = pd.read_csv("datasets/dataset.csv", dtype = "string") #4920 rows  x 18 cols
@@ -77,23 +74,46 @@ df_test = df.iloc[test_ix] # 354 rows x 18 cols
 df_train = df.drop(test_ix) # 4566 rows x 18 cols
 
 for i in range(1,18):
-    c_name = f"Symptom_{i}"
-    for word in df[c_name]:
+    for word in df[f"Symptom_{i}"]:
         all_symptoms.extend(tokenize(' '.join(word.split("_"))))
-all_symptoms = [stem(w) for w in all_symptoms if w not in ignore_words]
+all_symptoms = [stem(w) for w in all_symptoms]
 #remove duplicates from list and sort
 #sets are easier for comparing too
-all_symptoms = sorted(set(all_symptoms))
+all_symptoms = (set(all_symptoms))
 #print(all_words)
 print("Collected all symptoms")
 
+disease_labels = []
+disease_symptoms = torch.FloatTensor([])
+temp_symptoms = torch.FloatTensor([])
 
-for value in df["Disease"].str.split(","):
-    labels.extend(value)
+for value in df["Disease"].str.split(", "):
+    disease_labels.extend(value)
+disease_labels = (set(disease_labels))
 
-labels = sorted(set(labels))
+###############################################################
+#Need to fix this
+#print(disease_labels)
+df.set_index("Disease")
+print(df.loc[["Pneumonia"]])
+
+for value in disease_labels:
+    #collect symptoms for specific diseases
+    print(value)
+    temp_name = f"{value}_symptoms"
+    for word in df.loc[f"{value}"]:
+        print(word)
+        temp_symptoms.extend(word)
+        temp_symptoms = set(temp_symptoms)
+    print(temp_symptoms)
+    temp_name = temp_symptoms
 #list comprehension to remove letters
-temp = [] # temporary array
-[temp.append(x) for x in labels if len(x)>1]
-labels = (temp)
+#temp = [] # temporary array
+#[temp.append(x) for x in disease_labels if len(x)>1]
+#disease_labels = (temp)
+print(disease_symptoms)
+print(disease_labels)
 print("Collected all diseases")
+
+
+

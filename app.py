@@ -1,7 +1,7 @@
 from os import stat
 from tkinter import *
 from tkinter.font import Font
-from chat import get_response, bot_name
+from chat import get_response, bot_name, user_name
 
 BG_GRAY = "#ABB289"
 BG_COLOR = "#17202A"
@@ -57,7 +57,7 @@ class ChatApplication:
     
     def _on_enter_pressed(self, event):
         msg = self.msg_entry.get()
-        self._insert_message(msg, "You: ")
+        self._insert_message(msg, f"{user_name}")
     
     def _insert_message(self, msg, sender):
         if not msg:
@@ -82,4 +82,3 @@ class ChatApplication:
 if __name__ == "__main__":
     print("Let's chat!")
     app = ChatApplication()
-    #app.run

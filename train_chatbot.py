@@ -8,7 +8,7 @@ from torch.utils.data import Dataset, DataLoader
 
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
-from createAllWords import all_words, labels, X_train, y_train, ignore_words
+from createAllWords import all_words, chat_labels, X_train, y_train
 import createIntents
 
 # Hyper-parameters 
@@ -51,15 +51,15 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 #print("labels before training",labels)
 # Train the model
 for epoch in range(num_epochs):
-    for (word, label) in train_loader:
-        word = word.to(device)
-        label = label.to(dtype=torch.long).to(device)
+    for (x, y) in train_loader:
+        x = x.to(device)
+        y = y.to(dtype=torch.long).to(device)
         #print("words", word)
         # Forward pass
-        output = model(word)
+        y_hat = model(x)
         # if y would be one-hot, we must apply
         # labels = torch.max(labels, 1)[1]
-        loss = criterion(output, label)
+        loss = criterion(y_hat, y)
         
         # Backward and optimize
         optimizer.zero_grad()
@@ -77,7 +77,7 @@ data = {
 "hidden_size": hidden_size,
 "output_size": output_size,
 "all_words": all_words,
-"labels": labels
+"labels": chat_labels
 }
 #print(labels)
 FILE = "chatbot.pth"

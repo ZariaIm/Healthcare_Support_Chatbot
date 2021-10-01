@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 import pandas as pd
-from createAllWords import all_symptoms, labels, ignore_words, df_test, df_train
+from createAllWords import all_symptoms, disease_labels, disease_symptoms, df_test, df_train
 
 class SymptomDataset(Dataset):
 
@@ -43,7 +43,7 @@ batch_size = 100
 learning_rate = 0.001
 input_size = len(all_symptoms)
 hidden_size = 8
-output_size = len(labels)
+output_size = len(disease_labels)
 
 print("Preparing to set up the neural network")
 print(f" --- input size: {input_size}; output_size: {output_size} --- ")
@@ -63,13 +63,13 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 print("Model Initialised. Entering Training Loop.")
 #Train the model
 for epoch in range(num_epochs):
-    for (words,labels) in train_loader:
+    for (x,y) in train_loader:
         # Forward pass
-        outputs = model(words) #[batch_size,41]
-        labels = labels.squeeze(0)
+        y_hat = model(x) #[batch_size,41]
+        y = y.squeeze(0)
         # for one hot encoding
-        labels = torch.max(labels, 1)[1] #[41]
-        loss = criterion(outputs, labels)
+        y = torch.max(y, 1)[1] #[41]
+        loss = criterion(y_hat, y)
         # Backward and optimize
         optimizer.zero_grad()
         loss.backward()
@@ -83,7 +83,8 @@ data = {
 "hidden_size": hidden_size,
 "output_size": output_size,
 "all_words": all_symptoms,
-"labels": labels
+"labels": disease_labels,
+"disease_symptoms": disease_symptoms
 }
 
 FILE = "model_symptoms.pth"

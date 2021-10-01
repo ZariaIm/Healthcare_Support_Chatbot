@@ -4,7 +4,6 @@ from tkinter import Label
 import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
-from createAllWords import labels
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -18,7 +17,7 @@ input_size = data["input_size"]
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]
 all_words = data['all_words']
-labels_c = data['labels']
+chat_labels = data['labels']
 model_state = data["model_state"]
 model_c = NeuralNet(input_size, hidden_size, output_size).to(device)
 model_c.load_state_dict(model_state)
@@ -30,13 +29,15 @@ input_size = data["input_size"]
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]
 all_symptoms = data['all_words']
-labels_s = data['labels']
+disease_labels = data['labels']
+disease_symptoms = data['disease_symptoms']
 model_state = data["model_state"]
 model_s = NeuralNet(input_size, hidden_size, output_size).to(device)
 model_s.load_state_dict(model_state)
 model_s.eval()
 
 bot_name = "Sam"
+user_name = "You"
 
 def write_json(new_data, filename='storedSymptoms.json'):
     with open(filename,'r+') as file:
@@ -68,8 +69,8 @@ def get_response(msg):
     #Predicting intent for chatbot
     output = model_c(X)
     _, predicted = torch.max(output, dim=1)
-    label = labels_c[predicted.item()]
-    label = [label == i for i in labels_c]
+    label = chat_labels[predicted.item()]
+    label = [label == i for i in chat_labels]
     label = [label.index(i) for i in label if i == True]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
@@ -88,8 +89,10 @@ def get_response(msg):
             symptom_bag = bag_of_words(list_of_symptoms, all_symptoms)
             output_s = model_s(torch.FloatTensor(symptom_bag).unsqueeze(0))
             _, predicted_s = torch.max(output_s, dim=1)
-            disease = labels[predicted_s]
-            return f"You may have {disease}."
+            print(predicted_s)
+            print(disease_labels)
+            disease = disease_labels[predicted_s]
+            return f"You may have {disease}. The symptoms of {disease} are ____"
         for intent in intents['intents']:
             if label == [ctr]:
                  return random.choice(intent['responses'])
