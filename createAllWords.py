@@ -93,26 +93,23 @@ disease_labels = (set(disease_labels))
 
 ###############################################################
 #Need to fix this
-#print(disease_labels)
-df.set_index("Disease")
-print(df.loc[["Pneumonia"]])
 
-for value in disease_labels:
-    #collect symptoms for specific diseases
-    print(value)
-    temp_name = f"{value}_symptoms"
-    for word in df.loc[f"{value}"]:
-        print(word)
-        temp_symptoms.extend(word)
-        temp_symptoms = set(temp_symptoms)
-    print(temp_symptoms)
-    temp_name = temp_symptoms
-#list comprehension to remove letters
-#temp = [] # temporary array
-#[temp.append(x) for x in disease_labels if len(x)>1]
-#disease_labels = (temp)
-print(disease_symptoms)
-print(disease_labels)
+# for value in disease_labels:
+#     #collect symptoms for specific diseases
+#     print(value)
+#     temp_name = f"{value}_symptoms"
+#     for word in df.loc[f"{value}"]:
+#         print(word)
+#         temp_symptoms.extend(word)
+#         temp_symptoms = set(temp_symptoms)
+#     print(temp_symptoms)
+#     temp_name = temp_symptoms
+# #list comprehension to remove letters
+# #temp = [] # temporary array
+# #[temp.append(x) for x in disease_labels if len(x)>1]
+# #disease_labels = (temp)
+# print(disease_symptoms)
+# print(disease_labels)
 print("Collected all diseases")
 
 
