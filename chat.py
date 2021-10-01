@@ -58,6 +58,7 @@ def predict_intent(X, y):
     label = y[predicted.item()]
     label = [label == i for i in y]
     label = [label.index(i) for i in label if i == True]
+    
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
     return label, prob
@@ -77,16 +78,18 @@ def predict_disease(y):
     symptoms = file_data["symptoms"]
     for pair in symptoms:
         list_of_symptoms.append(pair["symptom"])
-    ############To do: remove duplicates before passing
+    ############To do: make sure we aren't adding duplicates
     symptom_bag = bag_of_words(list_of_symptoms, all_symptoms)
     output = model_s(torch.FloatTensor(symptom_bag).unsqueeze(0))
     _, predicted = torch.max(output, dim=1)
+    print(predicted)
     label = y[predicted.item()]
+    #the following would be if we wanted to index
     label = [label == i for i in y]
     label = [label.index(i) for i in label if i == True]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    return label, prob
+    return disease, prob
 
 
 def get_response(msg):
@@ -96,16 +99,21 @@ def get_response(msg):
             store_symptom(word)
     #Predicting intent for chatbot
     X = bag_of_words(sentence, all_words)
-    [intent, prob_intent] = predict_intent(X,chat_labels)
-
+    [label_intent, prob_intent] = predict_intent(X,chat_labels)
     if prob_intent.item() > 0.75:
         ctr = 0
-        if intent == [0]:
+        
+        if label_intent == [0]:
             [disease,prob_disease] = predict_disease(disease_labels)
-            return f"You may have {disease}. I'm {prob_disease*100}% confident in my prediction. The symptoms of {disease} are ____"
+            if prob_disease.item() > 0.15:
+                return f"You may have {disease}. I'm {torch.round(prob_disease*100)}% confident in my prediction. The symptoms of {disease} are ____"
+            else:
+                return f"I think I need more symptoms to be sure.. I'm only {torch.round(prob_disease*100)}% confident in my prediction."
         for intent in intents['intents']:
-            if intent == [ctr]:
+            if label_intent == [ctr]:
                  return random.choice(intent['responses'])
             ctr +=1
+            #print(label_intent)
+
     return "I do not understand..."
     

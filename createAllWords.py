@@ -71,7 +71,7 @@ df_test = df.iloc[test_ix] # 354 rows x 18 cols
 df_train = df.drop(test_ix) # 4566 rows x 18 cols
 
 for i in range(1,18):
-    for word in df[f"Symptom_{i}"]:
+    for word in df_train[f"Symptom_{i}"]:
         all_symptoms.extend(tokenize(' '.join(word.split("_"))))
 all_symptoms = [stem(w) for w in all_symptoms]
 #remove duplicates from list and sort
@@ -84,9 +84,9 @@ disease_labels = []
 disease_symptoms = torch.FloatTensor([])
 temp_symptoms = torch.FloatTensor([])
 
-for value in df["Disease"].str.split(", "):
+for value in df_train["Disease"].str.split(", "):
     disease_labels.extend(value)
-disease_labels = (set(disease_labels))
+disease_labels = list(sorted(set(disease_labels)))
 
 ###############################################################
 #Need to fix this

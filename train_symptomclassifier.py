@@ -86,4 +86,4 @@ data = {
 FILE = "model_symptoms.pth"
 torch.save(data, FILE)
 
-print(f'training complete. file saved to {FILE}')
+print(f'symptom classifier training complete. file saved to {FILE}')
