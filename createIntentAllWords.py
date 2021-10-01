@@ -2,6 +2,7 @@ import numpy as np
 import json
 from nltk_utils import bag_of_words, tokenize, stem
 import createIntents
+import torch
 
 with open('intents.json', 'r') as f:
     intents = json.load(f)
@@ -34,22 +35,30 @@ all_words = sorted(set(all_words))
 #print(labels)
 
 # create training data
-X_train = []
-y_train = []
+X_train_chat = []
+y_train_chat = []
 
 for (pattern_sentence, label) in xy:
     # X: bag of words for each pattern_sentence
     #print(type(pattern_sentence[0]))
     #print(all_words)
     bag = bag_of_words(pattern_sentence, all_words)
-    X_train.append(bag)
+    X_train_chat.append(bag)
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
     tag = chat_labels.index(label)
-    y_train.append(tag)
+    y_train_chat.append(tag)
 
-X_train = np.array(X_train)
-y_train = np.array(y_train)
+X_train_chat = np.array(X_train_chat)
+y_train_chat = np.array(y_train_chat)
 #print(type(X_train))
 #print(X_train.shape)
 
 print("Created All Words for Intents")
+
+
+data = {
+"all_words": all_words,
+"labels": chat_labels,
+}
+torch.save(data, "chat.pth")
+print("all words and labels saved to chat.pth")

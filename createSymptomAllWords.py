@@ -44,20 +44,26 @@ disease_labels = list(set(disease_labels))
 print("Collected all diseases and symptom All Words")
 
 # create training data
-X_train = []
-y_train = []
+X_train_symptom = []
+y_train_symptom = []
 
 for (pattern_sentence, label) in xy:
     # X: bag of words for each pattern_sentence
     #print(type(pattern_sentence[0]))
     #print(all_words)
     bag = bag_of_words(pattern_sentence, all_symptoms)
-    X_train.append(bag)
+    X_train_symptom.append(bag)
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
     tag = disease_labels.index(label)
-    y_train.append(tag)
+    y_train_symptom.append(tag)
 
-X_train = np.array(X_train)
-y_train = np.array(y_train)
+X_train_symptom = np.array(X_train_symptom)
+y_train_symptom = np.array(y_train_symptom)
 
 
+data = {
+"all_words": all_symptoms,
+"labels": disease_labels,
+}
+torch.save(data, "disease.pth")
+print("symptoms and diseases saved to disease.pth")
