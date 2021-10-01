@@ -54,7 +54,12 @@ class ChatApplication:
         # send button
         send_button = Button(bottom_label, text="Send", font=FONT_BOLD, width=20, bg=BG_GRAY, command=lambda: self._on_enter_pressed(None))
         send_button.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
-    
+
+        msg = f"{bot_name}: Nice to meet you, I'm Sam. I can tell you about diseases, make predictions about diseases based on symptoms and let you know some ways to manage those diseases\n"
+        self.text_widget.configure(state=NORMAL)
+        self.text_widget.insert(END, msg)
+        self.text_widget.configure(state=DISABLED)
+
     def _on_enter_pressed(self, event):
         msg = self.msg_entry.get()
         self._insert_message(msg, f"{user_name}")

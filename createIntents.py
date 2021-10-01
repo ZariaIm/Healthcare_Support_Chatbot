@@ -57,8 +57,8 @@ for i in range(1,18):
                     f"i have {symptom}",
                     ],
                 "responses": [
-                    f"If you have {symptom} I'll add it to the list, ask me ""Why am I sick?"" if you want to see what I predict.",
-                    f"If you have {symptom} I'll add it to the list, ask me ""Why am I sick?"" if you want to see what I predict."
+                    f"ah...{symptom}. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
+                    f"ah.... {symptom}. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
                     ]
                 }
             write_json(add)
@@ -127,12 +127,6 @@ add = {
             "labels": "thanks",
             "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
             "responses": ["Happy to help!", "Any time!", "My pleasure"],
-        }
-write_json(add)
-add = {
-            "labels": "noanswer",
-            "patterns": [""," "],
-            "responses": ["Sorry, I didn't quite catch that", "Sorry that message didn't send probably, please try again?"],
         }
 write_json(add)
 add = {

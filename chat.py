@@ -55,7 +55,7 @@ def predict_intent(X, y):
     X = torch.from_numpy(X).to(device)
     output = model_c(X)
     _, predicted = torch.max(output, dim=1)
-    label = chat_labels[predicted.item()]
+    label = y[predicted.item()]
     label = [label == i for i in y]
     label = [label.index(i) for i in label if i == True]
     probs = torch.softmax(output, dim=1)
@@ -65,12 +65,12 @@ def predict_intent(X, y):
 def store_symptom(word):
     add = {"symptom":f"{word}"}
     write_json(add)
-    print("Symptom was stored")
+    print(f"{word} was stored")
 
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
-def predict_disease(disease_labels):
+def predict_disease(y):
     list_of_symptoms = []
     with open('storedSymptoms.json', 'r') as json_data:
         file_data = json.load(json_data)
@@ -79,11 +79,14 @@ def predict_disease(disease_labels):
         list_of_symptoms.append(pair["symptom"])
     ############To do: remove duplicates before passing
     symptom_bag = bag_of_words(list_of_symptoms, all_symptoms)
-    output_s = model_s(torch.FloatTensor(symptom_bag).unsqueeze(0))
-    _, predicted_s = torch.max(output_s, dim=1)
-    disease_labels = list(disease_labels)
-    disease = disease_labels[predicted_s]
-    return disease
+    output = model_s(torch.FloatTensor(symptom_bag).unsqueeze(0))
+    _, predicted = torch.max(output, dim=1)
+    label = y[predicted.item()]
+    label = [label == i for i in y]
+    label = [label.index(i) for i in label if i == True]
+    probs = torch.softmax(output, dim=1)
+    prob = probs[0][predicted.item()]
+    return label, prob
 
 
 def get_response(msg):
@@ -93,15 +96,15 @@ def get_response(msg):
             store_symptom(word)
     #Predicting intent for chatbot
     X = bag_of_words(sentence, all_words)
-    [label, prob] = predict_intent(X,chat_labels)
+    [intent, prob_intent] = predict_intent(X,chat_labels)
 
-    if prob.item() > 0.75:
+    if prob_intent.item() > 0.75:
         ctr = 0
-        if label == [0]:
-            disease = predict_disease(disease_labels)
-            return f"You may have {disease}. The symptoms of {disease} are ____"
+        if intent == [0]:
+            [disease,prob_disease] = predict_disease(disease_labels)
+            return f"You may have {disease}. I'm {prob_disease*100}% confident in my prediction. The symptoms of {disease} are ____"
         for intent in intents['intents']:
-            if label == [ctr]:
+            if intent == [ctr]:
                  return random.choice(intent['responses'])
             ctr +=1
     return "I do not understand..."
