@@ -30,7 +30,7 @@ hidden_size = data["hidden_size"]
 output_size = data["output_size"]
 all_symptoms = data['all_words']
 disease_labels = data['labels']
-disease_symptoms = data['disease_symptoms']
+#disease_symptoms = data['disease_symptoms']
 model_state = data["model_state"]
 model_s = NeuralNet(input_size, hidden_size, output_size).to(device)
 model_s.load_state_dict(model_state)
@@ -58,7 +58,6 @@ def predict_intent(X, y):
     label = y[predicted.item()]
     label = [label == i for i in y]
     label = [label.index(i) for i in label if i == True]
-    
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
     return label, prob
@@ -82,11 +81,7 @@ def predict_disease(y):
     symptom_bag = bag_of_words(list_of_symptoms, all_symptoms)
     output = model_s(torch.FloatTensor(symptom_bag).unsqueeze(0))
     _, predicted = torch.max(output, dim=1)
-    print(predicted)
-    label = y[predicted.item()]
-    #the following would be if we wanted to index
-    label = [label == i for i in y]
-    label = [label.index(i) for i in label if i == True]
+    disease = y[predicted.item()]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
     return disease, prob

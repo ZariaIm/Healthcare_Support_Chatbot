@@ -1,1 +1,10 @@
-{"symptoms": []}
+{
+    "symptoms": [
+        {
+            "symptom": "sputum"
+        },
+        {
+            "symptom": "cough"
+        }
+    ]
+}

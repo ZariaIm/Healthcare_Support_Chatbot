@@ -4,9 +4,7 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
-from createAllWords import all_words, chat_labels, X_train, y_train
-import createIntents 
-# runs the file so we have most updated version
+from createIntentAllWords import all_words, chat_labels, X_train, y_train
 
 # Hyper-parameters 
 num_epochs = 300
