@@ -4,35 +4,1723 @@
             "labels": "ask disease",
             "patterns": [
                 "what do you think i have?",
-                "what is it?",
-                "why am i sick?",
-                "I feel sick",
-                "am i sick?"
+                "why am i sick?"
             ]
         },
         {
-            "labels": "greeting",
+            "labels": "talking about itching",
             "patterns": [
-                "hi",
-                "hey",
-                "how are you",
-                "hello"
+                "itching",
+                "I'm in itching",
+                "what do i do if i have itching",
+                "i have itching"
             ],
             "responses": [
-                "Hello there! My name is Sam. What can I do for you?",
-                "Hi, what can I do for you?"
+                "If you have itching I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have itching I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
             ]
         },
         {
-            "labels": "intro",
+            "labels": "talking about  skin rash",
             "patterns": [
-                "tell me about yourself",
-                "what do you do",
-                "who are you"
+                " skin rash",
+                "I'm in  skin rash",
+                "what do i do if i have  skin rash",
+                "i have  skin rash"
             ],
             "responses": [
-                "I help you figure out what might possibly be the problem",
-                "Someone to talk to to learn about diseases"
+                "If you have  skin rash I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  skin rash I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  continuous sneezing",
+            "patterns": [
+                " continuous sneezing",
+                "I'm in  continuous sneezing",
+                "what do i do if i have  continuous sneezing",
+                "i have  continuous sneezing"
+            ],
+            "responses": [
+                "If you have  continuous sneezing I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  continuous sneezing I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  shivering",
+            "patterns": [
+                " shivering",
+                "I'm in  shivering",
+                "what do i do if i have  shivering",
+                "i have  shivering"
+            ],
+            "responses": [
+                "If you have  shivering I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  shivering I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  stomach pain",
+            "patterns": [
+                " stomach pain",
+                "I'm in  stomach pain",
+                "what do i do if i have  stomach pain",
+                "i have  stomach pain"
+            ],
+            "responses": [
+                "If you have  stomach pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  stomach pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  acidity",
+            "patterns": [
+                " acidity",
+                "I'm in  acidity",
+                "what do i do if i have  acidity",
+                "i have  acidity"
+            ],
+            "responses": [
+                "If you have  acidity I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  acidity I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  vomiting",
+            "patterns": [
+                " vomiting",
+                "I'm in  vomiting",
+                "what do i do if i have  vomiting",
+                "i have  vomiting"
+            ],
+            "responses": [
+                "If you have  vomiting I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  vomiting I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  indigestion",
+            "patterns": [
+                " indigestion",
+                "I'm in  indigestion",
+                "what do i do if i have  indigestion",
+                "i have  indigestion"
+            ],
+            "responses": [
+                "If you have  indigestion I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  indigestion I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  muscle wasting",
+            "patterns": [
+                " muscle wasting",
+                "I'm in  muscle wasting",
+                "what do i do if i have  muscle wasting",
+                "i have  muscle wasting"
+            ],
+            "responses": [
+                "If you have  muscle wasting I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  muscle wasting I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  patches in throat",
+            "patterns": [
+                " patches in throat",
+                "I'm in  patches in throat",
+                "what do i do if i have  patches in throat",
+                "i have  patches in throat"
+            ],
+            "responses": [
+                "If you have  patches in throat I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  patches in throat I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  fatigue",
+            "patterns": [
+                " fatigue",
+                "I'm in  fatigue",
+                "what do i do if i have  fatigue",
+                "i have  fatigue"
+            ],
+            "responses": [
+                "If you have  fatigue I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  fatigue I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  weight loss",
+            "patterns": [
+                " weight loss",
+                "I'm in  weight loss",
+                "what do i do if i have  weight loss",
+                "i have  weight loss"
+            ],
+            "responses": [
+                "If you have  weight loss I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  weight loss I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  sunken eyes",
+            "patterns": [
+                " sunken eyes",
+                "I'm in  sunken eyes",
+                "what do i do if i have  sunken eyes",
+                "i have  sunken eyes"
+            ],
+            "responses": [
+                "If you have  sunken eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  sunken eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  cough",
+            "patterns": [
+                " cough",
+                "I'm in  cough",
+                "what do i do if i have  cough",
+                "i have  cough"
+            ],
+            "responses": [
+                "If you have  cough I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  cough I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  headache",
+            "patterns": [
+                " headache",
+                "I'm in  headache",
+                "what do i do if i have  headache",
+                "i have  headache"
+            ],
+            "responses": [
+                "If you have  headache I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  headache I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  chest pain",
+            "patterns": [
+                " chest pain",
+                "I'm in  chest pain",
+                "what do i do if i have  chest pain",
+                "i have  chest pain"
+            ],
+            "responses": [
+                "If you have  chest pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  chest pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  back pain",
+            "patterns": [
+                " back pain",
+                "I'm in  back pain",
+                "what do i do if i have  back pain",
+                "i have  back pain"
+            ],
+            "responses": [
+                "If you have  back pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  back pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  weakness in limbs",
+            "patterns": [
+                " weakness in limbs",
+                "I'm in  weakness in limbs",
+                "what do i do if i have  weakness in limbs",
+                "i have  weakness in limbs"
+            ],
+            "responses": [
+                "If you have  weakness in limbs I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  weakness in limbs I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  chills",
+            "patterns": [
+                " chills",
+                "I'm in  chills",
+                "what do i do if i have  chills",
+                "i have  chills"
+            ],
+            "responses": [
+                "If you have  chills I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  chills I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  joint pain",
+            "patterns": [
+                " joint pain",
+                "I'm in  joint pain",
+                "what do i do if i have  joint pain",
+                "i have  joint pain"
+            ],
+            "responses": [
+                "If you have  joint pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  joint pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  yellowish skin",
+            "patterns": [
+                " yellowish skin",
+                "I'm in  yellowish skin",
+                "what do i do if i have  yellowish skin",
+                "i have  yellowish skin"
+            ],
+            "responses": [
+                "If you have  yellowish skin I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  yellowish skin I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  constipation",
+            "patterns": [
+                " constipation",
+                "I'm in  constipation",
+                "what do i do if i have  constipation",
+                "i have  constipation"
+            ],
+            "responses": [
+                "If you have  constipation I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  constipation I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  pain during bowel movements",
+            "patterns": [
+                " pain during bowel movements",
+                "I'm in  pain during bowel movements",
+                "what do i do if i have  pain during bowel movements",
+                "i have  pain during bowel movements"
+            ],
+            "responses": [
+                "If you have  pain during bowel movements I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  pain during bowel movements I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  breathlessness",
+            "patterns": [
+                " breathlessness",
+                "I'm in  breathlessness",
+                "what do i do if i have  breathlessness",
+                "i have  breathlessness"
+            ],
+            "responses": [
+                "If you have  breathlessness I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  breathlessness I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  cramps",
+            "patterns": [
+                " cramps",
+                "I'm in  cramps",
+                "what do i do if i have  cramps",
+                "i have  cramps"
+            ],
+            "responses": [
+                "If you have  cramps I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  cramps I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  weight gain",
+            "patterns": [
+                " weight gain",
+                "I'm in  weight gain",
+                "what do i do if i have  weight gain",
+                "i have  weight gain"
+            ],
+            "responses": [
+                "If you have  weight gain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  weight gain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  mood swings",
+            "patterns": [
+                " mood swings",
+                "I'm in  mood swings",
+                "what do i do if i have  mood swings",
+                "i have  mood swings"
+            ],
+            "responses": [
+                "If you have  mood swings I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  mood swings I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  neck pain",
+            "patterns": [
+                " neck pain",
+                "I'm in  neck pain",
+                "what do i do if i have  neck pain",
+                "i have  neck pain"
+            ],
+            "responses": [
+                "If you have  neck pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  neck pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  muscle weakness",
+            "patterns": [
+                " muscle weakness",
+                "I'm in  muscle weakness",
+                "what do i do if i have  muscle weakness",
+                "i have  muscle weakness"
+            ],
+            "responses": [
+                "If you have  muscle weakness I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  muscle weakness I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  stiff neck",
+            "patterns": [
+                " stiff neck",
+                "I'm in  stiff neck",
+                "what do i do if i have  stiff neck",
+                "i have  stiff neck"
+            ],
+            "responses": [
+                "If you have  stiff neck I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  stiff neck I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  pus filled pimples",
+            "patterns": [
+                " pus filled pimples",
+                "I'm in  pus filled pimples",
+                "what do i do if i have  pus filled pimples",
+                "i have  pus filled pimples"
+            ],
+            "responses": [
+                "If you have  pus filled pimples I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  pus filled pimples I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  burning micturition",
+            "patterns": [
+                " burning micturition",
+                "I'm in  burning micturition",
+                "what do i do if i have  burning micturition",
+                "i have  burning micturition"
+            ],
+            "responses": [
+                "If you have  burning micturition I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  burning micturition I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  bladder discomfort",
+            "patterns": [
+                " bladder discomfort",
+                "I'm in  bladder discomfort",
+                "what do i do if i have  bladder discomfort",
+                "i have  bladder discomfort"
+            ],
+            "responses": [
+                "If you have  bladder discomfort I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  bladder discomfort I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  high fever",
+            "patterns": [
+                " high fever",
+                "I'm in  high fever",
+                "what do i do if i have  high fever",
+                "i have  high fever"
+            ],
+            "responses": [
+                "If you have  high fever I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  high fever I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  nodal skin eruptions",
+            "patterns": [
+                " nodal skin eruptions",
+                "I'm in  nodal skin eruptions",
+                "what do i do if i have  nodal skin eruptions",
+                "i have  nodal skin eruptions"
+            ],
+            "responses": [
+                "If you have  nodal skin eruptions I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  nodal skin eruptions I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  ulcers on tongue",
+            "patterns": [
+                " ulcers on tongue",
+                "I'm in  ulcers on tongue",
+                "what do i do if i have  ulcers on tongue",
+                "i have  ulcers on tongue"
+            ],
+            "responses": [
+                "If you have  ulcers on tongue I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  ulcers on tongue I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  loss of appetite",
+            "patterns": [
+                " loss of appetite",
+                "I'm in  loss of appetite",
+                "what do i do if i have  loss of appetite",
+                "i have  loss of appetite"
+            ],
+            "responses": [
+                "If you have  loss of appetite I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  loss of appetite I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  restlessness",
+            "patterns": [
+                " restlessness",
+                "I'm in  restlessness",
+                "what do i do if i have  restlessness",
+                "i have  restlessness"
+            ],
+            "responses": [
+                "If you have  restlessness I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  restlessness I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  dehydration",
+            "patterns": [
+                " dehydration",
+                "I'm in  dehydration",
+                "what do i do if i have  dehydration",
+                "i have  dehydration"
+            ],
+            "responses": [
+                "If you have  dehydration I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  dehydration I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  dizziness",
+            "patterns": [
+                " dizziness",
+                "I'm in  dizziness",
+                "what do i do if i have  dizziness",
+                "i have  dizziness"
+            ],
+            "responses": [
+                "If you have  dizziness I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  dizziness I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  weakness of one body side",
+            "patterns": [
+                " weakness of one body side",
+                "I'm in  weakness of one body side",
+                "what do i do if i have  weakness of one body side",
+                "i have  weakness of one body side"
+            ],
+            "responses": [
+                "If you have  weakness of one body side I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  weakness of one body side I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  lethargy",
+            "patterns": [
+                " lethargy",
+                "I'm in  lethargy",
+                "what do i do if i have  lethargy",
+                "i have  lethargy"
+            ],
+            "responses": [
+                "If you have  lethargy I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  lethargy I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  nausea",
+            "patterns": [
+                " nausea",
+                "I'm in  nausea",
+                "what do i do if i have  nausea",
+                "i have  nausea"
+            ],
+            "responses": [
+                "If you have  nausea I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  nausea I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  abdominal pain",
+            "patterns": [
+                " abdominal pain",
+                "I'm in  abdominal pain",
+                "what do i do if i have  abdominal pain",
+                "i have  abdominal pain"
+            ],
+            "responses": [
+                "If you have  abdominal pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  abdominal pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  pain in anal region",
+            "patterns": [
+                " pain in anal region",
+                "I'm in  pain in anal region",
+                "what do i do if i have  pain in anal region",
+                "i have  pain in anal region"
+            ],
+            "responses": [
+                "If you have  pain in anal region I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  pain in anal region I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  sweating",
+            "patterns": [
+                " sweating",
+                "I'm in  sweating",
+                "what do i do if i have  sweating",
+                "i have  sweating"
+            ],
+            "responses": [
+                "If you have  sweating I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  sweating I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  bruising",
+            "patterns": [
+                " bruising",
+                "I'm in  bruising",
+                "what do i do if i have  bruising",
+                "i have  bruising"
+            ],
+            "responses": [
+                "If you have  bruising I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  bruising I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  cold hands and feets",
+            "patterns": [
+                " cold hands and feets",
+                "I'm in  cold hands and feets",
+                "what do i do if i have  cold hands and feets",
+                "i have  cold hands and feets"
+            ],
+            "responses": [
+                "If you have  cold hands and feets I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  cold hands and feets I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  anxiety",
+            "patterns": [
+                " anxiety",
+                "I'm in  anxiety",
+                "what do i do if i have  anxiety",
+                "i have  anxiety"
+            ],
+            "responses": [
+                "If you have  anxiety I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  anxiety I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  knee pain",
+            "patterns": [
+                " knee pain",
+                "I'm in  knee pain",
+                "what do i do if i have  knee pain",
+                "i have  knee pain"
+            ],
+            "responses": [
+                "If you have  knee pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  knee pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  swelling joints",
+            "patterns": [
+                " swelling joints",
+                "I'm in  swelling joints",
+                "what do i do if i have  swelling joints",
+                "i have  swelling joints"
+            ],
+            "responses": [
+                "If you have  swelling joints I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  swelling joints I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  blackheads",
+            "patterns": [
+                " blackheads",
+                "I'm in  blackheads",
+                "what do i do if i have  blackheads",
+                "i have  blackheads"
+            ],
+            "responses": [
+                "If you have  blackheads I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  blackheads I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  foul smell of urine",
+            "patterns": [
+                " foul smell of urine",
+                "I'm in  foul smell of urine",
+                "what do i do if i have  foul smell of urine",
+                "i have  foul smell of urine"
+            ],
+            "responses": [
+                "If you have  foul smell of urine I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  foul smell of urine I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  skin peeling",
+            "patterns": [
+                " skin peeling",
+                "I'm in  skin peeling",
+                "what do i do if i have  skin peeling",
+                "i have  skin peeling"
+            ],
+            "responses": [
+                "If you have  skin peeling I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  skin peeling I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  blister",
+            "patterns": [
+                " blister",
+                "I'm in  blister",
+                "what do i do if i have  blister",
+                "i have  blister"
+            ],
+            "responses": [
+                "If you have  blister I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  blister I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  dischromic  patches",
+            "patterns": [
+                " dischromic  patches",
+                "I'm in  dischromic  patches",
+                "what do i do if i have  dischromic  patches",
+                "i have  dischromic  patches"
+            ],
+            "responses": [
+                "If you have  dischromic  patches I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  dischromic  patches I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  watering from eyes",
+            "patterns": [
+                " watering from eyes",
+                "I'm in  watering from eyes",
+                "what do i do if i have  watering from eyes",
+                "i have  watering from eyes"
+            ],
+            "responses": [
+                "If you have  watering from eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  watering from eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  extra marital contacts",
+            "patterns": [
+                " extra marital contacts",
+                "I'm in  extra marital contacts",
+                "what do i do if i have  extra marital contacts",
+                "i have  extra marital contacts"
+            ],
+            "responses": [
+                "If you have  extra marital contacts I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  extra marital contacts I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  diarrhoea",
+            "patterns": [
+                " diarrhoea",
+                "I'm in  diarrhoea",
+                "what do i do if i have  diarrhoea",
+                "i have  diarrhoea"
+            ],
+            "responses": [
+                "If you have  diarrhoea I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  diarrhoea I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  loss of balance",
+            "patterns": [
+                " loss of balance",
+                "I'm in  loss of balance",
+                "what do i do if i have  loss of balance",
+                "i have  loss of balance"
+            ],
+            "responses": [
+                "If you have  loss of balance I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  loss of balance I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  blurred and distorted vision",
+            "patterns": [
+                " blurred and distorted vision",
+                "I'm in  blurred and distorted vision",
+                "what do i do if i have  blurred and distorted vision",
+                "i have  blurred and distorted vision"
+            ],
+            "responses": [
+                "If you have  blurred and distorted vision I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  blurred and distorted vision I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  altered sensorium",
+            "patterns": [
+                " altered sensorium",
+                "I'm in  altered sensorium",
+                "what do i do if i have  altered sensorium",
+                "i have  altered sensorium"
+            ],
+            "responses": [
+                "If you have  altered sensorium I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  altered sensorium I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  dark urine",
+            "patterns": [
+                " dark urine",
+                "I'm in  dark urine",
+                "what do i do if i have  dark urine",
+                "i have  dark urine"
+            ],
+            "responses": [
+                "If you have  dark urine I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  dark urine I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  swelling of stomach",
+            "patterns": [
+                " swelling of stomach",
+                "I'm in  swelling of stomach",
+                "what do i do if i have  swelling of stomach",
+                "i have  swelling of stomach"
+            ],
+            "responses": [
+                "If you have  swelling of stomach I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  swelling of stomach I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  bloody stool",
+            "patterns": [
+                " bloody stool",
+                "I'm in  bloody stool",
+                "what do i do if i have  bloody stool",
+                "i have  bloody stool"
+            ],
+            "responses": [
+                "If you have  bloody stool I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  bloody stool I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  obesity",
+            "patterns": [
+                " obesity",
+                "I'm in  obesity",
+                "what do i do if i have  obesity",
+                "i have  obesity"
+            ],
+            "responses": [
+                "If you have  obesity I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  obesity I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  hip joint pain",
+            "patterns": [
+                " hip joint pain",
+                "I'm in  hip joint pain",
+                "what do i do if i have  hip joint pain",
+                "i have  hip joint pain"
+            ],
+            "responses": [
+                "If you have  hip joint pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  hip joint pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  movement stiffness",
+            "patterns": [
+                " movement stiffness",
+                "I'm in  movement stiffness",
+                "what do i do if i have  movement stiffness",
+                "i have  movement stiffness"
+            ],
+            "responses": [
+                "If you have  movement stiffness I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  movement stiffness I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  spinning movements",
+            "patterns": [
+                " spinning movements",
+                "I'm in  spinning movements",
+                "what do i do if i have  spinning movements",
+                "i have  spinning movements"
+            ],
+            "responses": [
+                "If you have  spinning movements I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  spinning movements I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  scurring",
+            "patterns": [
+                " scurring",
+                "I'm in  scurring",
+                "what do i do if i have  scurring",
+                "i have  scurring"
+            ],
+            "responses": [
+                "If you have  scurring I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  scurring I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  continuous feel of urine",
+            "patterns": [
+                " continuous feel of urine",
+                "I'm in  continuous feel of urine",
+                "what do i do if i have  continuous feel of urine",
+                "i have  continuous feel of urine"
+            ],
+            "responses": [
+                "If you have  continuous feel of urine I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  continuous feel of urine I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  silver like dusting",
+            "patterns": [
+                " silver like dusting",
+                "I'm in  silver like dusting",
+                "what do i do if i have  silver like dusting",
+                "i have  silver like dusting"
+            ],
+            "responses": [
+                "If you have  silver like dusting I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  silver like dusting I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  red sore around nose",
+            "patterns": [
+                " red sore around nose",
+                "I'm in  red sore around nose",
+                "what do i do if i have  red sore around nose",
+                "i have  red sore around nose"
+            ],
+            "responses": [
+                "If you have  red sore around nose I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  red sore around nose I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  ",
+            "patterns": [
+                " ",
+                "I'm in  ",
+                "what do i do if i have  ",
+                "i have  "
+            ],
+            "responses": [
+                "If you have   I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have   I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  spotting  urination",
+            "patterns": [
+                " spotting  urination",
+                "I'm in  spotting  urination",
+                "what do i do if i have  spotting  urination",
+                "i have  spotting  urination"
+            ],
+            "responses": [
+                "If you have  spotting  urination I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  spotting  urination I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  passage of gases",
+            "patterns": [
+                " passage of gases",
+                "I'm in  passage of gases",
+                "what do i do if i have  passage of gases",
+                "i have  passage of gases"
+            ],
+            "responses": [
+                "If you have  passage of gases I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  passage of gases I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  irregular sugar level",
+            "patterns": [
+                " irregular sugar level",
+                "I'm in  irregular sugar level",
+                "what do i do if i have  irregular sugar level",
+                "i have  irregular sugar level"
+            ],
+            "responses": [
+                "If you have  irregular sugar level I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  irregular sugar level I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  family history",
+            "patterns": [
+                " family history",
+                "I'm in  family history",
+                "what do i do if i have  family history",
+                "i have  family history"
+            ],
+            "responses": [
+                "If you have  family history I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  family history I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  lack of concentration",
+            "patterns": [
+                " lack of concentration",
+                "I'm in  lack of concentration",
+                "what do i do if i have  lack of concentration",
+                "i have  lack of concentration"
+            ],
+            "responses": [
+                "If you have  lack of concentration I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  lack of concentration I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  excessive hunger",
+            "patterns": [
+                " excessive hunger",
+                "I'm in  excessive hunger",
+                "what do i do if i have  excessive hunger",
+                "i have  excessive hunger"
+            ],
+            "responses": [
+                "If you have  excessive hunger I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  excessive hunger I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  yellowing of eyes",
+            "patterns": [
+                " yellowing of eyes",
+                "I'm in  yellowing of eyes",
+                "what do i do if i have  yellowing of eyes",
+                "i have  yellowing of eyes"
+            ],
+            "responses": [
+                "If you have  yellowing of eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  yellowing of eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  distention of abdomen",
+            "patterns": [
+                " distention of abdomen",
+                "I'm in  distention of abdomen",
+                "what do i do if i have  distention of abdomen",
+                "i have  distention of abdomen"
+            ],
+            "responses": [
+                "If you have  distention of abdomen I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  distention of abdomen I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  irritation in anus",
+            "patterns": [
+                " irritation in anus",
+                "I'm in  irritation in anus",
+                "what do i do if i have  irritation in anus",
+                "i have  irritation in anus"
+            ],
+            "responses": [
+                "If you have  irritation in anus I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  irritation in anus I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  swollen legs",
+            "patterns": [
+                " swollen legs",
+                "I'm in  swollen legs",
+                "what do i do if i have  swollen legs",
+                "i have  swollen legs"
+            ],
+            "responses": [
+                "If you have  swollen legs I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  swollen legs I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  painful walking",
+            "patterns": [
+                " painful walking",
+                "I'm in  painful walking",
+                "what do i do if i have  painful walking",
+                "i have  painful walking"
+            ],
+            "responses": [
+                "If you have  painful walking I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  painful walking I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  small dents in nails",
+            "patterns": [
+                " small dents in nails",
+                "I'm in  small dents in nails",
+                "what do i do if i have  small dents in nails",
+                "i have  small dents in nails"
+            ],
+            "responses": [
+                "If you have  small dents in nails I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  small dents in nails I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  yellow crust ooze",
+            "patterns": [
+                " yellow crust ooze",
+                "I'm in  yellow crust ooze",
+                "what do i do if i have  yellow crust ooze",
+                "i have  yellow crust ooze"
+            ],
+            "responses": [
+                "If you have  yellow crust ooze I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  yellow crust ooze I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  internal itching",
+            "patterns": [
+                " internal itching",
+                "I'm in  internal itching",
+                "what do i do if i have  internal itching",
+                "i have  internal itching"
+            ],
+            "responses": [
+                "If you have  internal itching I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  internal itching I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  mucoid sputum",
+            "patterns": [
+                " mucoid sputum",
+                "I'm in  mucoid sputum",
+                "what do i do if i have  mucoid sputum",
+                "i have  mucoid sputum"
+            ],
+            "responses": [
+                "If you have  mucoid sputum I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  mucoid sputum I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  history of alcohol consumption",
+            "patterns": [
+                " history of alcohol consumption",
+                "I'm in  history of alcohol consumption",
+                "what do i do if i have  history of alcohol consumption",
+                "i have  history of alcohol consumption"
+            ],
+            "responses": [
+                "If you have  history of alcohol consumption I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  history of alcohol consumption I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  swollen blood vessels",
+            "patterns": [
+                " swollen blood vessels",
+                "I'm in  swollen blood vessels",
+                "what do i do if i have  swollen blood vessels",
+                "i have  swollen blood vessels"
+            ],
+            "responses": [
+                "If you have  swollen blood vessels I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  swollen blood vessels I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  unsteadiness",
+            "patterns": [
+                " unsteadiness",
+                "I'm in  unsteadiness",
+                "what do i do if i have  unsteadiness",
+                "i have  unsteadiness"
+            ],
+            "responses": [
+                "If you have  unsteadiness I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  unsteadiness I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  inflammatory nails",
+            "patterns": [
+                " inflammatory nails",
+                "I'm in  inflammatory nails",
+                "what do i do if i have  inflammatory nails",
+                "i have  inflammatory nails"
+            ],
+            "responses": [
+                "If you have  inflammatory nails I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  inflammatory nails I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  depression",
+            "patterns": [
+                " depression",
+                "I'm in  depression",
+                "what do i do if i have  depression",
+                "i have  depression"
+            ],
+            "responses": [
+                "If you have  depression I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  depression I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  fluid overload",
+            "patterns": [
+                " fluid overload",
+                "I'm in  fluid overload",
+                "what do i do if i have  fluid overload",
+                "i have  fluid overload"
+            ],
+            "responses": [
+                "If you have  fluid overload I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  fluid overload I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  swelled lymph nodes",
+            "patterns": [
+                " swelled lymph nodes",
+                "I'm in  swelled lymph nodes",
+                "what do i do if i have  swelled lymph nodes",
+                "i have  swelled lymph nodes"
+            ],
+            "responses": [
+                "If you have  swelled lymph nodes I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  swelled lymph nodes I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  malaise",
+            "patterns": [
+                " malaise",
+                "I'm in  malaise",
+                "what do i do if i have  malaise",
+                "i have  malaise"
+            ],
+            "responses": [
+                "If you have  malaise I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  malaise I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  prominent veins on calf",
+            "patterns": [
+                " prominent veins on calf",
+                "I'm in  prominent veins on calf",
+                "what do i do if i have  prominent veins on calf",
+                "i have  prominent veins on calf"
+            ],
+            "responses": [
+                "If you have  prominent veins on calf I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  prominent veins on calf I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  puffy face and eyes",
+            "patterns": [
+                " puffy face and eyes",
+                "I'm in  puffy face and eyes",
+                "what do i do if i have  puffy face and eyes",
+                "i have  puffy face and eyes"
+            ],
+            "responses": [
+                "If you have  puffy face and eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  puffy face and eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  fast heart rate",
+            "patterns": [
+                " fast heart rate",
+                "I'm in  fast heart rate",
+                "what do i do if i have  fast heart rate",
+                "i have  fast heart rate"
+            ],
+            "responses": [
+                "If you have  fast heart rate I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  fast heart rate I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  irritability",
+            "patterns": [
+                " irritability",
+                "I'm in  irritability",
+                "what do i do if i have  irritability",
+                "i have  irritability"
+            ],
+            "responses": [
+                "If you have  irritability I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  irritability I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  muscle pain",
+            "patterns": [
+                " muscle pain",
+                "I'm in  muscle pain",
+                "what do i do if i have  muscle pain",
+                "i have  muscle pain"
+            ],
+            "responses": [
+                "If you have  muscle pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  muscle pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  mild fever",
+            "patterns": [
+                " mild fever",
+                "I'm in  mild fever",
+                "what do i do if i have  mild fever",
+                "i have  mild fever"
+            ],
+            "responses": [
+                "If you have  mild fever I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  mild fever I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  yellow urine",
+            "patterns": [
+                " yellow urine",
+                "I'm in  yellow urine",
+                "what do i do if i have  yellow urine",
+                "i have  yellow urine"
+            ],
+            "responses": [
+                "If you have  yellow urine I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  yellow urine I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  phlegm",
+            "patterns": [
+                " phlegm",
+                "I'm in  phlegm",
+                "what do i do if i have  phlegm",
+                "i have  phlegm"
+            ],
+            "responses": [
+                "If you have  phlegm I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  phlegm I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  enlarged thyroid",
+            "patterns": [
+                " enlarged thyroid",
+                "I'm in  enlarged thyroid",
+                "what do i do if i have  enlarged thyroid",
+                "i have  enlarged thyroid"
+            ],
+            "responses": [
+                "If you have  enlarged thyroid I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  enlarged thyroid I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  increased appetite",
+            "patterns": [
+                " increased appetite",
+                "I'm in  increased appetite",
+                "what do i do if i have  increased appetite",
+                "i have  increased appetite"
+            ],
+            "responses": [
+                "If you have  increased appetite I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  increased appetite I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  visual disturbances",
+            "patterns": [
+                " visual disturbances",
+                "I'm in  visual disturbances",
+                "what do i do if i have  visual disturbances",
+                "i have  visual disturbances"
+            ],
+            "responses": [
+                "If you have  visual disturbances I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  visual disturbances I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  brittle nails",
+            "patterns": [
+                " brittle nails",
+                "I'm in  brittle nails",
+                "what do i do if i have  brittle nails",
+                "i have  brittle nails"
+            ],
+            "responses": [
+                "If you have  brittle nails I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  brittle nails I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  drying and tingling lips",
+            "patterns": [
+                " drying and tingling lips",
+                "I'm in  drying and tingling lips",
+                "what do i do if i have  drying and tingling lips",
+                "i have  drying and tingling lips"
+            ],
+            "responses": [
+                "If you have  drying and tingling lips I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  drying and tingling lips I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  polyuria",
+            "patterns": [
+                " polyuria",
+                "I'm in  polyuria",
+                "what do i do if i have  polyuria",
+                "i have  polyuria"
+            ],
+            "responses": [
+                "If you have  polyuria I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  polyuria I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  pain behind the eyes",
+            "patterns": [
+                " pain behind the eyes",
+                "I'm in  pain behind the eyes",
+                "what do i do if i have  pain behind the eyes",
+                "i have  pain behind the eyes"
+            ],
+            "responses": [
+                "If you have  pain behind the eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  pain behind the eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  toxic look (typhos)",
+            "patterns": [
+                " toxic look (typhos)",
+                "I'm in  toxic look (typhos)",
+                "what do i do if i have  toxic look (typhos)",
+                "i have  toxic look (typhos)"
+            ],
+            "responses": [
+                "If you have  toxic look (typhos) I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  toxic look (typhos) I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  throat irritation",
+            "patterns": [
+                " throat irritation",
+                "I'm in  throat irritation",
+                "what do i do if i have  throat irritation",
+                "i have  throat irritation"
+            ],
+            "responses": [
+                "If you have  throat irritation I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  throat irritation I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  swollen extremeties",
+            "patterns": [
+                " swollen extremeties",
+                "I'm in  swollen extremeties",
+                "what do i do if i have  swollen extremeties",
+                "i have  swollen extremeties"
+            ],
+            "responses": [
+                "If you have  swollen extremeties I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  swollen extremeties I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  slurred speech",
+            "patterns": [
+                " slurred speech",
+                "I'm in  slurred speech",
+                "what do i do if i have  slurred speech",
+                "i have  slurred speech"
+            ],
+            "responses": [
+                "If you have  slurred speech I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  slurred speech I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  red spots over body",
+            "patterns": [
+                " red spots over body",
+                "I'm in  red spots over body",
+                "what do i do if i have  red spots over body",
+                "i have  red spots over body"
+            ],
+            "responses": [
+                "If you have  red spots over body I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  red spots over body I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  belly pain",
+            "patterns": [
+                " belly pain",
+                "I'm in  belly pain",
+                "what do i do if i have  belly pain",
+                "i have  belly pain"
+            ],
+            "responses": [
+                "If you have  belly pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  belly pain I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  receiving blood transfusion",
+            "patterns": [
+                " receiving blood transfusion",
+                "I'm in  receiving blood transfusion",
+                "what do i do if i have  receiving blood transfusion",
+                "i have  receiving blood transfusion"
+            ],
+            "responses": [
+                "If you have  receiving blood transfusion I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  receiving blood transfusion I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  acute liver failure",
+            "patterns": [
+                " acute liver failure",
+                "I'm in  acute liver failure",
+                "what do i do if i have  acute liver failure",
+                "i have  acute liver failure"
+            ],
+            "responses": [
+                "If you have  acute liver failure I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  acute liver failure I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  redness of eyes",
+            "patterns": [
+                " redness of eyes",
+                "I'm in  redness of eyes",
+                "what do i do if i have  redness of eyes",
+                "i have  redness of eyes"
+            ],
+            "responses": [
+                "If you have  redness of eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  redness of eyes I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  rusty sputum",
+            "patterns": [
+                " rusty sputum",
+                "I'm in  rusty sputum",
+                "what do i do if i have  rusty sputum",
+                "i have  rusty sputum"
+            ],
+            "responses": [
+                "If you have  rusty sputum I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  rusty sputum I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  abnormal menstruation",
+            "patterns": [
+                " abnormal menstruation",
+                "I'm in  abnormal menstruation",
+                "what do i do if i have  abnormal menstruation",
+                "i have  abnormal menstruation"
+            ],
+            "responses": [
+                "If you have  abnormal menstruation I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  abnormal menstruation I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  receiving unsterile injections",
+            "patterns": [
+                " receiving unsterile injections",
+                "I'm in  receiving unsterile injections",
+                "what do i do if i have  receiving unsterile injections",
+                "i have  receiving unsterile injections"
+            ],
+            "responses": [
+                "If you have  receiving unsterile injections I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  receiving unsterile injections I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  coma",
+            "patterns": [
+                " coma",
+                "I'm in  coma",
+                "what do i do if i have  coma",
+                "i have  coma"
+            ],
+            "responses": [
+                "If you have  coma I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  coma I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  sinus pressure",
+            "patterns": [
+                " sinus pressure",
+                "I'm in  sinus pressure",
+                "what do i do if i have  sinus pressure",
+                "i have  sinus pressure"
+            ],
+            "responses": [
+                "If you have  sinus pressure I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  sinus pressure I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  palpitations",
+            "patterns": [
+                " palpitations",
+                "I'm in  palpitations",
+                "what do i do if i have  palpitations",
+                "i have  palpitations"
+            ],
+            "responses": [
+                "If you have  palpitations I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  palpitations I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  stomach bleeding",
+            "patterns": [
+                " stomach bleeding",
+                "I'm in  stomach bleeding",
+                "what do i do if i have  stomach bleeding",
+                "i have  stomach bleeding"
+            ],
+            "responses": [
+                "If you have  stomach bleeding I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  stomach bleeding I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  runny nose",
+            "patterns": [
+                " runny nose",
+                "I'm in  runny nose",
+                "what do i do if i have  runny nose",
+                "i have  runny nose"
+            ],
+            "responses": [
+                "If you have  runny nose I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  runny nose I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  congestion",
+            "patterns": [
+                " congestion",
+                "I'm in  congestion",
+                "what do i do if i have  congestion",
+                "i have  congestion"
+            ],
+            "responses": [
+                "If you have  congestion I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  congestion I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  blood in sputum",
+            "patterns": [
+                " blood in sputum",
+                "I'm in  blood in sputum",
+                "what do i do if i have  blood in sputum",
+                "i have  blood in sputum"
+            ],
+            "responses": [
+                "If you have  blood in sputum I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  blood in sputum I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
+            ]
+        },
+        {
+            "labels": "talking about  loss of smell",
+            "patterns": [
+                " loss of smell",
+                "I'm in  loss of smell",
+                "what do i do if i have  loss of smell",
+                "i have  loss of smell"
+            ],
+            "responses": [
+                "If you have  loss of smell I'll add it to the list, ask me Why am I sick? if you want to see what I predict.",
+                "If you have  loss of smell I'll add it to the list, ask me Why am I sick? if you want to see what I predict."
             ]
         },
         {
@@ -46,17 +1734,6 @@
             "responses": [
                 "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs.",
                 "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs."
-            ]
-        },
-        {
-            "labels": "identify_Drug Reaction",
-            "patterns": [
-                "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs.",
-                "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs."
-            ],
-            "responses": [
-                "Are you talking about Drug Reaction",
-                "I think that's Drug Reaction"
             ]
         },
         {
@@ -88,17 +1765,6 @@
             ]
         },
         {
-            "labels": "identify_Malaria",
-            "patterns": [
-                "An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type.",
-                "An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type."
-            ],
-            "responses": [
-                "Are you talking about Malaria",
-                "I think that's Malaria"
-            ]
-        },
-        {
             "labels": "precaution_Malaria",
             "patterns": [
                 "what should i do about Malaria?",
@@ -124,17 +1790,6 @@
             "responses": [
                 "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens.",
                 "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens."
-            ]
-        },
-        {
-            "labels": "identify_Allergy",
-            "patterns": [
-                "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens.",
-                "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens."
-            ],
-            "responses": [
-                "Are you talking about Allergy",
-                "I think that's Allergy"
             ]
         },
         {
@@ -166,17 +1821,6 @@
             ]
         },
         {
-            "labels": "identify_Hypothyroidism",
-            "patterns": [
-                "Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone.",
-                "Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone."
-            ],
-            "responses": [
-                "Are you talking about Hypothyroidism",
-                "I think that's Hypothyroidism"
-            ]
-        },
-        {
             "labels": "precaution_Hypothyroidism",
             "patterns": [
                 "what should i do about Hypothyroidism?",
@@ -202,17 +1846,6 @@
             "responses": [
                 "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family.",
                 "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family."
-            ]
-        },
-        {
-            "labels": "identify_Psoriasis",
-            "patterns": [
-                "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family.",
-                "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family."
-            ],
-            "responses": [
-                "Are you talking about Psoriasis",
-                "I think that's Psoriasis"
             ]
         },
         {
@@ -244,17 +1877,6 @@
             ]
         },
         {
-            "labels": "identify_GERD",
-            "patterns": [
-                "Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter (LES), the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD.",
-                "Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter (LES), the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD."
-            ],
-            "responses": [
-                "Are you talking about GERD",
-                "I think that's GERD"
-            ]
-        },
-        {
             "labels": "precaution_GERD",
             "patterns": [
                 "what should i do about GERD?",
@@ -280,17 +1902,6 @@
             "responses": [
                 "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases",
                 "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases"
-            ]
-        },
-        {
-            "labels": "identify_Chronic cholestasis",
-            "patterns": [
-                "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases",
-                "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases"
-            ],
-            "responses": [
-                "Are you talking about Chronic cholestasis",
-                "I think that's Chronic cholestasis"
             ]
         },
         {
@@ -322,17 +1933,6 @@
             ]
         },
         {
-            "labels": "identify_hepatitis A",
-            "patterns": [
-                "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect your liver's ability to function.",
-                "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect your liver's ability to function."
-            ],
-            "responses": [
-                "Are you talking about hepatitis A",
-                "I think that's hepatitis A"
-            ]
-        },
-        {
             "labels": "precaution_hepatitis A",
             "patterns": [
                 "what should i do about hepatitis A?",
@@ -358,17 +1958,6 @@
             "responses": [
                 "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time.",
                 "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time."
-            ]
-        },
-        {
-            "labels": "identify_Osteoarthristis",
-            "patterns": [
-                "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time.",
-                "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time."
-            ],
-            "responses": [
-                "Are you talking about Osteoarthristis",
-                "I think that's Osteoarthristis"
             ]
         },
         {
@@ -400,17 +1989,6 @@
             ]
         },
         {
-            "labels": "identify_(vertigo) Paroymsal  Positional Vertigo",
-            "patterns": [
-                "Benign paroxysmal positional vertigo (BPPV) is one of the most common causes of vertigo \u2014 the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness.",
-                "Benign paroxysmal positional vertigo (BPPV) is one of the most common causes of vertigo \u2014 the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness."
-            ],
-            "responses": [
-                "Are you talking about (vertigo) Paroymsal  Positional Vertigo",
-                "I think that's (vertigo) Paroymsal  Positional Vertigo"
-            ]
-        },
-        {
             "labels": "precaution_(vertigo) Paroymsal  Positional Vertigo",
             "patterns": [
                 "what should i do about (vertigo) Paroymsal  Positional Vertigo?",
@@ -436,17 +2014,6 @@
             "responses": [
                 " Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions \u2014 many rare \u2014 can cause low blood sugar in people who don't have diabetes.",
                 " Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions \u2014 many rare \u2014 can cause low blood sugar in people who don't have diabetes."
-            ]
-        },
-        {
-            "labels": "identify_Hypoglycemia",
-            "patterns": [
-                " Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions \u2014 many rare \u2014 can cause low blood sugar in people who don't have diabetes.",
-                " Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions \u2014 many rare \u2014 can cause low blood sugar in people who don't have diabetes."
-            ],
-            "responses": [
-                "Are you talking about Hypoglycemia",
-                "I think that's Hypoglycemia"
             ]
         },
         {
@@ -478,17 +2045,6 @@
             ]
         },
         {
-            "labels": "identify_Acne",
-            "patterns": [
-                "Acne vulgaris is the formation of comedones, papules, pustules, nodules, and/or cysts as a result of obstruction and inflammation of pilosebaceous units (hair follicles and their accompanying sebaceous gland). Acne develops on the face and upper trunk. It most often affects adolescents.",
-                "Acne vulgaris is the formation of comedones, papules, pustules, nodules, and/or cysts as a result of obstruction and inflammation of pilosebaceous units (hair follicles and their accompanying sebaceous gland). Acne develops on the face and upper trunk. It most often affects adolescents."
-            ],
-            "responses": [
-                "Are you talking about Acne",
-                "I think that's Acne"
-            ]
-        },
-        {
             "labels": "precaution_Acne",
             "patterns": [
                 "what should i do about Acne?",
@@ -514,17 +2070,6 @@
             "responses": [
                 "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy.",
                 "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy."
-            ]
-        },
-        {
-            "labels": "identify_Diabetes",
-            "patterns": [
-                "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy.",
-                "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy."
-            ],
-            "responses": [
-                "Are you talking about Diabetes",
-                "I think that's Diabetes"
             ]
         },
         {
@@ -556,17 +2101,6 @@
             ]
         },
         {
-            "labels": "identify_Impetigo",
-            "patterns": [
-                "Impetigo (im-puh-TIE-go) is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child's nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts.",
-                "Impetigo (im-puh-TIE-go) is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child's nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts."
-            ],
-            "responses": [
-                "Are you talking about Impetigo",
-                "I think that's Impetigo"
-            ]
-        },
-        {
             "labels": "precaution_Impetigo",
             "patterns": [
                 "what should i do about Impetigo?",
@@ -592,17 +2126,6 @@
             "responses": [
                 "Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms.",
                 "Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms."
-            ]
-        },
-        {
-            "labels": "identify_Hypertension",
-            "patterns": [
-                "Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms.",
-                "Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms."
-            ],
-            "responses": [
-                "Are you talking about Hypertension",
-                "I think that's Hypertension"
             ]
         },
         {
@@ -634,17 +2157,6 @@
             ]
         },
         {
-            "labels": "identify_Peptic ulcer diseae",
-            "patterns": [
-                "Peptic ulcer disease (PUD) is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer.",
-                "Peptic ulcer disease (PUD) is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer."
-            ],
-            "responses": [
-                "Are you talking about Peptic ulcer diseae",
-                "I think that's Peptic ulcer diseae"
-            ]
-        },
-        {
             "labels": "precaution_Peptic ulcer diseae",
             "patterns": [
                 "what should i do about Peptic ulcer diseae?",
@@ -670,17 +2182,6 @@
             "responses": [
                 "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease .",
                 "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease ."
-            ]
-        },
-        {
-            "labels": "identify_Dimorphic hemorrhoids(piles)",
-            "patterns": [
-                "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease .",
-                "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease ."
-            ],
-            "responses": [
-                "Are you talking about Dimorphic hemorrhoids(piles)",
-                "I think that's Dimorphic hemorrhoids(piles)"
             ]
         },
         {
@@ -712,17 +2213,6 @@
             ]
         },
         {
-            "labels": "identify_Common Cold",
-            "patterns": [
-                "The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold.",
-                "The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold."
-            ],
-            "responses": [
-                "Are you talking about Common Cold",
-                "I think that's Common Cold"
-            ]
-        },
-        {
             "labels": "precaution_Common Cold",
             "patterns": [
                 "what should i do about Common Cold?",
@@ -748,17 +2238,6 @@
             "responses": [
                 "Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters.",
                 "Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters."
-            ]
-        },
-        {
-            "labels": "identify_Chicken pox",
-            "patterns": [
-                "Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters.",
-                "Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters."
-            ],
-            "responses": [
-                "Are you talking about Chicken pox",
-                "I think that's Chicken pox"
             ]
         },
         {
@@ -790,17 +2269,6 @@
             ]
         },
         {
-            "labels": "identify_Cervical spondylosis",
-            "patterns": [
-                "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs).",
-                "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs)."
-            ],
-            "responses": [
-                "Are you talking about Cervical spondylosis",
-                "I think that's Cervical spondylosis"
-            ]
-        },
-        {
             "labels": "precaution_Cervical spondylosis",
             "patterns": [
                 "what should i do about Cervical spondylosis?",
@@ -826,17 +2294,6 @@
             "responses": [
                 "Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat.",
                 "Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat."
-            ]
-        },
-        {
-            "labels": "identify_Hyperthyroidism",
-            "patterns": [
-                "Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat.",
-                "Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat."
-            ],
-            "responses": [
-                "Are you talking about Hyperthyroidism",
-                "I think that's Hyperthyroidism"
             ]
         },
         {
@@ -868,17 +2325,6 @@
             ]
         },
         {
-            "labels": "identify_Urinary tract infection",
-            "patterns": [
-                "Urinary tract infection: An infection of the kidney, ureter, bladder, or urethra. Abbreviated UTI. Not everyone with a UTI has symptoms, but common symptoms include a frequent urge to urinate and pain or burning when urinating.",
-                "Urinary tract infection: An infection of the kidney, ureter, bladder, or urethra. Abbreviated UTI. Not everyone with a UTI has symptoms, but common symptoms include a frequent urge to urinate and pain or burning when urinating."
-            ],
-            "responses": [
-                "Are you talking about Urinary tract infection",
-                "I think that's Urinary tract infection"
-            ]
-        },
-        {
             "labels": "precaution_Urinary tract infection",
             "patterns": [
                 "what should i do about Urinary tract infection?",
@@ -904,17 +2350,6 @@
             "responses": [
                 "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs.",
                 "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs."
-            ]
-        },
-        {
-            "labels": "identify_Varicose veins",
-            "patterns": [
-                "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs.",
-                "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs."
-            ],
-            "responses": [
-                "Are you talking about Varicose veins",
-                "I think that's Varicose veins"
             ]
         },
         {
@@ -946,17 +2381,6 @@
             ]
         },
         {
-            "labels": "identify_AIDS",
-            "patterns": [
-                "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease.",
-                "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease."
-            ],
-            "responses": [
-                "Are you talking about AIDS",
-                "I think that's AIDS"
-            ]
-        },
-        {
             "labels": "precaution_AIDS",
             "patterns": [
                 "what should i do about AIDS?",
@@ -982,17 +2406,6 @@
             "responses": [
                 "Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body.",
                 "Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body."
-            ]
-        },
-        {
-            "labels": "identify_Paralysis (brain hemorrhage)",
-            "patterns": [
-                "Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body.",
-                "Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body."
-            ],
-            "responses": [
-                "Are you talking about Paralysis (brain hemorrhage)",
-                "I think that's Paralysis (brain hemorrhage)"
             ]
         },
         {
@@ -1024,17 +2437,6 @@
             ]
         },
         {
-            "labels": "identify_Typhoid",
-            "patterns": [
-                "An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is not usually severe.",
-                "An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is not usually severe."
-            ],
-            "responses": [
-                "Are you talking about Typhoid",
-                "I think that's Typhoid"
-            ]
-        },
-        {
             "labels": "precaution_Typhoid",
             "patterns": [
                 "what should i do about Typhoid?",
@@ -1060,17 +2462,6 @@
             "responses": [
                 "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus.",
                 "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus."
-            ]
-        },
-        {
-            "labels": "identify_Hepatitis B",
-            "patterns": [
-                "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus.",
-                "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus."
-            ],
-            "responses": [
-                "Are you talking about Hepatitis B",
-                "I think that's Hepatitis B"
             ]
         },
         {
@@ -1102,17 +2493,6 @@
             ]
         },
         {
-            "labels": "identify_Fungal infection",
-            "patterns": [
-                "In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle. Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body. Like many microbes, there are helpful fungi and harmful fungi.",
-                "In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle. Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body. Like many microbes, there are helpful fungi and harmful fungi."
-            ],
-            "responses": [
-                "Are you talking about Fungal infection",
-                "I think that's Fungal infection"
-            ]
-        },
-        {
             "labels": "precaution_Fungal infection",
             "patterns": [
                 "what should i do about Fungal infection?",
@@ -1138,17 +2518,6 @@
             "responses": [
                 "Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer.",
                 "Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer."
-            ]
-        },
-        {
-            "labels": "identify_Hepatitis C",
-            "patterns": [
-                "Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer.",
-                "Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer."
-            ],
-            "responses": [
-                "Are you talking about Hepatitis C",
-                "I think that's Hepatitis C"
             ]
         },
         {
@@ -1180,17 +2549,6 @@
             ]
         },
         {
-            "labels": "identify_Migraine",
-            "patterns": [
-                "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities.",
-                "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities."
-            ],
-            "responses": [
-                "Are you talking about Migraine",
-                "I think that's Migraine"
-            ]
-        },
-        {
             "labels": "precaution_Migraine",
             "patterns": [
                 "what should i do about Migraine?",
@@ -1216,17 +2574,6 @@
             "responses": [
                 "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working.",
                 "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working."
-            ]
-        },
-        {
-            "labels": "identify_Bronchial Asthma",
-            "patterns": [
-                "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working.",
-                "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working."
-            ],
-            "responses": [
-                "Are you talking about Bronchial Asthma",
-                "I think that's Bronchial Asthma"
             ]
         },
         {
@@ -1258,17 +2605,6 @@
             ]
         },
         {
-            "labels": "identify_Alcoholic hepatitis",
-            "patterns": [
-                "Alcoholic hepatitis is a diseased, inflammatory condition of the liver caused by heavy alcohol consumption over an extended period of time. It's also aggravated by binge drinking and ongoing alcohol use. If you develop this condition, you must stop drinking alcohol",
-                "Alcoholic hepatitis is a diseased, inflammatory condition of the liver caused by heavy alcohol consumption over an extended period of time. It's also aggravated by binge drinking and ongoing alcohol use. If you develop this condition, you must stop drinking alcohol"
-            ],
-            "responses": [
-                "Are you talking about Alcoholic hepatitis",
-                "I think that's Alcoholic hepatitis"
-            ]
-        },
-        {
             "labels": "precaution_Alcoholic hepatitis",
             "patterns": [
                 "what should i do about Alcoholic hepatitis?",
@@ -1294,17 +2630,6 @@
             "responses": [
                 "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it",
                 "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it"
-            ]
-        },
-        {
-            "labels": "identify_Jaundice",
-            "patterns": [
-                "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it",
-                "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it"
-            ],
-            "responses": [
-                "Are you talking about Jaundice",
-                "I think that's Jaundice"
             ]
         },
         {
@@ -1336,17 +2661,6 @@
             ]
         },
         {
-            "labels": "identify_Hepatitis E",
-            "patterns": [
-                "A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease.",
-                "A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease."
-            ],
-            "responses": [
-                "Are you talking about Hepatitis E",
-                "I think that's Hepatitis E"
-            ]
-        },
-        {
             "labels": "precaution_Hepatitis E",
             "patterns": [
                 "what should i do about Hepatitis E?",
@@ -1372,17 +2686,6 @@
             "responses": [
                 "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever.",
                 "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever."
-            ]
-        },
-        {
-            "labels": "identify_Dengue",
-            "patterns": [
-                "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever.",
-                "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever."
-            ],
-            "responses": [
-                "Are you talking about Dengue",
-                "I think that's Dengue"
             ]
         },
         {
@@ -1414,17 +2717,6 @@
             ]
         },
         {
-            "labels": "identify_Hepatitis D",
-            "patterns": [
-                "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus (HDV).",
-                "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus (HDV)."
-            ],
-            "responses": [
-                "Are you talking about Hepatitis D",
-                "I think that's Hepatitis D"
-            ]
-        },
-        {
             "labels": "precaution_Hepatitis D",
             "patterns": [
                 "what should i do about Hepatitis D?",
@@ -1450,17 +2742,6 @@
             "responses": [
                 "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle.",
                 "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle."
-            ]
-        },
-        {
-            "labels": "identify_Heart attack",
-            "patterns": [
-                "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle.",
-                "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle."
-            ],
-            "responses": [
-                "Are you talking about Heart attack",
-                "I think that's Heart attack"
             ]
         },
         {
@@ -1492,17 +2773,6 @@
             ]
         },
         {
-            "labels": "identify_Pneumonia",
-            "patterns": [
-                "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe.",
-                "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe."
-            ],
-            "responses": [
-                "Are you talking about Pneumonia",
-                "I think that's Pneumonia"
-            ]
-        },
-        {
             "labels": "precaution_Pneumonia",
             "patterns": [
                 "what should i do about Pneumonia?",
@@ -1528,17 +2798,6 @@
             "responses": [
                 "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis.",
                 "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis."
-            ]
-        },
-        {
-            "labels": "identify_Arthritis",
-            "patterns": [
-                "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis.",
-                "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis."
-            ],
-            "responses": [
-                "Are you talking about Arthritis",
-                "I think that's Arthritis"
             ]
         },
         {
@@ -1570,17 +2829,6 @@
             ]
         },
         {
-            "labels": "identify_Gastroenteritis",
-            "patterns": [
-                "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting .",
-                "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting ."
-            ],
-            "responses": [
-                "Are you talking about Gastroenteritis",
-                "I think that's Gastroenteritis"
-            ]
-        },
-        {
             "labels": "precaution_Gastroenteritis",
             "patterns": [
                 "what should i do about Gastroenteritis?",
@@ -1609,17 +2857,6 @@
             ]
         },
         {
-            "labels": "identify_Tuberculosis",
-            "patterns": [
-                "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis.",
-                "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis."
-            ],
-            "responses": [
-                "Are you talking about Tuberculosis",
-                "I think that's Tuberculosis"
-            ]
-        },
-        {
             "labels": "precaution_Tuberculosis",
             "patterns": [
                 "what should i do about Tuberculosis?",
@@ -1632,6 +2869,71 @@
                 "If you have Tuberculosis, you could consult doctor",
                 "If you have Tuberculosis, you could medication",
                 "If you have Tuberculosis, you could rest"
+            ]
+        },
+        {
+            "labels": "greeting",
+            "patterns": [
+                "hi",
+                "hey",
+                "hello"
+            ],
+            "responses": [
+                "Hello there! My name is Sam. What can I do for you?",
+                "Hi, what can I do for you?"
+            ]
+        },
+        {
+            "labels": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "labels": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "labels": "noanswer",
+            "patterns": [
+                "",
+                " "
+            ],
+            "responses": [
+                "Sorry, I didn't quite catch that",
+                "Sorry that message didn't send probably, please try again?"
+            ]
+        },
+        {
+            "labels": "options",
+            "patterns": [
+                "How you could help me?",
+                "What help you provide?",
+                "How you can be helpful?"
+            ],
+            "responses": [
+                "I will help you figure out what might possibly be the problem",
+                "I am someone to talk to to learn about diseases, what to try if you have a particular disease and give you a possible idea of what disease you may have if you are experiencing symptoms."
             ]
         }
     ]
