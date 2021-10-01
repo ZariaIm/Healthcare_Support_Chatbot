@@ -3,9 +3,9 @@ import torch
 import torch.nn as nn
 
 
-from createIntentAllWords import all_words, chat_labels, X_train_chat, y_train_chat
-from createSymptomAllWords import all_symptoms, disease_labels, X_train_symptom, y_train_symptom
-from train_utils import initialise, training_loop, save_model
+from createIntentAllWords import X_train_chat, y_train_chat
+from createSymptomAllWords import X_train_symptom, y_train_symptom, X_val, y_val, X_test, y_test
+from train_utils import evaluate, initialise, initialise_with_val,training_loop, save_model, training_loop_with_val_loader
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 ##########################################################################
@@ -21,9 +21,9 @@ output_size = len(y_train_chat)
 X_train = X_train_chat
 y_train = y_train_chat
 print("Preparing to set up the neural network")
-[model, criterion, optimizer, loader] = initialise(device, X_train, y_train, batch_size, learning_rate, input_size, hidden_size, output_size)
-print("Chatbot Model initialised. Entering Chatbot Training Loop.")
-model = training_loop(device, num_epochs, model, loader,optimizer, criterion)
+[model, criterion, optimizer, trainloader] = initialise(device, X_train, y_train, batch_size, learning_rate, input_size, hidden_size, output_size)
+print("Chatbot Model initialised. Entering Training Loop.")
+[model, training_loss_logger,training_acc_logger] = training_loop(device, num_epochs, model, trainloader,optimizer, criterion)
 FILE = "chatbot.pth"
 save_model(FILE, model, input_size, hidden_size, output_size)
 print(f'chatbot training complete. file saved to {FILE}')
@@ -43,10 +43,12 @@ output_size = len(y_train_symptom)
 X_train = X_train_symptom
 y_train = y_train_symptom
 print("Preparing to set up the neural network")
-[model, criterion, optimizer, loader] = initialise(device, X_train, y_train, batch_size, learning_rate, input_size, hidden_size, output_size)
-print("Classifier Model initialised. Entering Chatbot Training Loop.")
-model = training_loop(device, num_epochs, model, loader,optimizer, criterion)
+[model, criterion, optimizer, trainloader, valloader, testloader] = initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, hidden_size, output_size)
+print("Classifier Model initialised. Entering Training Loop.")
+[model,symptom_training_loss_logger, sypmtom_training_acc_logger,symptom_validation_acc_logger] = training_loop_with_val_loader(device, num_epochs, model, trainloader, valloader,optimizer, criterion)
 FILE = "model_symptoms.pth"
+test_acc = evaluate(model, device, testloader)
+print(f"test accuracy: {test_acc*100:.4f}%")
 save_model(FILE, model, input_size, hidden_size, output_size)
 print(f'classifier training complete. file saved to {FILE}')
 ##########################################################################

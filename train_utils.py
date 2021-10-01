@@ -72,21 +72,57 @@ def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, 
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     return model, criterion, optimizer, loader
-    
+
+def initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, hidden_size, output_size):
+    print(f" --- input size: {input_size}; output_size: {output_size} --- ")
+
+    dataset = ChatDataset(X_train, y_train)
+    trainloader = DataLoader(dataset=dataset,
+                            batch_size=batch_size,
+                            shuffle=True,
+                            num_workers=0)
+    dataset = ChatDataset(X_val, y_val)
+    valloader = DataLoader(dataset=dataset,
+                            batch_size=batch_size,
+                            shuffle=True,
+                            num_workers=0)
+    dataset = ChatDataset(X_test, y_test)
+    testloader = DataLoader(dataset=dataset,
+                            batch_size=batch_size,
+                            shuffle=True,
+                            num_workers=0)
+    model = NeuralNet(input_size, hidden_size, output_size).to(device)
+    # Loss and optimizer
+    criterion = nn.CrossEntropyLoss()
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    return model, criterion, optimizer, trainloader, valloader, testloader
 
 def training_loop(device, num_epochs, model, loader,optimizer, criterion):
-    chat_training_loss_logger = []
-    chat_training_acc_logger = []
-
+    training_loss_logger = []
+    training_acc_logger = []
     for epoch in range(num_epochs):
         training_loss = train(model, device, loader, optimizer, criterion)
         train_acc = evaluate(model, device, loader)
-        chat_training_acc_logger.append(train_acc)
-        chat_training_loss_logger.append(training_loss.item())
-        if (epoch%50 == 0):    
-            #print(f'| Epoch: {epoch+1:.4f} | Train Acc: {train_acc*100:.4f}% | Train Loss: {training_loss.item():.4f}')
-            print (f'Epoch [{epoch}/{num_epochs}], Loss: {training_loss.item():.4f}, Acc: {train_acc}')
-    return model
+        training_acc_logger.append(train_acc)
+        training_loss_logger.append(training_loss.item())
+        if (epoch%10 == 0):    
+            print(f'| Epoch: {epoch:02} | Train Acc: {train_acc*100:05.2f}% | Train Loss: {training_loss.item():.4f}')
+    return model, training_loss_logger,training_acc_logger
+
+def training_loop_with_val_loader(device, num_epochs, model, trainloader,valloader,optimizer, criterion):
+    training_loss_logger = []
+    training_acc_logger = []
+    validation_acc_logger = []
+    for epoch in range(num_epochs):
+        training_loss = train(model, device, trainloader, optimizer, criterion)
+        train_acc = evaluate(model, device, trainloader)
+        val_acc = evaluate(model, device, valloader)
+        training_acc_logger.append(train_acc)
+        validation_acc_logger.append(val_acc)
+        training_loss_logger.append(training_loss.item())
+        if (epoch%10 == 0):    
+            print (f'| Epoch: {epoch:02} |Train Loss: {training_loss:.4f}| Train Acc: {train_acc*100:05.2f}% | Val. Acc: {val_acc*100:05.2f}% |')
+    return model, training_loss_logger,training_acc_logger,validation_acc_logger
 
 def save_model(FILE, model, input_size, hidden_size, output_size):
     chat_data = {

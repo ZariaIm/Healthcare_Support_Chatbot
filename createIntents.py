@@ -27,7 +27,7 @@ def write_json(new_data, filename='intents.json'):
 
 
 #################################################################
-print("adding first intent")
+
 #Make sure this one is first (it doesn't need responses)
 #responses edited directly in chat.py
 add = {
@@ -39,7 +39,7 @@ add = {
         }
 write_json(add)
 ##################################################################
-print("adding symptom intents")
+
 # using the dataset of diseases related to which symptoms
 df = pd.read_csv("datasets/dataset.csv", dtype = "string") #4920 rows  x 18 cols
 df = df.fillna(" ")
@@ -64,7 +64,7 @@ for i in range(1,18):
             write_json(add)
 
 ##################################################################
-print("adding description/precaution intents")
+
 #using the disease descriptions and precautions data
 df_description = pd.read_csv("datasets/symptom_description.csv", dtype = "string")
 df_precaution = pd.read_csv("datasets/symptom_precaution.csv", dtype = "string")
@@ -102,7 +102,7 @@ for row in range(len(df_description)):
             }
     write_json(add)
 #################################################################
-print("Adding last few intents")
+
 #other intents
 add = {
             "labels": "greeting",
