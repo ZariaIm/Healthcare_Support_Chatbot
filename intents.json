@@ -2659,6 +2659,271 @@
                 "A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease.",
                 "A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease."
             ]
+        },
+        {
+            "labels": "precaution_Hepatitis E",
+            "patterns": [
+                "what should i do about Hepatitis E?",
+                "what can i do if i have Hepatitis E?",
+                "what do i do if i have Hepatitis E",
+                "i have Hepatitis E"
+            ],
+            "responses": [
+                "If you have Hepatitis E, you could stop alcohol consumption",
+                "If you have Hepatitis E, you could rest",
+                "If you have Hepatitis E, you could consult doctor",
+                "If you have Hepatitis E, you could medication"
+            ]
+        },
+        {
+            "labels": "describe_Dengue",
+            "patterns": [
+                "can you tell me about Dengue?",
+                "what do you know about Dengue?",
+                "what is Dengue?",
+                "explain Dengue?"
+            ],
+            "responses": [
+                "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever.",
+                "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever."
+            ]
+        },
+        {
+            "labels": "precaution_Dengue",
+            "patterns": [
+                "what should i do about Dengue?",
+                "what can i do if i have Dengue?",
+                "what do i do if i have Dengue",
+                "i have Dengue"
+            ],
+            "responses": [
+                "If you have Dengue, you could drink papaya leaf juice",
+                "If you have Dengue, you could avoid fatty spicy food",
+                "If you have Dengue, you could keep mosquitos away",
+                "If you have Dengue, you could keep hydrated"
+            ]
+        },
+        {
+            "labels": "describe_Hepatitis D",
+            "patterns": [
+                "can you tell me about Hepatitis D?",
+                "what do you know about Hepatitis D?",
+                "what is Hepatitis D?",
+                "explain Hepatitis D?"
+            ],
+            "responses": [
+                "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus (HDV).",
+                "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus (HDV)."
+            ]
+        },
+        {
+            "labels": "precaution_Hepatitis D",
+            "patterns": [
+                "what should i do about Hepatitis D?",
+                "what can i do if i have Hepatitis D?",
+                "what do i do if i have Hepatitis D",
+                "i have Hepatitis D"
+            ],
+            "responses": [
+                "If you have Hepatitis D, you could consult doctor",
+                "If you have Hepatitis D, you could medication",
+                "If you have Hepatitis D, you could eat healthy",
+                "If you have Hepatitis D, you could follow up"
+            ]
+        },
+        {
+            "labels": "describe_Heart attack",
+            "patterns": [
+                "can you tell me about Heart attack?",
+                "what do you know about Heart attack?",
+                "what is Heart attack?",
+                "explain Heart attack?"
+            ],
+            "responses": [
+                "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle.",
+                "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle."
+            ]
+        },
+        {
+            "labels": "precaution_Heart attack",
+            "patterns": [
+                "what should i do about Heart attack?",
+                "what can i do if i have Heart attack?",
+                "what do i do if i have Heart attack",
+                "i have Heart attack"
+            ],
+            "responses": [
+                "If you have Heart attack, you could call ambulance",
+                "If you have Heart attack, you could chew or swallow asprin",
+                "If you have Heart attack, you could keep calm",
+                "If you have Heart attack, you could <NA>"
+            ]
+        },
+        {
+            "labels": "describe_Pneumonia",
+            "patterns": [
+                "can you tell me about Pneumonia?",
+                "what do you know about Pneumonia?",
+                "what is Pneumonia?",
+                "explain Pneumonia?"
+            ],
+            "responses": [
+                "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe.",
+                "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe."
+            ]
+        },
+        {
+            "labels": "precaution_Pneumonia",
+            "patterns": [
+                "what should i do about Pneumonia?",
+                "what can i do if i have Pneumonia?",
+                "what do i do if i have Pneumonia",
+                "i have Pneumonia"
+            ],
+            "responses": [
+                "If you have Pneumonia, you could consult doctor",
+                "If you have Pneumonia, you could medication",
+                "If you have Pneumonia, you could rest",
+                "If you have Pneumonia, you could follow up"
+            ]
+        },
+        {
+            "labels": "describe_Arthritis",
+            "patterns": [
+                "can you tell me about Arthritis?",
+                "what do you know about Arthritis?",
+                "what is Arthritis?",
+                "explain Arthritis?"
+            ],
+            "responses": [
+                "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis.",
+                "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis."
+            ]
+        },
+        {
+            "labels": "precaution_Arthritis",
+            "patterns": [
+                "what should i do about Arthritis?",
+                "what can i do if i have Arthritis?",
+                "what do i do if i have Arthritis",
+                "i have Arthritis"
+            ],
+            "responses": [
+                "If you have Arthritis, you could exercise",
+                "If you have Arthritis, you could use hot and cold therapy",
+                "If you have Arthritis, you could try acupuncture",
+                "If you have Arthritis, you could massage"
+            ]
+        },
+        {
+            "labels": "describe_Gastroenteritis",
+            "patterns": [
+                "can you tell me about Gastroenteritis?",
+                "what do you know about Gastroenteritis?",
+                "what is Gastroenteritis?",
+                "explain Gastroenteritis?"
+            ],
+            "responses": [
+                "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting .",
+                "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting ."
+            ]
+        },
+        {
+            "labels": "precaution_Gastroenteritis",
+            "patterns": [
+                "what should i do about Gastroenteritis?",
+                "what can i do if i have Gastroenteritis?",
+                "what do i do if i have Gastroenteritis",
+                "i have Gastroenteritis"
+            ],
+            "responses": [
+                "If you have Gastroenteritis, you could stop eating solid food for while",
+                "If you have Gastroenteritis, you could try taking small sips of water",
+                "If you have Gastroenteritis, you could rest",
+                "If you have Gastroenteritis, you could ease back into eating"
+            ]
+        },
+        {
+            "labels": "describe_Tuberculosis",
+            "patterns": [
+                "can you tell me about Tuberculosis?",
+                "what do you know about Tuberculosis?",
+                "what is Tuberculosis?",
+                "explain Tuberculosis?"
+            ],
+            "responses": [
+                "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis.",
+                "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis."
+            ]
+        },
+        {
+            "labels": "precaution_Tuberculosis",
+            "patterns": [
+                "what should i do about Tuberculosis?",
+                "what can i do if i have Tuberculosis?",
+                "what do i do if i have Tuberculosis",
+                "i have Tuberculosis"
+            ],
+            "responses": [
+                "If you have Tuberculosis, you could cover mouth",
+                "If you have Tuberculosis, you could consult doctor",
+                "If you have Tuberculosis, you could medication",
+                "If you have Tuberculosis, you could rest"
+            ]
+        },
+        {
+            "labels": "greeting",
+            "patterns": [
+                "hi",
+                "hey",
+                "hello"
+            ],
+            "responses": [
+                "Hello there! My name is Sam. What can I do for you?",
+                "Hi, what can I do for you?"
+            ]
+        },
+        {
+            "labels": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "labels": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "labels": "options",
+            "patterns": [
+                "How you could help me?",
+                "What help you provide?",
+                "How you can be helpful?"
+            ],
+            "responses": [
+                "I will help you figure out what might possibly be the problem",
+                "I am someone to talk to to learn about diseases, what to try if you have a particular disease and give you a possible idea of what disease you may have if you are experiencing symptoms."
+            ]
         }
     ]
 }

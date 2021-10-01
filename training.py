@@ -1,6 +1,4 @@
-import numpy as np
 import torch
-import torch.nn as nn
 
 
 from createIntentAllWords import X_train_chat, y_train_chat

@@ -1,8 +1,6 @@
-import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 from createIntentAllWords import all_words, chat_labels
 
@@ -105,7 +103,7 @@ def training_loop(device, num_epochs, model, loader,optimizer, criterion):
         train_acc = evaluate(model, device, loader)
         training_acc_logger.append(train_acc)
         training_loss_logger.append(training_loss.item())
-        if (epoch%10 == 0):    
+        if (epoch%50 == 0):    
             print(f'| Epoch: {epoch:02} | Train Acc: {train_acc*100:05.2f}% | Train Loss: {training_loss.item():.4f}')
     return model, training_loss_logger,training_acc_logger
 
@@ -120,7 +118,7 @@ def training_loop_with_val_loader(device, num_epochs, model, trainloader,valload
         training_acc_logger.append(train_acc)
         validation_acc_logger.append(val_acc)
         training_loss_logger.append(training_loss.item())
-        if (epoch%10 == 0):    
+        if (epoch%50 == 0):    
             print (f'| Epoch: {epoch:02} |Train Loss: {training_loss:.4f}| Train Acc: {train_acc*100:05.2f}% | Val. Acc: {val_acc*100:05.2f}% |')
     return model, training_loss_logger,training_acc_logger,validation_acc_logger
 

@@ -1,8 +1,6 @@
 import random
 import json
-from tkinter import Label
 import torch
-from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 from chat_utils import load_saved_model, load_saved_words, predict_disease, predict_intent, store_symptom
 
