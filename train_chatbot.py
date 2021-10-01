@@ -18,7 +18,8 @@ learning_rate = 0.001
 input_size = len(X_train[0])
 hidden_size = 8
 output_size = len(y_train)
-print(input_size, output_size)
+print("Preparing to set up the neural network")
+print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
 class ChatDataset(Dataset):
 
@@ -44,12 +45,11 @@ train_loader = DataLoader(dataset=dataset,
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
-
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-#print("labels before training",labels)
-# Train the model
+
+print("Model initialised. Entering Training Loop.")
 for epoch in range(num_epochs):
     for (x, y) in train_loader:
         x = x.to(device)

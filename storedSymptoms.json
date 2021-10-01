@@ -1,10 +1,10 @@
 {
     "symptoms": [
         {
-            "symptom": "cold"
+            "symptom": "joint"
         },
         {
-            "symptom": "pain"
+            "symptom": "swell"
         }
     ]
 }
