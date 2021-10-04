@@ -64,7 +64,6 @@ def predict_disease(y, model, all_symptoms):
     symptom_bag = bag_of_words(list_of_symptoms, all_symptoms)
     output = model(torch.FloatTensor(symptom_bag).unsqueeze(0))
     _, predicted = torch.max(output, dim=1)
-    disease = y[predicted.item()]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    return disease, prob, list_of_symptoms
+    return predicted.item(), prob, list_of_symptoms

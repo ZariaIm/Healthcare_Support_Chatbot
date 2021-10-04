@@ -37,9 +37,9 @@ def get_response(msg):
         ctr = 0
         
         if label_intent == [0]:
-            [disease,prob_disease, list_of_symptoms] = predict_disease(disease_labels, classifier_model, all_symptoms)
+            [index, prob_disease, list_of_symptoms] = predict_disease(disease_labels, classifier_model, all_symptoms)
             if prob_disease.item() > 0.15:
-                return f"You may have {disease}. I'm {torch.round(prob_disease*100)}% confident in my prediction. The symptoms I used to make the prediction are {list_of_symptoms}. The symptoms of {disease} are ____"
+                return f"You may have {disease_labels[index]}. I'm {torch.round(prob_disease*100)}% confident in my prediction. The symptoms I used to make the prediction are {list_of_symptoms}. The symptoms of {disease_labels[index]} are {disease_symptoms[index]}"
             else:
                 return f"I think I need more symptoms to be sure.. I'm only {torch.round(prob_disease*100)}% confident in my prediction."
         for intent in intents['intents']:
