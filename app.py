@@ -20,7 +20,7 @@ class ChatApplication:
     def _setup_main_window(self):
         self.window.title("Healthcare Support Bot")
         self.window.resizable(width=False, height=False)
-        self.window.configure(width=470, height=550, bg=BG_COLOR)
+        self.window.configure(width=500, height=600, bg=BG_COLOR)
         
 
         # head label
@@ -37,9 +37,9 @@ class ChatApplication:
         self.text_widget.configure(cursor="arrow", state=DISABLED)
 
         # scroll bar
-        scrollbar = Scrollbar(self.text_widget)
-        scrollbar.place(relheight=1, relx=0.974)
-        scrollbar.configure(command=self.text_widget.yview)
+        #scrollbar = Scrollbar(self.text_widget)
+        #scrollbar.place(relheight=1, relx=0.974)
+        #scrollbar.configure(command=self.text_widget.yview)
 
         # bottom label
         bottom_label = Label(self.window, bg=BG_GRAY, height=80)

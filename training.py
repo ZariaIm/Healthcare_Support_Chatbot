@@ -22,7 +22,7 @@ print("Preparing to set up the neural network")
 [model, criterion, optimizer, trainloader] = initialise(device, X_train, y_train, batch_size, learning_rate, input_size, hidden_size, output_size)
 print("Chatbot Model initialised. Entering Training Loop.")
 [model, training_loss_logger,training_acc_logger] = training_loop(device, num_epochs, model, trainloader,optimizer, criterion)
-FILE = "chatbot.pth"
+FILE = "model_chatbot.pth"
 save_model(FILE, model, input_size, hidden_size, output_size)
 print(f'chatbot training complete. file saved to {FILE}')
 ##########################################################################

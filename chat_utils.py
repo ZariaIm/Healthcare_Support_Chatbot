@@ -22,6 +22,13 @@ def load_saved_words(FILE):
     labels = data["labels"]
     return all_words, labels
 
+def load_saved_symptoms(FILE):
+    data = torch.load(FILE)
+    all_words = data["all_words"]
+    labels = data["labels"]
+    disease_symptoms = data["disease_symptoms"]
+    return all_words, labels,disease_symptoms
+
 def write_json(new_data, filename='storedSymptoms.json'):
     with open(filename,'r+') as file:
         file_data = json.load(file)
@@ -53,11 +60,11 @@ def predict_disease(y, model, all_symptoms):
     symptoms = file_data["symptoms"]
     for pair in symptoms:
         list_of_symptoms.append(pair["symptom"])
-    ############To do: make sure we aren't adding duplicates
+        list_of_symptoms = list(set(list_of_symptoms))
     symptom_bag = bag_of_words(list_of_symptoms, all_symptoms)
     output = model(torch.FloatTensor(symptom_bag).unsqueeze(0))
     _, predicted = torch.max(output, dim=1)
     disease = y[predicted.item()]
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    return disease, prob
+    return disease, prob, list_of_symptoms
