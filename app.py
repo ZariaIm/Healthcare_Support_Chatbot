@@ -20,7 +20,7 @@ class ChatApplication:
     def _setup_main_window(self):
         self.window.title("Healthcare Support Bot")
         self.window.resizable(width=False, height=False)
-        self.window.configure(width=500, height=600, bg=BG_COLOR)
+        self.window.configure(width=1000, height=600, bg=BG_COLOR)
         
 
         # head label
@@ -47,7 +47,7 @@ class ChatApplication:
 
         # message entry box
         self.msg_entry = Entry(bottom_label, bg="#2C3E50", fg=TEXT_COLOR, font=FONT)
-        self.msg_entry.place(relwidth=0.74, relheight=0.06, rely=0.008, relx=0.011)
+        self.msg_entry.place(relwidth=0.74, relheight=0.05, rely=0.008, relx=0.011)
         self.msg_entry.focus()
         self.msg_entry.bind("<Return>", self._on_enter_pressed)
 
