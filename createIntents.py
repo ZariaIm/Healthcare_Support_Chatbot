@@ -44,13 +44,25 @@ add = {
         }
 write_json(add)
 ##################################################################
+#Trying to do the emergency thing
+emergency_symptom = []
+for i in range(len(disease_labels)):
+    if ("Hypertension" in disease_labels[i]):
+        emergency_symptom.append(disease_symptoms[i])
 
+for j in range(len(disease_labels)):
+    if ("Heart attack" in disease_labels[j]):
+        emergency_symptom.append(disease_symptoms[j])
+        
+print("The emergency symptoms found are:",emergency_symptom )
+##################################################################
 # using the dataset of diseases related to which symptoms
 
 df = pd.read_csv("datasets/dataset.csv", dtype = "string") #4920 rows  x 18 cols
 df = df.fillna(" ")
 
 temp = []
+emergency = []
 for i in range(1,18):
     for word in df[f"Symptom_{i}"]:
         symptom = ((' '.join(word.split("_"))))
@@ -69,37 +81,10 @@ for i in range(1,18):
                     ],
                 "context": "experiencing synptoms"
 
-                
+       
                 }
             write_json(add)
             
-##################################################################
-#Trying to do the emergency thing
-emergency_symptom = []
-for i in range(len(disease_labels)):
-    if ("Hypertension" in disease_labels[i]):
-        emergency_symptom.append(disease_symptoms[i])
-
-for j in range(len(disease_labels)):
-    if ("Heart attack" in disease_labels[j]):
-        emergency_symptom.append(disease_symptoms[j])
-        
-print("The emergency symptoms found are:",emergency_symptom )
-    
-       
-
-    
-#print("disease: ", i, disease_labels[i])
-    
-    #print("disease: ", disease_labels[i])
-    #print("Hypertension label type", type(disease_labels[i]))
-#     if (disease_labels[i] == "Hear attack"):
-#         #print("I'm in loop")
-#         emergency_symptom = disease_symptoms[i]
-#         print("disease symptoms:", disease_symptoms[i])
-    
-# print("The disease found is:",emergency_symptom )
-
 
 
 ##################################################################
