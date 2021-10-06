@@ -4,8 +4,11 @@
             "labels": "ask disease",
             "patterns": [
                 "what do you think i have?",
-                "why am i sick?"
-            ]
+                "why am i sick?",
+                "What is wrong with me?",
+                "can you tell me what is wrong?"
+            ],
+            "context": "predicted disease"
         },
         {
             "labels": "talking about itching",
@@ -18,7 +21,8 @@
             "responses": [
                 "ah...itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah.... itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  skin rash",
@@ -31,7 +35,8 @@
             "responses": [
                 "ah... skin rash. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  skin rash. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  continuous sneezing",
@@ -44,7 +49,8 @@
             "responses": [
                 "ah... continuous sneezing. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  continuous sneezing. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  shivering",
@@ -57,7 +63,8 @@
             "responses": [
                 "ah... shivering. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  shivering. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  stomach pain",
@@ -70,7 +77,8 @@
             "responses": [
                 "ah... stomach pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  stomach pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  acidity",
@@ -83,7 +91,8 @@
             "responses": [
                 "ah... acidity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  acidity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  vomiting",
@@ -96,7 +105,8 @@
             "responses": [
                 "ah... vomiting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  vomiting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  indigestion",
@@ -109,7 +119,8 @@
             "responses": [
                 "ah... indigestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  indigestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  muscle wasting",
@@ -122,7 +133,8 @@
             "responses": [
                 "ah... muscle wasting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  muscle wasting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  patches in throat",
@@ -135,7 +147,8 @@
             "responses": [
                 "ah... patches in throat. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  patches in throat. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  fatigue",
@@ -148,7 +161,8 @@
             "responses": [
                 "ah... fatigue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  fatigue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  weight loss",
@@ -161,7 +175,8 @@
             "responses": [
                 "ah... weight loss. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  weight loss. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  sunken eyes",
@@ -174,7 +189,8 @@
             "responses": [
                 "ah... sunken eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  sunken eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  cough",
@@ -187,7 +203,8 @@
             "responses": [
                 "ah... cough. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  cough. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  headache",
@@ -200,7 +217,8 @@
             "responses": [
                 "ah... headache. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  headache. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  chest pain",
@@ -213,7 +231,8 @@
             "responses": [
                 "ah... chest pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  chest pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  back pain",
@@ -226,7 +245,8 @@
             "responses": [
                 "ah... back pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  back pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  weakness in limbs",
@@ -239,7 +259,8 @@
             "responses": [
                 "ah... weakness in limbs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  weakness in limbs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  chills",
@@ -252,7 +273,8 @@
             "responses": [
                 "ah... chills. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  chills. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  joint pain",
@@ -265,7 +287,8 @@
             "responses": [
                 "ah... joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  yellowish skin",
@@ -278,7 +301,8 @@
             "responses": [
                 "ah... yellowish skin. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  yellowish skin. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  constipation",
@@ -291,7 +315,8 @@
             "responses": [
                 "ah... constipation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  constipation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  pain during bowel movements",
@@ -304,7 +329,8 @@
             "responses": [
                 "ah... pain during bowel movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  pain during bowel movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  breathlessness",
@@ -317,7 +343,8 @@
             "responses": [
                 "ah... breathlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  breathlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  cramps",
@@ -330,7 +357,8 @@
             "responses": [
                 "ah... cramps. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  cramps. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  weight gain",
@@ -343,7 +371,8 @@
             "responses": [
                 "ah... weight gain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  weight gain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  mood swings",
@@ -356,7 +385,8 @@
             "responses": [
                 "ah... mood swings. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  mood swings. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  neck pain",
@@ -369,7 +399,8 @@
             "responses": [
                 "ah... neck pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  neck pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  muscle weakness",
@@ -382,7 +413,8 @@
             "responses": [
                 "ah... muscle weakness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  muscle weakness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  stiff neck",
@@ -395,7 +427,8 @@
             "responses": [
                 "ah... stiff neck. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  stiff neck. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  pus filled pimples",
@@ -408,7 +441,8 @@
             "responses": [
                 "ah... pus filled pimples. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  pus filled pimples. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  burning micturition",
@@ -421,7 +455,8 @@
             "responses": [
                 "ah... burning micturition. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  burning micturition. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  bladder discomfort",
@@ -434,7 +469,8 @@
             "responses": [
                 "ah... bladder discomfort. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  bladder discomfort. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  high fever",
@@ -447,7 +483,8 @@
             "responses": [
                 "ah... high fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  high fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  nodal skin eruptions",
@@ -460,7 +497,8 @@
             "responses": [
                 "ah... nodal skin eruptions. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  nodal skin eruptions. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  ulcers on tongue",
@@ -473,7 +511,8 @@
             "responses": [
                 "ah... ulcers on tongue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  ulcers on tongue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  loss of appetite",
@@ -486,7 +525,8 @@
             "responses": [
                 "ah... loss of appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  loss of appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  restlessness",
@@ -499,7 +539,8 @@
             "responses": [
                 "ah... restlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  restlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  dehydration",
@@ -512,7 +553,8 @@
             "responses": [
                 "ah... dehydration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  dehydration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  dizziness",
@@ -525,7 +567,8 @@
             "responses": [
                 "ah... dizziness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  dizziness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  weakness of one body side",
@@ -538,7 +581,8 @@
             "responses": [
                 "ah... weakness of one body side. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  weakness of one body side. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  lethargy",
@@ -551,7 +595,8 @@
             "responses": [
                 "ah... lethargy. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  lethargy. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  nausea",
@@ -564,7 +609,8 @@
             "responses": [
                 "ah... nausea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  nausea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  abdominal pain",
@@ -577,7 +623,8 @@
             "responses": [
                 "ah... abdominal pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  abdominal pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  pain in anal region",
@@ -590,7 +637,8 @@
             "responses": [
                 "ah... pain in anal region. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  pain in anal region. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  sweating",
@@ -603,7 +651,8 @@
             "responses": [
                 "ah... sweating. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  sweating. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  bruising",
@@ -616,7 +665,8 @@
             "responses": [
                 "ah... bruising. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  bruising. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  cold hands and feets",
@@ -629,7 +679,8 @@
             "responses": [
                 "ah... cold hands and feets. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  cold hands and feets. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  anxiety",
@@ -642,7 +693,8 @@
             "responses": [
                 "ah... anxiety. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  anxiety. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  knee pain",
@@ -655,7 +707,8 @@
             "responses": [
                 "ah... knee pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  knee pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  swelling joints",
@@ -668,7 +721,8 @@
             "responses": [
                 "ah... swelling joints. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swelling joints. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  blackheads",
@@ -681,7 +735,8 @@
             "responses": [
                 "ah... blackheads. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  blackheads. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  foul smell of urine",
@@ -694,7 +749,8 @@
             "responses": [
                 "ah... foul smell of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  foul smell of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  skin peeling",
@@ -707,7 +763,8 @@
             "responses": [
                 "ah... skin peeling. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  skin peeling. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  blister",
@@ -720,7 +777,8 @@
             "responses": [
                 "ah... blister. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  blister. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  dischromic  patches",
@@ -733,7 +791,8 @@
             "responses": [
                 "ah... dischromic  patches. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  dischromic  patches. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  watering from eyes",
@@ -746,7 +805,8 @@
             "responses": [
                 "ah... watering from eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  watering from eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  extra marital contacts",
@@ -759,7 +819,8 @@
             "responses": [
                 "ah... extra marital contacts. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  extra marital contacts. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  diarrhoea",
@@ -772,7 +833,8 @@
             "responses": [
                 "ah... diarrhoea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  diarrhoea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  loss of balance",
@@ -785,7 +847,8 @@
             "responses": [
                 "ah... loss of balance. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  loss of balance. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  blurred and distorted vision",
@@ -798,7 +861,8 @@
             "responses": [
                 "ah... blurred and distorted vision. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  blurred and distorted vision. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  altered sensorium",
@@ -811,7 +875,8 @@
             "responses": [
                 "ah... altered sensorium. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  altered sensorium. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  dark urine",
@@ -824,7 +889,8 @@
             "responses": [
                 "ah... dark urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  dark urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  swelling of stomach",
@@ -837,7 +903,8 @@
             "responses": [
                 "ah... swelling of stomach. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swelling of stomach. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  bloody stool",
@@ -850,7 +917,8 @@
             "responses": [
                 "ah... bloody stool. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  bloody stool. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  obesity",
@@ -863,7 +931,8 @@
             "responses": [
                 "ah... obesity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  obesity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  hip joint pain",
@@ -876,7 +945,8 @@
             "responses": [
                 "ah... hip joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  hip joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  movement stiffness",
@@ -889,7 +959,8 @@
             "responses": [
                 "ah... movement stiffness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  movement stiffness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  spinning movements",
@@ -902,7 +973,8 @@
             "responses": [
                 "ah... spinning movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  spinning movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  scurring",
@@ -915,7 +987,8 @@
             "responses": [
                 "ah... scurring. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  scurring. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  continuous feel of urine",
@@ -928,7 +1001,8 @@
             "responses": [
                 "ah... continuous feel of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  continuous feel of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  silver like dusting",
@@ -941,7 +1015,8 @@
             "responses": [
                 "ah... silver like dusting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  silver like dusting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  red sore around nose",
@@ -954,7 +1029,8 @@
             "responses": [
                 "ah... red sore around nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  red sore around nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  ",
@@ -967,7 +1043,8 @@
             "responses": [
                 "ah... . I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  . I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  spotting  urination",
@@ -980,7 +1057,8 @@
             "responses": [
                 "ah... spotting  urination. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  spotting  urination. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  passage of gases",
@@ -993,7 +1071,8 @@
             "responses": [
                 "ah... passage of gases. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  passage of gases. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  irregular sugar level",
@@ -1006,7 +1085,8 @@
             "responses": [
                 "ah... irregular sugar level. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  irregular sugar level. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  family history",
@@ -1019,7 +1099,8 @@
             "responses": [
                 "ah... family history. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  family history. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  lack of concentration",
@@ -1032,7 +1113,8 @@
             "responses": [
                 "ah... lack of concentration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  lack of concentration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  excessive hunger",
@@ -1045,7 +1127,8 @@
             "responses": [
                 "ah... excessive hunger. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  excessive hunger. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  yellowing of eyes",
@@ -1058,7 +1141,8 @@
             "responses": [
                 "ah... yellowing of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  yellowing of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  distention of abdomen",
@@ -1071,7 +1155,8 @@
             "responses": [
                 "ah... distention of abdomen. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  distention of abdomen. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  irritation in anus",
@@ -1084,7 +1169,8 @@
             "responses": [
                 "ah... irritation in anus. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  irritation in anus. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  swollen legs",
@@ -1097,7 +1183,8 @@
             "responses": [
                 "ah... swollen legs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swollen legs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  painful walking",
@@ -1110,7 +1197,8 @@
             "responses": [
                 "ah... painful walking. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  painful walking. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  small dents in nails",
@@ -1123,7 +1211,8 @@
             "responses": [
                 "ah... small dents in nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  small dents in nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  yellow crust ooze",
@@ -1136,7 +1225,8 @@
             "responses": [
                 "ah... yellow crust ooze. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  yellow crust ooze. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  internal itching",
@@ -1149,7 +1239,8 @@
             "responses": [
                 "ah... internal itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  internal itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  mucoid sputum",
@@ -1162,7 +1253,8 @@
             "responses": [
                 "ah... mucoid sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  mucoid sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  history of alcohol consumption",
@@ -1175,7 +1267,8 @@
             "responses": [
                 "ah... history of alcohol consumption. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  history of alcohol consumption. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  swollen blood vessels",
@@ -1188,7 +1281,8 @@
             "responses": [
                 "ah... swollen blood vessels. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swollen blood vessels. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  unsteadiness",
@@ -1201,7 +1295,8 @@
             "responses": [
                 "ah... unsteadiness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  unsteadiness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  inflammatory nails",
@@ -1214,7 +1309,8 @@
             "responses": [
                 "ah... inflammatory nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  inflammatory nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  depression",
@@ -1227,7 +1323,8 @@
             "responses": [
                 "ah... depression. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  depression. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  fluid overload",
@@ -1240,7 +1337,8 @@
             "responses": [
                 "ah... fluid overload. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  fluid overload. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  swelled lymph nodes",
@@ -1253,7 +1351,8 @@
             "responses": [
                 "ah... swelled lymph nodes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swelled lymph nodes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  malaise",
@@ -1266,7 +1365,8 @@
             "responses": [
                 "ah... malaise. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  malaise. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  prominent veins on calf",
@@ -1279,7 +1379,8 @@
             "responses": [
                 "ah... prominent veins on calf. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  prominent veins on calf. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  puffy face and eyes",
@@ -1292,7 +1393,8 @@
             "responses": [
                 "ah... puffy face and eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  puffy face and eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  fast heart rate",
@@ -1305,7 +1407,8 @@
             "responses": [
                 "ah... fast heart rate. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  fast heart rate. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  irritability",
@@ -1318,7 +1421,8 @@
             "responses": [
                 "ah... irritability. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  irritability. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  muscle pain",
@@ -1331,7 +1435,8 @@
             "responses": [
                 "ah... muscle pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  muscle pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  mild fever",
@@ -1344,7 +1449,8 @@
             "responses": [
                 "ah... mild fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  mild fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  yellow urine",
@@ -1357,7 +1463,8 @@
             "responses": [
                 "ah... yellow urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  yellow urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  phlegm",
@@ -1370,7 +1477,8 @@
             "responses": [
                 "ah... phlegm. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  phlegm. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  enlarged thyroid",
@@ -1383,7 +1491,8 @@
             "responses": [
                 "ah... enlarged thyroid. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  enlarged thyroid. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  increased appetite",
@@ -1396,7 +1505,8 @@
             "responses": [
                 "ah... increased appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  increased appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  visual disturbances",
@@ -1409,7 +1519,8 @@
             "responses": [
                 "ah... visual disturbances. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  visual disturbances. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  brittle nails",
@@ -1422,7 +1533,8 @@
             "responses": [
                 "ah... brittle nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  brittle nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  drying and tingling lips",
@@ -1435,7 +1547,8 @@
             "responses": [
                 "ah... drying and tingling lips. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  drying and tingling lips. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  polyuria",
@@ -1448,7 +1561,8 @@
             "responses": [
                 "ah... polyuria. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  polyuria. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  pain behind the eyes",
@@ -1461,7 +1575,8 @@
             "responses": [
                 "ah... pain behind the eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  pain behind the eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  toxic look (typhos)",
@@ -1474,7 +1589,8 @@
             "responses": [
                 "ah... toxic look (typhos). I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  toxic look (typhos). I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  throat irritation",
@@ -1487,7 +1603,8 @@
             "responses": [
                 "ah... throat irritation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  throat irritation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  swollen extremeties",
@@ -1500,7 +1617,8 @@
             "responses": [
                 "ah... swollen extremeties. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swollen extremeties. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  slurred speech",
@@ -1513,7 +1631,8 @@
             "responses": [
                 "ah... slurred speech. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  slurred speech. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  red spots over body",
@@ -1526,7 +1645,8 @@
             "responses": [
                 "ah... red spots over body. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  red spots over body. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  belly pain",
@@ -1539,7 +1659,8 @@
             "responses": [
                 "ah... belly pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  belly pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  receiving blood transfusion",
@@ -1552,7 +1673,8 @@
             "responses": [
                 "ah... receiving blood transfusion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  receiving blood transfusion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  acute liver failure",
@@ -1565,7 +1687,8 @@
             "responses": [
                 "ah... acute liver failure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  acute liver failure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  redness of eyes",
@@ -1578,7 +1701,8 @@
             "responses": [
                 "ah... redness of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  redness of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  rusty sputum",
@@ -1591,7 +1715,8 @@
             "responses": [
                 "ah... rusty sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  rusty sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  abnormal menstruation",
@@ -1604,7 +1729,8 @@
             "responses": [
                 "ah... abnormal menstruation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  abnormal menstruation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  receiving unsterile injections",
@@ -1617,7 +1743,8 @@
             "responses": [
                 "ah... receiving unsterile injections. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  receiving unsterile injections. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  coma",
@@ -1630,7 +1757,8 @@
             "responses": [
                 "ah... coma. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  coma. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  sinus pressure",
@@ -1643,7 +1771,8 @@
             "responses": [
                 "ah... sinus pressure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  sinus pressure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  palpitations",
@@ -1656,7 +1785,8 @@
             "responses": [
                 "ah... palpitations. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  palpitations. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  stomach bleeding",
@@ -1669,7 +1799,8 @@
             "responses": [
                 "ah... stomach bleeding. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  stomach bleeding. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  runny nose",
@@ -1682,7 +1813,8 @@
             "responses": [
                 "ah... runny nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  runny nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  congestion",
@@ -1695,7 +1827,8 @@
             "responses": [
                 "ah... congestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  congestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  blood in sputum",
@@ -1708,7 +1841,8 @@
             "responses": [
                 "ah... blood in sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  blood in sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "talking about  loss of smell",
@@ -1721,7 +1855,8 @@
             "responses": [
                 "ah... loss of smell. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  loss of smell. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
-            ]
+            ],
+            "context": "experiencing synptoms"
         },
         {
             "labels": "describe_Drug Reaction",
@@ -1729,12 +1864,14 @@
                 "can you tell me about Drug Reaction?",
                 "what do you know about Drug Reaction?",
                 "what is Drug Reaction?",
-                "explain Drug Reaction?"
+                "explain Drug Reaction?",
+                "Drug Reaction"
             ],
             "responses": [
                 "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs.",
                 "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Drug Reaction",
@@ -1749,7 +1886,8 @@
                 "If you have Drug Reaction, you could consult nearest hospital",
                 "If you have Drug Reaction, you could stop taking drug",
                 "If you have Drug Reaction, you could follow up"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Malaria",
@@ -1757,12 +1895,14 @@
                 "can you tell me about Malaria?",
                 "what do you know about Malaria?",
                 "what is Malaria?",
-                "explain Malaria?"
+                "explain Malaria?",
+                "Malaria"
             ],
             "responses": [
                 "An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type.",
                 "An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Malaria",
@@ -1777,7 +1917,8 @@
                 "If you have Malaria, you could avoid oily food",
                 "If you have Malaria, you could avoid non veg food",
                 "If you have Malaria, you could keep mosquitos out"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Allergy",
@@ -1785,12 +1926,14 @@
                 "can you tell me about Allergy?",
                 "what do you know about Allergy?",
                 "what is Allergy?",
-                "explain Allergy?"
+                "explain Allergy?",
+                "Allergy"
             ],
             "responses": [
                 "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens.",
                 "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Allergy",
@@ -1805,7 +1948,8 @@
                 "If you have Allergy, you could cover area with bandage",
                 "If you have Allergy, you could <NA>",
                 "If you have Allergy, you could use ice to compress itching"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Hypothyroidism",
@@ -1813,12 +1957,14 @@
                 "can you tell me about Hypothyroidism?",
                 "what do you know about Hypothyroidism?",
                 "what is Hypothyroidism?",
-                "explain Hypothyroidism?"
+                "explain Hypothyroidism?",
+                "Hypothyroidism"
             ],
             "responses": [
                 "Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone.",
                 "Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Hypothyroidism",
@@ -1833,7 +1979,8 @@
                 "If you have Hypothyroidism, you could exercise",
                 "If you have Hypothyroidism, you could eat healthy",
                 "If you have Hypothyroidism, you could get proper sleep"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Psoriasis",
@@ -1841,12 +1988,14 @@
                 "can you tell me about Psoriasis?",
                 "what do you know about Psoriasis?",
                 "what is Psoriasis?",
-                "explain Psoriasis?"
+                "explain Psoriasis?",
+                "Psoriasis"
             ],
             "responses": [
                 "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family.",
                 "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Psoriasis",
@@ -1861,7 +2010,8 @@
                 "If you have Psoriasis, you could stop bleeding using pressure",
                 "If you have Psoriasis, you could consult doctor",
                 "If you have Psoriasis, you could salt baths"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_GERD",
@@ -1869,12 +2019,14 @@
                 "can you tell me about GERD?",
                 "what do you know about GERD?",
                 "what is GERD?",
-                "explain GERD?"
+                "explain GERD?",
+                "GERD"
             ],
             "responses": [
                 "Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter (LES), the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD.",
                 "Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter (LES), the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_GERD",
@@ -1889,7 +2041,8 @@
                 "If you have GERD, you could avoid lying down after eating",
                 "If you have GERD, you could maintain healthy weight",
                 "If you have GERD, you could exercise"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Chronic cholestasis",
@@ -1897,12 +2050,14 @@
                 "can you tell me about Chronic cholestasis?",
                 "what do you know about Chronic cholestasis?",
                 "what is Chronic cholestasis?",
-                "explain Chronic cholestasis?"
+                "explain Chronic cholestasis?",
+                "Chronic cholestasis"
             ],
             "responses": [
                 "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases",
                 "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases"
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Chronic cholestasis",
@@ -1917,7 +2072,8 @@
                 "If you have Chronic cholestasis, you could anti itch medicine",
                 "If you have Chronic cholestasis, you could consult doctor",
                 "If you have Chronic cholestasis, you could eat healthy"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_hepatitis A",
@@ -1925,12 +2081,14 @@
                 "can you tell me about hepatitis A?",
                 "what do you know about hepatitis A?",
                 "what is hepatitis A?",
-                "explain hepatitis A?"
+                "explain hepatitis A?",
+                "hepatitis A"
             ],
             "responses": [
                 "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect your liver's ability to function.",
                 "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect your liver's ability to function."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_hepatitis A",
@@ -1945,7 +2103,8 @@
                 "If you have hepatitis A, you could wash hands through",
                 "If you have hepatitis A, you could avoid fatty spicy food",
                 "If you have hepatitis A, you could medication"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Osteoarthristis",
@@ -1953,12 +2112,14 @@
                 "can you tell me about Osteoarthristis?",
                 "what do you know about Osteoarthristis?",
                 "what is Osteoarthristis?",
-                "explain Osteoarthristis?"
+                "explain Osteoarthristis?",
+                "Osteoarthristis"
             ],
             "responses": [
                 "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time.",
                 "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Osteoarthristis",
@@ -1973,7 +2134,8 @@
                 "If you have Osteoarthristis, you could consult nearest hospital",
                 "If you have Osteoarthristis, you could follow up",
                 "If you have Osteoarthristis, you could salt baths"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_(vertigo) Paroymsal  Positional Vertigo",
@@ -1981,12 +2143,14 @@
                 "can you tell me about (vertigo) Paroymsal  Positional Vertigo?",
                 "what do you know about (vertigo) Paroymsal  Positional Vertigo?",
                 "what is (vertigo) Paroymsal  Positional Vertigo?",
-                "explain (vertigo) Paroymsal  Positional Vertigo?"
+                "explain (vertigo) Paroymsal  Positional Vertigo?",
+                "(vertigo) Paroymsal  Positional Vertigo"
             ],
             "responses": [
                 "Benign paroxysmal positional vertigo (BPPV) is one of the most common causes of vertigo \u2014 the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness.",
                 "Benign paroxysmal positional vertigo (BPPV) is one of the most common causes of vertigo \u2014 the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_(vertigo) Paroymsal  Positional Vertigo",
@@ -2001,7 +2165,8 @@
                 "If you have (vertigo) Paroymsal  Positional Vertigo, you could avoid sudden change in body",
                 "If you have (vertigo) Paroymsal  Positional Vertigo, you could avoid abrupt head movment",
                 "If you have (vertigo) Paroymsal  Positional Vertigo, you could relax"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Hypoglycemia",
@@ -2009,12 +2174,14 @@
                 "can you tell me about Hypoglycemia?",
                 "what do you know about Hypoglycemia?",
                 "what is Hypoglycemia?",
-                "explain Hypoglycemia?"
+                "explain Hypoglycemia?",
+                "Hypoglycemia"
             ],
             "responses": [
                 " Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions \u2014 many rare \u2014 can cause low blood sugar in people who don't have diabetes.",
                 " Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions \u2014 many rare \u2014 can cause low blood sugar in people who don't have diabetes."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Hypoglycemia",
@@ -2029,7 +2196,8 @@
                 "If you have Hypoglycemia, you could check in pulse",
                 "If you have Hypoglycemia, you could drink sugary drinks",
                 "If you have Hypoglycemia, you could consult doctor"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Acne",
@@ -2037,12 +2205,14 @@
                 "can you tell me about Acne?",
                 "what do you know about Acne?",
                 "what is Acne?",
-                "explain Acne?"
+                "explain Acne?",
+                "Acne"
             ],
             "responses": [
                 "Acne vulgaris is the formation of comedones, papules, pustules, nodules, and/or cysts as a result of obstruction and inflammation of pilosebaceous units (hair follicles and their accompanying sebaceous gland). Acne develops on the face and upper trunk. It most often affects adolescents.",
                 "Acne vulgaris is the formation of comedones, papules, pustules, nodules, and/or cysts as a result of obstruction and inflammation of pilosebaceous units (hair follicles and their accompanying sebaceous gland). Acne develops on the face and upper trunk. It most often affects adolescents."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Acne",
@@ -2057,7 +2227,8 @@
                 "If you have Acne, you could avoid fatty spicy food",
                 "If you have Acne, you could drink plenty of water",
                 "If you have Acne, you could avoid too many products"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Diabetes",
@@ -2065,12 +2236,14 @@
                 "can you tell me about Diabetes?",
                 "what do you know about Diabetes?",
                 "what is Diabetes?",
-                "explain Diabetes?"
+                "explain Diabetes?",
+                "Diabetes"
             ],
             "responses": [
                 "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy.",
                 "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Diabetes",
@@ -2085,7 +2258,8 @@
                 "If you have Diabetes, you could exercise",
                 "If you have Diabetes, you could consult doctor",
                 "If you have Diabetes, you could follow up"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Impetigo",
@@ -2093,12 +2267,14 @@
                 "can you tell me about Impetigo?",
                 "what do you know about Impetigo?",
                 "what is Impetigo?",
-                "explain Impetigo?"
+                "explain Impetigo?",
+                "Impetigo"
             ],
             "responses": [
                 "Impetigo (im-puh-TIE-go) is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child's nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts.",
                 "Impetigo (im-puh-TIE-go) is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child's nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Impetigo",
@@ -2113,7 +2289,8 @@
                 "If you have Impetigo, you could use antibiotics",
                 "If you have Impetigo, you could remove scabs with wet compressed cloth",
                 "If you have Impetigo, you could consult doctor"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Hypertension",
@@ -2121,12 +2298,14 @@
                 "can you tell me about Hypertension?",
                 "what do you know about Hypertension?",
                 "what is Hypertension?",
-                "explain Hypertension?"
+                "explain Hypertension?",
+                "Hypertension"
             ],
             "responses": [
                 "Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms.",
                 "Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Hypertension",
@@ -2141,7 +2320,8 @@
                 "If you have Hypertension, you could salt baths",
                 "If you have Hypertension, you could reduce stress",
                 "If you have Hypertension, you could get proper sleep"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Peptic ulcer diseae",
@@ -2149,12 +2329,14 @@
                 "can you tell me about Peptic ulcer diseae?",
                 "what do you know about Peptic ulcer diseae?",
                 "what is Peptic ulcer diseae?",
-                "explain Peptic ulcer diseae?"
+                "explain Peptic ulcer diseae?",
+                "Peptic ulcer diseae"
             ],
             "responses": [
                 "Peptic ulcer disease (PUD) is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer.",
                 "Peptic ulcer disease (PUD) is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Peptic ulcer diseae",
@@ -2169,7 +2351,8 @@
                 "If you have Peptic ulcer diseae, you could consume probiotic food",
                 "If you have Peptic ulcer diseae, you could eliminate milk",
                 "If you have Peptic ulcer diseae, you could limit alcohol"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Dimorphic hemorrhoids(piles)",
@@ -2177,12 +2360,14 @@
                 "can you tell me about Dimorphic hemorrhoids(piles)?",
                 "what do you know about Dimorphic hemorrhoids(piles)?",
                 "what is Dimorphic hemorrhoids(piles)?",
-                "explain Dimorphic hemorrhoids(piles)?"
+                "explain Dimorphic hemorrhoids(piles)?",
+                "Dimorphic hemorrhoids(piles)"
             ],
             "responses": [
                 "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease .",
                 "Hemorrhoids, also spelled haemorrhoids, are vascular structures in the anal canal. In their ... Other names, Haemorrhoids, piles, hemorrhoidal disease ."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Dimorphic hemorrhoids(piles)",
@@ -2197,7 +2382,8 @@
                 "If you have Dimorphic hemorrhoids(piles), you could consume witch hazel",
                 "If you have Dimorphic hemorrhoids(piles), you could warm bath with epsom salt",
                 "If you have Dimorphic hemorrhoids(piles), you could consume alovera juice"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Common Cold",
@@ -2205,12 +2391,14 @@
                 "can you tell me about Common Cold?",
                 "what do you know about Common Cold?",
                 "what is Common Cold?",
-                "explain Common Cold?"
+                "explain Common Cold?",
+                "Common Cold"
             ],
             "responses": [
                 "The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold.",
                 "The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Common Cold",
@@ -2225,7 +2413,8 @@
                 "If you have Common Cold, you could take vapour",
                 "If you have Common Cold, you could avoid cold food",
                 "If you have Common Cold, you could keep fever in check"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Chicken pox",
@@ -2233,12 +2422,14 @@
                 "can you tell me about Chicken pox?",
                 "what do you know about Chicken pox?",
                 "what is Chicken pox?",
-                "explain Chicken pox?"
+                "explain Chicken pox?",
+                "Chicken pox"
             ],
             "responses": [
                 "Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters.",
                 "Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Chicken pox",
@@ -2253,7 +2444,8 @@
                 "If you have Chicken pox, you could consume neem leaves",
                 "If you have Chicken pox, you could take vaccine",
                 "If you have Chicken pox, you could avoid public places"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Cervical spondylosis",
@@ -2261,12 +2453,14 @@
                 "can you tell me about Cervical spondylosis?",
                 "what do you know about Cervical spondylosis?",
                 "what is Cervical spondylosis?",
-                "explain Cervical spondylosis?"
+                "explain Cervical spondylosis?",
+                "Cervical spondylosis"
             ],
             "responses": [
                 "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs).",
                 "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs)."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Cervical spondylosis",
@@ -2281,7 +2475,8 @@
                 "If you have Cervical spondylosis, you could exercise",
                 "If you have Cervical spondylosis, you could take otc pain reliver",
                 "If you have Cervical spondylosis, you could consult doctor"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Hyperthyroidism",
@@ -2289,12 +2484,14 @@
                 "can you tell me about Hyperthyroidism?",
                 "what do you know about Hyperthyroidism?",
                 "what is Hyperthyroidism?",
-                "explain Hyperthyroidism?"
+                "explain Hyperthyroidism?",
+                "Hyperthyroidism"
             ],
             "responses": [
                 "Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat.",
                 "Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Hyperthyroidism",
@@ -2309,7 +2506,8 @@
                 "If you have Hyperthyroidism, you could massage",
                 "If you have Hyperthyroidism, you could use lemon balm",
                 "If you have Hyperthyroidism, you could take radioactive iodine treatment"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Urinary tract infection",
@@ -2317,12 +2515,14 @@
                 "can you tell me about Urinary tract infection?",
                 "what do you know about Urinary tract infection?",
                 "what is Urinary tract infection?",
-                "explain Urinary tract infection?"
+                "explain Urinary tract infection?",
+                "Urinary tract infection"
             ],
             "responses": [
                 "Urinary tract infection: An infection of the kidney, ureter, bladder, or urethra. Abbreviated UTI. Not everyone with a UTI has symptoms, but common symptoms include a frequent urge to urinate and pain or burning when urinating.",
                 "Urinary tract infection: An infection of the kidney, ureter, bladder, or urethra. Abbreviated UTI. Not everyone with a UTI has symptoms, but common symptoms include a frequent urge to urinate and pain or burning when urinating."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Urinary tract infection",
@@ -2337,7 +2537,8 @@
                 "If you have Urinary tract infection, you could increase vitamin c intake",
                 "If you have Urinary tract infection, you could drink cranberry juice",
                 "If you have Urinary tract infection, you could take probiotics"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Varicose veins",
@@ -2345,12 +2546,14 @@
                 "can you tell me about Varicose veins?",
                 "what do you know about Varicose veins?",
                 "what is Varicose veins?",
-                "explain Varicose veins?"
+                "explain Varicose veins?",
+                "Varicose veins"
             ],
             "responses": [
                 "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs.",
                 "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Varicose veins",
@@ -2365,7 +2568,8 @@
                 "If you have Varicose veins, you could use oinments",
                 "If you have Varicose veins, you could use vein compression",
                 "If you have Varicose veins, you could dont stand still for long"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_AIDS",
@@ -2373,12 +2577,14 @@
                 "can you tell me about AIDS?",
                 "what do you know about AIDS?",
                 "what is AIDS?",
-                "explain AIDS?"
+                "explain AIDS?",
+                "AIDS"
             ],
             "responses": [
                 "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease.",
                 "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_AIDS",
@@ -2393,7 +2599,8 @@
                 "If you have AIDS, you could wear ppe if possible",
                 "If you have AIDS, you could consult doctor",
                 "If you have AIDS, you could follow up"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Paralysis (brain hemorrhage)",
@@ -2401,12 +2608,14 @@
                 "can you tell me about Paralysis (brain hemorrhage)?",
                 "what do you know about Paralysis (brain hemorrhage)?",
                 "what is Paralysis (brain hemorrhage)?",
-                "explain Paralysis (brain hemorrhage)?"
+                "explain Paralysis (brain hemorrhage)?",
+                "Paralysis (brain hemorrhage)"
             ],
             "responses": [
                 "Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body.",
                 "Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Paralysis (brain hemorrhage)",
@@ -2421,7 +2630,8 @@
                 "If you have Paralysis (brain hemorrhage), you could eat healthy",
                 "If you have Paralysis (brain hemorrhage), you could exercise",
                 "If you have Paralysis (brain hemorrhage), you could consult doctor"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Typhoid",
@@ -2429,12 +2639,14 @@
                 "can you tell me about Typhoid?",
                 "what do you know about Typhoid?",
                 "what is Typhoid?",
-                "explain Typhoid?"
+                "explain Typhoid?",
+                "Typhoid"
             ],
             "responses": [
                 "An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is not usually severe.",
                 "An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is not usually severe."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Typhoid",
@@ -2449,7 +2661,8 @@
                 "If you have Typhoid, you could antiboitic therapy",
                 "If you have Typhoid, you could consult doctor",
                 "If you have Typhoid, you could medication"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Hepatitis B",
@@ -2457,12 +2670,14 @@
                 "can you tell me about Hepatitis B?",
                 "what do you know about Hepatitis B?",
                 "what is Hepatitis B?",
-                "explain Hepatitis B?"
+                "explain Hepatitis B?",
+                "Hepatitis B"
             ],
             "responses": [
                 "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus.",
                 "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Hepatitis B",
@@ -2477,7 +2692,8 @@
                 "If you have Hepatitis B, you could vaccination",
                 "If you have Hepatitis B, you could eat healthy",
                 "If you have Hepatitis B, you could medication"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Fungal infection",
@@ -2485,12 +2701,14 @@
                 "can you tell me about Fungal infection?",
                 "what do you know about Fungal infection?",
                 "what is Fungal infection?",
-                "explain Fungal infection?"
+                "explain Fungal infection?",
+                "Fungal infection"
             ],
             "responses": [
                 "In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle. Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body. Like many microbes, there are helpful fungi and harmful fungi.",
                 "In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle. Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body. Like many microbes, there are helpful fungi and harmful fungi."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Fungal infection",
@@ -2505,7 +2723,8 @@
                 "If you have Fungal infection, you could use detol or neem in bathing water",
                 "If you have Fungal infection, you could keep infected area dry",
                 "If you have Fungal infection, you could use clean cloths"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Hepatitis C",
@@ -2513,12 +2732,14 @@
                 "can you tell me about Hepatitis C?",
                 "what do you know about Hepatitis C?",
                 "what is Hepatitis C?",
-                "explain Hepatitis C?"
+                "explain Hepatitis C?",
+                "Hepatitis C"
             ],
             "responses": [
                 "Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer.",
                 "Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Hepatitis C",
@@ -2533,7 +2754,8 @@
                 "If you have Hepatitis C, you could vaccination",
                 "If you have Hepatitis C, you could eat healthy",
                 "If you have Hepatitis C, you could medication"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Migraine",
@@ -2541,12 +2763,14 @@
                 "can you tell me about Migraine?",
                 "what do you know about Migraine?",
                 "what is Migraine?",
-                "explain Migraine?"
+                "explain Migraine?",
+                "Migraine"
             ],
             "responses": [
                 "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities.",
                 "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Migraine",
@@ -2561,7 +2785,8 @@
                 "If you have Migraine, you could reduce stress",
                 "If you have Migraine, you could use poloroid glasses in sun",
                 "If you have Migraine, you could consult doctor"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Bronchial Asthma",
@@ -2569,12 +2794,14 @@
                 "can you tell me about Bronchial Asthma?",
                 "what do you know about Bronchial Asthma?",
                 "what is Bronchial Asthma?",
-                "explain Bronchial Asthma?"
+                "explain Bronchial Asthma?",
+                "Bronchial Asthma"
             ],
             "responses": [
                 "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working.",
                 "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Bronchial Asthma",
@@ -2589,7 +2816,8 @@
                 "If you have Bronchial Asthma, you could take deep breaths",
                 "If you have Bronchial Asthma, you could get away from trigger",
                 "If you have Bronchial Asthma, you could seek help"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Alcoholic hepatitis",
@@ -2597,12 +2825,14 @@
                 "can you tell me about Alcoholic hepatitis?",
                 "what do you know about Alcoholic hepatitis?",
                 "what is Alcoholic hepatitis?",
-                "explain Alcoholic hepatitis?"
+                "explain Alcoholic hepatitis?",
+                "Alcoholic hepatitis"
             ],
             "responses": [
                 "Alcoholic hepatitis is a diseased, inflammatory condition of the liver caused by heavy alcohol consumption over an extended period of time. It's also aggravated by binge drinking and ongoing alcohol use. If you develop this condition, you must stop drinking alcohol",
                 "Alcoholic hepatitis is a diseased, inflammatory condition of the liver caused by heavy alcohol consumption over an extended period of time. It's also aggravated by binge drinking and ongoing alcohol use. If you develop this condition, you must stop drinking alcohol"
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Alcoholic hepatitis",
@@ -2617,7 +2847,8 @@
                 "If you have Alcoholic hepatitis, you could consult doctor",
                 "If you have Alcoholic hepatitis, you could medication",
                 "If you have Alcoholic hepatitis, you could follow up"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Jaundice",
@@ -2625,12 +2856,14 @@
                 "can you tell me about Jaundice?",
                 "what do you know about Jaundice?",
                 "what is Jaundice?",
-                "explain Jaundice?"
+                "explain Jaundice?",
+                "Jaundice"
             ],
             "responses": [
                 "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it",
                 "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it"
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Jaundice",
@@ -2645,7 +2878,8 @@
                 "If you have Jaundice, you could consume milk thistle",
                 "If you have Jaundice, you could eat fruits and high fiberous food",
                 "If you have Jaundice, you could medication"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Hepatitis E",
@@ -2653,12 +2887,14 @@
                 "can you tell me about Hepatitis E?",
                 "what do you know about Hepatitis E?",
                 "what is Hepatitis E?",
-                "explain Hepatitis E?"
+                "explain Hepatitis E?",
+                "Hepatitis E"
             ],
             "responses": [
                 "A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease.",
                 "A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Hepatitis E",
@@ -2673,7 +2909,8 @@
                 "If you have Hepatitis E, you could rest",
                 "If you have Hepatitis E, you could consult doctor",
                 "If you have Hepatitis E, you could medication"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Dengue",
@@ -2681,12 +2918,14 @@
                 "can you tell me about Dengue?",
                 "what do you know about Dengue?",
                 "what is Dengue?",
-                "explain Dengue?"
+                "explain Dengue?",
+                "Dengue"
             ],
             "responses": [
                 "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever.",
                 "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. \u2014 called also breakbone fever, dengue fever."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Dengue",
@@ -2701,7 +2940,8 @@
                 "If you have Dengue, you could avoid fatty spicy food",
                 "If you have Dengue, you could keep mosquitos away",
                 "If you have Dengue, you could keep hydrated"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Hepatitis D",
@@ -2709,12 +2949,14 @@
                 "can you tell me about Hepatitis D?",
                 "what do you know about Hepatitis D?",
                 "what is Hepatitis D?",
-                "explain Hepatitis D?"
+                "explain Hepatitis D?",
+                "Hepatitis D"
             ],
             "responses": [
                 "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus (HDV).",
                 "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus (HDV)."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Hepatitis D",
@@ -2729,7 +2971,8 @@
                 "If you have Hepatitis D, you could medication",
                 "If you have Hepatitis D, you could eat healthy",
                 "If you have Hepatitis D, you could follow up"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Heart attack",
@@ -2737,12 +2980,14 @@
                 "can you tell me about Heart attack?",
                 "what do you know about Heart attack?",
                 "what is Heart attack?",
-                "explain Heart attack?"
+                "explain Heart attack?",
+                "Heart attack"
             ],
             "responses": [
                 "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle.",
                 "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Heart attack",
@@ -2757,7 +3002,8 @@
                 "If you have Heart attack, you could chew or swallow asprin",
                 "If you have Heart attack, you could keep calm",
                 "If you have Heart attack, you could <NA>"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Pneumonia",
@@ -2765,12 +3011,14 @@
                 "can you tell me about Pneumonia?",
                 "what do you know about Pneumonia?",
                 "what is Pneumonia?",
-                "explain Pneumonia?"
+                "explain Pneumonia?",
+                "Pneumonia"
             ],
             "responses": [
                 "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe.",
                 "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Pneumonia",
@@ -2785,7 +3033,8 @@
                 "If you have Pneumonia, you could medication",
                 "If you have Pneumonia, you could rest",
                 "If you have Pneumonia, you could follow up"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Arthritis",
@@ -2793,12 +3042,14 @@
                 "can you tell me about Arthritis?",
                 "what do you know about Arthritis?",
                 "what is Arthritis?",
-                "explain Arthritis?"
+                "explain Arthritis?",
+                "Arthritis"
             ],
             "responses": [
                 "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis.",
                 "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Arthritis",
@@ -2813,7 +3064,8 @@
                 "If you have Arthritis, you could use hot and cold therapy",
                 "If you have Arthritis, you could try acupuncture",
                 "If you have Arthritis, you could massage"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Gastroenteritis",
@@ -2821,12 +3073,14 @@
                 "can you tell me about Gastroenteritis?",
                 "what do you know about Gastroenteritis?",
                 "what is Gastroenteritis?",
-                "explain Gastroenteritis?"
+                "explain Gastroenteritis?",
+                "Gastroenteritis"
             ],
             "responses": [
                 "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting .",
                 "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting ."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Gastroenteritis",
@@ -2841,7 +3095,8 @@
                 "If you have Gastroenteritis, you could try taking small sips of water",
                 "If you have Gastroenteritis, you could rest",
                 "If you have Gastroenteritis, you could ease back into eating"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "describe_Tuberculosis",
@@ -2849,12 +3104,14 @@
                 "can you tell me about Tuberculosis?",
                 "what do you know about Tuberculosis?",
                 "what is Tuberculosis?",
-                "explain Tuberculosis?"
+                "explain Tuberculosis?",
+                "Tuberculosis"
             ],
             "responses": [
                 "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis.",
                 "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis."
-            ]
+            ],
+            "context": "about diseases"
         },
         {
             "labels": "precaution_Tuberculosis",
@@ -2869,19 +3126,24 @@
                 "If you have Tuberculosis, you could consult doctor",
                 "If you have Tuberculosis, you could medication",
                 "If you have Tuberculosis, you could rest"
-            ]
+            ],
+            "context": "disease precautions"
         },
         {
             "labels": "greeting",
             "patterns": [
                 "hi",
                 "hey",
-                "hello"
+                "hello",
+                "yo",
+                "G'day"
             ],
             "responses": [
+                "Hello, How can I help you today?",
                 "Hello there! My name is Sam. What can I do for you?",
                 "Hi, what can I do for you?"
-            ]
+            ],
+            "context": "opening"
         },
         {
             "labels": "goodbye",
@@ -2896,7 +3158,8 @@
                 "See you!",
                 "Have a nice day",
                 "Bye! Come back again soon."
-            ]
+            ],
+            "context": "closing"
         },
         {
             "labels": "thanks",
@@ -2911,7 +3174,8 @@
                 "Happy to help!",
                 "Any time!",
                 "My pleasure"
-            ]
+            ],
+            "context": "appreciations"
         },
         {
             "labels": "options",
@@ -2923,7 +3187,8 @@
             "responses": [
                 "I will help you figure out what might possibly be the problem",
                 "I am someone to talk to to learn about diseases, what to try if you have a particular disease and give you a possible idea of what disease you may have if you are experiencing symptoms."
-            ]
+            ],
+            "context": "bot's capability"
         }
     ]
 }
