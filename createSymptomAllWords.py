@@ -7,6 +7,7 @@ from nltk_utils import bag_of_words, tokenize, stem
 all_symptoms = [] #list type
 disease_labels = []
 xy = []
+emergency_symptom = []
 
 #read dataset and cast values as strings
 df = pd.read_csv("datasets/dataset.csv", dtype = "string") #4920 rows  x 18 cols
@@ -36,6 +37,8 @@ for row in range(len(df_train["Disease"])):
         word = df_train.iloc[row, i]
         all_symptoms.extend(tokenize(' '.join(word.split("_"))))
         temp_symptoms.extend(tokenize(' '.join(word.split("_"))))
+        
+        
     xy.append((temp_symptoms, value))    
 
 ignore_words = [
@@ -51,6 +54,7 @@ ignore_words = [
     ]
 
 all_symptoms = [stem(w) for w in all_symptoms if w not in ignore_words]
+
 #remove duplicates from list and sort
 #sets are easier for comparing too
 all_symptoms = sorted(set(all_symptoms))
@@ -85,6 +89,35 @@ for disease in disease_labels:
 
 
 ###################################################################
+
+#Trying to do the emergency thing
+
+for i in range(len(disease_labels)):
+    if ("Hypertension" in disease_labels[i]):
+        emergency_symptom.extend(disease_symptoms[i])
+
+for j in range(len(disease_labels)):
+    if ("Heart attack" in disease_labels[j]):
+        emergency_symptom.extend(disease_symptoms[j])
+#emergency_symptom = list(emergency_symptom) 
+
+#print("all symptoms are:  ",all_symptoms)
+for row in emergency_symptom:
+    words = row.split()
+    for i in len(words):
+        emergency_symptom.extend(tokenize(' '.join(i.split("_"))))
+    #print(words)
+
+    #emergency_symptom.extend(tokenize(' '.join(words_in.split("_"))))
+        
+
+emergency_symptom = [stem(w) for w in emergency_symptom if w not in ignore_words]
+
+print("The emergency symptoms found are:",emergency_symptom )
+#print("all: ", all_symptoms)
+##################################################################
+
+
 # create training data
 X_train_symptom = []
 y_train_symptom = []
@@ -106,7 +139,8 @@ y_train_symptom = np.array(y_train_symptom)
 data = {
 "all_words": all_symptoms,
 "labels": disease_labels,
-"disease_symptoms":disease_symptoms
+"disease_symptoms":disease_symptoms,
+"emergency_symptoms":emergency_symptom
 }
 torch.save(data, "disease.pth")
 print("symptoms and diseases saved to disease.pth")

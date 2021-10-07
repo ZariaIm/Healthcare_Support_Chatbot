@@ -43,18 +43,8 @@ add = {
             "context": "predicted disease"
         }
 write_json(add)
-##################################################################
-#Trying to do the emergency thing
-emergency_symptom = []
-for i in range(len(disease_labels)):
-    if ("Hypertension" in disease_labels[i]):
-        emergency_symptom.append(disease_symptoms[i])
 
-for j in range(len(disease_labels)):
-    if ("Heart attack" in disease_labels[j]):
-        emergency_symptom.append(disease_symptoms[j])
-        
-print("The emergency symptoms found are:",emergency_symptom )
+
 ##################################################################
 # using the dataset of diseases related to which symptoms
 
@@ -62,7 +52,7 @@ df = pd.read_csv("datasets/dataset.csv", dtype = "string") #4920 rows  x 18 cols
 df = df.fillna(" ")
 
 temp = []
-emergency = []
+
 for i in range(1,18):
     for word in df[f"Symptom_{i}"]:
         symptom = ((' '.join(word.split("_"))))

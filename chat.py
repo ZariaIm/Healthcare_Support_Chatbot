@@ -18,18 +18,25 @@ FILE = "chat.pth"
 [all_words, chat_labels] = load_saved_words(FILE)
 FILE = "disease.pth"
 [all_symptoms, disease_labels, disease_symptoms] = load_saved_symptoms(FILE)
+#################
+#printing all symptoms to see the format
 
+
+#####################
 bot_name = "Sam"
 user_name = "You"
 
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
-
+from createIntentAllWords import emergency_symptom
 def get_response(msg):
     sentence = tokenize(msg)
     for word in sentence:
         if word in all_symptoms:
             store_symptom(word)
+        if word in emergency_symptom:
+            return "Please call 000"
+
     #Predicting intent for chatbot
     X = bag_of_words(sentence, all_words)
     [label_intent, prob_intent] = predict_intent(device, X,chat_labels, chatbot_model)
