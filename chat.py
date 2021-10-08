@@ -1,6 +1,7 @@
 import random
 import json
 import torch
+import nltk
 from nltk_utils import bag_of_words, tokenize, stem
 from chat_utils import load_saved_model, load_saved_symptoms, load_saved_words, predict_disease, predict_intent, store_symptom
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -48,6 +49,22 @@ def get_response(msg):
                             store_symptom(word)
                         if word in emergency_symptoms:
                             return random.choice(intent['responses']) + "\n Please call 000 if you are experiencing severe symptoms"
+                if intent["context"] == "asking symptoms":
+                    temp = []
+                    temp_labels = [((disease).split()) for disease in disease_labels]
+                    for i in temp_labels:
+                        temp_temp = []
+                        for j in range(len(i)):
+                            temp_temp.append(stem(i[j]))
+                        temp.append(temp_temp)
+                    for word in sentence:
+                        disease_ctr = 0
+                        for disease in temp:
+                            if stem(word) in disease:
+                                i = disease.index(stem(word))
+                                return f"The symptoms of {disease_labels[disease_ctr]} are {disease_symptoms[disease_ctr]}"
+                            disease_ctr += 1
+                    return "I didn't quite catch which disease that was"
                 return random.choice(intent['responses'])
         ###########################################################################
             ctr +=1

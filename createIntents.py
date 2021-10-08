@@ -1,7 +1,6 @@
 import json
 import torch
 from nltk_utils import bag_of_words, tokenize
-from createSymptomAllWords import disease_symptoms,disease_labels
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 import pandas as pd
@@ -90,6 +89,15 @@ for row in range(len(df_description)):
                 f"If you have {disease}, you could {precaution4}"
                 ],
                 "context":"disease precautions"
+            }
+    write_json(add)
+    add = {"labels":f"symptoms_of_{disease}",
+            "patterns": [
+                f"what are the symptoms of {disease}?",
+                f"how would i know if i have {disease}?", 
+                f"how to tell if its {disease}?", 
+                ],
+                "context":"asking symptoms"
             }
     write_json(add)
 #################################################################

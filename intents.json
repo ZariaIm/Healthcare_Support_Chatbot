@@ -2144,6 +2144,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Drug Reaction",
+            "patterns": [
+                "what are the symptoms of Drug Reaction?",
+                "how would i know if i have Drug Reaction?",
+                "how to tell if its Drug Reaction?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Malaria",
             "patterns": [
                 "can you tell me about Malaria?",
@@ -2173,6 +2182,15 @@
                 "If you have Malaria, you could keep mosquitos out"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Malaria",
+            "patterns": [
+                "what are the symptoms of Malaria?",
+                "how would i know if i have Malaria?",
+                "how to tell if its Malaria?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Allergy",
@@ -2206,6 +2224,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Allergy",
+            "patterns": [
+                "what are the symptoms of Allergy?",
+                "how would i know if i have Allergy?",
+                "how to tell if its Allergy?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Hypothyroidism",
             "patterns": [
                 "can you tell me about Hypothyroidism?",
@@ -2235,6 +2262,15 @@
                 "If you have Hypothyroidism, you could get proper sleep"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Hypothyroidism",
+            "patterns": [
+                "what are the symptoms of Hypothyroidism?",
+                "how would i know if i have Hypothyroidism?",
+                "how to tell if its Hypothyroidism?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Psoriasis",
@@ -2268,6 +2304,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Psoriasis",
+            "patterns": [
+                "what are the symptoms of Psoriasis?",
+                "how would i know if i have Psoriasis?",
+                "how to tell if its Psoriasis?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_GERD",
             "patterns": [
                 "can you tell me about GERD?",
@@ -2297,6 +2342,15 @@
                 "If you have GERD, you could exercise"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_GERD",
+            "patterns": [
+                "what are the symptoms of GERD?",
+                "how would i know if i have GERD?",
+                "how to tell if its GERD?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Chronic cholestasis",
@@ -2330,6 +2384,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Chronic cholestasis",
+            "patterns": [
+                "what are the symptoms of Chronic cholestasis?",
+                "how would i know if i have Chronic cholestasis?",
+                "how to tell if its Chronic cholestasis?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_hepatitis A",
             "patterns": [
                 "can you tell me about hepatitis A?",
@@ -2359,6 +2422,15 @@
                 "If you have hepatitis A, you could medication"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_hepatitis A",
+            "patterns": [
+                "what are the symptoms of hepatitis A?",
+                "how would i know if i have hepatitis A?",
+                "how to tell if its hepatitis A?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Osteoarthristis",
@@ -2392,6 +2464,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Osteoarthristis",
+            "patterns": [
+                "what are the symptoms of Osteoarthristis?",
+                "how would i know if i have Osteoarthristis?",
+                "how to tell if its Osteoarthristis?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_(vertigo) Paroymsal  Positional Vertigo",
             "patterns": [
                 "can you tell me about (vertigo) Paroymsal  Positional Vertigo?",
@@ -2421,6 +2502,15 @@
                 "If you have (vertigo) Paroymsal  Positional Vertigo, you could relax"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_(vertigo) Paroymsal  Positional Vertigo",
+            "patterns": [
+                "what are the symptoms of (vertigo) Paroymsal  Positional Vertigo?",
+                "how would i know if i have (vertigo) Paroymsal  Positional Vertigo?",
+                "how to tell if its (vertigo) Paroymsal  Positional Vertigo?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Hypoglycemia",
@@ -2454,6 +2544,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Hypoglycemia",
+            "patterns": [
+                "what are the symptoms of Hypoglycemia?",
+                "how would i know if i have Hypoglycemia?",
+                "how to tell if its Hypoglycemia?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Acne",
             "patterns": [
                 "can you tell me about Acne?",
@@ -2483,6 +2582,15 @@
                 "If you have Acne, you could avoid too many products"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Acne",
+            "patterns": [
+                "what are the symptoms of Acne?",
+                "how would i know if i have Acne?",
+                "how to tell if its Acne?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Diabetes",
@@ -2516,6 +2624,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Diabetes",
+            "patterns": [
+                "what are the symptoms of Diabetes?",
+                "how would i know if i have Diabetes?",
+                "how to tell if its Diabetes?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Impetigo",
             "patterns": [
                 "can you tell me about Impetigo?",
@@ -2545,6 +2662,15 @@
                 "If you have Impetigo, you could consult doctor"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Impetigo",
+            "patterns": [
+                "what are the symptoms of Impetigo?",
+                "how would i know if i have Impetigo?",
+                "how to tell if its Impetigo?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Hypertension",
@@ -2578,6 +2704,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Hypertension",
+            "patterns": [
+                "what are the symptoms of Hypertension?",
+                "how would i know if i have Hypertension?",
+                "how to tell if its Hypertension?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Peptic ulcer diseae",
             "patterns": [
                 "can you tell me about Peptic ulcer diseae?",
@@ -2607,6 +2742,15 @@
                 "If you have Peptic ulcer diseae, you could limit alcohol"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Peptic ulcer diseae",
+            "patterns": [
+                "what are the symptoms of Peptic ulcer diseae?",
+                "how would i know if i have Peptic ulcer diseae?",
+                "how to tell if its Peptic ulcer diseae?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Dimorphic hemorrhoids(piles)",
@@ -2640,6 +2784,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Dimorphic hemorrhoids(piles)",
+            "patterns": [
+                "what are the symptoms of Dimorphic hemorrhoids(piles)?",
+                "how would i know if i have Dimorphic hemorrhoids(piles)?",
+                "how to tell if its Dimorphic hemorrhoids(piles)?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Common Cold",
             "patterns": [
                 "can you tell me about Common Cold?",
@@ -2669,6 +2822,15 @@
                 "If you have Common Cold, you could keep fever in check"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Common Cold",
+            "patterns": [
+                "what are the symptoms of Common Cold?",
+                "how would i know if i have Common Cold?",
+                "how to tell if its Common Cold?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Chicken pox",
@@ -2702,6 +2864,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Chicken pox",
+            "patterns": [
+                "what are the symptoms of Chicken pox?",
+                "how would i know if i have Chicken pox?",
+                "how to tell if its Chicken pox?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Cervical spondylosis",
             "patterns": [
                 "can you tell me about Cervical spondylosis?",
@@ -2731,6 +2902,15 @@
                 "If you have Cervical spondylosis, you could consult doctor"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Cervical spondylosis",
+            "patterns": [
+                "what are the symptoms of Cervical spondylosis?",
+                "how would i know if i have Cervical spondylosis?",
+                "how to tell if its Cervical spondylosis?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Hyperthyroidism",
@@ -2764,6 +2944,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Hyperthyroidism",
+            "patterns": [
+                "what are the symptoms of Hyperthyroidism?",
+                "how would i know if i have Hyperthyroidism?",
+                "how to tell if its Hyperthyroidism?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Urinary tract infection",
             "patterns": [
                 "can you tell me about Urinary tract infection?",
@@ -2793,6 +2982,15 @@
                 "If you have Urinary tract infection, you could take probiotics"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Urinary tract infection",
+            "patterns": [
+                "what are the symptoms of Urinary tract infection?",
+                "how would i know if i have Urinary tract infection?",
+                "how to tell if its Urinary tract infection?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Varicose veins",
@@ -2826,6 +3024,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Varicose veins",
+            "patterns": [
+                "what are the symptoms of Varicose veins?",
+                "how would i know if i have Varicose veins?",
+                "how to tell if its Varicose veins?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_AIDS",
             "patterns": [
                 "can you tell me about AIDS?",
@@ -2855,6 +3062,15 @@
                 "If you have AIDS, you could follow up"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_AIDS",
+            "patterns": [
+                "what are the symptoms of AIDS?",
+                "how would i know if i have AIDS?",
+                "how to tell if its AIDS?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Paralysis (brain hemorrhage)",
@@ -2888,6 +3104,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Paralysis (brain hemorrhage)",
+            "patterns": [
+                "what are the symptoms of Paralysis (brain hemorrhage)?",
+                "how would i know if i have Paralysis (brain hemorrhage)?",
+                "how to tell if its Paralysis (brain hemorrhage)?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Typhoid",
             "patterns": [
                 "can you tell me about Typhoid?",
@@ -2917,6 +3142,15 @@
                 "If you have Typhoid, you could medication"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Typhoid",
+            "patterns": [
+                "what are the symptoms of Typhoid?",
+                "how would i know if i have Typhoid?",
+                "how to tell if its Typhoid?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Hepatitis B",
@@ -2950,6 +3184,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Hepatitis B",
+            "patterns": [
+                "what are the symptoms of Hepatitis B?",
+                "how would i know if i have Hepatitis B?",
+                "how to tell if its Hepatitis B?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Fungal infection",
             "patterns": [
                 "can you tell me about Fungal infection?",
@@ -2979,6 +3222,15 @@
                 "If you have Fungal infection, you could use clean cloths"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Fungal infection",
+            "patterns": [
+                "what are the symptoms of Fungal infection?",
+                "how would i know if i have Fungal infection?",
+                "how to tell if its Fungal infection?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Hepatitis C",
@@ -3012,6 +3264,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Hepatitis C",
+            "patterns": [
+                "what are the symptoms of Hepatitis C?",
+                "how would i know if i have Hepatitis C?",
+                "how to tell if its Hepatitis C?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Migraine",
             "patterns": [
                 "can you tell me about Migraine?",
@@ -3041,6 +3302,15 @@
                 "If you have Migraine, you could consult doctor"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Migraine",
+            "patterns": [
+                "what are the symptoms of Migraine?",
+                "how would i know if i have Migraine?",
+                "how to tell if its Migraine?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Bronchial Asthma",
@@ -3074,6 +3344,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Bronchial Asthma",
+            "patterns": [
+                "what are the symptoms of Bronchial Asthma?",
+                "how would i know if i have Bronchial Asthma?",
+                "how to tell if its Bronchial Asthma?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Alcoholic hepatitis",
             "patterns": [
                 "can you tell me about Alcoholic hepatitis?",
@@ -3103,6 +3382,15 @@
                 "If you have Alcoholic hepatitis, you could follow up"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Alcoholic hepatitis",
+            "patterns": [
+                "what are the symptoms of Alcoholic hepatitis?",
+                "how would i know if i have Alcoholic hepatitis?",
+                "how to tell if its Alcoholic hepatitis?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Jaundice",
@@ -3136,6 +3424,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Jaundice",
+            "patterns": [
+                "what are the symptoms of Jaundice?",
+                "how would i know if i have Jaundice?",
+                "how to tell if its Jaundice?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Hepatitis E",
             "patterns": [
                 "can you tell me about Hepatitis E?",
@@ -3165,6 +3462,15 @@
                 "If you have Hepatitis E, you could medication"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Hepatitis E",
+            "patterns": [
+                "what are the symptoms of Hepatitis E?",
+                "how would i know if i have Hepatitis E?",
+                "how to tell if its Hepatitis E?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Dengue",
@@ -3198,6 +3504,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Dengue",
+            "patterns": [
+                "what are the symptoms of Dengue?",
+                "how would i know if i have Dengue?",
+                "how to tell if its Dengue?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Hepatitis D",
             "patterns": [
                 "can you tell me about Hepatitis D?",
@@ -3227,6 +3542,15 @@
                 "If you have Hepatitis D, you could follow up"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Hepatitis D",
+            "patterns": [
+                "what are the symptoms of Hepatitis D?",
+                "how would i know if i have Hepatitis D?",
+                "how to tell if its Hepatitis D?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Heart attack",
@@ -3260,6 +3584,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Heart attack",
+            "patterns": [
+                "what are the symptoms of Heart attack?",
+                "how would i know if i have Heart attack?",
+                "how to tell if its Heart attack?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Pneumonia",
             "patterns": [
                 "can you tell me about Pneumonia?",
@@ -3289,6 +3622,15 @@
                 "If you have Pneumonia, you could follow up"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Pneumonia",
+            "patterns": [
+                "what are the symptoms of Pneumonia?",
+                "how would i know if i have Pneumonia?",
+                "how to tell if its Pneumonia?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "describe_Arthritis",
@@ -3322,6 +3664,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Arthritis",
+            "patterns": [
+                "what are the symptoms of Arthritis?",
+                "how would i know if i have Arthritis?",
+                "how to tell if its Arthritis?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Gastroenteritis",
             "patterns": [
                 "can you tell me about Gastroenteritis?",
@@ -3353,6 +3704,15 @@
             "context": "disease precautions"
         },
         {
+            "labels": "symptoms_of_Gastroenteritis",
+            "patterns": [
+                "what are the symptoms of Gastroenteritis?",
+                "how would i know if i have Gastroenteritis?",
+                "how to tell if its Gastroenteritis?"
+            ],
+            "context": "asking symptoms"
+        },
+        {
             "labels": "describe_Tuberculosis",
             "patterns": [
                 "can you tell me about Tuberculosis?",
@@ -3382,6 +3742,15 @@
                 "If you have Tuberculosis, you could rest"
             ],
             "context": "disease precautions"
+        },
+        {
+            "labels": "symptoms_of_Tuberculosis",
+            "patterns": [
+                "what are the symptoms of Tuberculosis?",
+                "how would i know if i have Tuberculosis?",
+                "how to tell if its Tuberculosis?"
+            ],
+            "context": "asking symptoms"
         },
         {
             "labels": "greeting",

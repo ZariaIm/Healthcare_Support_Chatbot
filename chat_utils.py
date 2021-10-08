@@ -1,9 +1,8 @@
 
 import json
 import torch
-from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
-
+from model import LinearNet
+from nltk_utils import bag_of_words
 
 def load_saved_model(device, FILE):
     data = torch.load(FILE)
@@ -11,7 +10,7 @@ def load_saved_model(device, FILE):
     hidden_size = data["hidden_size"]
     output_size = data["output_size"]
     model_state = data["model_state"]
-    model = NeuralNet(input_size, hidden_size, output_size).to(device)
+    model = LinearNet(input_size, hidden_size, output_size).to(device)
     model.load_state_dict(model_state)
     model.eval()
     return model
@@ -48,7 +47,6 @@ def predict_intent(device, X, y, model):
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
     return label, prob
-
 
 def store_symptom(word):
     add = {"symptom":f"{word}"}
