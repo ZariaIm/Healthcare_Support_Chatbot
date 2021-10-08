@@ -27,7 +27,8 @@ def load_saved_symptoms(FILE):
     all_words = data["all_words"]
     labels = data["labels"]
     disease_symptoms = data["disease_symptoms"]
-    return all_words, labels,disease_symptoms
+    emergency_symptoms = data["emergency_symptoms"]
+    return all_words, labels,disease_symptoms, emergency_symptoms
 
 def write_json(new_data, filename='storedSymptoms.json'):
     with open(filename,'r+') as file:
@@ -47,6 +48,7 @@ def predict_intent(device, X, y, model):
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
     return label, prob
+
 
 def store_symptom(word):
     add = {"symptom":f"{word}"}

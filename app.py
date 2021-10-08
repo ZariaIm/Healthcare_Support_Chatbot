@@ -20,7 +20,7 @@ class ChatApplication:
     def _setup_main_window(self):
         self.window.title("Healthcare Support Bot")
         self.window.resizable(width=False, height=False)
-        self.window.configure(width=1000, height=600, bg=BG_COLOR)
+        self.window.configure(width=500, height=600, bg=BG_COLOR)
         
 
         # head label

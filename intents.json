@@ -1,1862 +1,2116 @@
 {
     "intents": [
         {
-            "labels": "ask disease",
-            "patterns": [
-                "what do you think i have?",
-                "why am i sick?",
-                "What is wrong with me?",
-                "can you tell me what is wrong?"
-            ],
-            "context": "predicted disease"
-        },
-        {
             "labels": "talking about itching",
             "patterns": [
                 "itching",
                 "I'm in itching",
-                "what do i do if i have itching",
-                "i have itching"
+                "I'm itching",
+                "I've got a itching",
+                "i have itching",
+                "I have a itching"
             ],
             "responses": [
                 "ah...itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah.... itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  skin rash",
             "patterns": [
                 " skin rash",
                 "I'm in  skin rash",
-                "what do i do if i have  skin rash",
-                "i have  skin rash"
+                "I'm  skin rash",
+                "I've got a  skin rash",
+                "i have  skin rash",
+                "I have a  skin rash"
             ],
             "responses": [
                 "ah... skin rash. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  skin rash. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  continuous sneezing",
             "patterns": [
                 " continuous sneezing",
                 "I'm in  continuous sneezing",
-                "what do i do if i have  continuous sneezing",
-                "i have  continuous sneezing"
+                "I'm  continuous sneezing",
+                "I've got a  continuous sneezing",
+                "i have  continuous sneezing",
+                "I have a  continuous sneezing"
             ],
             "responses": [
                 "ah... continuous sneezing. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  continuous sneezing. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  shivering",
             "patterns": [
                 " shivering",
                 "I'm in  shivering",
-                "what do i do if i have  shivering",
-                "i have  shivering"
+                "I'm  shivering",
+                "I've got a  shivering",
+                "i have  shivering",
+                "I have a  shivering"
             ],
             "responses": [
                 "ah... shivering. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  shivering. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  stomach pain",
             "patterns": [
                 " stomach pain",
                 "I'm in  stomach pain",
-                "what do i do if i have  stomach pain",
-                "i have  stomach pain"
+                "I'm  stomach pain",
+                "I've got a  stomach pain",
+                "i have  stomach pain",
+                "I have a  stomach pain"
             ],
             "responses": [
                 "ah... stomach pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  stomach pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  acidity",
             "patterns": [
                 " acidity",
                 "I'm in  acidity",
-                "what do i do if i have  acidity",
-                "i have  acidity"
+                "I'm  acidity",
+                "I've got a  acidity",
+                "i have  acidity",
+                "I have a  acidity"
             ],
             "responses": [
                 "ah... acidity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  acidity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  vomiting",
             "patterns": [
                 " vomiting",
                 "I'm in  vomiting",
-                "what do i do if i have  vomiting",
-                "i have  vomiting"
+                "I'm  vomiting",
+                "I've got a  vomiting",
+                "i have  vomiting",
+                "I have a  vomiting"
             ],
             "responses": [
                 "ah... vomiting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  vomiting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  indigestion",
             "patterns": [
                 " indigestion",
                 "I'm in  indigestion",
-                "what do i do if i have  indigestion",
-                "i have  indigestion"
+                "I'm  indigestion",
+                "I've got a  indigestion",
+                "i have  indigestion",
+                "I have a  indigestion"
             ],
             "responses": [
                 "ah... indigestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  indigestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  muscle wasting",
             "patterns": [
                 " muscle wasting",
                 "I'm in  muscle wasting",
-                "what do i do if i have  muscle wasting",
-                "i have  muscle wasting"
+                "I'm  muscle wasting",
+                "I've got a  muscle wasting",
+                "i have  muscle wasting",
+                "I have a  muscle wasting"
             ],
             "responses": [
                 "ah... muscle wasting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  muscle wasting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  patches in throat",
             "patterns": [
                 " patches in throat",
                 "I'm in  patches in throat",
-                "what do i do if i have  patches in throat",
-                "i have  patches in throat"
+                "I'm  patches in throat",
+                "I've got a  patches in throat",
+                "i have  patches in throat",
+                "I have a  patches in throat"
             ],
             "responses": [
                 "ah... patches in throat. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  patches in throat. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  fatigue",
             "patterns": [
                 " fatigue",
                 "I'm in  fatigue",
-                "what do i do if i have  fatigue",
-                "i have  fatigue"
+                "I'm  fatigue",
+                "I've got a  fatigue",
+                "i have  fatigue",
+                "I have a  fatigue"
             ],
             "responses": [
                 "ah... fatigue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  fatigue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  weight loss",
             "patterns": [
                 " weight loss",
                 "I'm in  weight loss",
-                "what do i do if i have  weight loss",
-                "i have  weight loss"
+                "I'm  weight loss",
+                "I've got a  weight loss",
+                "i have  weight loss",
+                "I have a  weight loss"
             ],
             "responses": [
                 "ah... weight loss. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  weight loss. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  sunken eyes",
             "patterns": [
                 " sunken eyes",
                 "I'm in  sunken eyes",
-                "what do i do if i have  sunken eyes",
-                "i have  sunken eyes"
+                "I'm  sunken eyes",
+                "I've got a  sunken eyes",
+                "i have  sunken eyes",
+                "I have a  sunken eyes"
             ],
             "responses": [
                 "ah... sunken eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  sunken eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  cough",
             "patterns": [
                 " cough",
                 "I'm in  cough",
-                "what do i do if i have  cough",
-                "i have  cough"
+                "I'm  cough",
+                "I've got a  cough",
+                "i have  cough",
+                "I have a  cough"
             ],
             "responses": [
                 "ah... cough. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  cough. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  headache",
             "patterns": [
                 " headache",
                 "I'm in  headache",
-                "what do i do if i have  headache",
-                "i have  headache"
+                "I'm  headache",
+                "I've got a  headache",
+                "i have  headache",
+                "I have a  headache"
             ],
             "responses": [
                 "ah... headache. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  headache. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  chest pain",
             "patterns": [
                 " chest pain",
                 "I'm in  chest pain",
-                "what do i do if i have  chest pain",
-                "i have  chest pain"
+                "I'm  chest pain",
+                "I've got a  chest pain",
+                "i have  chest pain",
+                "I have a  chest pain"
             ],
             "responses": [
                 "ah... chest pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  chest pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  back pain",
             "patterns": [
                 " back pain",
                 "I'm in  back pain",
-                "what do i do if i have  back pain",
-                "i have  back pain"
+                "I'm  back pain",
+                "I've got a  back pain",
+                "i have  back pain",
+                "I have a  back pain"
             ],
             "responses": [
                 "ah... back pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  back pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  weakness in limbs",
             "patterns": [
                 " weakness in limbs",
                 "I'm in  weakness in limbs",
-                "what do i do if i have  weakness in limbs",
-                "i have  weakness in limbs"
+                "I'm  weakness in limbs",
+                "I've got a  weakness in limbs",
+                "i have  weakness in limbs",
+                "I have a  weakness in limbs"
             ],
             "responses": [
                 "ah... weakness in limbs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  weakness in limbs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  chills",
             "patterns": [
                 " chills",
                 "I'm in  chills",
-                "what do i do if i have  chills",
-                "i have  chills"
+                "I'm  chills",
+                "I've got a  chills",
+                "i have  chills",
+                "I have a  chills"
             ],
             "responses": [
                 "ah... chills. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  chills. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  joint pain",
             "patterns": [
                 " joint pain",
                 "I'm in  joint pain",
-                "what do i do if i have  joint pain",
-                "i have  joint pain"
+                "I'm  joint pain",
+                "I've got a  joint pain",
+                "i have  joint pain",
+                "I have a  joint pain"
             ],
             "responses": [
                 "ah... joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  yellowish skin",
             "patterns": [
                 " yellowish skin",
                 "I'm in  yellowish skin",
-                "what do i do if i have  yellowish skin",
-                "i have  yellowish skin"
+                "I'm  yellowish skin",
+                "I've got a  yellowish skin",
+                "i have  yellowish skin",
+                "I have a  yellowish skin"
             ],
             "responses": [
                 "ah... yellowish skin. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  yellowish skin. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  constipation",
             "patterns": [
                 " constipation",
                 "I'm in  constipation",
-                "what do i do if i have  constipation",
-                "i have  constipation"
+                "I'm  constipation",
+                "I've got a  constipation",
+                "i have  constipation",
+                "I have a  constipation"
             ],
             "responses": [
                 "ah... constipation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  constipation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  pain during bowel movements",
             "patterns": [
                 " pain during bowel movements",
                 "I'm in  pain during bowel movements",
-                "what do i do if i have  pain during bowel movements",
-                "i have  pain during bowel movements"
+                "I'm  pain during bowel movements",
+                "I've got a  pain during bowel movements",
+                "i have  pain during bowel movements",
+                "I have a  pain during bowel movements"
             ],
             "responses": [
                 "ah... pain during bowel movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  pain during bowel movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  breathlessness",
             "patterns": [
                 " breathlessness",
                 "I'm in  breathlessness",
-                "what do i do if i have  breathlessness",
-                "i have  breathlessness"
+                "I'm  breathlessness",
+                "I've got a  breathlessness",
+                "i have  breathlessness",
+                "I have a  breathlessness"
             ],
             "responses": [
                 "ah... breathlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  breathlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  cramps",
             "patterns": [
                 " cramps",
                 "I'm in  cramps",
-                "what do i do if i have  cramps",
-                "i have  cramps"
+                "I'm  cramps",
+                "I've got a  cramps",
+                "i have  cramps",
+                "I have a  cramps"
             ],
             "responses": [
                 "ah... cramps. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  cramps. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  weight gain",
             "patterns": [
                 " weight gain",
                 "I'm in  weight gain",
-                "what do i do if i have  weight gain",
-                "i have  weight gain"
+                "I'm  weight gain",
+                "I've got a  weight gain",
+                "i have  weight gain",
+                "I have a  weight gain"
             ],
             "responses": [
                 "ah... weight gain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  weight gain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  mood swings",
             "patterns": [
                 " mood swings",
                 "I'm in  mood swings",
-                "what do i do if i have  mood swings",
-                "i have  mood swings"
+                "I'm  mood swings",
+                "I've got a  mood swings",
+                "i have  mood swings",
+                "I have a  mood swings"
             ],
             "responses": [
                 "ah... mood swings. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  mood swings. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  neck pain",
             "patterns": [
                 " neck pain",
                 "I'm in  neck pain",
-                "what do i do if i have  neck pain",
-                "i have  neck pain"
+                "I'm  neck pain",
+                "I've got a  neck pain",
+                "i have  neck pain",
+                "I have a  neck pain"
             ],
             "responses": [
                 "ah... neck pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  neck pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  muscle weakness",
             "patterns": [
                 " muscle weakness",
                 "I'm in  muscle weakness",
-                "what do i do if i have  muscle weakness",
-                "i have  muscle weakness"
+                "I'm  muscle weakness",
+                "I've got a  muscle weakness",
+                "i have  muscle weakness",
+                "I have a  muscle weakness"
             ],
             "responses": [
                 "ah... muscle weakness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  muscle weakness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  stiff neck",
             "patterns": [
                 " stiff neck",
                 "I'm in  stiff neck",
-                "what do i do if i have  stiff neck",
-                "i have  stiff neck"
+                "I'm  stiff neck",
+                "I've got a  stiff neck",
+                "i have  stiff neck",
+                "I have a  stiff neck"
             ],
             "responses": [
                 "ah... stiff neck. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  stiff neck. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  pus filled pimples",
             "patterns": [
                 " pus filled pimples",
                 "I'm in  pus filled pimples",
-                "what do i do if i have  pus filled pimples",
-                "i have  pus filled pimples"
+                "I'm  pus filled pimples",
+                "I've got a  pus filled pimples",
+                "i have  pus filled pimples",
+                "I have a  pus filled pimples"
             ],
             "responses": [
                 "ah... pus filled pimples. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  pus filled pimples. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  burning micturition",
             "patterns": [
                 " burning micturition",
                 "I'm in  burning micturition",
-                "what do i do if i have  burning micturition",
-                "i have  burning micturition"
+                "I'm  burning micturition",
+                "I've got a  burning micturition",
+                "i have  burning micturition",
+                "I have a  burning micturition"
             ],
             "responses": [
                 "ah... burning micturition. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  burning micturition. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  bladder discomfort",
             "patterns": [
                 " bladder discomfort",
                 "I'm in  bladder discomfort",
-                "what do i do if i have  bladder discomfort",
-                "i have  bladder discomfort"
+                "I'm  bladder discomfort",
+                "I've got a  bladder discomfort",
+                "i have  bladder discomfort",
+                "I have a  bladder discomfort"
             ],
             "responses": [
                 "ah... bladder discomfort. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  bladder discomfort. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  high fever",
             "patterns": [
                 " high fever",
                 "I'm in  high fever",
-                "what do i do if i have  high fever",
-                "i have  high fever"
+                "I'm  high fever",
+                "I've got a  high fever",
+                "i have  high fever",
+                "I have a  high fever"
             ],
             "responses": [
                 "ah... high fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  high fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  nodal skin eruptions",
             "patterns": [
                 " nodal skin eruptions",
                 "I'm in  nodal skin eruptions",
-                "what do i do if i have  nodal skin eruptions",
-                "i have  nodal skin eruptions"
+                "I'm  nodal skin eruptions",
+                "I've got a  nodal skin eruptions",
+                "i have  nodal skin eruptions",
+                "I have a  nodal skin eruptions"
             ],
             "responses": [
                 "ah... nodal skin eruptions. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  nodal skin eruptions. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  ulcers on tongue",
             "patterns": [
                 " ulcers on tongue",
                 "I'm in  ulcers on tongue",
-                "what do i do if i have  ulcers on tongue",
-                "i have  ulcers on tongue"
+                "I'm  ulcers on tongue",
+                "I've got a  ulcers on tongue",
+                "i have  ulcers on tongue",
+                "I have a  ulcers on tongue"
             ],
             "responses": [
                 "ah... ulcers on tongue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  ulcers on tongue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  loss of appetite",
             "patterns": [
                 " loss of appetite",
                 "I'm in  loss of appetite",
-                "what do i do if i have  loss of appetite",
-                "i have  loss of appetite"
+                "I'm  loss of appetite",
+                "I've got a  loss of appetite",
+                "i have  loss of appetite",
+                "I have a  loss of appetite"
             ],
             "responses": [
                 "ah... loss of appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  loss of appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  restlessness",
             "patterns": [
                 " restlessness",
                 "I'm in  restlessness",
-                "what do i do if i have  restlessness",
-                "i have  restlessness"
+                "I'm  restlessness",
+                "I've got a  restlessness",
+                "i have  restlessness",
+                "I have a  restlessness"
             ],
             "responses": [
                 "ah... restlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  restlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  dehydration",
             "patterns": [
                 " dehydration",
                 "I'm in  dehydration",
-                "what do i do if i have  dehydration",
-                "i have  dehydration"
+                "I'm  dehydration",
+                "I've got a  dehydration",
+                "i have  dehydration",
+                "I have a  dehydration"
             ],
             "responses": [
                 "ah... dehydration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  dehydration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  dizziness",
             "patterns": [
                 " dizziness",
                 "I'm in  dizziness",
-                "what do i do if i have  dizziness",
-                "i have  dizziness"
+                "I'm  dizziness",
+                "I've got a  dizziness",
+                "i have  dizziness",
+                "I have a  dizziness"
             ],
             "responses": [
                 "ah... dizziness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  dizziness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  weakness of one body side",
             "patterns": [
                 " weakness of one body side",
                 "I'm in  weakness of one body side",
-                "what do i do if i have  weakness of one body side",
-                "i have  weakness of one body side"
+                "I'm  weakness of one body side",
+                "I've got a  weakness of one body side",
+                "i have  weakness of one body side",
+                "I have a  weakness of one body side"
             ],
             "responses": [
                 "ah... weakness of one body side. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  weakness of one body side. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  lethargy",
             "patterns": [
                 " lethargy",
                 "I'm in  lethargy",
-                "what do i do if i have  lethargy",
-                "i have  lethargy"
+                "I'm  lethargy",
+                "I've got a  lethargy",
+                "i have  lethargy",
+                "I have a  lethargy"
             ],
             "responses": [
                 "ah... lethargy. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  lethargy. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  nausea",
             "patterns": [
                 " nausea",
                 "I'm in  nausea",
-                "what do i do if i have  nausea",
-                "i have  nausea"
+                "I'm  nausea",
+                "I've got a  nausea",
+                "i have  nausea",
+                "I have a  nausea"
             ],
             "responses": [
                 "ah... nausea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  nausea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  abdominal pain",
             "patterns": [
                 " abdominal pain",
                 "I'm in  abdominal pain",
-                "what do i do if i have  abdominal pain",
-                "i have  abdominal pain"
+                "I'm  abdominal pain",
+                "I've got a  abdominal pain",
+                "i have  abdominal pain",
+                "I have a  abdominal pain"
             ],
             "responses": [
                 "ah... abdominal pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  abdominal pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  pain in anal region",
             "patterns": [
                 " pain in anal region",
                 "I'm in  pain in anal region",
-                "what do i do if i have  pain in anal region",
-                "i have  pain in anal region"
+                "I'm  pain in anal region",
+                "I've got a  pain in anal region",
+                "i have  pain in anal region",
+                "I have a  pain in anal region"
             ],
             "responses": [
                 "ah... pain in anal region. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  pain in anal region. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  sweating",
             "patterns": [
                 " sweating",
                 "I'm in  sweating",
-                "what do i do if i have  sweating",
-                "i have  sweating"
+                "I'm  sweating",
+                "I've got a  sweating",
+                "i have  sweating",
+                "I have a  sweating"
             ],
             "responses": [
                 "ah... sweating. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  sweating. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  bruising",
             "patterns": [
                 " bruising",
                 "I'm in  bruising",
-                "what do i do if i have  bruising",
-                "i have  bruising"
+                "I'm  bruising",
+                "I've got a  bruising",
+                "i have  bruising",
+                "I have a  bruising"
             ],
             "responses": [
                 "ah... bruising. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  bruising. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  cold hands and feets",
             "patterns": [
                 " cold hands and feets",
                 "I'm in  cold hands and feets",
-                "what do i do if i have  cold hands and feets",
-                "i have  cold hands and feets"
+                "I'm  cold hands and feets",
+                "I've got a  cold hands and feets",
+                "i have  cold hands and feets",
+                "I have a  cold hands and feets"
             ],
             "responses": [
                 "ah... cold hands and feets. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  cold hands and feets. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  anxiety",
             "patterns": [
                 " anxiety",
                 "I'm in  anxiety",
-                "what do i do if i have  anxiety",
-                "i have  anxiety"
+                "I'm  anxiety",
+                "I've got a  anxiety",
+                "i have  anxiety",
+                "I have a  anxiety"
             ],
             "responses": [
                 "ah... anxiety. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  anxiety. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  knee pain",
             "patterns": [
                 " knee pain",
                 "I'm in  knee pain",
-                "what do i do if i have  knee pain",
-                "i have  knee pain"
+                "I'm  knee pain",
+                "I've got a  knee pain",
+                "i have  knee pain",
+                "I have a  knee pain"
             ],
             "responses": [
                 "ah... knee pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  knee pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  swelling joints",
             "patterns": [
                 " swelling joints",
                 "I'm in  swelling joints",
-                "what do i do if i have  swelling joints",
-                "i have  swelling joints"
+                "I'm  swelling joints",
+                "I've got a  swelling joints",
+                "i have  swelling joints",
+                "I have a  swelling joints"
             ],
             "responses": [
                 "ah... swelling joints. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swelling joints. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  blackheads",
             "patterns": [
                 " blackheads",
                 "I'm in  blackheads",
-                "what do i do if i have  blackheads",
-                "i have  blackheads"
+                "I'm  blackheads",
+                "I've got a  blackheads",
+                "i have  blackheads",
+                "I have a  blackheads"
             ],
             "responses": [
                 "ah... blackheads. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  blackheads. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  foul smell of urine",
             "patterns": [
                 " foul smell of urine",
                 "I'm in  foul smell of urine",
-                "what do i do if i have  foul smell of urine",
-                "i have  foul smell of urine"
+                "I'm  foul smell of urine",
+                "I've got a  foul smell of urine",
+                "i have  foul smell of urine",
+                "I have a  foul smell of urine"
             ],
             "responses": [
                 "ah... foul smell of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  foul smell of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  skin peeling",
             "patterns": [
                 " skin peeling",
                 "I'm in  skin peeling",
-                "what do i do if i have  skin peeling",
-                "i have  skin peeling"
+                "I'm  skin peeling",
+                "I've got a  skin peeling",
+                "i have  skin peeling",
+                "I have a  skin peeling"
             ],
             "responses": [
                 "ah... skin peeling. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  skin peeling. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  blister",
             "patterns": [
                 " blister",
                 "I'm in  blister",
-                "what do i do if i have  blister",
-                "i have  blister"
+                "I'm  blister",
+                "I've got a  blister",
+                "i have  blister",
+                "I have a  blister"
             ],
             "responses": [
                 "ah... blister. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  blister. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  dischromic  patches",
             "patterns": [
                 " dischromic  patches",
                 "I'm in  dischromic  patches",
-                "what do i do if i have  dischromic  patches",
-                "i have  dischromic  patches"
+                "I'm  dischromic  patches",
+                "I've got a  dischromic  patches",
+                "i have  dischromic  patches",
+                "I have a  dischromic  patches"
             ],
             "responses": [
                 "ah... dischromic  patches. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  dischromic  patches. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  watering from eyes",
             "patterns": [
                 " watering from eyes",
                 "I'm in  watering from eyes",
-                "what do i do if i have  watering from eyes",
-                "i have  watering from eyes"
+                "I'm  watering from eyes",
+                "I've got a  watering from eyes",
+                "i have  watering from eyes",
+                "I have a  watering from eyes"
             ],
             "responses": [
                 "ah... watering from eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  watering from eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  extra marital contacts",
             "patterns": [
                 " extra marital contacts",
                 "I'm in  extra marital contacts",
-                "what do i do if i have  extra marital contacts",
-                "i have  extra marital contacts"
+                "I'm  extra marital contacts",
+                "I've got a  extra marital contacts",
+                "i have  extra marital contacts",
+                "I have a  extra marital contacts"
             ],
             "responses": [
                 "ah... extra marital contacts. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  extra marital contacts. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  diarrhoea",
             "patterns": [
                 " diarrhoea",
                 "I'm in  diarrhoea",
-                "what do i do if i have  diarrhoea",
-                "i have  diarrhoea"
+                "I'm  diarrhoea",
+                "I've got a  diarrhoea",
+                "i have  diarrhoea",
+                "I have a  diarrhoea"
             ],
             "responses": [
                 "ah... diarrhoea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  diarrhoea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  loss of balance",
             "patterns": [
                 " loss of balance",
                 "I'm in  loss of balance",
-                "what do i do if i have  loss of balance",
-                "i have  loss of balance"
+                "I'm  loss of balance",
+                "I've got a  loss of balance",
+                "i have  loss of balance",
+                "I have a  loss of balance"
             ],
             "responses": [
                 "ah... loss of balance. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  loss of balance. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  blurred and distorted vision",
             "patterns": [
                 " blurred and distorted vision",
                 "I'm in  blurred and distorted vision",
-                "what do i do if i have  blurred and distorted vision",
-                "i have  blurred and distorted vision"
+                "I'm  blurred and distorted vision",
+                "I've got a  blurred and distorted vision",
+                "i have  blurred and distorted vision",
+                "I have a  blurred and distorted vision"
             ],
             "responses": [
                 "ah... blurred and distorted vision. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  blurred and distorted vision. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  altered sensorium",
             "patterns": [
                 " altered sensorium",
                 "I'm in  altered sensorium",
-                "what do i do if i have  altered sensorium",
-                "i have  altered sensorium"
+                "I'm  altered sensorium",
+                "I've got a  altered sensorium",
+                "i have  altered sensorium",
+                "I have a  altered sensorium"
             ],
             "responses": [
                 "ah... altered sensorium. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  altered sensorium. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  dark urine",
             "patterns": [
                 " dark urine",
                 "I'm in  dark urine",
-                "what do i do if i have  dark urine",
-                "i have  dark urine"
+                "I'm  dark urine",
+                "I've got a  dark urine",
+                "i have  dark urine",
+                "I have a  dark urine"
             ],
             "responses": [
                 "ah... dark urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  dark urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  swelling of stomach",
             "patterns": [
                 " swelling of stomach",
                 "I'm in  swelling of stomach",
-                "what do i do if i have  swelling of stomach",
-                "i have  swelling of stomach"
+                "I'm  swelling of stomach",
+                "I've got a  swelling of stomach",
+                "i have  swelling of stomach",
+                "I have a  swelling of stomach"
             ],
             "responses": [
                 "ah... swelling of stomach. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swelling of stomach. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  bloody stool",
             "patterns": [
                 " bloody stool",
                 "I'm in  bloody stool",
-                "what do i do if i have  bloody stool",
-                "i have  bloody stool"
+                "I'm  bloody stool",
+                "I've got a  bloody stool",
+                "i have  bloody stool",
+                "I have a  bloody stool"
             ],
             "responses": [
                 "ah... bloody stool. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  bloody stool. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  obesity",
             "patterns": [
                 " obesity",
                 "I'm in  obesity",
-                "what do i do if i have  obesity",
-                "i have  obesity"
+                "I'm  obesity",
+                "I've got a  obesity",
+                "i have  obesity",
+                "I have a  obesity"
             ],
             "responses": [
                 "ah... obesity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  obesity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  hip joint pain",
             "patterns": [
                 " hip joint pain",
                 "I'm in  hip joint pain",
-                "what do i do if i have  hip joint pain",
-                "i have  hip joint pain"
+                "I'm  hip joint pain",
+                "I've got a  hip joint pain",
+                "i have  hip joint pain",
+                "I have a  hip joint pain"
             ],
             "responses": [
                 "ah... hip joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  hip joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  movement stiffness",
             "patterns": [
                 " movement stiffness",
                 "I'm in  movement stiffness",
-                "what do i do if i have  movement stiffness",
-                "i have  movement stiffness"
+                "I'm  movement stiffness",
+                "I've got a  movement stiffness",
+                "i have  movement stiffness",
+                "I have a  movement stiffness"
             ],
             "responses": [
                 "ah... movement stiffness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  movement stiffness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  spinning movements",
             "patterns": [
                 " spinning movements",
                 "I'm in  spinning movements",
-                "what do i do if i have  spinning movements",
-                "i have  spinning movements"
+                "I'm  spinning movements",
+                "I've got a  spinning movements",
+                "i have  spinning movements",
+                "I have a  spinning movements"
             ],
             "responses": [
                 "ah... spinning movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  spinning movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  scurring",
             "patterns": [
                 " scurring",
                 "I'm in  scurring",
-                "what do i do if i have  scurring",
-                "i have  scurring"
+                "I'm  scurring",
+                "I've got a  scurring",
+                "i have  scurring",
+                "I have a  scurring"
             ],
             "responses": [
                 "ah... scurring. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  scurring. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  continuous feel of urine",
             "patterns": [
                 " continuous feel of urine",
                 "I'm in  continuous feel of urine",
-                "what do i do if i have  continuous feel of urine",
-                "i have  continuous feel of urine"
+                "I'm  continuous feel of urine",
+                "I've got a  continuous feel of urine",
+                "i have  continuous feel of urine",
+                "I have a  continuous feel of urine"
             ],
             "responses": [
                 "ah... continuous feel of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  continuous feel of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  silver like dusting",
             "patterns": [
                 " silver like dusting",
                 "I'm in  silver like dusting",
-                "what do i do if i have  silver like dusting",
-                "i have  silver like dusting"
+                "I'm  silver like dusting",
+                "I've got a  silver like dusting",
+                "i have  silver like dusting",
+                "I have a  silver like dusting"
             ],
             "responses": [
                 "ah... silver like dusting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  silver like dusting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  red sore around nose",
             "patterns": [
                 " red sore around nose",
                 "I'm in  red sore around nose",
-                "what do i do if i have  red sore around nose",
-                "i have  red sore around nose"
+                "I'm  red sore around nose",
+                "I've got a  red sore around nose",
+                "i have  red sore around nose",
+                "I have a  red sore around nose"
             ],
             "responses": [
                 "ah... red sore around nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  red sore around nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  ",
             "patterns": [
                 " ",
                 "I'm in  ",
-                "what do i do if i have  ",
-                "i have  "
+                "I'm  ",
+                "I've got a  ",
+                "i have  ",
+                "I have a  "
             ],
             "responses": [
                 "ah... . I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  . I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  spotting  urination",
             "patterns": [
                 " spotting  urination",
                 "I'm in  spotting  urination",
-                "what do i do if i have  spotting  urination",
-                "i have  spotting  urination"
+                "I'm  spotting  urination",
+                "I've got a  spotting  urination",
+                "i have  spotting  urination",
+                "I have a  spotting  urination"
             ],
             "responses": [
                 "ah... spotting  urination. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  spotting  urination. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  passage of gases",
             "patterns": [
                 " passage of gases",
                 "I'm in  passage of gases",
-                "what do i do if i have  passage of gases",
-                "i have  passage of gases"
+                "I'm  passage of gases",
+                "I've got a  passage of gases",
+                "i have  passage of gases",
+                "I have a  passage of gases"
             ],
             "responses": [
                 "ah... passage of gases. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  passage of gases. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  irregular sugar level",
             "patterns": [
                 " irregular sugar level",
                 "I'm in  irregular sugar level",
-                "what do i do if i have  irregular sugar level",
-                "i have  irregular sugar level"
+                "I'm  irregular sugar level",
+                "I've got a  irregular sugar level",
+                "i have  irregular sugar level",
+                "I have a  irregular sugar level"
             ],
             "responses": [
                 "ah... irregular sugar level. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  irregular sugar level. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  family history",
             "patterns": [
                 " family history",
                 "I'm in  family history",
-                "what do i do if i have  family history",
-                "i have  family history"
+                "I'm  family history",
+                "I've got a  family history",
+                "i have  family history",
+                "I have a  family history"
             ],
             "responses": [
                 "ah... family history. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  family history. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  lack of concentration",
             "patterns": [
                 " lack of concentration",
                 "I'm in  lack of concentration",
-                "what do i do if i have  lack of concentration",
-                "i have  lack of concentration"
+                "I'm  lack of concentration",
+                "I've got a  lack of concentration",
+                "i have  lack of concentration",
+                "I have a  lack of concentration"
             ],
             "responses": [
                 "ah... lack of concentration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  lack of concentration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  excessive hunger",
             "patterns": [
                 " excessive hunger",
                 "I'm in  excessive hunger",
-                "what do i do if i have  excessive hunger",
-                "i have  excessive hunger"
+                "I'm  excessive hunger",
+                "I've got a  excessive hunger",
+                "i have  excessive hunger",
+                "I have a  excessive hunger"
             ],
             "responses": [
                 "ah... excessive hunger. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  excessive hunger. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  yellowing of eyes",
             "patterns": [
                 " yellowing of eyes",
                 "I'm in  yellowing of eyes",
-                "what do i do if i have  yellowing of eyes",
-                "i have  yellowing of eyes"
+                "I'm  yellowing of eyes",
+                "I've got a  yellowing of eyes",
+                "i have  yellowing of eyes",
+                "I have a  yellowing of eyes"
             ],
             "responses": [
                 "ah... yellowing of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  yellowing of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  distention of abdomen",
             "patterns": [
                 " distention of abdomen",
                 "I'm in  distention of abdomen",
-                "what do i do if i have  distention of abdomen",
-                "i have  distention of abdomen"
+                "I'm  distention of abdomen",
+                "I've got a  distention of abdomen",
+                "i have  distention of abdomen",
+                "I have a  distention of abdomen"
             ],
             "responses": [
                 "ah... distention of abdomen. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  distention of abdomen. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  irritation in anus",
             "patterns": [
                 " irritation in anus",
                 "I'm in  irritation in anus",
-                "what do i do if i have  irritation in anus",
-                "i have  irritation in anus"
+                "I'm  irritation in anus",
+                "I've got a  irritation in anus",
+                "i have  irritation in anus",
+                "I have a  irritation in anus"
             ],
             "responses": [
                 "ah... irritation in anus. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  irritation in anus. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  swollen legs",
             "patterns": [
                 " swollen legs",
                 "I'm in  swollen legs",
-                "what do i do if i have  swollen legs",
-                "i have  swollen legs"
+                "I'm  swollen legs",
+                "I've got a  swollen legs",
+                "i have  swollen legs",
+                "I have a  swollen legs"
             ],
             "responses": [
                 "ah... swollen legs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swollen legs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  painful walking",
             "patterns": [
                 " painful walking",
                 "I'm in  painful walking",
-                "what do i do if i have  painful walking",
-                "i have  painful walking"
+                "I'm  painful walking",
+                "I've got a  painful walking",
+                "i have  painful walking",
+                "I have a  painful walking"
             ],
             "responses": [
                 "ah... painful walking. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  painful walking. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  small dents in nails",
             "patterns": [
                 " small dents in nails",
                 "I'm in  small dents in nails",
-                "what do i do if i have  small dents in nails",
-                "i have  small dents in nails"
+                "I'm  small dents in nails",
+                "I've got a  small dents in nails",
+                "i have  small dents in nails",
+                "I have a  small dents in nails"
             ],
             "responses": [
                 "ah... small dents in nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  small dents in nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  yellow crust ooze",
             "patterns": [
                 " yellow crust ooze",
                 "I'm in  yellow crust ooze",
-                "what do i do if i have  yellow crust ooze",
-                "i have  yellow crust ooze"
+                "I'm  yellow crust ooze",
+                "I've got a  yellow crust ooze",
+                "i have  yellow crust ooze",
+                "I have a  yellow crust ooze"
             ],
             "responses": [
                 "ah... yellow crust ooze. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  yellow crust ooze. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  internal itching",
             "patterns": [
                 " internal itching",
                 "I'm in  internal itching",
-                "what do i do if i have  internal itching",
-                "i have  internal itching"
+                "I'm  internal itching",
+                "I've got a  internal itching",
+                "i have  internal itching",
+                "I have a  internal itching"
             ],
             "responses": [
                 "ah... internal itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  internal itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  mucoid sputum",
             "patterns": [
                 " mucoid sputum",
                 "I'm in  mucoid sputum",
-                "what do i do if i have  mucoid sputum",
-                "i have  mucoid sputum"
+                "I'm  mucoid sputum",
+                "I've got a  mucoid sputum",
+                "i have  mucoid sputum",
+                "I have a  mucoid sputum"
             ],
             "responses": [
                 "ah... mucoid sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  mucoid sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  history of alcohol consumption",
             "patterns": [
                 " history of alcohol consumption",
                 "I'm in  history of alcohol consumption",
-                "what do i do if i have  history of alcohol consumption",
-                "i have  history of alcohol consumption"
+                "I'm  history of alcohol consumption",
+                "I've got a  history of alcohol consumption",
+                "i have  history of alcohol consumption",
+                "I have a  history of alcohol consumption"
             ],
             "responses": [
                 "ah... history of alcohol consumption. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  history of alcohol consumption. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  swollen blood vessels",
             "patterns": [
                 " swollen blood vessels",
                 "I'm in  swollen blood vessels",
-                "what do i do if i have  swollen blood vessels",
-                "i have  swollen blood vessels"
+                "I'm  swollen blood vessels",
+                "I've got a  swollen blood vessels",
+                "i have  swollen blood vessels",
+                "I have a  swollen blood vessels"
             ],
             "responses": [
                 "ah... swollen blood vessels. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swollen blood vessels. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  unsteadiness",
             "patterns": [
                 " unsteadiness",
                 "I'm in  unsteadiness",
-                "what do i do if i have  unsteadiness",
-                "i have  unsteadiness"
+                "I'm  unsteadiness",
+                "I've got a  unsteadiness",
+                "i have  unsteadiness",
+                "I have a  unsteadiness"
             ],
             "responses": [
                 "ah... unsteadiness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  unsteadiness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  inflammatory nails",
             "patterns": [
                 " inflammatory nails",
                 "I'm in  inflammatory nails",
-                "what do i do if i have  inflammatory nails",
-                "i have  inflammatory nails"
+                "I'm  inflammatory nails",
+                "I've got a  inflammatory nails",
+                "i have  inflammatory nails",
+                "I have a  inflammatory nails"
             ],
             "responses": [
                 "ah... inflammatory nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  inflammatory nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  depression",
             "patterns": [
                 " depression",
                 "I'm in  depression",
-                "what do i do if i have  depression",
-                "i have  depression"
+                "I'm  depression",
+                "I've got a  depression",
+                "i have  depression",
+                "I have a  depression"
             ],
             "responses": [
                 "ah... depression. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  depression. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  fluid overload",
             "patterns": [
                 " fluid overload",
                 "I'm in  fluid overload",
-                "what do i do if i have  fluid overload",
-                "i have  fluid overload"
+                "I'm  fluid overload",
+                "I've got a  fluid overload",
+                "i have  fluid overload",
+                "I have a  fluid overload"
             ],
             "responses": [
                 "ah... fluid overload. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  fluid overload. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  swelled lymph nodes",
             "patterns": [
                 " swelled lymph nodes",
                 "I'm in  swelled lymph nodes",
-                "what do i do if i have  swelled lymph nodes",
-                "i have  swelled lymph nodes"
+                "I'm  swelled lymph nodes",
+                "I've got a  swelled lymph nodes",
+                "i have  swelled lymph nodes",
+                "I have a  swelled lymph nodes"
             ],
             "responses": [
                 "ah... swelled lymph nodes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swelled lymph nodes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  malaise",
             "patterns": [
                 " malaise",
                 "I'm in  malaise",
-                "what do i do if i have  malaise",
-                "i have  malaise"
+                "I'm  malaise",
+                "I've got a  malaise",
+                "i have  malaise",
+                "I have a  malaise"
             ],
             "responses": [
                 "ah... malaise. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  malaise. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  prominent veins on calf",
             "patterns": [
                 " prominent veins on calf",
                 "I'm in  prominent veins on calf",
-                "what do i do if i have  prominent veins on calf",
-                "i have  prominent veins on calf"
+                "I'm  prominent veins on calf",
+                "I've got a  prominent veins on calf",
+                "i have  prominent veins on calf",
+                "I have a  prominent veins on calf"
             ],
             "responses": [
                 "ah... prominent veins on calf. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  prominent veins on calf. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  puffy face and eyes",
             "patterns": [
                 " puffy face and eyes",
                 "I'm in  puffy face and eyes",
-                "what do i do if i have  puffy face and eyes",
-                "i have  puffy face and eyes"
+                "I'm  puffy face and eyes",
+                "I've got a  puffy face and eyes",
+                "i have  puffy face and eyes",
+                "I have a  puffy face and eyes"
             ],
             "responses": [
                 "ah... puffy face and eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  puffy face and eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  fast heart rate",
             "patterns": [
                 " fast heart rate",
                 "I'm in  fast heart rate",
-                "what do i do if i have  fast heart rate",
-                "i have  fast heart rate"
+                "I'm  fast heart rate",
+                "I've got a  fast heart rate",
+                "i have  fast heart rate",
+                "I have a  fast heart rate"
             ],
             "responses": [
                 "ah... fast heart rate. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  fast heart rate. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  irritability",
             "patterns": [
                 " irritability",
                 "I'm in  irritability",
-                "what do i do if i have  irritability",
-                "i have  irritability"
+                "I'm  irritability",
+                "I've got a  irritability",
+                "i have  irritability",
+                "I have a  irritability"
             ],
             "responses": [
                 "ah... irritability. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  irritability. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  muscle pain",
             "patterns": [
                 " muscle pain",
                 "I'm in  muscle pain",
-                "what do i do if i have  muscle pain",
-                "i have  muscle pain"
+                "I'm  muscle pain",
+                "I've got a  muscle pain",
+                "i have  muscle pain",
+                "I have a  muscle pain"
             ],
             "responses": [
                 "ah... muscle pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  muscle pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  mild fever",
             "patterns": [
                 " mild fever",
                 "I'm in  mild fever",
-                "what do i do if i have  mild fever",
-                "i have  mild fever"
+                "I'm  mild fever",
+                "I've got a  mild fever",
+                "i have  mild fever",
+                "I have a  mild fever"
             ],
             "responses": [
                 "ah... mild fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  mild fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  yellow urine",
             "patterns": [
                 " yellow urine",
                 "I'm in  yellow urine",
-                "what do i do if i have  yellow urine",
-                "i have  yellow urine"
+                "I'm  yellow urine",
+                "I've got a  yellow urine",
+                "i have  yellow urine",
+                "I have a  yellow urine"
             ],
             "responses": [
                 "ah... yellow urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  yellow urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  phlegm",
             "patterns": [
                 " phlegm",
                 "I'm in  phlegm",
-                "what do i do if i have  phlegm",
-                "i have  phlegm"
+                "I'm  phlegm",
+                "I've got a  phlegm",
+                "i have  phlegm",
+                "I have a  phlegm"
             ],
             "responses": [
                 "ah... phlegm. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  phlegm. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  enlarged thyroid",
             "patterns": [
                 " enlarged thyroid",
                 "I'm in  enlarged thyroid",
-                "what do i do if i have  enlarged thyroid",
-                "i have  enlarged thyroid"
+                "I'm  enlarged thyroid",
+                "I've got a  enlarged thyroid",
+                "i have  enlarged thyroid",
+                "I have a  enlarged thyroid"
             ],
             "responses": [
                 "ah... enlarged thyroid. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  enlarged thyroid. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  increased appetite",
             "patterns": [
                 " increased appetite",
                 "I'm in  increased appetite",
-                "what do i do if i have  increased appetite",
-                "i have  increased appetite"
+                "I'm  increased appetite",
+                "I've got a  increased appetite",
+                "i have  increased appetite",
+                "I have a  increased appetite"
             ],
             "responses": [
                 "ah... increased appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  increased appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  visual disturbances",
             "patterns": [
                 " visual disturbances",
                 "I'm in  visual disturbances",
-                "what do i do if i have  visual disturbances",
-                "i have  visual disturbances"
+                "I'm  visual disturbances",
+                "I've got a  visual disturbances",
+                "i have  visual disturbances",
+                "I have a  visual disturbances"
             ],
             "responses": [
                 "ah... visual disturbances. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  visual disturbances. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  brittle nails",
             "patterns": [
                 " brittle nails",
                 "I'm in  brittle nails",
-                "what do i do if i have  brittle nails",
-                "i have  brittle nails"
+                "I'm  brittle nails",
+                "I've got a  brittle nails",
+                "i have  brittle nails",
+                "I have a  brittle nails"
             ],
             "responses": [
                 "ah... brittle nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  brittle nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  drying and tingling lips",
             "patterns": [
                 " drying and tingling lips",
                 "I'm in  drying and tingling lips",
-                "what do i do if i have  drying and tingling lips",
-                "i have  drying and tingling lips"
+                "I'm  drying and tingling lips",
+                "I've got a  drying and tingling lips",
+                "i have  drying and tingling lips",
+                "I have a  drying and tingling lips"
             ],
             "responses": [
                 "ah... drying and tingling lips. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  drying and tingling lips. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  polyuria",
             "patterns": [
                 " polyuria",
                 "I'm in  polyuria",
-                "what do i do if i have  polyuria",
-                "i have  polyuria"
+                "I'm  polyuria",
+                "I've got a  polyuria",
+                "i have  polyuria",
+                "I have a  polyuria"
             ],
             "responses": [
                 "ah... polyuria. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  polyuria. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  pain behind the eyes",
             "patterns": [
                 " pain behind the eyes",
                 "I'm in  pain behind the eyes",
-                "what do i do if i have  pain behind the eyes",
-                "i have  pain behind the eyes"
+                "I'm  pain behind the eyes",
+                "I've got a  pain behind the eyes",
+                "i have  pain behind the eyes",
+                "I have a  pain behind the eyes"
             ],
             "responses": [
                 "ah... pain behind the eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  pain behind the eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  toxic look (typhos)",
             "patterns": [
                 " toxic look (typhos)",
                 "I'm in  toxic look (typhos)",
-                "what do i do if i have  toxic look (typhos)",
-                "i have  toxic look (typhos)"
+                "I'm  toxic look (typhos)",
+                "I've got a  toxic look (typhos)",
+                "i have  toxic look (typhos)",
+                "I have a  toxic look (typhos)"
             ],
             "responses": [
                 "ah... toxic look (typhos). I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  toxic look (typhos). I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  throat irritation",
             "patterns": [
                 " throat irritation",
                 "I'm in  throat irritation",
-                "what do i do if i have  throat irritation",
-                "i have  throat irritation"
+                "I'm  throat irritation",
+                "I've got a  throat irritation",
+                "i have  throat irritation",
+                "I have a  throat irritation"
             ],
             "responses": [
                 "ah... throat irritation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  throat irritation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  swollen extremeties",
             "patterns": [
                 " swollen extremeties",
                 "I'm in  swollen extremeties",
-                "what do i do if i have  swollen extremeties",
-                "i have  swollen extremeties"
+                "I'm  swollen extremeties",
+                "I've got a  swollen extremeties",
+                "i have  swollen extremeties",
+                "I have a  swollen extremeties"
             ],
             "responses": [
                 "ah... swollen extremeties. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  swollen extremeties. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  slurred speech",
             "patterns": [
                 " slurred speech",
                 "I'm in  slurred speech",
-                "what do i do if i have  slurred speech",
-                "i have  slurred speech"
+                "I'm  slurred speech",
+                "I've got a  slurred speech",
+                "i have  slurred speech",
+                "I have a  slurred speech"
             ],
             "responses": [
                 "ah... slurred speech. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  slurred speech. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  red spots over body",
             "patterns": [
                 " red spots over body",
                 "I'm in  red spots over body",
-                "what do i do if i have  red spots over body",
-                "i have  red spots over body"
+                "I'm  red spots over body",
+                "I've got a  red spots over body",
+                "i have  red spots over body",
+                "I have a  red spots over body"
             ],
             "responses": [
                 "ah... red spots over body. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  red spots over body. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  belly pain",
             "patterns": [
                 " belly pain",
                 "I'm in  belly pain",
-                "what do i do if i have  belly pain",
-                "i have  belly pain"
+                "I'm  belly pain",
+                "I've got a  belly pain",
+                "i have  belly pain",
+                "I have a  belly pain"
             ],
             "responses": [
                 "ah... belly pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  belly pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  receiving blood transfusion",
             "patterns": [
                 " receiving blood transfusion",
                 "I'm in  receiving blood transfusion",
-                "what do i do if i have  receiving blood transfusion",
-                "i have  receiving blood transfusion"
+                "I'm  receiving blood transfusion",
+                "I've got a  receiving blood transfusion",
+                "i have  receiving blood transfusion",
+                "I have a  receiving blood transfusion"
             ],
             "responses": [
                 "ah... receiving blood transfusion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  receiving blood transfusion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  acute liver failure",
             "patterns": [
                 " acute liver failure",
                 "I'm in  acute liver failure",
-                "what do i do if i have  acute liver failure",
-                "i have  acute liver failure"
+                "I'm  acute liver failure",
+                "I've got a  acute liver failure",
+                "i have  acute liver failure",
+                "I have a  acute liver failure"
             ],
             "responses": [
                 "ah... acute liver failure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  acute liver failure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  redness of eyes",
             "patterns": [
                 " redness of eyes",
                 "I'm in  redness of eyes",
-                "what do i do if i have  redness of eyes",
-                "i have  redness of eyes"
+                "I'm  redness of eyes",
+                "I've got a  redness of eyes",
+                "i have  redness of eyes",
+                "I have a  redness of eyes"
             ],
             "responses": [
                 "ah... redness of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  redness of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  rusty sputum",
             "patterns": [
                 " rusty sputum",
                 "I'm in  rusty sputum",
-                "what do i do if i have  rusty sputum",
-                "i have  rusty sputum"
+                "I'm  rusty sputum",
+                "I've got a  rusty sputum",
+                "i have  rusty sputum",
+                "I have a  rusty sputum"
             ],
             "responses": [
                 "ah... rusty sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  rusty sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  abnormal menstruation",
             "patterns": [
                 " abnormal menstruation",
                 "I'm in  abnormal menstruation",
-                "what do i do if i have  abnormal menstruation",
-                "i have  abnormal menstruation"
+                "I'm  abnormal menstruation",
+                "I've got a  abnormal menstruation",
+                "i have  abnormal menstruation",
+                "I have a  abnormal menstruation"
             ],
             "responses": [
                 "ah... abnormal menstruation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  abnormal menstruation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  receiving unsterile injections",
             "patterns": [
                 " receiving unsterile injections",
                 "I'm in  receiving unsterile injections",
-                "what do i do if i have  receiving unsterile injections",
-                "i have  receiving unsterile injections"
+                "I'm  receiving unsterile injections",
+                "I've got a  receiving unsterile injections",
+                "i have  receiving unsterile injections",
+                "I have a  receiving unsterile injections"
             ],
             "responses": [
                 "ah... receiving unsterile injections. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  receiving unsterile injections. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  coma",
             "patterns": [
                 " coma",
                 "I'm in  coma",
-                "what do i do if i have  coma",
-                "i have  coma"
+                "I'm  coma",
+                "I've got a  coma",
+                "i have  coma",
+                "I have a  coma"
             ],
             "responses": [
                 "ah... coma. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  coma. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  sinus pressure",
             "patterns": [
                 " sinus pressure",
                 "I'm in  sinus pressure",
-                "what do i do if i have  sinus pressure",
-                "i have  sinus pressure"
+                "I'm  sinus pressure",
+                "I've got a  sinus pressure",
+                "i have  sinus pressure",
+                "I have a  sinus pressure"
             ],
             "responses": [
                 "ah... sinus pressure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  sinus pressure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  palpitations",
             "patterns": [
                 " palpitations",
                 "I'm in  palpitations",
-                "what do i do if i have  palpitations",
-                "i have  palpitations"
+                "I'm  palpitations",
+                "I've got a  palpitations",
+                "i have  palpitations",
+                "I have a  palpitations"
             ],
             "responses": [
                 "ah... palpitations. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  palpitations. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  stomach bleeding",
             "patterns": [
                 " stomach bleeding",
                 "I'm in  stomach bleeding",
-                "what do i do if i have  stomach bleeding",
-                "i have  stomach bleeding"
+                "I'm  stomach bleeding",
+                "I've got a  stomach bleeding",
+                "i have  stomach bleeding",
+                "I have a  stomach bleeding"
             ],
             "responses": [
                 "ah... stomach bleeding. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  stomach bleeding. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  runny nose",
             "patterns": [
                 " runny nose",
                 "I'm in  runny nose",
-                "what do i do if i have  runny nose",
-                "i have  runny nose"
+                "I'm  runny nose",
+                "I've got a  runny nose",
+                "i have  runny nose",
+                "I have a  runny nose"
             ],
             "responses": [
                 "ah... runny nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  runny nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  congestion",
             "patterns": [
                 " congestion",
                 "I'm in  congestion",
-                "what do i do if i have  congestion",
-                "i have  congestion"
+                "I'm  congestion",
+                "I've got a  congestion",
+                "i have  congestion",
+                "I have a  congestion"
             ],
             "responses": [
                 "ah... congestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  congestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  blood in sputum",
             "patterns": [
                 " blood in sputum",
                 "I'm in  blood in sputum",
-                "what do i do if i have  blood in sputum",
-                "i have  blood in sputum"
+                "I'm  blood in sputum",
+                "I've got a  blood in sputum",
+                "i have  blood in sputum",
+                "I have a  blood in sputum"
             ],
             "responses": [
                 "ah... blood in sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  blood in sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "talking about  loss of smell",
             "patterns": [
                 " loss of smell",
                 "I'm in  loss of smell",
-                "what do i do if i have  loss of smell",
-                "i have  loss of smell"
+                "I'm  loss of smell",
+                "I've got a  loss of smell",
+                "i have  loss of smell",
+                "I have a  loss of smell"
             ],
             "responses": [
                 "ah... loss of smell. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                 "ah....  loss of smell. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
             ],
-            "context": "experiencing synptoms"
+            "context": "experiencing symptoms"
         },
         {
             "labels": "describe_Drug Reaction",
@@ -3143,7 +3397,7 @@
                 "Hello there! My name is Sam. What can I do for you?",
                 "Hi, what can I do for you?"
             ],
-            "context": "opening"
+            "context": "none"
         },
         {
             "labels": "goodbye",
@@ -3159,7 +3413,7 @@
                 "Have a nice day",
                 "Bye! Come back again soon."
             ],
-            "context": "closing"
+            "context": "none"
         },
         {
             "labels": "thanks",
@@ -3175,7 +3429,7 @@
                 "Any time!",
                 "My pleasure"
             ],
-            "context": "appreciations"
+            "context": "none"
         },
         {
             "labels": "options",
@@ -3188,7 +3442,29 @@
                 "I will help you figure out what might possibly be the problem",
                 "I am someone to talk to to learn about diseases, what to try if you have a particular disease and give you a possible idea of what disease you may have if you are experiencing symptoms."
             ],
-            "context": "bot's capability"
+            "context": "none"
+        },
+        {
+            "labels": "asking wellbeing",
+            "patterns": [
+                "how are you?",
+                "how you doing?"
+            ],
+            "responses": [
+                "thanks for asking, I'm great.",
+                "I'm doing well, hope you are too."
+            ],
+            "context": "none"
+        },
+        {
+            "labels": "ask disease",
+            "patterns": [
+                "what do you think i have?",
+                "why am i sick?",
+                "What is wrong with me?",
+                "can you tell me what is wrong?"
+            ],
+            "context": "predicted disease"
         }
     ]
 }

@@ -24,35 +24,14 @@ def write_json(new_data, filename='intents.json'):
         file.seek(0)
         # convert back to json.
         json.dump(file_data, file, indent = 4)
- #################################################################
- #################################################################
-
-
 #################################################################
-
-#Make sure this one is first (it doesn't need responses)
-#responses edited directly in chat.py
-add = {
-            "labels": "ask disease",
-            "patterns": [
-                "what do you think i have?",
-                "why am i sick?",
-                "What is wrong with me?",
-                "can you tell me what is wrong?"
-            ],
-            "context": "predicted disease"
-        }
-write_json(add)
-
+#################################################################
 
 ##################################################################
 # using the dataset of diseases related to which symptoms
-
 df = pd.read_csv("datasets/dataset.csv", dtype = "string") #4920 rows  x 18 cols
 df = df.fillna(" ")
-
 temp = []
-
 for i in range(1,18):
     for word in df[f"Symptom_{i}"]:
         symptom = ((' '.join(word.split("_"))))
@@ -62,23 +41,19 @@ for i in range(1,18):
                 "patterns": [
                     f"{symptom}",
                     f"I'm in {symptom}", 
-                    f"what do i do if i have {symptom}",
+                    f"I'm {symptom}",
+                    f"I've got a {symptom}",
                     f"i have {symptom}",
+                    f"I have a {symptom}"
                     ],
                 "responses": [
                     f"ah...{symptom}. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
                     f"ah.... {symptom}. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
                     ],
-                "context": "experiencing synptoms"
-
-       
+                "context": "experiencing symptoms"
                 }
             write_json(add)
-            
-
-
 ##################################################################
-
 #using the disease descriptions and precautions data
 df_description = pd.read_csv("datasets/symptom_description.csv", dtype = "string")
 df_precaution = pd.read_csv("datasets/symptom_precaution.csv", dtype = "string")
@@ -99,8 +74,7 @@ for row in range(len(df_description)):
                 f"{disease}"
                 ],
             "responses": [f"{description}",f"{description}"],
-            "context": "about diseases"
-            }
+            "context": "about diseases"}
     write_json(add)
     add = {"labels":f"precaution_{disease}",
             "patterns": [
@@ -119,7 +93,6 @@ for row in range(len(df_description)):
             }
     write_json(add)
 #################################################################
-
 #other intents
 add = {
             "labels": "greeting",
@@ -129,29 +102,27 @@ add = {
                 "hello",
                 "yo", #:D
                 "G'day"
-
             ],
             "responses": [
                 "Hello, How can I help you today?",
                 "Hello there! My name is Sam. What can I do for you?",
-                "Hi, what can I do for you?"
-                
+                "Hi, what can I do for you?" 
             ],
-            "context": "opening"
+            "context": "none"
         }
 write_json(add)
 add = {
             "labels": "goodbye",
             "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
             "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-            "context": "closing"
+            "context": "none"
         }
 write_json(add)
 add = {
             "labels": "thanks",
             "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
             "responses": ["Happy to help!", "Any time!", "My pleasure"],
-            "context": "appreciations"
+            "context": "none"
         }
 write_json(add)
 add = {
@@ -161,7 +132,7 @@ add = {
                 "I will help you figure out what might possibly be the problem",
                 "I am someone to talk to to learn about diseases, what to try if you have a particular disease and give you a possible idea of what disease you may have if you are experiencing symptoms."
             ],
-            "context": "bot's capability"
+            "context": "none"
         }
 write_json(add)
 add = {
@@ -170,5 +141,17 @@ add = {
     "responses":["thanks for asking, I'm great.","I'm doing well, hope you are too."],
     "context":"none"
 }
+write_json(add)
+add = {
+            "labels": "ask disease",
+            "patterns": [
+                "what do you think i have?",
+                "why am i sick?",
+                "What is wrong with me?",
+                "can you tell me what is wrong?"
+            ],
+            "context": "predicted disease"
+        }
+write_json(add)
 ###################################################################
 print("Finished creating intents.json")
