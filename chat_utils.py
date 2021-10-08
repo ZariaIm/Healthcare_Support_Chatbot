@@ -55,13 +55,13 @@ def store_symptom(word):
     write_json(add)
     print(f"{word} was stored")
 
-def predict_disease(y, model, all_symptoms):
+def predict_disease(model, all_symptoms):
     list_of_symptoms = []
     with open('storedSymptoms.json', 'r') as json_data:
         file_data = json.load(json_data)
     symptoms = file_data["symptoms"]
-    for pair in symptoms:
-        list_of_symptoms.append(pair["symptom"])
+    for symptom in symptoms:
+        list_of_symptoms.append(symptom["symptom"])
         list_of_symptoms = list(set(list_of_symptoms))
     symptom_bag = bag_of_words(list_of_symptoms, all_symptoms)
     output = model(torch.FloatTensor(symptom_bag).unsqueeze(0))

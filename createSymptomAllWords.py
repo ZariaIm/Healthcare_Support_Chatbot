@@ -40,7 +40,7 @@ all_symptoms = [stem(w) for w in all_symptoms if w not in ignore_words]
 #remove duplicates from list and sort
 #sets are easier for comparing too
 all_symptoms = sorted(set(all_symptoms))
-disease_labels = list(set(disease_labels))
+disease_labels = sorted(set(disease_labels))
 print("Collected all diseases and symptom ALL Words")
 ##################################################################
 disease_symptoms = []
@@ -69,7 +69,6 @@ ignore_words = ['in', ', ', 'like', 'feel', 'from', 'and', 'of', 'on', 'the', 'l
 emergency_symptoms = [stem(w) for w in emergency_symptoms if w not in ignore_words]
 print("Hypertension and Heart attack symptoms classed as emergency")
 ##################################################################
-print(emergency_symptoms)
 data = {
 "all_words": all_symptoms,
 "labels": disease_labels,
@@ -84,8 +83,6 @@ X_train_symptom = []
 y_train_symptom = []
 for (pattern_sentence, label) in xy:
     # X: bag of words for each pattern_sentence
-    #print(type(pattern_sentence[0]))
-    #print(all_words)
     bag = bag_of_words(pattern_sentence, all_symptoms)
     X_train_symptom.append(bag)
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot

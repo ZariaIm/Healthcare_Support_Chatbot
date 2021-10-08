@@ -11,8 +11,8 @@
                 "I have a itching"
             ],
             "responses": [
-                "ah...itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah.... itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah...itching. I'll add it to the list.",
+                "ah.... itching. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -27,8 +27,8 @@
                 "I have a  skin rash"
             ],
             "responses": [
-                "ah... skin rash. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  skin rash. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... skin rash. I'll add it to the list.",
+                "ah....  skin rash. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -43,8 +43,8 @@
                 "I have a  continuous sneezing"
             ],
             "responses": [
-                "ah... continuous sneezing. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  continuous sneezing. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... continuous sneezing. I'll add it to the list.",
+                "ah....  continuous sneezing. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -59,8 +59,8 @@
                 "I have a  shivering"
             ],
             "responses": [
-                "ah... shivering. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  shivering. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... shivering. I'll add it to the list.",
+                "ah....  shivering. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -75,8 +75,8 @@
                 "I have a  stomach pain"
             ],
             "responses": [
-                "ah... stomach pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  stomach pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... stomach pain. I'll add it to the list.",
+                "ah....  stomach pain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -91,8 +91,8 @@
                 "I have a  acidity"
             ],
             "responses": [
-                "ah... acidity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  acidity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... acidity. I'll add it to the list.",
+                "ah....  acidity. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -107,8 +107,8 @@
                 "I have a  vomiting"
             ],
             "responses": [
-                "ah... vomiting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  vomiting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... vomiting. I'll add it to the list.",
+                "ah....  vomiting. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -123,8 +123,8 @@
                 "I have a  indigestion"
             ],
             "responses": [
-                "ah... indigestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  indigestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... indigestion. I'll add it to the list.",
+                "ah....  indigestion. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -139,8 +139,8 @@
                 "I have a  muscle wasting"
             ],
             "responses": [
-                "ah... muscle wasting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  muscle wasting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... muscle wasting. I'll add it to the list.",
+                "ah....  muscle wasting. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -155,8 +155,8 @@
                 "I have a  patches in throat"
             ],
             "responses": [
-                "ah... patches in throat. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  patches in throat. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... patches in throat. I'll add it to the list.",
+                "ah....  patches in throat. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -171,8 +171,8 @@
                 "I have a  fatigue"
             ],
             "responses": [
-                "ah... fatigue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  fatigue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... fatigue. I'll add it to the list.",
+                "ah....  fatigue. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -187,8 +187,8 @@
                 "I have a  weight loss"
             ],
             "responses": [
-                "ah... weight loss. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  weight loss. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... weight loss. I'll add it to the list.",
+                "ah....  weight loss. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -203,8 +203,8 @@
                 "I have a  sunken eyes"
             ],
             "responses": [
-                "ah... sunken eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  sunken eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... sunken eyes. I'll add it to the list.",
+                "ah....  sunken eyes. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -219,8 +219,8 @@
                 "I have a  cough"
             ],
             "responses": [
-                "ah... cough. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  cough. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... cough. I'll add it to the list.",
+                "ah....  cough. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -235,8 +235,8 @@
                 "I have a  headache"
             ],
             "responses": [
-                "ah... headache. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  headache. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... headache. I'll add it to the list.",
+                "ah....  headache. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -251,8 +251,8 @@
                 "I have a  chest pain"
             ],
             "responses": [
-                "ah... chest pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  chest pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... chest pain. I'll add it to the list.",
+                "ah....  chest pain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -267,8 +267,8 @@
                 "I have a  back pain"
             ],
             "responses": [
-                "ah... back pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  back pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... back pain. I'll add it to the list.",
+                "ah....  back pain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -283,8 +283,8 @@
                 "I have a  weakness in limbs"
             ],
             "responses": [
-                "ah... weakness in limbs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  weakness in limbs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... weakness in limbs. I'll add it to the list.",
+                "ah....  weakness in limbs. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -299,8 +299,8 @@
                 "I have a  chills"
             ],
             "responses": [
-                "ah... chills. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  chills. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... chills. I'll add it to the list.",
+                "ah....  chills. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -315,8 +315,8 @@
                 "I have a  joint pain"
             ],
             "responses": [
-                "ah... joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... joint pain. I'll add it to the list.",
+                "ah....  joint pain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -331,8 +331,8 @@
                 "I have a  yellowish skin"
             ],
             "responses": [
-                "ah... yellowish skin. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  yellowish skin. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... yellowish skin. I'll add it to the list.",
+                "ah....  yellowish skin. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -347,8 +347,8 @@
                 "I have a  constipation"
             ],
             "responses": [
-                "ah... constipation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  constipation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... constipation. I'll add it to the list.",
+                "ah....  constipation. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -363,8 +363,8 @@
                 "I have a  pain during bowel movements"
             ],
             "responses": [
-                "ah... pain during bowel movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  pain during bowel movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... pain during bowel movements. I'll add it to the list.",
+                "ah....  pain during bowel movements. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -379,8 +379,8 @@
                 "I have a  breathlessness"
             ],
             "responses": [
-                "ah... breathlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  breathlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... breathlessness. I'll add it to the list.",
+                "ah....  breathlessness. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -395,8 +395,8 @@
                 "I have a  cramps"
             ],
             "responses": [
-                "ah... cramps. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  cramps. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... cramps. I'll add it to the list.",
+                "ah....  cramps. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -411,8 +411,8 @@
                 "I have a  weight gain"
             ],
             "responses": [
-                "ah... weight gain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  weight gain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... weight gain. I'll add it to the list.",
+                "ah....  weight gain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -427,8 +427,8 @@
                 "I have a  mood swings"
             ],
             "responses": [
-                "ah... mood swings. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  mood swings. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... mood swings. I'll add it to the list.",
+                "ah....  mood swings. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -443,8 +443,8 @@
                 "I have a  neck pain"
             ],
             "responses": [
-                "ah... neck pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  neck pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... neck pain. I'll add it to the list.",
+                "ah....  neck pain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -459,8 +459,8 @@
                 "I have a  muscle weakness"
             ],
             "responses": [
-                "ah... muscle weakness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  muscle weakness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... muscle weakness. I'll add it to the list.",
+                "ah....  muscle weakness. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -475,8 +475,8 @@
                 "I have a  stiff neck"
             ],
             "responses": [
-                "ah... stiff neck. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  stiff neck. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... stiff neck. I'll add it to the list.",
+                "ah....  stiff neck. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -491,8 +491,8 @@
                 "I have a  pus filled pimples"
             ],
             "responses": [
-                "ah... pus filled pimples. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  pus filled pimples. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... pus filled pimples. I'll add it to the list.",
+                "ah....  pus filled pimples. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -507,8 +507,8 @@
                 "I have a  burning micturition"
             ],
             "responses": [
-                "ah... burning micturition. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  burning micturition. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... burning micturition. I'll add it to the list.",
+                "ah....  burning micturition. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -523,8 +523,8 @@
                 "I have a  bladder discomfort"
             ],
             "responses": [
-                "ah... bladder discomfort. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  bladder discomfort. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... bladder discomfort. I'll add it to the list.",
+                "ah....  bladder discomfort. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -539,8 +539,8 @@
                 "I have a  high fever"
             ],
             "responses": [
-                "ah... high fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  high fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... high fever. I'll add it to the list.",
+                "ah....  high fever. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -555,8 +555,8 @@
                 "I have a  nodal skin eruptions"
             ],
             "responses": [
-                "ah... nodal skin eruptions. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  nodal skin eruptions. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... nodal skin eruptions. I'll add it to the list.",
+                "ah....  nodal skin eruptions. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -571,8 +571,8 @@
                 "I have a  ulcers on tongue"
             ],
             "responses": [
-                "ah... ulcers on tongue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  ulcers on tongue. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... ulcers on tongue. I'll add it to the list.",
+                "ah....  ulcers on tongue. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -587,8 +587,8 @@
                 "I have a  loss of appetite"
             ],
             "responses": [
-                "ah... loss of appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  loss of appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... loss of appetite. I'll add it to the list.",
+                "ah....  loss of appetite. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -603,8 +603,8 @@
                 "I have a  restlessness"
             ],
             "responses": [
-                "ah... restlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  restlessness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... restlessness. I'll add it to the list.",
+                "ah....  restlessness. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -619,8 +619,8 @@
                 "I have a  dehydration"
             ],
             "responses": [
-                "ah... dehydration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  dehydration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... dehydration. I'll add it to the list.",
+                "ah....  dehydration. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -635,8 +635,8 @@
                 "I have a  dizziness"
             ],
             "responses": [
-                "ah... dizziness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  dizziness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... dizziness. I'll add it to the list.",
+                "ah....  dizziness. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -651,8 +651,8 @@
                 "I have a  weakness of one body side"
             ],
             "responses": [
-                "ah... weakness of one body side. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  weakness of one body side. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... weakness of one body side. I'll add it to the list.",
+                "ah....  weakness of one body side. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -667,8 +667,8 @@
                 "I have a  lethargy"
             ],
             "responses": [
-                "ah... lethargy. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  lethargy. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... lethargy. I'll add it to the list.",
+                "ah....  lethargy. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -683,8 +683,8 @@
                 "I have a  nausea"
             ],
             "responses": [
-                "ah... nausea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  nausea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... nausea. I'll add it to the list.",
+                "ah....  nausea. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -699,8 +699,8 @@
                 "I have a  abdominal pain"
             ],
             "responses": [
-                "ah... abdominal pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  abdominal pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... abdominal pain. I'll add it to the list.",
+                "ah....  abdominal pain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -715,8 +715,8 @@
                 "I have a  pain in anal region"
             ],
             "responses": [
-                "ah... pain in anal region. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  pain in anal region. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... pain in anal region. I'll add it to the list.",
+                "ah....  pain in anal region. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -731,8 +731,8 @@
                 "I have a  sweating"
             ],
             "responses": [
-                "ah... sweating. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  sweating. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... sweating. I'll add it to the list.",
+                "ah....  sweating. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -747,8 +747,8 @@
                 "I have a  bruising"
             ],
             "responses": [
-                "ah... bruising. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  bruising. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... bruising. I'll add it to the list.",
+                "ah....  bruising. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -763,8 +763,8 @@
                 "I have a  cold hands and feets"
             ],
             "responses": [
-                "ah... cold hands and feets. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  cold hands and feets. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... cold hands and feets. I'll add it to the list.",
+                "ah....  cold hands and feets. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -779,8 +779,8 @@
                 "I have a  anxiety"
             ],
             "responses": [
-                "ah... anxiety. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  anxiety. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... anxiety. I'll add it to the list.",
+                "ah....  anxiety. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -795,8 +795,8 @@
                 "I have a  knee pain"
             ],
             "responses": [
-                "ah... knee pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  knee pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... knee pain. I'll add it to the list.",
+                "ah....  knee pain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -811,8 +811,8 @@
                 "I have a  swelling joints"
             ],
             "responses": [
-                "ah... swelling joints. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  swelling joints. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... swelling joints. I'll add it to the list.",
+                "ah....  swelling joints. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -827,8 +827,8 @@
                 "I have a  blackheads"
             ],
             "responses": [
-                "ah... blackheads. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  blackheads. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... blackheads. I'll add it to the list.",
+                "ah....  blackheads. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -843,8 +843,8 @@
                 "I have a  foul smell of urine"
             ],
             "responses": [
-                "ah... foul smell of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  foul smell of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... foul smell of urine. I'll add it to the list.",
+                "ah....  foul smell of urine. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -859,8 +859,8 @@
                 "I have a  skin peeling"
             ],
             "responses": [
-                "ah... skin peeling. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  skin peeling. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... skin peeling. I'll add it to the list.",
+                "ah....  skin peeling. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -875,8 +875,8 @@
                 "I have a  blister"
             ],
             "responses": [
-                "ah... blister. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  blister. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... blister. I'll add it to the list.",
+                "ah....  blister. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -891,8 +891,8 @@
                 "I have a  dischromic  patches"
             ],
             "responses": [
-                "ah... dischromic  patches. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  dischromic  patches. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... dischromic  patches. I'll add it to the list.",
+                "ah....  dischromic  patches. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -907,8 +907,8 @@
                 "I have a  watering from eyes"
             ],
             "responses": [
-                "ah... watering from eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  watering from eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... watering from eyes. I'll add it to the list.",
+                "ah....  watering from eyes. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -923,8 +923,8 @@
                 "I have a  extra marital contacts"
             ],
             "responses": [
-                "ah... extra marital contacts. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  extra marital contacts. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... extra marital contacts. I'll add it to the list.",
+                "ah....  extra marital contacts. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -939,8 +939,8 @@
                 "I have a  diarrhoea"
             ],
             "responses": [
-                "ah... diarrhoea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  diarrhoea. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... diarrhoea. I'll add it to the list.",
+                "ah....  diarrhoea. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -955,8 +955,8 @@
                 "I have a  loss of balance"
             ],
             "responses": [
-                "ah... loss of balance. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  loss of balance. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... loss of balance. I'll add it to the list.",
+                "ah....  loss of balance. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -971,8 +971,8 @@
                 "I have a  blurred and distorted vision"
             ],
             "responses": [
-                "ah... blurred and distorted vision. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  blurred and distorted vision. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... blurred and distorted vision. I'll add it to the list.",
+                "ah....  blurred and distorted vision. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -987,8 +987,8 @@
                 "I have a  altered sensorium"
             ],
             "responses": [
-                "ah... altered sensorium. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  altered sensorium. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... altered sensorium. I'll add it to the list.",
+                "ah....  altered sensorium. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1003,8 +1003,8 @@
                 "I have a  dark urine"
             ],
             "responses": [
-                "ah... dark urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  dark urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... dark urine. I'll add it to the list.",
+                "ah....  dark urine. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1019,8 +1019,8 @@
                 "I have a  swelling of stomach"
             ],
             "responses": [
-                "ah... swelling of stomach. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  swelling of stomach. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... swelling of stomach. I'll add it to the list.",
+                "ah....  swelling of stomach. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1035,8 +1035,8 @@
                 "I have a  bloody stool"
             ],
             "responses": [
-                "ah... bloody stool. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  bloody stool. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... bloody stool. I'll add it to the list.",
+                "ah....  bloody stool. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1051,8 +1051,8 @@
                 "I have a  obesity"
             ],
             "responses": [
-                "ah... obesity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  obesity. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... obesity. I'll add it to the list.",
+                "ah....  obesity. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1067,8 +1067,8 @@
                 "I have a  hip joint pain"
             ],
             "responses": [
-                "ah... hip joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  hip joint pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... hip joint pain. I'll add it to the list.",
+                "ah....  hip joint pain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1083,8 +1083,8 @@
                 "I have a  movement stiffness"
             ],
             "responses": [
-                "ah... movement stiffness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  movement stiffness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... movement stiffness. I'll add it to the list.",
+                "ah....  movement stiffness. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1099,8 +1099,8 @@
                 "I have a  spinning movements"
             ],
             "responses": [
-                "ah... spinning movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  spinning movements. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... spinning movements. I'll add it to the list.",
+                "ah....  spinning movements. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1115,8 +1115,8 @@
                 "I have a  scurring"
             ],
             "responses": [
-                "ah... scurring. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  scurring. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... scurring. I'll add it to the list.",
+                "ah....  scurring. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1131,8 +1131,8 @@
                 "I have a  continuous feel of urine"
             ],
             "responses": [
-                "ah... continuous feel of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  continuous feel of urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... continuous feel of urine. I'll add it to the list.",
+                "ah....  continuous feel of urine. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1147,8 +1147,8 @@
                 "I have a  silver like dusting"
             ],
             "responses": [
-                "ah... silver like dusting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  silver like dusting. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... silver like dusting. I'll add it to the list.",
+                "ah....  silver like dusting. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1163,8 +1163,8 @@
                 "I have a  red sore around nose"
             ],
             "responses": [
-                "ah... red sore around nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  red sore around nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... red sore around nose. I'll add it to the list.",
+                "ah....  red sore around nose. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1179,8 +1179,8 @@
                 "I have a  "
             ],
             "responses": [
-                "ah... . I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  . I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... . I'll add it to the list.",
+                "ah....  . I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1195,8 +1195,8 @@
                 "I have a  spotting  urination"
             ],
             "responses": [
-                "ah... spotting  urination. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  spotting  urination. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... spotting  urination. I'll add it to the list.",
+                "ah....  spotting  urination. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1211,8 +1211,8 @@
                 "I have a  passage of gases"
             ],
             "responses": [
-                "ah... passage of gases. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  passage of gases. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... passage of gases. I'll add it to the list.",
+                "ah....  passage of gases. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1227,8 +1227,8 @@
                 "I have a  irregular sugar level"
             ],
             "responses": [
-                "ah... irregular sugar level. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  irregular sugar level. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... irregular sugar level. I'll add it to the list.",
+                "ah....  irregular sugar level. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1243,8 +1243,8 @@
                 "I have a  family history"
             ],
             "responses": [
-                "ah... family history. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  family history. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... family history. I'll add it to the list.",
+                "ah....  family history. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1259,8 +1259,8 @@
                 "I have a  lack of concentration"
             ],
             "responses": [
-                "ah... lack of concentration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  lack of concentration. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... lack of concentration. I'll add it to the list.",
+                "ah....  lack of concentration. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1275,8 +1275,8 @@
                 "I have a  excessive hunger"
             ],
             "responses": [
-                "ah... excessive hunger. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  excessive hunger. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... excessive hunger. I'll add it to the list.",
+                "ah....  excessive hunger. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1291,8 +1291,8 @@
                 "I have a  yellowing of eyes"
             ],
             "responses": [
-                "ah... yellowing of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  yellowing of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... yellowing of eyes. I'll add it to the list.",
+                "ah....  yellowing of eyes. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1307,8 +1307,8 @@
                 "I have a  distention of abdomen"
             ],
             "responses": [
-                "ah... distention of abdomen. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  distention of abdomen. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... distention of abdomen. I'll add it to the list.",
+                "ah....  distention of abdomen. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1323,8 +1323,8 @@
                 "I have a  irritation in anus"
             ],
             "responses": [
-                "ah... irritation in anus. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  irritation in anus. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... irritation in anus. I'll add it to the list.",
+                "ah....  irritation in anus. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1339,8 +1339,8 @@
                 "I have a  swollen legs"
             ],
             "responses": [
-                "ah... swollen legs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  swollen legs. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... swollen legs. I'll add it to the list.",
+                "ah....  swollen legs. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1355,8 +1355,8 @@
                 "I have a  painful walking"
             ],
             "responses": [
-                "ah... painful walking. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  painful walking. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... painful walking. I'll add it to the list.",
+                "ah....  painful walking. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1371,8 +1371,8 @@
                 "I have a  small dents in nails"
             ],
             "responses": [
-                "ah... small dents in nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  small dents in nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... small dents in nails. I'll add it to the list.",
+                "ah....  small dents in nails. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1387,8 +1387,8 @@
                 "I have a  yellow crust ooze"
             ],
             "responses": [
-                "ah... yellow crust ooze. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  yellow crust ooze. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... yellow crust ooze. I'll add it to the list.",
+                "ah....  yellow crust ooze. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1403,8 +1403,8 @@
                 "I have a  internal itching"
             ],
             "responses": [
-                "ah... internal itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  internal itching. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... internal itching. I'll add it to the list.",
+                "ah....  internal itching. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1419,8 +1419,8 @@
                 "I have a  mucoid sputum"
             ],
             "responses": [
-                "ah... mucoid sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  mucoid sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... mucoid sputum. I'll add it to the list.",
+                "ah....  mucoid sputum. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1435,8 +1435,8 @@
                 "I have a  history of alcohol consumption"
             ],
             "responses": [
-                "ah... history of alcohol consumption. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  history of alcohol consumption. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... history of alcohol consumption. I'll add it to the list.",
+                "ah....  history of alcohol consumption. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1451,8 +1451,8 @@
                 "I have a  swollen blood vessels"
             ],
             "responses": [
-                "ah... swollen blood vessels. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  swollen blood vessels. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... swollen blood vessels. I'll add it to the list.",
+                "ah....  swollen blood vessels. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1467,8 +1467,8 @@
                 "I have a  unsteadiness"
             ],
             "responses": [
-                "ah... unsteadiness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  unsteadiness. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... unsteadiness. I'll add it to the list.",
+                "ah....  unsteadiness. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1483,8 +1483,8 @@
                 "I have a  inflammatory nails"
             ],
             "responses": [
-                "ah... inflammatory nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  inflammatory nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... inflammatory nails. I'll add it to the list.",
+                "ah....  inflammatory nails. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1499,8 +1499,8 @@
                 "I have a  depression"
             ],
             "responses": [
-                "ah... depression. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  depression. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... depression. I'll add it to the list.",
+                "ah....  depression. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1515,8 +1515,8 @@
                 "I have a  fluid overload"
             ],
             "responses": [
-                "ah... fluid overload. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  fluid overload. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... fluid overload. I'll add it to the list.",
+                "ah....  fluid overload. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1531,8 +1531,8 @@
                 "I have a  swelled lymph nodes"
             ],
             "responses": [
-                "ah... swelled lymph nodes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  swelled lymph nodes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... swelled lymph nodes. I'll add it to the list.",
+                "ah....  swelled lymph nodes. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1547,8 +1547,8 @@
                 "I have a  malaise"
             ],
             "responses": [
-                "ah... malaise. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  malaise. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... malaise. I'll add it to the list.",
+                "ah....  malaise. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1563,8 +1563,8 @@
                 "I have a  prominent veins on calf"
             ],
             "responses": [
-                "ah... prominent veins on calf. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  prominent veins on calf. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... prominent veins on calf. I'll add it to the list.",
+                "ah....  prominent veins on calf. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1579,8 +1579,8 @@
                 "I have a  puffy face and eyes"
             ],
             "responses": [
-                "ah... puffy face and eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  puffy face and eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... puffy face and eyes. I'll add it to the list.",
+                "ah....  puffy face and eyes. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1595,8 +1595,8 @@
                 "I have a  fast heart rate"
             ],
             "responses": [
-                "ah... fast heart rate. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  fast heart rate. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... fast heart rate. I'll add it to the list.",
+                "ah....  fast heart rate. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1611,8 +1611,8 @@
                 "I have a  irritability"
             ],
             "responses": [
-                "ah... irritability. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  irritability. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... irritability. I'll add it to the list.",
+                "ah....  irritability. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1627,8 +1627,8 @@
                 "I have a  muscle pain"
             ],
             "responses": [
-                "ah... muscle pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  muscle pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... muscle pain. I'll add it to the list.",
+                "ah....  muscle pain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1643,8 +1643,8 @@
                 "I have a  mild fever"
             ],
             "responses": [
-                "ah... mild fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  mild fever. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... mild fever. I'll add it to the list.",
+                "ah....  mild fever. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1659,8 +1659,8 @@
                 "I have a  yellow urine"
             ],
             "responses": [
-                "ah... yellow urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  yellow urine. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... yellow urine. I'll add it to the list.",
+                "ah....  yellow urine. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1675,8 +1675,8 @@
                 "I have a  phlegm"
             ],
             "responses": [
-                "ah... phlegm. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  phlegm. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... phlegm. I'll add it to the list.",
+                "ah....  phlegm. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1691,8 +1691,8 @@
                 "I have a  enlarged thyroid"
             ],
             "responses": [
-                "ah... enlarged thyroid. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  enlarged thyroid. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... enlarged thyroid. I'll add it to the list.",
+                "ah....  enlarged thyroid. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1707,8 +1707,8 @@
                 "I have a  increased appetite"
             ],
             "responses": [
-                "ah... increased appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  increased appetite. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... increased appetite. I'll add it to the list.",
+                "ah....  increased appetite. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1723,8 +1723,8 @@
                 "I have a  visual disturbances"
             ],
             "responses": [
-                "ah... visual disturbances. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  visual disturbances. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... visual disturbances. I'll add it to the list.",
+                "ah....  visual disturbances. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1739,8 +1739,8 @@
                 "I have a  brittle nails"
             ],
             "responses": [
-                "ah... brittle nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  brittle nails. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... brittle nails. I'll add it to the list.",
+                "ah....  brittle nails. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1755,8 +1755,8 @@
                 "I have a  drying and tingling lips"
             ],
             "responses": [
-                "ah... drying and tingling lips. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  drying and tingling lips. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... drying and tingling lips. I'll add it to the list.",
+                "ah....  drying and tingling lips. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1771,8 +1771,8 @@
                 "I have a  polyuria"
             ],
             "responses": [
-                "ah... polyuria. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  polyuria. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... polyuria. I'll add it to the list.",
+                "ah....  polyuria. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1787,8 +1787,8 @@
                 "I have a  pain behind the eyes"
             ],
             "responses": [
-                "ah... pain behind the eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  pain behind the eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... pain behind the eyes. I'll add it to the list.",
+                "ah....  pain behind the eyes. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1803,8 +1803,8 @@
                 "I have a  toxic look (typhos)"
             ],
             "responses": [
-                "ah... toxic look (typhos). I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  toxic look (typhos). I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... toxic look (typhos). I'll add it to the list.",
+                "ah....  toxic look (typhos). I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1819,8 +1819,8 @@
                 "I have a  throat irritation"
             ],
             "responses": [
-                "ah... throat irritation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  throat irritation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... throat irritation. I'll add it to the list.",
+                "ah....  throat irritation. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1835,8 +1835,8 @@
                 "I have a  swollen extremeties"
             ],
             "responses": [
-                "ah... swollen extremeties. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  swollen extremeties. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... swollen extremeties. I'll add it to the list.",
+                "ah....  swollen extremeties. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1851,8 +1851,8 @@
                 "I have a  slurred speech"
             ],
             "responses": [
-                "ah... slurred speech. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  slurred speech. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... slurred speech. I'll add it to the list.",
+                "ah....  slurred speech. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1867,8 +1867,8 @@
                 "I have a  red spots over body"
             ],
             "responses": [
-                "ah... red spots over body. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  red spots over body. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... red spots over body. I'll add it to the list.",
+                "ah....  red spots over body. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1883,8 +1883,8 @@
                 "I have a  belly pain"
             ],
             "responses": [
-                "ah... belly pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  belly pain. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... belly pain. I'll add it to the list.",
+                "ah....  belly pain. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1899,8 +1899,8 @@
                 "I have a  receiving blood transfusion"
             ],
             "responses": [
-                "ah... receiving blood transfusion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  receiving blood transfusion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... receiving blood transfusion. I'll add it to the list.",
+                "ah....  receiving blood transfusion. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1915,8 +1915,8 @@
                 "I have a  acute liver failure"
             ],
             "responses": [
-                "ah... acute liver failure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  acute liver failure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... acute liver failure. I'll add it to the list.",
+                "ah....  acute liver failure. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1931,8 +1931,8 @@
                 "I have a  redness of eyes"
             ],
             "responses": [
-                "ah... redness of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  redness of eyes. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... redness of eyes. I'll add it to the list.",
+                "ah....  redness of eyes. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1947,8 +1947,8 @@
                 "I have a  rusty sputum"
             ],
             "responses": [
-                "ah... rusty sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  rusty sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... rusty sputum. I'll add it to the list.",
+                "ah....  rusty sputum. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1963,8 +1963,8 @@
                 "I have a  abnormal menstruation"
             ],
             "responses": [
-                "ah... abnormal menstruation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  abnormal menstruation. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... abnormal menstruation. I'll add it to the list.",
+                "ah....  abnormal menstruation. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1979,8 +1979,8 @@
                 "I have a  receiving unsterile injections"
             ],
             "responses": [
-                "ah... receiving unsterile injections. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  receiving unsterile injections. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... receiving unsterile injections. I'll add it to the list.",
+                "ah....  receiving unsterile injections. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -1995,8 +1995,8 @@
                 "I have a  coma"
             ],
             "responses": [
-                "ah... coma. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  coma. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... coma. I'll add it to the list.",
+                "ah....  coma. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -2011,8 +2011,8 @@
                 "I have a  sinus pressure"
             ],
             "responses": [
-                "ah... sinus pressure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  sinus pressure. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... sinus pressure. I'll add it to the list.",
+                "ah....  sinus pressure. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -2027,8 +2027,8 @@
                 "I have a  palpitations"
             ],
             "responses": [
-                "ah... palpitations. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  palpitations. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... palpitations. I'll add it to the list.",
+                "ah....  palpitations. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -2043,8 +2043,8 @@
                 "I have a  stomach bleeding"
             ],
             "responses": [
-                "ah... stomach bleeding. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  stomach bleeding. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... stomach bleeding. I'll add it to the list.",
+                "ah....  stomach bleeding. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -2059,8 +2059,8 @@
                 "I have a  runny nose"
             ],
             "responses": [
-                "ah... runny nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  runny nose. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... runny nose. I'll add it to the list.",
+                "ah....  runny nose. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -2075,8 +2075,8 @@
                 "I have a  congestion"
             ],
             "responses": [
-                "ah... congestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  congestion. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... congestion. I'll add it to the list.",
+                "ah....  congestion. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -2091,8 +2091,8 @@
                 "I have a  blood in sputum"
             ],
             "responses": [
-                "ah... blood in sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  blood in sputum. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... blood in sputum. I'll add it to the list.",
+                "ah....  blood in sputum. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },
@@ -2107,8 +2107,8 @@
                 "I have a  loss of smell"
             ],
             "responses": [
-                "ah... loss of smell. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                "ah....  loss of smell. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                "ah... loss of smell. I'll add it to the list.",
+                "ah....  loss of smell. I'll add it to the list."
             ],
             "context": "experiencing symptoms"
         },

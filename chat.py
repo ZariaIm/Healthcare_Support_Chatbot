@@ -36,11 +36,11 @@ def get_response(msg):
         for intent in intents['intents']:
             if label_intent == [ctr]:
                 if intent["context"] == "predicted disease":
-                    [index, prob_disease, list_of_symptoms] = predict_disease(disease_labels, classifier_model, all_symptoms)
+                    [index, prob_disease, list_of_symptoms] = predict_disease(classifier_model, all_symptoms)
                     if prob_disease.item() > 0.15:
                         return f"You may have {disease_labels[index]}. I'm {torch.round(prob_disease*100)}% confident in my prediction. The symptoms I used to make the prediction are {list_of_symptoms}. The symptoms of {disease_labels[index]} are {disease_symptoms[index]}"
                     else:
-                        return f"I think I need more symptoms to be sure.. I'm only {torch.round(prob_disease*100)}% confident in my prediction."
+                        return f"I think I need more symptoms.. I'm only {torch.round(prob_disease*100)}% confident in my prediction."
                 if intent["context"] == "experiencing symptoms":
                     for word in sentence:
                         word = stem(word)
