@@ -47,7 +47,7 @@ def get_response(msg):
                         if word in all_symptoms:
                             store_symptom(word)
                         if word in emergency_symptoms:
-                            return f"Please call 000 if you are experiencing severe symptoms"
+                            return random.choice(intent['responses']) + "\n Please call 000 if you are experiencing severe symptoms"
                 return random.choice(intent['responses'])
         ###########################################################################
             ctr +=1

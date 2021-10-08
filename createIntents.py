@@ -47,8 +47,8 @@ for i in range(1,18):
                     f"I have a {symptom}"
                     ],
                 "responses": [
-                    f"ah...{symptom}. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict.",
-                    f"ah.... {symptom}. I'll add it to the list, ask me 'Why am I sick?' if you want to see what I predict."
+                    f"ah...{symptom}. I'll add it to the list.",
+                    f"ah.... {symptom}. I'll add it to the list."
                     ],
                 "context": "experiencing symptoms"
                 }

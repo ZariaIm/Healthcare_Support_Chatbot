@@ -1,10 +1,7 @@
 {
     "symptoms": [
         {
-            "symptom": "headach"
-        },
-        {
-            "symptom": "chest"
+            "symptom": "acid"
         }
     ]
 }
