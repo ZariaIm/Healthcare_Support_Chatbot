@@ -112,10 +112,22 @@ add = {
                 "G'day"
             ],
             "responses": [
-                "Hello, How can I help you today?",
-                "Hello there! My name is Sam. What can I do for you?",
-                "Hi, what can I do for you?" 
+                "How are you feeling today?", "How are you going?" 
             ],
+            "context": "none"
+        }
+write_json(add)
+add = {
+            "labels": "good",
+            "patterns": ["I'm good", "I'm great", "Feeling great", "Always good"],
+            "responses": ["I'm glad, let me know if I can help with anything else", "That's good to hear, can I help in some other way"],
+            "context": "none"
+        }
+write_json(add)
+add = {
+            "labels": "bad",
+            "patterns": ["I feel sick", "I am sick", "I'm sick", "I'm not well", "I'm feeling bad", "Feeling down", "Not doing great","Not well"],
+            "responses": ["That's not good, do you have any symptoms to tell me?", "Are you experiencing any symptoms lately that I should know about?", "If you tell me some symptoms, I might be able to help find the reason why you're unwell"],
             "context": "none"
         }
 write_json(add)

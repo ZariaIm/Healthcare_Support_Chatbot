@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-from model import LinearNet
+from model import LinearNet, LinearNetDropout, ConvolutionalNet
 from createIntentAllWords import all_words, chat_labels
 
 
@@ -65,7 +65,7 @@ def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, 
                             batch_size=batch_size,
                             shuffle=True,
                             num_workers=0)
-    model = LinearNet(input_size, hidden_size, output_size).to(device)
+    model = ConvolutionalNet(input_size, hidden_size, output_size).to(device)
     # Loss and optimizer
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)

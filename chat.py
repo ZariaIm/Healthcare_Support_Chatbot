@@ -50,18 +50,18 @@ def get_response(msg):
                         if word in emergency_symptoms:
                             return random.choice(intent['responses']) + "\n Please call 000 if you are experiencing severe symptoms"
                 if intent["context"] == "asking symptoms":
-                    temp = []
+                    disease_words = []
                     temp_labels = [((disease).split()) for disease in disease_labels]
-                    for i in temp_labels:
-                        temp_temp = []
-                        for j in range(len(i)):
-                            temp_temp.append(stem(i[j]))
-                        temp.append(temp_temp)
+                    for raw_word in temp_labels:
+                        stemmed_words = []
+                        for j in range(len(raw_word)):
+                            stemmed_words.append(stem(raw_word[j]))
+                        disease_words.append(stemmed_words)
                     for word in sentence:
                         disease_ctr = 0
-                        for disease in temp:
-                            if stem(word) in disease:
-                                i = disease.index(stem(word))
+                        for disease_word in disease_words:
+                            if stem(word) in disease_word:
+                                raw_word = disease_word.index(stem(word))
                                 return f"The symptoms of {disease_labels[disease_ctr]} are {disease_symptoms[disease_ctr]}"
                             disease_ctr += 1
                     return "I didn't quite catch which disease that was"
