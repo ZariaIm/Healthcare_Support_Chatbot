@@ -3,8 +3,7 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from model import LSTM_CNN, LSTM_CNN_Dropout
 from createIntentAllWords import all_words, chat_labels
-Model_Chatbot = LSTM_CNN
-Model_Classifier = LSTM_CNN
+Model = LSTM_CNN
 
 class ChatDataset(Dataset):
 
@@ -66,7 +65,7 @@ def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, 
                             batch_size=batch_size,
                             shuffle=True,
                             num_workers=0)
-    model = Model_Chatbot(input_size, hidden_size, output_size).to(device)
+    model = Model(input_size, hidden_size, output_size).to(device)
     # Loss and optimizer
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
@@ -90,7 +89,7 @@ def initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, 
                             batch_size=batch_size,
                             shuffle=True,
                             num_workers=0)
-    model = Model_Classifier(input_size, hidden_size, output_size).to(device)
+    model = Model(input_size, hidden_size, output_size).to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     return model, criterion, optimizer, trainloader, valloader, testloader

@@ -1,8 +1,9 @@
 
 import json
 import torch
-from model import LinearNet
+from model import LSTM_CNN, LSTM_CNN_Dropout
 from nltk_utils import bag_of_words
+Model = LSTM_CNN
 
 def load_saved_model(device, FILE):
     data = torch.load(FILE)
@@ -10,7 +11,7 @@ def load_saved_model(device, FILE):
     hidden_size = data["hidden_size"]
     output_size = data["output_size"]
     model_state = data["model_state"]
-    model = LinearNet(input_size, hidden_size, output_size).to(device)
+    model = Model(input_size, hidden_size, output_size).to(device)
     model.load_state_dict(model_state)
     model.eval()
     return model
