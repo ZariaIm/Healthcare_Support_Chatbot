@@ -37,6 +37,7 @@ for row in range(len(df_train["Disease"])):
     xy.append((temp_symptoms, value))    
 ignore_words = ['in', ', ', 'like', 'feel', 'from', 'and', 'of', 'on', 'the']
 all_symptoms = [stem(w) for w in all_symptoms if w not in ignore_words]
+#print("all symptoms", all_symptoms)
 #remove duplicates from list and sort
 #sets are easier for comparing too
 all_symptoms = sorted(set(all_symptoms))
