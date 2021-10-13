@@ -57,7 +57,7 @@ def evaluate(net, device, loader):
     #return the accuracy from the epoch 
     return epoch_acc / len(loader.dataset)    
 
-def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, hidden_size, output_size):
+def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, output_size):
     print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
     dataset = ChatDataset(X_train, y_train)
@@ -65,13 +65,13 @@ def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, 
                             batch_size=batch_size,
                             shuffle=True,
                             num_workers=0)
-    model = Model(input_size, hidden_size, output_size).to(device)
+    model = Model(len(all_words), input_size, output_size).to(device)
     # Loss and optimizer
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     return model, criterion, optimizer, loader
 
-def initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, hidden_size, output_size):
+def initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, output_size):
     print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
     dataset = ChatDataset(X_train, y_train)

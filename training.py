@@ -19,7 +19,7 @@ output_size = len(y_train_chat)
 X_train = X_train_chat
 y_train = y_train_chat
 print("Preparing to set up the neural network")
-[model, criterion, optimizer, trainloader] = initialise(device, X_train, y_train, batch_size, learning_rate, input_size, hidden_size, output_size)
+[model, criterion, optimizer, trainloader] = initialise(device, X_train, y_train, batch_size, learning_rate, input_size, output_size)
 print("Chatbot Model initialised. Entering Training Loop.")
 [model, training_loss_logger,training_acc_logger] = training_loop(device, num_epochs, model, trainloader,optimizer, criterion)
 FILE = "model_chatbot.pth"
@@ -41,7 +41,7 @@ output_size = len(y_train_symptom)
 X_train = X_train_symptom
 y_train = y_train_symptom
 print("Preparing to set up the neural network")
-[model, criterion, optimizer, trainloader, valloader, testloader] = initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, hidden_size, output_size)
+[model, criterion, optimizer, trainloader, valloader, testloader] = initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, output_size)
 print("Classifier Model initialised. Entering Training Loop.")
 [model,symptom_training_loss_logger, sypmtom_training_acc_logger,symptom_validation_acc_logger] = training_loop_with_val_loader(device, num_epochs, model, trainloader, valloader,optimizer, criterion)
 FILE = "model_symptoms.pth"
