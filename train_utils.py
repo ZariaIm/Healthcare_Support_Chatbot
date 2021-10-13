@@ -27,18 +27,19 @@ def train(net, device, loader, optimizer, loss_fun):
     #Set Network in train mode
     net.train()
     #Perform a single epoch of training on the input dataloader, logging the loss at every step 
+    state_h, state_c = net.init_state(32)
     for batch_idx, (x, y) in enumerate(loader):
         x = x.to(device)
         y = y.to(dtype=torch.long).to(device) 
         y_hat, (state_h, state_c) = net(x, (state_h, state_c))
-        loss = loss_fun(y_hat.transpose(1,2), y)
+        loss = loss_fun(y_hat, y)
         state_h = state_h.detach()
         state_c = state_c.detach()
         optimizer.zero_grad()   
         loss.backward()
         optimizer.step()
     #return the logger array       
-    return loss, state
+    return loss
 ########################################################################################
 #This function should perform a single evaluation epoch, it WILL NOT be used to train our model
 def evaluate(net, device, loader):
