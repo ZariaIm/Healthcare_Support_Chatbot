@@ -1,7 +1,7 @@
 
 import json
 import torch
-from model import LSTM_CNN, LSTM_CNN_Dropout
+from model import LSTM_CNN
 from nltk_utils import bag_of_words
 Model = LSTM_CNN
 

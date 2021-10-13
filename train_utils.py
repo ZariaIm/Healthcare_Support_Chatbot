@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-from model import LSTM_CNN, LSTM_CNN_Dropout
+from model import LSTM_CNN
 from createIntentAllWords import all_words, chat_labels
 from createSymptomAllWords import all_symptoms
 Model = LSTM_CNN
@@ -49,12 +49,14 @@ def evaluate(net, device, loader):
     
     #Set network in evaluation mode
     net.eval()
-    
+    state_h, state_c = net.init_state(32)
     with torch.no_grad():
         for i, (x, y) in enumerate(loader):
             x = x.to(device)
             y = y.to(dtype=torch.long).to(device) 
-            y_hat = net(x)
+            y_hat, (state_h, state_c) = net(x, (state_h, state_c))
+            state_h = state_h.detach()
+            state_c = state_c.detach()
             #log the cumulative sum of the acc
             epoch_acc += (y_hat.argmax(1) == y.to(device)).sum().item()
             

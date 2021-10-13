@@ -22,36 +22,13 @@ class LSTM_CNN(nn.Module):
         self.fc1 = nn.Linear(lstm_size*filter_num,num_classes)
         self.relu = nn.ReLU()
     def forward(self, x, prev_state):
-        print("1", x.shape, type(x))
         out = self.embed((x.long()))
-        print("2", out.shape, type(out))
         out = self.relu(self.conv1(out))
-        print("3", out.shape, type(out))
         out = self.maxpool(out)
-        print("4", out.shape, type(out))
         out, state = self.LSTM(out, prev_state)
-        #print("5", out, type(out))
         out = out.view(out.shape[0], -1)
-        print("6", out.shape, type(out))
         out = self.fc1(out)
-        print("7", out.shape, type(out))
         # no activation and no softmax at the end
         return out, state
     def init_state(self, sequence_length):
         return torch.zeros(num_layers, sequence_length, lstm_size), torch.zeros(num_layers, sequence_length, lstm_size)
-
-class LSTM_CNN_Dropout(nn.Module):
-    def __init__(self, input_size, hidden_size, num_classes):
-        super(LSTM_CNN_Dropout, self).__init__()
-        self.fc1 = nn.Linear(input_size, hidden_size) 
-        self.fc2 = nn.Linear(hidden_size, hidden_size) 
-        self.fc3 = nn.Linear(hidden_size, num_classes)
-        self.relu = nn.ReLU()
-    def forward(self, x):
-        out = self.fc1(x)
-        out = self.relu(out)
-        out = self.fc2(out)
-        out = self.relu(out)
-        out = self.fc3(out)
-        # no activation and no softmax at the end
-        return out
