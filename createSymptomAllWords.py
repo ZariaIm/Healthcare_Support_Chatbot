@@ -79,19 +79,20 @@ data = {
 torch.save(data, "disease.pth")
 print("symptoms and diseases saved to disease.pth")
 ##################################################################
+
 # create training data
 X_train_symptom = []
 y_train_symptom = []
 for (pattern_sentence, label) in xy:
     # X: bag of words for each pattern_sentence
-    bag = bag_of_words(pattern_sentence, all_symptoms)
+    bag = bag_of_words(pattern_sentence, all_symptoms, 400)
     X_train_symptom.append(bag)
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
     tag = disease_labels.index(label)
     y_train_symptom.append(tag)
 
-X_train_symptom = np.array(X_train_symptom)
-y_train_symptom = np.array(y_train_symptom)
+X_train_symptom = torch.Tensor(X_train_symptom)
+y_train_symptom = torch.Tensor(y_train_symptom)
 print("Training data created for symptom classifier")
 ##################################################################
 X_val = []
@@ -108,13 +109,13 @@ for (pattern_sentence, label) in xy:
     # X: bag of words for each pattern_sentence
     #print(type(pattern_sentence[0]))
     #print(all_words)
-    bag = bag_of_words(pattern_sentence, all_symptoms)
+    bag = bag_of_words(pattern_sentence, all_symptoms, 400)
     X_val.append(bag)
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
     tag = disease_labels.index(label)
     y_val.append(tag)
-X_val = np.array(X_val)
-y_val = np.array(y_val)
+X_val = torch.Tensor(X_val)
+y_val = torch.Tensor(y_val)
 print("Validation data created for symptom classifier")
 #################################################################
 X_test = []
@@ -131,11 +132,11 @@ for (pattern_sentence, label) in xy:
     # X: bag of words for each pattern_sentence
     #print(type(pattern_sentence[0]))
     #print(all_words)
-    bag = bag_of_words(pattern_sentence, all_symptoms)
+    bag = bag_of_words(pattern_sentence, all_symptoms, 400)
     X_test.append(bag)
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
     tag = disease_labels.index(label)
     y_test.append(tag)
-X_test = np.array(X_test)
-y_test = np.array(y_test)
+X_test =torch.Tensor(X_test)
+y_test =torch.Tensor(y_test)
 print("Test data created for symptom classifier")

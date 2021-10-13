@@ -9,39 +9,45 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 ##########################################################################
 ##########################################################################
 #Hyperparameters for chatbot training
-num_epochs = 300
-batch_size = 100
-learning_rate = 0.001
-input_size = len(X_train_chat[0])
-hidden_size = 8
-output_size = len(y_train_chat)
+# num_epochs = 10
+# batch_size = 100
+# learning_rate = 0.001
+# input_size = len(X_train_chat[0])
+# output_size = len(y_train_chat)
+# embedding_vector_length = 256
+# lstm_size = 124
+# num_layers = 3
+# filter_num = 32
 
-X_train = X_train_chat
-y_train = y_train_chat
-print("Preparing to set up the neural network")
-[model, criterion, optimizer, trainloader] = initialise(device, X_train, y_train, batch_size, learning_rate, input_size, output_size)
-print("Chatbot Model initialised. Entering Training Loop.")
-[model, training_loss_logger,training_acc_logger] = training_loop(device, num_epochs, model, trainloader,optimizer, criterion)
-FILE = "model_chatbot.pth"
-save_model(FILE, model, input_size, hidden_size, output_size)
-print(f'chatbot training complete. file saved to {FILE}')
+# X_train = X_train_chat
+# y_train = y_train_chat
+# print("Preparing to set up the neural network")
+# [model, criterion, optimizer, trainloader] = initialise(device, X_train, y_train, batch_size, learning_rate, input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num)
+# print("Chatbot Model initialised. Entering Training Loop.")
+# [model, training_loss_logger,training_acc_logger] = training_loop(device, num_epochs, model, trainloader,optimizer, criterion)
+# FILE = "model_chatbot.pth"
+# save_model(FILE, model, input_size, hidden_size, output_size)
+# print(f'chatbot training complete. file saved to {FILE}')
 ##########################################################################
 ##########################################################################
 
 ##########################################################################
 ##########################################################################
 # Hyper-parameters for symptom classifier training
-num_epochs = 300
+num_epochs = 10
 batch_size = 100
 learning_rate = 0.001
 input_size = len(X_train_symptom[0])
-hidden_size = 8
 output_size = len(y_train_symptom)
+embedding_vector_length = 32
+lstm_size = 12
+num_layers = 3
+filter_num = 32
 
 X_train = X_train_symptom
 y_train = y_train_symptom
 print("Preparing to set up the neural network")
-[model, criterion, optimizer, trainloader, valloader, testloader] = initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, output_size)
+[model, criterion, optimizer, trainloader, valloader, testloader] = initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num)
 print("Classifier Model initialised. Entering Training Loop.")
 [model,symptom_training_loss_logger, sypmtom_training_acc_logger,symptom_validation_acc_logger] = training_loop_with_val_loader(device, num_epochs, model, trainloader, valloader,optimizer, criterion)
 FILE = "model_symptoms.pth"

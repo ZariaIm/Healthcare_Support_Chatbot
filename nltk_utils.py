@@ -36,7 +36,7 @@ def stem(word):
     return word
 
 
-def bag_of_words(tokenized_sentence, words):
+def bag_of_words(tokenized_sentence, words, maxlength = 1000):
     """
     return bag of words array:
     1 for each known word that exists in the sentence, 0 otherwise
@@ -48,7 +48,7 @@ def bag_of_words(tokenized_sentence, words):
     # stem each word
     sentence_words = [stem(word) for word in tokenized_sentence]
     # initialize bag with 0 for each word
-    bag = np.zeros(1000, dtype=np.float32)
+    bag = np.zeros(maxlength, dtype=np.float32)
     for idx, w in enumerate(words):
         for idx2, word in enumerate(sentence_words):
             if w == word: 

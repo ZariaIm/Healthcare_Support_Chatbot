@@ -63,7 +63,7 @@ def evaluate(net, device, loader):
     #return the accuracy from the epoch 
     return epoch_acc / len(loader.dataset)    
 ########################################################################################
-def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, output_size):
+def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num):
     print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
     dataset = ChatDataset(X_train, y_train)
@@ -71,13 +71,15 @@ def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, 
                             batch_size=batch_size,
                             shuffle=True,
                             num_workers=0)
-    model = Model(len(all_words), input_size, output_size).to(device)
+    
+
+    model = Model(len(all_words), input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num).to(device)
     # Loss and optimizer
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
     return model, criterion, optimizer, loader
 ########################################################################################
-def initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, output_size):
+def initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num):
     print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
     dataset = ChatDataset(X_train, y_train)
@@ -95,7 +97,8 @@ def initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, 
                             batch_size=batch_size,
                             shuffle=True,
                             num_workers=0)
-    model = Model(len(all_symptoms), input_size, output_size).to(device)
+
+    model = Model(len(all_symptoms), input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num).to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
     return model, criterion, optimizer, trainloader, valloader, testloader
@@ -107,9 +110,8 @@ def training_loop(device, num_epochs, model, loader,optimizer, criterion):
         training_loss = train(model, device, loader, optimizer, criterion)
         train_acc = evaluate(model, device, loader)
         training_acc_logger.append(train_acc)
-        training_loss_logger.append(training_loss.item())
-        if (epoch%50 == 0):    
-            print(f'| Epoch: {epoch:02} | Train Acc: {train_acc*100:05.2f}% | Train Loss: {training_loss.item():.4f}')
+        training_loss_logger.append(training_loss.item())  
+        print(f'| Epoch: {epoch:02}/{num_epochs} | Train Acc: {train_acc*100:05.2f}% | Train Loss: {training_loss.item():.4f}')
     return model, training_loss_logger,training_acc_logger
 ########################################################################################
 def training_loop_with_val_loader(device, num_epochs, model, trainloader,valloader,optimizer, criterion):
@@ -122,9 +124,8 @@ def training_loop_with_val_loader(device, num_epochs, model, trainloader,valload
         val_acc = evaluate(model, device, valloader)
         training_acc_logger.append(train_acc)
         validation_acc_logger.append(val_acc)
-        training_loss_logger.append(training_loss.item())
-        if (epoch%50 == 0):    
-            print (f'| Epoch: {epoch:02} |Train Loss: {training_loss:.4f}| Train Acc: {train_acc*100:05.2f}% | Val. Acc: {val_acc*100:05.2f}% |')
+        training_loss_logger.append(training_loss.item())  
+        print (f'| Epoch: {epoch:02}/{num_epochs} |Train Loss: {training_loss:.4f}| Train Acc: {train_acc*100:05.2f}% | Val. Acc: {val_acc*100:05.2f}% |')
     return model, training_loss_logger,training_acc_logger,validation_acc_logger
 ########################################################################################
 def save_model(FILE, model, input_size, hidden_size, output_size):
