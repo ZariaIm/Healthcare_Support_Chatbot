@@ -45,9 +45,9 @@ for (pattern_sentence, label) in xy:
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
     tag = chat_labels.index(label)
     y_train_chat.append(tag)
-X_train_chat = np.array(X_train_chat)
-y_train_chat = np.array(y_train_chat)
+X_train_chat = torch.Tensor(X_train_chat)
+y_train_chat = torch.Tensor(y_train_chat)
 print("Training data created for intent classifier")
 ##################################################################
-
+#print(X_train_chat.shape, type(X_train_chat))
 

@@ -3,8 +3,9 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from model import LSTM_CNN, LSTM_CNN_Dropout
 from createIntentAllWords import all_words, chat_labels
+from createSymptomAllWords import all_symptoms
 Model = LSTM_CNN
-
+########################################################################################
 class ChatDataset(Dataset):
 
     def __init__(self, X_train, y_train):
@@ -19,7 +20,7 @@ class ChatDataset(Dataset):
     # we can call len(dataset) to return the size
     def __len__(self):
         return self.n_samples
-
+########################################################################################
 #This function should perform a single training epoch using our training data
 def train(net, device, loader, optimizer, loss_fun):
     loss = 0
@@ -29,14 +30,16 @@ def train(net, device, loader, optimizer, loss_fun):
     for batch_idx, (x, y) in enumerate(loader):
         x = x.to(device)
         y = y.to(dtype=torch.long).to(device) 
-        y_hat = net(x)
-        loss = loss_fun(y_hat, y)
+        y_hat, (state_h, state_c) = net(x, (state_h, state_c))
+        loss = loss_fun(y_hat.transpose(1,2), y)
+        state_h = state_h.detach()
+        state_c = state_c.detach()
         optimizer.zero_grad()   
         loss.backward()
         optimizer.step()
     #return the logger array       
-    return loss
-
+    return loss, state
+########################################################################################
 #This function should perform a single evaluation epoch, it WILL NOT be used to train our model
 def evaluate(net, device, loader):
     
@@ -56,7 +59,7 @@ def evaluate(net, device, loader):
             
     #return the accuracy from the epoch 
     return epoch_acc / len(loader.dataset)    
-
+########################################################################################
 def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, output_size):
     print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
@@ -68,9 +71,9 @@ def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, 
     model = Model(len(all_words), input_size, output_size).to(device)
     # Loss and optimizer
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
     return model, criterion, optimizer, loader
-
+########################################################################################
 def initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, output_size):
     print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
@@ -89,11 +92,11 @@ def initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, 
                             batch_size=batch_size,
                             shuffle=True,
                             num_workers=0)
-    model = Model(input_size, hidden_size, output_size).to(device)
+    model = Model(len(all_symptoms), input_size, output_size).to(device)
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
     return model, criterion, optimizer, trainloader, valloader, testloader
-
+########################################################################################
 def training_loop(device, num_epochs, model, loader,optimizer, criterion):
     training_loss_logger = []
     training_acc_logger = []
@@ -105,7 +108,7 @@ def training_loop(device, num_epochs, model, loader,optimizer, criterion):
         if (epoch%50 == 0):    
             print(f'| Epoch: {epoch:02} | Train Acc: {train_acc*100:05.2f}% | Train Loss: {training_loss.item():.4f}')
     return model, training_loss_logger,training_acc_logger
-
+########################################################################################
 def training_loop_with_val_loader(device, num_epochs, model, trainloader,valloader,optimizer, criterion):
     training_loss_logger = []
     training_acc_logger = []
@@ -120,9 +123,9 @@ def training_loop_with_val_loader(device, num_epochs, model, trainloader,valload
         if (epoch%50 == 0):    
             print (f'| Epoch: {epoch:02} |Train Loss: {training_loss:.4f}| Train Acc: {train_acc*100:05.2f}% | Val. Acc: {val_acc*100:05.2f}% |')
     return model, training_loss_logger,training_acc_logger,validation_acc_logger
-
+########################################################################################
 def save_model(FILE, model, input_size, hidden_size, output_size):
-    chat_data = {
+    data = {
     "model_state": model.state_dict(),
     "input_size": input_size,
     "hidden_size": hidden_size,
@@ -130,4 +133,4 @@ def save_model(FILE, model, input_size, hidden_size, output_size):
     "all_words": all_words,
     "labels": chat_labels
     }    
-    torch.save(chat_data, FILE)
+    torch.save(data, FILE)
