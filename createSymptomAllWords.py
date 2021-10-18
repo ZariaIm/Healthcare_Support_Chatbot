@@ -3,6 +3,19 @@ import pandas as pd
 import torch
 from nltk_utils import bag_of_words, tokenize, stem
 #####################################################################
+class ChatDataset():
+    def __init__(self, X_train, y_train):
+        self.x_data = X_train
+        self.y_data = y_train
+    # support indexing such that dataset[i] can be used to get i-th sample
+    def __getitem__(self, index):
+        item = {key: torch.tensor(val[index]) for key, val in self.X_train.items()}
+        item['labels'] = torch.tensor(self.y_data[index])
+        return item 
+    # we can call len(dataset) to return the size
+    def __len__(self):
+        return len(self.y_data)
+
 #Create all words array, diseases array
 all_symptoms = [] #list type
 disease_labels = []

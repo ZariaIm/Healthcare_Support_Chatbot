@@ -1,25 +1,76 @@
+from transformers.utils.dummy_pt_objects import DistilBertForSequenceClassification
+import createIntents
 import torch
-from createIntentAllWords import X_train_chat, y_train_chat, chat_labels, all_words
-from createSymptomAllWords import X_train_symptom, y_train_symptom, disease_labels, all_symptoms
-from time import process_time
-from transformers import Trainer, TrainingArguments
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-class ChatDataset():
+from time import process_time
+from transformers import DistilBertTokenizerFast
+from transformers import Trainer, TrainingArguments
+import numpy as np
+import json
 
+model_name = "distilbert-base-uncased-finetuned-sst-2-english"
+
+##################################################################
+with open('intents.json', 'r') as f:
+    intents = json.load(f)
+##################################################################
+chat_text =[]
+chat_labels = []
+
+# loop through each sentence in our intents patterns
+for intent in intents['intents']:
+    label = intent['labels']
+    # add to tag list
+    chat_labels.append(label)
+    for pattern in intent['patterns']:
+        # add to our words list
+        chat_text.append(pattern)
+#### Need to split training and validation sets
+##################################################################
+
+class ChatDataset():
     def __init__(self, X_train, y_train):
-        self.n_samples = len(X_train)
         self.x_data = X_train
         self.y_data = y_train
-
     # support indexing such that dataset[i] can be used to get i-th sample
     def __getitem__(self, index):
-        return self.x_data[index], self.y_data[index]
-
+        item = {key: torch.tensor(val[index]) for key, val in self.X_train.items()}
+        item['labels'] = torch.tensor(self.y_data[index])
+        return item 
     # we can call len(dataset) to return the size
     def __len__(self):
-        return self.n_samples
-        
+        return len(self.y_data)
+
+##################################################################
+
+# tokenize each word in the sentence
+chat_encodings = DistilBertTokenizerFast.tokenize(chat_text, truncation = True, padding = True)
+# create training data
+chat_train_dataset = ChatDataset(chat_encodings, chat_labels)
+chat_val_dataset = ChatDataset(chat_encodings, chat_labels)
+##################################################################
+training_args = TrainingArguments(
+    output_dir = './results',
+    num_train_epochs=2,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=64,
+    warmup_steps = 500,
+    learning_rate = 5e-5,
+    weight_decay=0.01,
+    logging_dir='./logs',
+    logging_steps=10
+)
+model = DistilBertForSequenceClassification.from_pretrained(model_name)
+
+trainer = Trainer(
+    model = model,
+    args = training_args,
+    train_dataset = chat_train_dataset,
+    eval_dataset = chat_val_dataset
+)
+trainer.train()
+
 #This function should perform a single training epoch using our training data
 def train(net, device, loader, optimizer, loss_fun, filter_num):
     loss = 0
@@ -88,8 +139,6 @@ def save_model(FILE, model, dict_size, input_size, output_size, kernel_size,embe
 ##########################################################################
 ##########################################################################
 
-from transformers import pipeline
-from transformers import Autotokenizer
 model_name = "distilbert-base-uncased-finetuned-sst-2-english"
 learning_rate = 1e-5
 batch_size = 32
