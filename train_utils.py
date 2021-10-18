@@ -2,9 +2,6 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from model import LSTM_CNN
-from createIntentAllWords import all_words, chat_labels
-from createSymptomAllWords import all_symptoms
-Model = LSTM_CNN
 ########################################################################################
 class ChatDataset(Dataset):
 
@@ -22,12 +19,12 @@ class ChatDataset(Dataset):
         return self.n_samples
 ########################################################################################
 #This function should perform a single training epoch using our training data
-def train(net, device, loader, optimizer, loss_fun):
+def train(net, device, loader, optimizer, loss_fun, filter_num):
     loss = 0
     #Set Network in train mode
     net.train()
     #Perform a single epoch of training on the input dataloader, logging the loss at every step 
-    state_h, state_c = net.init_state(32)
+    state_h, state_c = net.init_state(filter_num)
     for batch_idx, (x, y) in enumerate(loader):
         x = x.to(device)
         y = y.to(dtype=torch.long).to(device) 
@@ -42,14 +39,14 @@ def train(net, device, loader, optimizer, loss_fun):
     return loss
 ########################################################################################
 #This function should perform a single evaluation epoch, it WILL NOT be used to train our model
-def evaluate(net, device, loader):
+def evaluate(net, device, loader, filter_num):
     
     #initialise counter
     epoch_acc = 0
     
     #Set network in evaluation mode
     net.eval()
-    state_h, state_c = net.init_state(32)
+    state_h, state_c = net.init_state(filter_num)
     with torch.no_grad():
         for i, (x, y) in enumerate(loader):
             x = x.to(device)
@@ -63,7 +60,10 @@ def evaluate(net, device, loader):
     #return the accuracy from the epoch 
     return epoch_acc / len(loader.dataset)    
 ########################################################################################
-def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num):
+########################################################################################
+########################################################################################
+########################################################################################
+def initialise(device, X_train, y_train, batch_size, learning_rate, dict_size, input_size, output_size, kernel_size,embedding_vector_length,num_layers,filter_num):
     print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
     dataset = ChatDataset(X_train, y_train)
@@ -73,68 +73,38 @@ def initialise(device, X_train, y_train, batch_size, learning_rate, input_size, 
                             num_workers=0)
     
 
-    model = Model(len(all_words), input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num).to(device)
+    model = LSTM_CNN(dict_size, input_size, output_size, kernel_size,embedding_vector_length,num_layers,filter_num).to(device)
     # Loss and optimizer
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
     return model, criterion, optimizer, loader
 ########################################################################################
-def initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num):
-    print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
-    dataset = ChatDataset(X_train, y_train)
-    trainloader = DataLoader(dataset=dataset,
-                            batch_size=batch_size,
-                            shuffle=True,
-                            num_workers=0)
-    dataset = ChatDataset(X_val, y_val)
-    valloader = DataLoader(dataset=dataset,
-                            batch_size=batch_size,
-                            shuffle=True,
-                            num_workers=0)
-    dataset = ChatDataset(X_test, y_test)
-    testloader = DataLoader(dataset=dataset,
-                            batch_size=batch_size,
-                            shuffle=True,
-                            num_workers=0)
-
-    model = Model(len(all_symptoms), input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num).to(device)
-    criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
-    return model, criterion, optimizer, trainloader, valloader, testloader
 ########################################################################################
-def training_loop(device, num_epochs, model, loader,optimizer, criterion):
+def training_loop(device, num_epochs, model, loader,optimizer, criterion, filter_num):
     training_loss_logger = []
     training_acc_logger = []
     for epoch in range(num_epochs):
-        training_loss = train(model, device, loader, optimizer, criterion)
-        train_acc = evaluate(model, device, loader)
+        training_loss = train(model, device, loader, optimizer, criterion, filter_num)
+        train_acc = evaluate(model, device, loader, filter_num)
         training_acc_logger.append(train_acc)
         training_loss_logger.append(training_loss.item())  
-        print(f'| Epoch: {epoch:02}/{num_epochs} | Train Acc: {train_acc*100:05.2f}% | Train Loss: {training_loss.item():.4f}')
+        if ((epoch+1)%10) == 0: 
+            print(f'| Epoch: {epoch+1:02}/{num_epochs} | Train Acc: {train_acc*100:05.2f}% | Train Loss: {training_loss.item():.4f}')
     return model, training_loss_logger,training_acc_logger
 ########################################################################################
-def training_loop_with_val_loader(device, num_epochs, model, trainloader,valloader,optimizer, criterion):
-    training_loss_logger = []
-    training_acc_logger = []
-    validation_acc_logger = []
-    for epoch in range(num_epochs):
-        training_loss = train(model, device, trainloader, optimizer, criterion)
-        train_acc = evaluate(model, device, trainloader)
-        val_acc = evaluate(model, device, valloader)
-        training_acc_logger.append(train_acc)
-        validation_acc_logger.append(val_acc)
-        training_loss_logger.append(training_loss.item())  
-        print (f'| Epoch: {epoch:02}/{num_epochs} |Train Loss: {training_loss:.4f}| Train Acc: {train_acc*100:05.2f}% | Val. Acc: {val_acc*100:05.2f}% |')
-    return model, training_loss_logger,training_acc_logger,validation_acc_logger
+
 ########################################################################################
-def save_model(FILE, model, input_size, hidden_size, output_size):
+def save_model(FILE, model, dict_size, input_size, output_size, kernel_size,embedding_vector_length,num_layers,filter_num):
     data = {
     "model_state": model.state_dict(),
+    "dict_size": dict_size,
     "input_size": input_size,
-    "hidden_size": hidden_size,
     "output_size": output_size,
-    "all_words": all_words,
-    "labels": chat_labels
+    "kernel_size": kernel_size,
+    "embedding_vector_length": embedding_vector_length,
+    "num_layers": num_layers,
+    "filter_num": filter_num
     }    
     torch.save(data, FILE)
+    ########################################################################################

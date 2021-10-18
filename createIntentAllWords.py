@@ -29,13 +29,15 @@ all_words = [stem(w) for w in all_words if w not in ignore_words]
 # remove duplicates and sort
 all_words = sorted(set(all_words))
 #print("all words: ", all_words)
-print("Created All Words for Intents")
+#print("Created All Words for Intents")
 ##################################################################
 data = {"all_words": all_words, "labels": chat_labels}
 torch.save(data, "chat.pth")
-print("all words and labels saved to chat.pth")
+##print("all words and labels saved to chat.pth")
 ##################################################################
 # create training data
+#print("xy", xy)
+#print(xy[0])
 X_train_chat = []
 y_train_chat = []
 for (pattern_sentence, label) in xy:

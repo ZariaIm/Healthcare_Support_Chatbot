@@ -1,60 +1,72 @@
 import torch
-
-
-from createIntentAllWords import X_train_chat, y_train_chat
-from createSymptomAllWords import X_train_symptom, y_train_symptom, X_val, y_val, X_test, y_test
-from train_utils import evaluate, initialise, initialise_with_val,training_loop, save_model, training_loop_with_val_loader
+from createIntentAllWords import X_train_chat, y_train_chat, chat_labels, all_words
+from createSymptomAllWords import X_train_symptom, y_train_symptom, disease_labels, all_symptoms
+from train_utils import initialise, training_loop, save_model
+from time import process_time
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 ##########################################################################
 ##########################################################################
 #Hyperparameters for chatbot training
-# num_epochs = 10
-# batch_size = 100
-# learning_rate = 0.001
-# input_size = len(X_train_chat[0])
-# output_size = len(y_train_chat)
-# embedding_vector_length = 256
-# lstm_size = 124
-# num_layers = 3
-# filter_num = 32
+#training set size...1320
+num_epochs = 1000
+batch_size = 300
+learning_rate = 2e-6
+input_size = len(X_train_chat[0])
+output_size = len(chat_labels)
+embedding_vector_length = 64
+num_layers = 2
+filter_num = 32
+kernel_size = 9
+dict_size = len(all_words)
 
-# X_train = X_train_chat
-# y_train = y_train_chat
-# print("Preparing to set up the neural network")
-# [model, criterion, optimizer, trainloader] = initialise(device, X_train, y_train, batch_size, learning_rate, input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num)
-# print("Chatbot Model initialised. Entering Training Loop.")
-# [model, training_loss_logger,training_acc_logger] = training_loop(device, num_epochs, model, trainloader,optimizer, criterion)
-# FILE = "model_chatbot.pth"
-# save_model(FILE, model, input_size, hidden_size, output_size)
-# print(f'chatbot training complete. file saved to {FILE}')
+X_train = X_train_chat
+y_train = y_train_chat
+print("Preparing to set up the neural network")
+[model, criterion, optimizer, trainloader] = initialise(device, X_train, y_train, batch_size, learning_rate, dict_size, input_size, output_size, kernel_size,embedding_vector_length,num_layers,filter_num)
+print()
+print("chatbot model",model)
+print()
+print(f"Chatbot Model initialised. Entering Training Loop. \nBatch size: {batch_size}\nLearning rate:{learning_rate}")
+Start_time_chatbot =  process_time()
+[model, training_loss_logger,training_acc_logger] = training_loop(device, num_epochs, model, trainloader,optimizer, criterion, filter_num)
+End_time_chatbot =  process_time()
+FILE = "model_chatbot.pth"
+save_model(FILE, model, dict_size, input_size, output_size, kernel_size,embedding_vector_length,num_layers,filter_num)
+print(f'chatbot training complete. file saved to {FILE}')
+print("time taken to train chatbot per epoch = ", (End_time_chatbot-Start_time_chatbot)/num_epochs, "seconds")
+print(f"total time: {(End_time_chatbot-Start_time_chatbot)/60} minutes")
 ##########################################################################
 ##########################################################################
 
 ##########################################################################
 ##########################################################################
 # Hyper-parameters for symptom classifier training
-num_epochs = 10
-batch_size = 100
-learning_rate = 0.001
+#num_epochs = 10
+batch_size = 20
+#learning_rate = 0.3
 input_size = len(X_train_symptom[0])
-output_size = len(y_train_symptom)
-embedding_vector_length = 32
-lstm_size = 12
-num_layers = 3
-filter_num = 32
+output_size = len(disease_labels)
+embedding_vector_length = 8
+num_layers = 1
+filter_num = 12
+kernel_size = 3
+dict_size = len(all_symptoms)
 
 X_train = X_train_symptom
 y_train = y_train_symptom
 print("Preparing to set up the neural network")
-[model, criterion, optimizer, trainloader, valloader, testloader] = initialise_with_val(device, X_train, y_train, X_val, y_val, X_test, y_test, batch_size, learning_rate, input_size, output_size,embedding_vector_length,lstm_size,num_layers,filter_num)
-print("Classifier Model initialised. Entering Training Loop.")
-[model,symptom_training_loss_logger, sypmtom_training_acc_logger,symptom_validation_acc_logger] = training_loop_with_val_loader(device, num_epochs, model, trainloader, valloader,optimizer, criterion)
+[model, criterion, optimizer, trainloader] = initialise(device, X_train, y_train, batch_size, learning_rate, dict_size, input_size, output_size, kernel_size,embedding_vector_length,num_layers,filter_num)
+print("classifier model",model)
+print(f"Classifier Model initialised. Entering Training Loop.\nBatch size: {batch_size}\nLearning rate:{learning_rate}")
+Start_time_classifier =  process_time()
+[model, training_loss_logger,training_acc_logger] = training_loop(device, num_epochs, model, trainloader,optimizer, criterion, filter_num)
+End_time_classifier =  process_time()
 FILE = "model_symptoms.pth"
-test_acc = evaluate(model, device, testloader)
-print(f"test accuracy: {test_acc*100:.4f}%")
-save_model(FILE, model, input_size, hidden_size, output_size)
+save_model(FILE, model, dict_size, input_size, output_size, kernel_size,embedding_vector_length,num_layers,filter_num)
 print(f'classifier training complete. file saved to {FILE}')
+print("time taken to train classifier per epoch = ", (End_time_classifier-Start_time_classifier)/num_epochs, "seconds")
+print(f"total time: {(End_time_classifier-Start_time_classifier)/60} minutes")
 ##########################################################################
 ##########################################################################
 

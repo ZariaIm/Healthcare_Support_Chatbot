@@ -1,18 +1,20 @@
 #LINEAR 
+from numpy import ceil
 import torch
 import torch.nn as nn
 from torch.nn.modules import dropout
 
 class LSTM_CNN(nn.Module):
-    def __init__(self, vocab_size, input_size, num_classes, embedding_vector_length, lstm_size, num_layers, filter_num):
+    def __init__(self, vocab_size, input_size, output_size, kernel_size,embedding_vector_length,num_layers,filter_num):
         super(LSTM_CNN, self).__init__()
-        self.lstm_size = lstm_size
+        self.pool_size = 2
+        self.lstm_size = int((embedding_vector_length - (kernel_size -1))/self.pool_size)
         self.num_layers = num_layers
         self.embed = nn.Embedding((vocab_size), (embedding_vector_length),(input_size))
-        self.conv1 = nn.Conv1d(input_size, filter_num, 9) 
-        self.maxpool = nn.MaxPool1d(2) 
-        self.LSTM = nn.LSTM(lstm_size, lstm_size, num_layers = num_layers, dropout = 0.2)
-        self.fc1 = nn.Linear(lstm_size*filter_num,num_classes)
+        self.conv1 = nn.Conv1d(input_size, filter_num, kernel_size) 
+        self.maxpool = nn.MaxPool1d(self.pool_size) 
+        self.LSTM = nn.LSTM(self.lstm_size, self.lstm_size, num_layers = num_layers)
+        self.fc1 = nn.Linear(self.lstm_size*filter_num,output_size)
         self.relu = nn.ReLU()
     def forward(self, x, prev_state):
         out = self.embed((x.long()))

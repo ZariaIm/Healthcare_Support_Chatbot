@@ -8,10 +8,13 @@ Model = LSTM_CNN
 def load_saved_model(device, FILE):
     data = torch.load(FILE)
     input_size = data["input_size"]
-    hidden_size = data["hidden_size"]
     output_size = data["output_size"]
     model_state = data["model_state"]
-    model = Model(input_size, hidden_size, output_size).to(device)
+    embedding_vector_length = data["embedding_vector_length"]
+    kernel_size = data["kernel_size"]
+    num_layers = data["num_layers"]
+    filter_num = data["filter_num"]
+    model = Model(input_size, output_size, embedding_vector_length, num_layers, filter_num).to(device)
     model.load_state_dict(model_state)
     model.eval()
     return model
