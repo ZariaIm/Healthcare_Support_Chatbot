@@ -4,7 +4,8 @@ from createSymptomAllWords import X_train_symptom, y_train_symptom, disease_labe
 from train_utils import initialise, training_loop, save_model
 from time import process_time
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
+pip install transformers[torch]
+model_name = "distilbert-base-uncased-finetuned-sst-2-english"
 ##########################################################################
 ##########################################################################
 #Hyperparameters for chatbot training
