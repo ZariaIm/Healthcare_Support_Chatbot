@@ -1,22 +1,28 @@
 import createIntents
 import torch
 import torch.nn as nn
+import numpy as np
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 from torch.utils.data import Dataset, DataLoader
 from time import process_time
-from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassification
+from transformers import DistilBertTokenizerFast, DistilBertModel
+from transformers import Trainer, TrainingArguments
 import json
 
 model_name = "distilbert-base-uncased-finetuned-sst-2-english"
+
 ##################################################################
+
 with open('intents.json', 'r') as f:
     intents = json.load(f)
+
 ##################################################################
+
 chat_text =[]
 chat_labels_str = []
 chat_labels = []
-id2label_dict = {}
-label2id_dict = {}
+# id2label_dict = {}
+# label2id_dict = {}
 
 for idx, intent in enumerate(intents['intents']):
     label = intent['labels']
@@ -25,52 +31,68 @@ for idx, intent in enumerate(intents['intents']):
     for pattern in intent['patterns']:
         chat_text.append(pattern)
         chat_labels.append(idx)
-        if i == 0:
-            id2label_dict[idx] = f'{label}'
-            label2id_dict[f'{label}'] = idx
-            i += 1
+        # if i == 0:
+        #     id2label_dict[idx] = f'{label}'
+        #     label2id_dict[f'{label}'] = idx
+        #     i += 1
+
 ##################################################################
 ########################################################################################
+
 #This function should perform a single training epoch using our training data
-def train(net, device, loader, optimizer):
+def train(net, device, loader, optimizer, loss_func):
     loss = 0
     #Set Network in train mode
     net.train()
     #Perform a single epoch of training on the input dataloader, logging the loss at every step 
     for batch in (loader):
         x = batch['input_ids'].to(device)
+        x = x.to(dtype=torch.long)
         y = batch['labels'].to(device)
-        attn = batch['attention_mask'].to(device)
-        y_hat = net(x,attn,y)
-        loss = y_hat[0]
+        y_onehot = y.numpy()
+        y_onehot = (np.arange(len(chat_labels_str)) == y_onehot[:,None]).astype(np.float32)
+        y = torch.from_numpy(y_onehot)
+        #y_dummy = torch.zeros(50).to(dtype=torch.long) # batch size
+        attn = batch['attention_mask'].to(dtype=torch.long).to(device)
+        y_hat = net(x,attn)
+        loss = loss_func(y_hat, y.to(dtype=torch.long))
         optimizer.zero_grad()   
         loss.backward()
-        optimizer.step()
-    #return the logger array       
-    #return loss
+        optimizer.step()      
+    return loss
+
 ########################################################################################
 #This function should perform a single evaluation epoch, it WILL NOT be used to train our model
 def evaluate(net, device, loader):
-    
     #initialise counter
     epoch_acc = 0
-    
     #Set network in evaluation mode
     net.eval()
     with torch.no_grad():
         for batch in (loader):
             x = batch['input_ids'].to(device)
+            x = x.to(dtype=torch.long)
             y = batch['labels'].to(device)
-            attn = batch['attention_mask'].to(device)
-            y_hat = net(x,attn,y)
+            y_onehot = y.numpy()
+            y_onehot = (np.arange(len(chat_labels_str)) == y_onehot[:,None]).astype(np.float32)
+            y = torch.from_numpy(y_onehot)
+            #y_dummy = torch.zeros(50).to(dtype=torch.long) # batch size
+            attn = batch['attention_mask'].to(dtype=torch.long).to(device)
+            y_hat = net(x,attn)
             epoch_acc += (y_hat.argmax(1) == y.to(device)).sum().item()
-            
     #return the accuracy from the epoch 
-    return epoch_acc / len(loader.dataset)    
+    return epoch_acc / len(loader.dataset)  
+
 ##################################################################
+
 tokenizer = DistilBertTokenizerFast.from_pretrained(model_name)
 # tokenize each word in the sentence
-chat_encodings = tokenizer(text = chat_text, truncation = True, padding = True)
+chat_encodings = tokenizer(
+    text = chat_text,
+    truncation = True, 
+    padding = True,
+    return_tensors = 'pt')
+
 ##################################################################
 
 class ChatDataset():
@@ -96,53 +118,66 @@ chat_train_dataset = ChatDataset(chat_encodings, chat_labels)
 chat_val_dataset = ChatDataset(chat_encodings, chat_labels)
 ##################################################################
 
-batch_size = 50
-output_dir = './results'
-num_train_epochs=2
-per_device_train_batch_size=16
-per_device_eval_batch_size=64
-warmup_steps = 100
+#batch_size = 50
+batch_size = 10
 learning_rate = 5e-5
-weight_decay=0.01
-logging_dir='./logs'
-logging_steps=10
+num_train_epochs=10
+
+# training_args = TrainingArguments(
+#     output_dir = './results',
+#     num_train_epochs=2,
+#     per_device_train_batch_size=16,
+#     per_device_eval_batch_size=64,
+#     warmup_steps = 100,
+#     learning_rate = 5e-5,
+#     weight_decay=0.01,
+#     logging_dir='./logs',
+#     logging_steps=10)
 
 ##################################################################
+
 class FineTunedModel(nn.Module):
     def __init__(self):
         super(FineTunedModel, self).__init__()
-        self.base_model = DistilBertForSequenceClassification.from_pretrained(model_name)
+        self.base_model = DistilBertModel.from_pretrained(model_name)
         self.dropout = nn.Dropout(0.5)
         self.linear = nn.Linear(768, len(chat_labels_str))
         
-    def forward(self, input_ids, attn_mask, labels):
-        outputs = self.base_model(input_ids, attention_mask=attn_mask, labels = labels)
-        print(outputs)
-        outputs = self.dropout(outputs[0])
+    def forward(self, input_ids, attn_mask):
+        #print(input_ids.shape, attn_mask.shape, labels.shape)
+        outputs = self.base_model(input_ids, attention_mask=attn_mask)
+        outputs = self.dropout(outputs.last_hidden_state)
         outputs = self.linear(outputs)
-        
         return outputs
+
 ##################################################################
+
 train_loader = DataLoader(dataset=chat_train_dataset,batch_size=batch_size,shuffle=True,num_workers=0)
+
 ##################################################################
+#print("labels",len(chat_labels_str))
+#chat_model = DistilBertForSequenceClassification.from_pretrained(model_name, num_labels = len(chat_labels_str))
 chat_model = FineTunedModel()
 optimizer = torch.optim.Adam(chat_model.parameters(), lr=learning_rate)
+loss_func = nn.CrossEntropyLoss()
+
+# config =config.num_labels == len(chat_labels_str)
+# chat_model.config.id2label == id2label_dict
+# chat_model.config.label2id == label2id_dict
+# chat_model.config.problem_type == "single_label_classification"
+# optimizer = torch.optim.Adam(chat_model.parameters(), lr=learning_rate)
+# for epoch in range(num_train_epochs):
+#     train(chat_model, device, train_loader, optimizer)
+#print(chat_model)
+
+# trainer = Trainer(
+#     model = chat_model, 
+#     args = training_args, 
+#     train_dataset = chat_train_dataset, 
+#     eval_dataset = chat_val_dataset)
+
+# trainer.train()
 for epoch in range(num_train_epochs):
-    train(chat_model, device, train_loader, optimizer)
-
-# print(f'| Epoch: {epoch+1:02}/{num_epochs} | Train Acc: {train_acc*100:05.2f}% | Train Loss: {training_loss.item():.4f}')
-
-# def save_model(FILE, model, dict_size, input_size, output_size, kernel_size,embedding_vector_length,num_layers,filter_num):
-#     data = {
-#     "model_state": model.state_dict(),
-#     "dict_size": dict_size,
-#     "input_size": input_size,
-#     "output_size": output_size,
-#     "kernel_size": kernel_size,
-#     "embedding_vector_length": embedding_vector_length,
-#     "num_layers": num_layers,
-#     "filter_num": filter_num
-#     }    
-#     torch.save(data, FILE)
-##########################################################################
-##########################################################################
+    loss = train(chat_model, device, train_loader, optimizer, loss_func)
+    acc = evaluate(chat_model, device, train_loader)
+    print("epoch:",epoch,"loss:", loss, "acc:", acc)
