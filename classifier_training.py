@@ -40,25 +40,6 @@ def train(net, device, loader, optimizer, loss_fun):
     #return the logger array       
     return loss
 
-# def train(net, device, loader, optimizer, loss_fun):
-#     loss = 0
-#     #Set Network in train mode
-#     net.train()
-#     #Perform a single epoch of training on the input dataloader, logging the loss at every step 
-#     for batch_idx, (x, y) in enumerate(loader):
-#         x = x.to(device)
-#         #print(x.shape)
-#         y = y.to(device) 
-#         y_hat = net(x)
-#         # _, predicted = torch.max(y_hat, dim=1)
-#         print(y_hat.shape)
-#         predict = torch.argmax(y_hat, dim=1).float()
-#         loss = loss_fun(predict, y)############NEED TO FIX, y and y_hat are size torch([41])
-#         optimizer.zero_grad()   
-#         loss.backward()
-#         optimizer.step()
-        
-#     return loss
 
 def evaluate(net, device, loader):
     #initialise counter
@@ -131,8 +112,8 @@ emergency_symptoms = [stem(w) for w in emergency_symptoms if w not in ignore_wor
 print("Hypertension and Heart attack symptoms classed as emergency")
 ##################################################################
 data = {
-"all_words": all_symptoms,
-"labels": disease_labels,
+"all_symptoms": all_symptoms,
+"disease_labels": disease_labels,
 "disease_symptoms":disease_symptoms,
 "emergency_symptoms":emergency_symptoms
 }
@@ -189,8 +170,6 @@ chat_data = {
 "input_size": input_size,
 "hidden_size": hidden_size,
 "output_size": output_size,
-"all_words": all_symptoms,
-"labels": disease_labels
 }
 #print(labels)
 
