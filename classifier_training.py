@@ -33,13 +33,15 @@ def train(net, device, loader, optimizer, loss_fun):
         x = x.to(device)
         y = y.to(dtype=torch.long).to(device) 
         y_hat = net(x)
-        print(y)
-        print(y_hat)
-        loss = loss_fun(y_hat.argmax(0), y) ###### TO FIX
+
+        _, predicted = torch.max(y_hat, dim=1)
+        print(y.shape)
+        print(predicted.shape) 
+        loss = loss_fun(predicted, y)############NEED TO FIX, y and y_hat are size torch([41])
         optimizer.zero_grad()   
         loss.backward()
         optimizer.step()
-    #return the logger array       
+        
     return loss
 
 def evaluate(net, device, loader):

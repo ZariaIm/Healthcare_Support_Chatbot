@@ -8,7 +8,7 @@ from time import process_time
 from transformers import DistilBertTokenizerFast
 import json
 from model import FineTunedModel
-model_name = "distilbert-base-uncased-finetuned-sst-2-english"
+model_name = "distilbert-base-uncased"
 ##################################################################
 
 with open('intents.json', 'r') as f:
@@ -40,12 +40,13 @@ def train(net, device, loader, optimizer, loss_func):
     for batch in (loader):
         x = batch['input_ids'].to(device)
         x = x.to(dtype=torch.long)
+        attn = batch['attention_mask'].to(dtype=torch.long).to(device)
+        y_hat = net(x,attn)
+
         y = batch['labels'].to(device)
         y_onehot = y.numpy()
         y_onehot = (np.arange(len(chat_labels_str)) == y_onehot[:,None]).astype(np.float32)
         y = torch.from_numpy(y_onehot)
-        attn = batch['attention_mask'].to(dtype=torch.long).to(device)
-        y_hat = net(x,attn)
         loss = loss_func(y_hat, y.to(dtype=torch.long))
         optimizer.zero_grad()   
         loss.backward()
@@ -65,7 +66,11 @@ def evaluate(net, device, loader):
             y = batch['labels'].to(device)
             attn = batch['attention_mask'].to(dtype=torch.long).to(device)
             y_hat = net(x,attn)
-            epoch_acc += (y_hat.argmax(1) == y.to(device)).sum().item()
+            _, predicted = torch.max(y_hat, dim=1)
+            #print(y)
+            #print(predicted.argmax(1))
+            ## Need to fix acc calculation
+            epoch_acc += (predicted.argmax(1) == y.to(device)).sum().item()
     #return the accuracy from the epoch 
     return epoch_acc / len(loader.dataset)  
 ##################################################################
