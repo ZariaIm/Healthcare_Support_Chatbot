@@ -44,8 +44,8 @@ def train(net, device, loader, optimizer, loss_func):
         logits = net(x,attn)
         
         y = batch['labels'].to(device)
-        print(torch.argmax(logits, dim=1).flatten())
-        print(y)
+        #print(torch.argmax(logits, dim=1).flatten())
+        #print(y)
         # y_onehot = y.numpy()
         # y_onehot = (np.arange(len(chat_labels_str)) == y_onehot[:,None]).astype(np.float32)
         # y = torch.from_numpy(y_onehot)
@@ -74,7 +74,7 @@ def evaluate(net, device, loader):
             #print(predicted.argmax(1))
             ## Need to fix acc calculation
             
-            epoch_acc =(y ==y).numpy().mean()*100
+            epoch_acc =(predicted == y).numpy().mean()*100
     #return the accuracy from the epoch 
     return np.mean(epoch_acc)
 ##################################################################
