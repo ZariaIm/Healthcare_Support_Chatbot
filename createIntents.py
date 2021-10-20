@@ -95,9 +95,6 @@ for row in range(len(df_description)):
                 f"how would i know if i have {disease}?", 
                 f"how to tell if its {disease}?", 
                 ],
-            "responses":[
-                "FIller", "Filler"
-            ],
             "context":"asking symptoms"
             }
     write_json(add)

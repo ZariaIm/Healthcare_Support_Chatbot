@@ -135,8 +135,8 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 print("Training data created for symptom classifier")
 ##################################################################
-num_epochs = 300
-batch_size = 10
+num_epochs = 30
+batch_size = 50
 learning_rate = 0.1
 input_size = len(X_train[0])
 hidden_size = 8
@@ -162,7 +162,7 @@ for epoch in range(num_epochs):
     train_acc = evaluate(model, device, loader)
     training_acc_logger.append(train_acc)
     training_loss_logger.append(training_loss.item())
-    if (epoch%50 == 0):    
+    if (epoch%5 == 0):    
         print(f'| Epoch: {epoch:02} | Train Acc: {train_acc*100:05.2f}% | Train Loss: {training_loss.item():.4f}')
 
 chat_data = {
@@ -171,6 +171,5 @@ chat_data = {
 "hidden_size": hidden_size,
 "output_size": output_size,
 }
-#print(labels)
 
 torch.save(chat_data, "model_symptoms.pth")  

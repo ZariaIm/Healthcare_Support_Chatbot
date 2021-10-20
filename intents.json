@@ -2150,10 +2150,6 @@
                 "how would i know if i have Drug Reaction?",
                 "how to tell if its Drug Reaction?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -2193,10 +2189,6 @@
                 "what are the symptoms of Malaria?",
                 "how would i know if i have Malaria?",
                 "how to tell if its Malaria?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -2238,10 +2230,6 @@
                 "how would i know if i have Allergy?",
                 "how to tell if its Allergy?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -2281,10 +2269,6 @@
                 "what are the symptoms of Hypothyroidism?",
                 "how would i know if i have Hypothyroidism?",
                 "how to tell if its Hypothyroidism?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -2326,10 +2310,6 @@
                 "how would i know if i have Psoriasis?",
                 "how to tell if its Psoriasis?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -2369,10 +2349,6 @@
                 "what are the symptoms of GERD?",
                 "how would i know if i have GERD?",
                 "how to tell if its GERD?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -2414,10 +2390,6 @@
                 "how would i know if i have Chronic cholestasis?",
                 "how to tell if its Chronic cholestasis?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -2457,10 +2429,6 @@
                 "what are the symptoms of hepatitis A?",
                 "how would i know if i have hepatitis A?",
                 "how to tell if its hepatitis A?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -2502,10 +2470,6 @@
                 "how would i know if i have Osteoarthristis?",
                 "how to tell if its Osteoarthristis?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -2545,10 +2509,6 @@
                 "what are the symptoms of (vertigo) Paroymsal  Positional Vertigo?",
                 "how would i know if i have (vertigo) Paroymsal  Positional Vertigo?",
                 "how to tell if its (vertigo) Paroymsal  Positional Vertigo?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -2590,10 +2550,6 @@
                 "how would i know if i have Hypoglycemia?",
                 "how to tell if its Hypoglycemia?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -2633,10 +2589,6 @@
                 "what are the symptoms of Acne?",
                 "how would i know if i have Acne?",
                 "how to tell if its Acne?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -2678,10 +2630,6 @@
                 "how would i know if i have Diabetes?",
                 "how to tell if its Diabetes?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -2721,10 +2669,6 @@
                 "what are the symptoms of Impetigo?",
                 "how would i know if i have Impetigo?",
                 "how to tell if its Impetigo?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -2766,10 +2710,6 @@
                 "how would i know if i have Hypertension?",
                 "how to tell if its Hypertension?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -2809,10 +2749,6 @@
                 "what are the symptoms of Peptic ulcer diseae?",
                 "how would i know if i have Peptic ulcer diseae?",
                 "how to tell if its Peptic ulcer diseae?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -2854,10 +2790,6 @@
                 "how would i know if i have Dimorphic hemorrhoids(piles)?",
                 "how to tell if its Dimorphic hemorrhoids(piles)?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -2897,10 +2829,6 @@
                 "what are the symptoms of Common Cold?",
                 "how would i know if i have Common Cold?",
                 "how to tell if its Common Cold?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -2942,10 +2870,6 @@
                 "how would i know if i have Chicken pox?",
                 "how to tell if its Chicken pox?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -2985,10 +2909,6 @@
                 "what are the symptoms of Cervical spondylosis?",
                 "how would i know if i have Cervical spondylosis?",
                 "how to tell if its Cervical spondylosis?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -3030,10 +2950,6 @@
                 "how would i know if i have Hyperthyroidism?",
                 "how to tell if its Hyperthyroidism?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3073,10 +2989,6 @@
                 "what are the symptoms of Urinary tract infection?",
                 "how would i know if i have Urinary tract infection?",
                 "how to tell if its Urinary tract infection?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -3118,10 +3030,6 @@
                 "how would i know if i have Varicose veins?",
                 "how to tell if its Varicose veins?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3161,10 +3069,6 @@
                 "what are the symptoms of AIDS?",
                 "how would i know if i have AIDS?",
                 "how to tell if its AIDS?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -3206,10 +3110,6 @@
                 "how would i know if i have Paralysis (brain hemorrhage)?",
                 "how to tell if its Paralysis (brain hemorrhage)?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3249,10 +3149,6 @@
                 "what are the symptoms of Typhoid?",
                 "how would i know if i have Typhoid?",
                 "how to tell if its Typhoid?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -3294,10 +3190,6 @@
                 "how would i know if i have Hepatitis B?",
                 "how to tell if its Hepatitis B?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3337,10 +3229,6 @@
                 "what are the symptoms of Fungal infection?",
                 "how would i know if i have Fungal infection?",
                 "how to tell if its Fungal infection?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -3382,10 +3270,6 @@
                 "how would i know if i have Hepatitis C?",
                 "how to tell if its Hepatitis C?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3425,10 +3309,6 @@
                 "what are the symptoms of Migraine?",
                 "how would i know if i have Migraine?",
                 "how to tell if its Migraine?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -3470,10 +3350,6 @@
                 "how would i know if i have Bronchial Asthma?",
                 "how to tell if its Bronchial Asthma?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3513,10 +3389,6 @@
                 "what are the symptoms of Alcoholic hepatitis?",
                 "how would i know if i have Alcoholic hepatitis?",
                 "how to tell if its Alcoholic hepatitis?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -3558,10 +3430,6 @@
                 "how would i know if i have Jaundice?",
                 "how to tell if its Jaundice?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3601,10 +3469,6 @@
                 "what are the symptoms of Hepatitis E?",
                 "how would i know if i have Hepatitis E?",
                 "how to tell if its Hepatitis E?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -3646,10 +3510,6 @@
                 "how would i know if i have Dengue?",
                 "how to tell if its Dengue?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3689,10 +3549,6 @@
                 "what are the symptoms of Hepatitis D?",
                 "how would i know if i have Hepatitis D?",
                 "how to tell if its Hepatitis D?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -3734,10 +3590,6 @@
                 "how would i know if i have Heart attack?",
                 "how to tell if its Heart attack?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3777,10 +3629,6 @@
                 "what are the symptoms of Pneumonia?",
                 "how would i know if i have Pneumonia?",
                 "how to tell if its Pneumonia?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
@@ -3822,10 +3670,6 @@
                 "how would i know if i have Arthritis?",
                 "how to tell if its Arthritis?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3866,10 +3710,6 @@
                 "how would i know if i have Gastroenteritis?",
                 "how to tell if its Gastroenteritis?"
             ],
-            "responses": [
-                "FIller",
-                "Filler"
-            ],
             "context": "asking symptoms"
         },
         {
@@ -3909,10 +3749,6 @@
                 "what are the symptoms of Tuberculosis?",
                 "how would i know if i have Tuberculosis?",
                 "how to tell if its Tuberculosis?"
-            ],
-            "responses": [
-                "FIller",
-                "Filler"
             ],
             "context": "asking symptoms"
         },
