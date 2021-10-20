@@ -8,7 +8,7 @@ class FineTunedModel(nn.Module):
     def __init__(self, output_size, model_name, freeze_bert = True):
         super(FineTunedModel, self).__init__()
         self.base_model = DistilBertModel.from_pretrained(model_name)
-        self.dropout = nn.Dropout(0.5)
+        #self.dropout = nn.Dropout(0.5)
         hidden_size = 20
         self.fc1 = nn.Linear(768, hidden_size) 
         self.fc2 = nn.Linear(hidden_size, output_size) 
@@ -24,7 +24,7 @@ class FineTunedModel(nn.Module):
         #last hidden state is tensor of shape batch_size x seq length x hidden size
         outputs = self.fc1(outputs[0][:, 0, :])
         outputs = F.relu(outputs)
-        outputs = self.dropout(outputs)
+        #outputs = self.dropout(outputs)
         logits = self.fc2(outputs)
 
         return logits

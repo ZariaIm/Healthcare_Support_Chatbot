@@ -111,7 +111,8 @@ chat_val_dataset = ChatDataset(chat_encodings, chat_labels)
 
 #batch_size = 50
 batch_size = 10
-learning_rate = 5e-5
+#learning_rate = 5e-5
+learning_rate = 2e-10
 #num_train_epochs = 2
 num_train_epochs=10
 
