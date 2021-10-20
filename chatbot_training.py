@@ -6,7 +6,6 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 from torch.utils.data import Dataset, DataLoader
 from time import process_time
 from transformers import DistilBertTokenizerFast, DistilBertModel
-from transformers import Trainer, TrainingArguments
 import json
 
 model_name = "distilbert-base-uncased-finetuned-sst-2-english"
@@ -21,8 +20,7 @@ with open('intents.json', 'r') as f:
 chat_text =[]
 chat_labels_str = []
 chat_labels = []
-# id2label_dict = {}
-# label2id_dict = {}
+
 
 for idx, intent in enumerate(intents['intents']):
     label = intent['labels']
@@ -31,10 +29,7 @@ for idx, intent in enumerate(intents['intents']):
     for pattern in intent['patterns']:
         chat_text.append(pattern)
         chat_labels.append(idx)
-        # if i == 0:
-        #     id2label_dict[idx] = f'{label}'
-        #     label2id_dict[f'{label}'] = idx
-        #     i += 1
+
 
 ##################################################################
 ########################################################################################
@@ -52,7 +47,6 @@ def train(net, device, loader, optimizer, loss_func):
         y_onehot = y.numpy()
         y_onehot = (np.arange(len(chat_labels_str)) == y_onehot[:,None]).astype(np.float32)
         y = torch.from_numpy(y_onehot)
-        #y_dummy = torch.zeros(50).to(dtype=torch.long) # batch size
         attn = batch['attention_mask'].to(dtype=torch.long).to(device)
         y_hat = net(x,attn)
         loss = loss_func(y_hat, y.to(dtype=torch.long))
@@ -73,10 +67,6 @@ def evaluate(net, device, loader):
             x = batch['input_ids'].to(device)
             x = x.to(dtype=torch.long)
             y = batch['labels'].to(device)
-            y_onehot = y.numpy()
-            y_onehot = (np.arange(len(chat_labels_str)) == y_onehot[:,None]).astype(np.float32)
-            y = torch.from_numpy(y_onehot)
-            #y_dummy = torch.zeros(50).to(dtype=torch.long) # batch size
             attn = batch['attention_mask'].to(dtype=torch.long).to(device)
             y_hat = net(x,attn)
             epoch_acc += (y_hat.argmax(1) == y.to(device)).sum().item()
@@ -121,18 +111,8 @@ chat_val_dataset = ChatDataset(chat_encodings, chat_labels)
 #batch_size = 50
 batch_size = 10
 learning_rate = 5e-5
+#num_train_epochs = 2
 num_train_epochs=10
-
-# training_args = TrainingArguments(
-#     output_dir = './results',
-#     num_train_epochs=2,
-#     per_device_train_batch_size=16,
-#     per_device_eval_batch_size=64,
-#     warmup_steps = 100,
-#     learning_rate = 5e-5,
-#     weight_decay=0.01,
-#     logging_dir='./logs',
-#     logging_steps=10)
 
 ##################################################################
 
@@ -150,34 +130,27 @@ class FineTunedModel(nn.Module):
         outputs = self.linear(outputs)
         return outputs
 
+
+
 ##################################################################
 
 train_loader = DataLoader(dataset=chat_train_dataset,batch_size=batch_size,shuffle=True,num_workers=0)
 
 ##################################################################
-#print("labels",len(chat_labels_str))
+
 #chat_model = DistilBertForSequenceClassification.from_pretrained(model_name, num_labels = len(chat_labels_str))
 chat_model = FineTunedModel()
+#print(chat_model)
 optimizer = torch.optim.Adam(chat_model.parameters(), lr=learning_rate)
 loss_func = nn.CrossEntropyLoss()
 
-# config =config.num_labels == len(chat_labels_str)
-# chat_model.config.id2label == id2label_dict
-# chat_model.config.label2id == label2id_dict
-# chat_model.config.problem_type == "single_label_classification"
-# optimizer = torch.optim.Adam(chat_model.parameters(), lr=learning_rate)
-# for epoch in range(num_train_epochs):
-#     train(chat_model, device, train_loader, optimizer)
-#print(chat_model)
-
-# trainer = Trainer(
-#     model = chat_model, 
-#     args = training_args, 
-#     train_dataset = chat_train_dataset, 
-#     eval_dataset = chat_val_dataset)
-
-# trainer.train()
 for epoch in range(num_train_epochs):
     loss = train(chat_model, device, train_loader, optimizer, loss_func)
     acc = evaluate(chat_model, device, train_loader)
-    print("epoch:",epoch,"loss:", loss, "acc:", acc)
+    print("epoch:",epoch+1,"loss:", loss.item(), "acc:", acc)
+
+data = chat_model.state_dict()
+
+torch.save(data, "model_chatbot.pth")
+
+
