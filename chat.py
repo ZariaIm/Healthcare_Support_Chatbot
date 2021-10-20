@@ -8,13 +8,11 @@ from nltk_utils import bag_of_words, tokenize, stem
 
 data = torch.load("model_symptoms.pth")
 input_size = data["input_size"]
+hidden_size = data["hidden_size"]
 output_size = data["output_size"]
 model_state = data["model_state"]
-embedding_vector_length = data["embedding_vector_length"]
-kernel_size = data["kernel_size"]
-num_layers = data["num_layers"]
-filter_num = data["filter_num"]
-classifier_model = LinearNet(input_size, output_size, embedding_vector_length, num_layers, filter_num).to(device)
+
+classifier_model = LinearNet(input_size, hidden_size,output_size).to(device)
 classifier_model.load_state_dict(model_state)
 classifier_model.eval()
 

@@ -22,7 +22,8 @@ class FineTunedModel(nn.Module):
         #print(input_ids.shape, attn_mask.shape, labels.shape)
         outputs = self.base_model(input_ids, attention_mask=attn_mask)
         #last hidden state is tensor of shape batch_size x seq length x hidden size
-        outputs = self.fc1(outputs[0][:, 0, :])
+        outputs = self.fc1(outputs[0][:, 0, :]) # returns last hidden layer
+        # was using outputs.last_hidden_layer before but shape was eh
         outputs = F.relu(outputs)
         #outputs = self.dropout(outputs)
         logits = self.fc2(outputs)
@@ -33,7 +34,7 @@ class LinearNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
         super(LinearNet, self).__init__()
         self.l1 = nn.Linear(input_size, hidden_size) 
-        self.l2 = nn.Linear(hidden_size, hidden_size)
+        self.l2 = nn.Linear(hidden_size, num_classes)
         self.relu = nn.ReLU()
     def forward(self, x):
         out = self.l1(x)

@@ -22,8 +22,6 @@ class ChatDataset():
     def __len__(self):
         return self.n_samples
 #####################################################################        
-
-
 def train(net, device, loader, optimizer, loss_fun):
     loss = 0
     #Set Network in train mode
@@ -32,17 +30,35 @@ def train(net, device, loader, optimizer, loss_fun):
     for batch_idx, (x, y) in enumerate(loader):
         x = x.to(device)
         y = y.to(dtype=torch.long).to(device) 
-        y_hat = net(x)
 
-        _, predicted = torch.max(y_hat, dim=1)
-        print(y.shape)
-        print(predicted.shape) 
-        loss = loss_fun(predicted, y)############NEED TO FIX, y and y_hat are size torch([41])
+        y_hat = net(x)
+     
+        loss = loss_fun(y_hat, y)
         optimizer.zero_grad()   
         loss.backward()
         optimizer.step()
-        
+    #return the logger array       
     return loss
+
+# def train(net, device, loader, optimizer, loss_fun):
+#     loss = 0
+#     #Set Network in train mode
+#     net.train()
+#     #Perform a single epoch of training on the input dataloader, logging the loss at every step 
+#     for batch_idx, (x, y) in enumerate(loader):
+#         x = x.to(device)
+#         #print(x.shape)
+#         y = y.to(device) 
+#         y_hat = net(x)
+#         # _, predicted = torch.max(y_hat, dim=1)
+#         print(y_hat.shape)
+#         predict = torch.argmax(y_hat, dim=1).float()
+#         loss = loss_fun(predict, y)############NEED TO FIX, y and y_hat are size torch([41])
+#         optimizer.zero_grad()   
+#         loss.backward()
+#         optimizer.step()
+        
+#     return loss
 
 def evaluate(net, device, loader):
     #initialise counter
@@ -139,7 +155,7 @@ y_train = np.array(y_train)
 print("Training data created for symptom classifier")
 ##################################################################
 num_epochs = 300
-batch_size = 100
+batch_size = 10
 learning_rate = 0.1
 input_size = len(X_train[0])
 hidden_size = 8
