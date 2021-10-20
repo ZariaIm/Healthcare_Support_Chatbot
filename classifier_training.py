@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import torch.nn as nn
 import torch
+from model import LinearNet
 from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -21,18 +22,7 @@ class ChatDataset():
     def __len__(self):
         return self.n_samples
 #####################################################################        
-class LinearNet(nn.Module):
-    def __init__(self, input_size, hidden_size, num_classes):
-        super(LinearNet, self).__init__()
-        self.l1 = nn.Linear(input_size, hidden_size) 
-        self.l2 = nn.Linear(hidden_size, hidden_size)
-        self.relu = nn.ReLU()
-    def forward(self, x):
-        out = self.l1(x)
-        out = self.relu(out)
-        out = self.l2(out)
-        # no activation and no softmax at the end
-        return out
+
 
 def train(net, device, loader, optimizer, loss_fun):
     loss = 0

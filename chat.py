@@ -3,34 +3,33 @@ import json
 import torch
 import nltk
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+from model import FineTunedModel, LinearNet
+from nltk_utils import bag_of_words, tokenize, stem
 
-def load_saved_model(device, FILE):
-    data = torch.load(FILE)
-    input_size = data["input_size"]
-    output_size = data["output_size"]
-    model_state = data["model_state"]
-    embedding_vector_length = data["embedding_vector_length"]
-    kernel_size = data["kernel_size"]
-    num_layers = data["num_layers"]
-    filter_num = data["filter_num"]
-    model = Model(input_size, output_size, embedding_vector_length, num_layers, filter_num).to(device)
-    model.load_state_dict(model_state)
-    model.eval()
-    return model
+data = torch.load("model_symptoms.pth")
+input_size = data["input_size"]
+output_size = data["output_size"]
+model_state = data["model_state"]
+embedding_vector_length = data["embedding_vector_length"]
+kernel_size = data["kernel_size"]
+num_layers = data["num_layers"]
+filter_num = data["filter_num"]
+classifier_model = LinearNet(input_size, output_size, embedding_vector_length, num_layers, filter_num).to(device)
+classifier_model.load_state_dict(model_state)
+classifier_model.eval()
 
-def load_saved_words(FILE):
-    data = torch.load(FILE)
-    all_words = data["all_words"]
-    labels = data["labels"]
-    return all_words, labels
+data = torch.load("model_chatbot.pth")
+output_size = data["output_size"]
+model_name = data["model_name"]
+chat_model = FineTunedModel(output_size, model_name).to(device)
+chat_model.load_state_dict(model_state)
+chat_model.eval()
 
-def load_saved_symptoms(FILE):
-    data = torch.load(FILE)
-    all_words = data["all_words"]
-    labels = data["labels"]
-    disease_symptoms = data["disease_symptoms"]
-    emergency_symptoms = data["emergency_symptoms"]
-    return all_words, labels,disease_symptoms, emergency_symptoms
+data = torch.load("disease.pth")
+all_words = data["all_words"]
+labels = data["labels"]
+disease_symptoms = data["disease_symptoms"]
+emergency_symptoms = data["emergency_symptoms"]
 
 def write_json(new_data, filename='storedSymptoms.json'):
     with open(filename,'r+') as file:
@@ -39,6 +38,7 @@ def write_json(new_data, filename='storedSymptoms.json'):
         file.seek(0)
         json.dump(file_data, file, indent = 4)
 
+####################################NEED TO MODIFY
 def predict_intent(device, X, y, model):
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
@@ -77,16 +77,10 @@ def predict_disease(model, all_symptoms):
 print("Clearing previous symptoms")
 with open("storedSymptoms.json",'w') as file:
         json.dump({"symptoms":[]}, file)
-FILE = "model_chatbot.pth"
-chatbot_model = load_saved_model(device, FILE)
-FILE = "model_symptoms.pth"
-classifier_model = load_saved_model(device, FILE)
-FILE = "chat.pth"
-[all_words, chat_labels] = load_saved_words(FILE)
-FILE = "disease.pth"
-[all_symptoms, disease_labels, disease_symptoms, emergency_symptoms] = load_saved_symptoms(FILE)
+
 bot_name = "Sam"
 user_name = "You"
+
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
 ############################################################################################
@@ -95,8 +89,9 @@ with open('intents.json', 'r') as json_data:
 def get_response(msg):
     sentence = tokenize(msg)
     #Predicting intent for chatbot
-    X = bag_of_words(sentence, all_words)
-    [label_intent, prob_intent] = predict_intent(device, X,chat_labels, chatbot_model)
+    ### NEED TO MODIFY
+    #X = bag_of_words(sentence, all_words)
+    #[label_intent, prob_intent] = predict_intent(device, X,chat_labels, chatbot_model)
     #########################################################################################
     if prob_intent.item() > 0.75:
         ctr = 0

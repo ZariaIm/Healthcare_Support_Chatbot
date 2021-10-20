@@ -5,11 +5,10 @@ import numpy as np
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 from torch.utils.data import Dataset, DataLoader
 from time import process_time
-from transformers import DistilBertTokenizerFast, DistilBertModel
+from transformers import DistilBertTokenizerFast
 import json
-
+from model import FineTunedModel
 model_name = "distilbert-base-uncased-finetuned-sst-2-english"
-
 ##################################################################
 
 with open('intents.json', 'r') as f:
@@ -30,10 +29,8 @@ for idx, intent in enumerate(intents['intents']):
         chat_text.append(pattern)
         chat_labels.append(idx)
 
-
 ##################################################################
 ########################################################################################
-
 #This function should perform a single training epoch using our training data
 def train(net, device, loader, optimizer, loss_func):
     loss = 0
@@ -54,7 +51,6 @@ def train(net, device, loader, optimizer, loss_func):
         loss.backward()
         optimizer.step()      
     return loss
-
 ########################################################################################
 #This function should perform a single evaluation epoch, it WILL NOT be used to train our model
 def evaluate(net, device, loader):
@@ -72,7 +68,6 @@ def evaluate(net, device, loader):
             epoch_acc += (y_hat.argmax(1) == y.to(device)).sum().item()
     #return the accuracy from the epoch 
     return epoch_acc / len(loader.dataset)  
-
 ##################################################################
 
 tokenizer = DistilBertTokenizerFast.from_pretrained(model_name)
@@ -116,30 +111,12 @@ num_train_epochs=10
 
 ##################################################################
 
-class FineTunedModel(nn.Module):
-    def __init__(self):
-        super(FineTunedModel, self).__init__()
-        self.base_model = DistilBertModel.from_pretrained(model_name)
-        self.dropout = nn.Dropout(0.5)
-        self.linear = nn.Linear(768, len(chat_labels_str))
-        
-    def forward(self, input_ids, attn_mask):
-        #print(input_ids.shape, attn_mask.shape, labels.shape)
-        outputs = self.base_model(input_ids, attention_mask=attn_mask)
-        outputs = self.dropout(outputs.last_hidden_state)
-        outputs = self.linear(outputs)
-        return outputs
-
-
-
-##################################################################
-
 train_loader = DataLoader(dataset=chat_train_dataset,batch_size=batch_size,shuffle=True,num_workers=0)
 
 ##################################################################
 
 #chat_model = DistilBertForSequenceClassification.from_pretrained(model_name, num_labels = len(chat_labels_str))
-chat_model = FineTunedModel()
+chat_model = FineTunedModel(len(chat_labels_str), model_name)
 #print(chat_model)
 optimizer = torch.optim.Adam(chat_model.parameters(), lr=learning_rate)
 loss_func = nn.CrossEntropyLoss()
@@ -149,7 +126,10 @@ for epoch in range(num_train_epochs):
     acc = evaluate(chat_model, device, train_loader)
     print("epoch:",epoch+1,"loss:", loss.item(), "acc:", acc)
 
-data = chat_model.state_dict()
+data = {
+    "model_state": chat_model.state_dict(),
+    "output_size": len(chat_labels_str),
+    "model_name": model_name}
 
 torch.save(data, "model_chatbot.pth")
 
