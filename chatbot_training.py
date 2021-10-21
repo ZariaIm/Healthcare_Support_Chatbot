@@ -137,6 +137,7 @@ optimizer = torch.optim.AdamW(chat_model.parameters(), lr=learning_rate)
 training_loss_logger = []
 training_acc_logger = []
 testing_acc_logger = []
+start_time = process_time()
 for epoch in range(num_epochs):
     training_loss = train(chat_model, device, train_loader, optimizer, loss_func)
     train_acc = evaluate(chat_model, device, train_loader)
@@ -147,19 +148,22 @@ for epoch in range(num_epochs):
     if (epoch % 5 == 0):
         print(
             f'| Epoch: {epoch:02} |  Train Loss: {training_loss.item():.4f} | Train Acc: {train_acc*100:05.2f}% | Test Acc: {test_acc*100:05.2f}% |')
+end_time = process_time()
+
+print(f"Ave training time per epoch: {(start_time-end_time)/num_epochs} seconds")
 ##################################################################
 plt.plot(training_loss_logger)
-plt.title('model training loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
+plt.title('Model Training Loss')
+plt.ylabel('Loss')
+plt.xlabel('Epoch')
 plt.show()
 ##################################################################
-plt.title('model accuracy')
+plt.title('Model Accuracy')
 plt.plot(training_acc_logger)
 plt.plot(testing_acc_logger)
-plt.ylabel('accuracy')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
+plt.ylabel('Accuracy')
+plt.xlabel('Epoch')
+plt.legend(['Train', 'Test'], loc='upper left')
 plt.show()
 ##################################################################
 data = {
