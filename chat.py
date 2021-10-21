@@ -49,11 +49,9 @@ def predict_intent(device, msg, model):
         text=msg,
         truncation=True,
         padding=True,
-        return_tensors='pt')
-    x = chat_encodings.to(device)
-    # x = x.to(dtype=torch.long)\
-    print(x)
-    logits = model(x['input_ids'], x['attention_mask'])
+        return_tensors='pt').to(device)
+    #print(x)
+    logits = model(chat_encodings['input_ids'], chat_encodings['attention_mask'])
     label_intent = torch.argmax(logits, dim=1).flatten()
     probs = torch.softmax(logits, dim=1)
     prob_intent = probs[0][label_intent]
