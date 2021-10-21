@@ -29,6 +29,24 @@ for idx, intent in enumerate(intents['intents']):
         chat_text.append(pattern)
         chat_labels.append(idx)
 
+#split into train and testing data
+train_chat_text = []
+test_chat_text = []
+train_chat_labels = []
+test_chat_labels = []
+
+np.random.seed(42)
+ix = np.random.rand(len(chat_text)) <= 0.98
+
+for idx in range(len(chat_text)):
+    if ix[idx]:
+        train_chat_text.append(chat_text[idx])
+        train_chat_labels.append(chat_labels[idx])
+    else:
+        test_chat_text.append(chat_text[idx])
+        test_chat_labels.append(chat_labels[idx])
+
+
 ##################################################################
 ########################################################################################
 # This function should perform a single training epoch using our training data
@@ -75,8 +93,14 @@ def evaluate(net, device, loader):
 ##################################################################
 tokenizer = DistilBertTokenizerFast.from_pretrained(model_name)
 # tokenize each word in the sentence
-chat_encodings = tokenizer(
-    text=chat_text,
+train_chat_encodings = tokenizer(
+    text=train_chat_text,
+    truncation=True,
+    padding=True,
+    return_tensors='pt')
+
+test_chat_encodings = tokenizer(
+    text=test_chat_text,
     truncation=True,
     padding=True,
     return_tensors='pt')
@@ -99,25 +123,26 @@ class ChatDataset():
         return len(self.y_data)
 
 ##################################################################
-# create training data and validation data
-# #################TO DO##################
-
 ##################################################################
-chat_train_dataset = ChatDataset(chat_encodings, chat_labels)
-chat_val_dataset = ChatDataset(chat_encodings, chat_labels)
+
+chat_train_dataset = ChatDataset(train_chat_encodings, train_chat_labels)
+chat_test_dataset = ChatDataset(test_chat_encodings, test_chat_labels)
+
 ##################################################################
 
 #batch_size = 50
-batch_size = 1320
+batch_size = 500
 #learning_rate = 5e-5
 learning_rate = 1e-2
 #num_train_epochs = 2
-num_train_epochs = 250
+num_epochs = 250
 
 ##################################################################
 
 train_loader = DataLoader(dataset=chat_train_dataset,
                           batch_size=batch_size, shuffle=True, num_workers=0)
+test_loader = DataLoader(dataset=chat_test_dataset,
+                          batch_size=20, shuffle=False, num_workers=0)
 
 ##################################################################
 
@@ -127,12 +152,20 @@ chat_model = FineTunedModel(len(chat_labels_str), model_name)
 optimizer = torch.optim.AdamW(chat_model.parameters(), lr=learning_rate)
 loss_func = nn.CrossEntropyLoss()
 
-
 ### TRAINING LOOP ###
-for epoch in range(num_train_epochs):
-    loss = train(chat_model, device, train_loader, optimizer, loss_func)
-    acc = evaluate(chat_model, device, train_loader)
-    print("epoch:", epoch+1, "loss:", loss.item(), "acc:", acc)
+training_loss_logger = []
+training_acc_logger = []
+testing_acc_logger = []
+for epoch in range(num_epochs):
+    training_loss = train(chat_model, device, train_loader, optimizer, loss_func)
+    train_acc = evaluate(chat_model, device, train_loader)
+    test_acc = evaluate(chat_model, device, test_loader)
+    training_acc_logger.append(train_acc)
+    testing_acc_logger.append(test_acc)
+    training_loss_logger.append(training_loss.item())
+    if (epoch % 5 == 0):
+        print(
+            f'| Epoch: {epoch:02} |  Train Loss: {training_loss.item():.4f} | Train Acc: {train_acc*100:05.2f}% | Test Acc: {test_acc*100:05.2f}% |')
 
 data = {
     "model_state": chat_model.state_dict(),

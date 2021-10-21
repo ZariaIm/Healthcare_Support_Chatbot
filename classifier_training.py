@@ -63,10 +63,14 @@ def evaluate(net, device, loader):
 
 #####################################################################
 # read dataset and cast values as strings
+np.random.seed(42)
+
 # 4920 rows  x 18 cols
 df = pd.read_csv("datasets/dataset.csv", dtype="string")
 df = df.fillna(" ")
 df_train = df.iloc[4879:4922]  # the dataset kinda repeats at this point
+ix = np.random.rand(4878) > 0.8
+df_test = df.iloc[0:4878][ix]
 #####################################################################
 ##################################################################
 # create training data and validation data
@@ -77,7 +81,7 @@ df_train = df.iloc[4879:4922]  # the dataset kinda repeats at this point
 # Create all words array, diseases array
 all_symptoms = []  # list type
 disease_labels = []
-xy = []
+train_xy = []
 # Collect disease labels
 for row in range(len(df_train["Disease"])):
     value = df_train.iloc[row, 0]
@@ -87,7 +91,7 @@ for row in range(len(df_train["Disease"])):
         word = df_train.iloc[row, i]
         all_symptoms.extend(tokenize(' '.join(word.split("_"))))
         temp_symptoms.extend(tokenize(' '.join(word.split("_"))))
-    xy.append((temp_symptoms, value))
+    train_xy.append((temp_symptoms, value))
 ignore_words = ['in', ', ', 'like', 'feel', 'from', 'and', 'of', 'on', 'the']
 all_symptoms = [stem(w) for w in all_symptoms if w not in ignore_words]
 # remove duplicates from list and sort
@@ -95,6 +99,18 @@ all_symptoms = [stem(w) for w in all_symptoms if w not in ignore_words]
 all_symptoms = sorted(set(all_symptoms))
 disease_labels = sorted(set(disease_labels))
 print("Collected all diseases and symptom ALL Words")
+#####################################################################
+#### testing set
+test_xy = []
+# Collect disease labels
+for row in range(len(df_test["Disease"])):
+    value = df_test.iloc[row, 0]
+    temp_symptoms = []
+    for i in range(1, 18):
+        word = df_test.iloc[row, i]
+        temp_symptoms.extend(tokenize(' '.join(word.split("_"))))
+    test_xy.append((temp_symptoms, value))
+
 ##################################################################
 disease_symptoms = []
 for disease in disease_labels:
@@ -136,7 +152,7 @@ print("symptoms and diseases saved to disease.pth")
 # create training data
 X_train = []
 y_train = []
-for (pattern_sentence, label) in xy:
+for (pattern_sentence, label) in train_xy:
     # X: bag of words for each pattern_sentence
     bag = bag_of_words(pattern_sentence, all_symptoms)
     X_train.append(bag)
@@ -148,6 +164,21 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 print("Training data created for symptom classifier")
 ##################################################################
+# create training data
+X_test = []
+y_test = []
+for (pattern_sentence, label) in test_xy:
+    # X: bag of words for each pattern_sentence
+    bag = bag_of_words(pattern_sentence, all_symptoms)
+    X_test.append(bag)
+    # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
+    tag = disease_labels.index(label)
+    y_test.append(tag)
+
+X_test = np.array(X_test)
+y_test = np.array(y_test)
+print("Training data created for symptom classifier")
+##################################################################
 num_epochs = 20
 batch_size = 41  # higher than 41 won't do anything because there are only 41 samples
 learning_rate = 0.1
@@ -157,11 +188,21 @@ output_size = len(y_train)
 ##################################################################
 print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
-dataset = ChatDataset(X_train, y_train)
-loader = DataLoader(dataset=dataset,
+train_dataset = ChatDataset(X_train, y_train)
+
+train_loader = DataLoader(dataset=train_dataset,
                     batch_size=batch_size,
                     shuffle=True,
                     num_workers=0)
+
+test_dataset = ChatDataset(X_test, y_test)
+
+test_loader = DataLoader(dataset=test_dataset,
+                    batch_size=batch_size,
+                    shuffle=True,
+                    num_workers=0)
+
+
 model = LinearNet(input_size, hidden_size, output_size).to(device)
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
@@ -170,14 +211,17 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 training_loss_logger = []
 training_acc_logger = []
+testing_acc_logger = []
 for epoch in range(num_epochs):
-    training_loss = train(model, device, loader, optimizer, criterion)
-    train_acc = evaluate(model, device, loader)
+    training_loss = train(model, device, train_loader, optimizer, criterion)
+    train_acc = evaluate(model, device, train_loader)
+    test_acc = evaluate(model, device, test_loader)
     training_acc_logger.append(train_acc)
+    testing_acc_logger.append(test_acc)
     training_loss_logger.append(training_loss.item())
     if (epoch % 5 == 0):
         print(
-            f'| Epoch: {epoch:02} | Train Acc: {train_acc*100:05.2f}% | Train Loss: {training_loss.item():.4f}')
+            f'| Epoch: {epoch:02} |  Train Loss: {training_loss.item():.4f} | Train Acc: {train_acc*100:05.2f}% | Test Acc: {test_acc*100:05.2f}% |')
 
 chat_data = {
     "model_state": model.state_dict(),
