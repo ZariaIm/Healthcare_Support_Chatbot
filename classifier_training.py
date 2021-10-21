@@ -221,17 +221,17 @@ for epoch in range(num_epochs):
 
 ##################################################################
 plt.plot(training_loss_logger)
-plt.title('model training loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
+plt.title('Model Training Loss')
+plt.ylabel('Loss')
+plt.xlabel('Epoch')
 plt.show()
 ##################################################################
-plt.title('model accuracy')
+plt.title('Model Accuracy')
 plt.plot(training_acc_logger)
 plt.plot(testing_acc_logger)
-plt.ylabel('accuracy')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
+plt.ylabel('Accuracy')
+plt.xlabel('Epoch')
+plt.legend(['Train', 'Test'], loc='upper left')
 plt.show()
 ##################################################################
 chat_data = {
