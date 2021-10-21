@@ -165,6 +165,7 @@ plt.show()
 data = {
     "model_state": chat_model.state_dict(),
     "output_size": len(chat_labels_str),
+    "hidden_size": hidden_size,
     "model_name": model_name}
 
 torch.save(data, "model_chatbot.pth")
