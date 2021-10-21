@@ -58,7 +58,7 @@ def train(net, device, loader, optimizer, loss_func):
 
 def evaluate(net, device, loader):
     # initialise counter
-    epoch_acc = 0
+    epoch_acc = []
     # Set network in evaluation mode
     net.eval()
     with torch.no_grad():
@@ -68,18 +68,11 @@ def evaluate(net, device, loader):
             y = batch['labels'].to(device)
             attn = batch['attention_mask'].to(dtype=torch.long).to(device)
             logits = net(x, attn)
-
             predicted = torch.argmax(logits, dim=1).flatten()
-            # print(y)
-            # print(predicted.argmax(1))
-            # Need to fix acc calculation
-
-            epoch_acc = (predicted == y).numpy().mean()
+            epoch_acc.append((predicted == y).numpy().mean())
     # return the accuracy from the epoch
     return np.mean(epoch_acc)
 ##################################################################
-
-
 tokenizer = DistilBertTokenizerFast.from_pretrained(model_name)
 # tokenize each word in the sentence
 chat_encodings = tokenizer(
@@ -87,10 +80,7 @@ chat_encodings = tokenizer(
     truncation=True,
     padding=True,
     return_tensors='pt')
-
 ##################################################################
-
-
 class ChatDataset():
     def __init__(self, X_train, y_train):
         super()
@@ -112,7 +102,6 @@ class ChatDataset():
 # create training data and validation data
 # #################TO DO##################
 
-
 ##################################################################
 chat_train_dataset = ChatDataset(chat_encodings, chat_labels)
 chat_val_dataset = ChatDataset(chat_encodings, chat_labels)
@@ -121,7 +110,7 @@ chat_val_dataset = ChatDataset(chat_encodings, chat_labels)
 #batch_size = 50
 batch_size = 1320
 #learning_rate = 5e-5
-learning_rate = 1e-1
+learning_rate = 1e-2
 #num_train_epochs = 2
 num_train_epochs = 1000
 

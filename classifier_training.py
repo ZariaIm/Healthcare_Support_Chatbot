@@ -68,6 +68,11 @@ df = pd.read_csv("datasets/dataset.csv", dtype="string")
 df = df.fillna(" ")
 df_train = df.iloc[4879:4922]  # the dataset kinda repeats at this point
 #####################################################################
+##################################################################
+# create training data and validation data
+# #################TO DO##################
+
+##################################################################
 #####################################################################
 # Create all words array, diseases array
 all_symptoms = []  # list type
