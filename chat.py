@@ -20,7 +20,8 @@ data = torch.load("model_chatbot.pth")
 output_size = data["output_size"]
 model_name = data["model_name"]
 model_state = data["model_state"]
-chat_model = FineTunedModel(output_size, model_name).to(device)
+hidden_size = data["hidden_size"]
+chat_model = FineTunedModel(output_size, model_name, hidden_size).to(device)
 chat_model.load_state_dict(model_state)
 chat_model.eval()
 

@@ -1,1 +1,7 @@
-{"symptoms": []}
+{
+    "symptoms": [
+        {
+            "symptom": "cold"
+        }
+    ]
+}

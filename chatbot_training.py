@@ -18,7 +18,7 @@ batch_size = 500
 learning_rate = 1e-2
 #num_train_epochs = 2
 num_epochs = 250
-hidden_size = 20 #for the fc layers after bert
+hidden_size = 512 #for the fc layers after bert
 loss_func = nn.CrossEntropyLoss()
 ##################################################################
 
