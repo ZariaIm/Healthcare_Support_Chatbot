@@ -84,7 +84,7 @@ def evaluate(net, device, loader):
             attn = batch['attention_mask'].to(dtype=torch.long).to(device)
             logits = net(x, attn)
             predicted = torch.argmax(logits, dim=1).flatten()
-            epoch_acc.append((predicted == y).numpy().mean())
+            epoch_acc.append((predicted == y).cpu().numpy().mean())
     # return the accuracy from the epoch
     return np.mean(epoch_acc)
 ##################################################################
@@ -129,7 +129,7 @@ test_loader = DataLoader(dataset=chat_test_dataset,
 
 ##################################################################
 #initialise model
-chat_model = FineTunedModel(len(chat_labels_str), model_name, hidden_size)
+chat_model = FineTunedModel(len(chat_labels_str), model_name, hidden_size).to(device)
 # print(chat_model)
 optimizer = torch.optim.AdamW(chat_model.parameters(), lr=learning_rate)
 ##################################################################
