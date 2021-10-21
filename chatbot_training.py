@@ -70,7 +70,7 @@ def evaluate(net, device, loader):
             #print(predicted.argmax(1))
             ## Need to fix acc calculation
             
-            epoch_acc =(predicted == y).numpy().mean()*100
+            epoch_acc =(predicted == y).numpy().mean()
     #return the accuracy from the epoch 
     return np.mean(epoch_acc)
 ##################################################################
@@ -113,7 +113,7 @@ batch_size = 1320
 #learning_rate = 5e-5
 learning_rate = 1e-3
 #num_train_epochs = 2
-num_train_epochs=30
+num_train_epochs=100
 
 ##################################################################
 
