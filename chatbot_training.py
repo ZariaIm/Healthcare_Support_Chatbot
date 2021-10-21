@@ -9,6 +9,7 @@ import torch.nn as nn
 import numpy as np
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model_name = "distilbert-base-uncased"
+import matplotlib.pyplot as plt
 ##################################################################
 
 with open('intents.json', 'r') as f:
@@ -166,7 +167,21 @@ for epoch in range(num_epochs):
     if (epoch % 5 == 0):
         print(
             f'| Epoch: {epoch:02} |  Train Loss: {training_loss.item():.4f} | Train Acc: {train_acc*100:05.2f}% | Test Acc: {test_acc*100:05.2f}% |')
+##################################################################
+plt.plot(training_loss_logger)
+plt.title('model training loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.show()
 
+plt.title('model accuracy')
+plt.plot(training_acc_logger)
+plt.plot(testing_acc_logger)
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.show()
+##################################################################
 data = {
     "model_state": chat_model.state_dict(),
     "output_size": len(chat_labels_str),
