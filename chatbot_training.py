@@ -112,7 +112,7 @@ batch_size = 1320
 #learning_rate = 5e-5
 learning_rate = 1e-2
 #num_train_epochs = 2
-num_train_epochs = 1000
+num_train_epochs = 250
 
 ##################################################################
 
