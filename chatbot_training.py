@@ -44,11 +44,7 @@ def train(net, device, loader, optimizer, loss_func):
         logits = net(x,attn)
         
         y = batch['labels'].to(device)
-        #print(torch.argmax(logits, dim=1).flatten())
-        #print(y)
-        # y_onehot = y.numpy()
-        # y_onehot = (np.arange(len(chat_labels_str)) == y_onehot[:,None]).astype(np.float32)
-        # y = torch.from_numpy(y_onehot)
+       
         loss = loss_func(logits, y.to(dtype=torch.long))
         optimizer.zero_grad()   
         loss.backward()
@@ -113,11 +109,11 @@ chat_val_dataset = ChatDataset(chat_encodings, chat_labels)
 ##################################################################
 
 #batch_size = 50
-batch_size = 10
+batch_size = 1320
 #learning_rate = 5e-5
-learning_rate = 2e-10
+learning_rate = 1e-3
 #num_train_epochs = 2
-num_train_epochs=10
+num_train_epochs=30
 
 ##################################################################
 
@@ -128,7 +124,7 @@ train_loader = DataLoader(dataset=chat_train_dataset,batch_size=batch_size,shuff
 #chat_model = DistilBertForSequenceClassification.from_pretrained(model_name, num_labels = len(chat_labels_str))
 chat_model = FineTunedModel(len(chat_labels_str), model_name)
 #print(chat_model)
-optimizer = torch.optim.Adam(chat_model.parameters(), lr=learning_rate)
+optimizer = torch.optim.AdamW(chat_model.parameters(), lr=learning_rate)
 loss_func = nn.CrossEntropyLoss()
 
 

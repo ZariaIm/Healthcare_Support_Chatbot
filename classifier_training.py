@@ -135,8 +135,8 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 print("Training data created for symptom classifier")
 ##################################################################
-num_epochs = 30
-batch_size = 50
+num_epochs = 20
+batch_size = 41 # higher than 41 won't do anything because there are only 41 samples
 learning_rate = 0.1
 input_size = len(X_train[0])
 hidden_size = 8

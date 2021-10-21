@@ -11,7 +11,7 @@ class FineTunedModel(nn.Module):
         #self.dropout = nn.Dropout(0.5)
         hidden_size = 20
         self.fc1 = nn.Linear(768, hidden_size) 
-        self.fc2 = nn.Linear(hidden_size, output_size) 
+        self.fc2 = nn.Linear(hidden_size, output_size) #output_size ~=263`
 
         # Freeze the BERT model
         if freeze_bert:
@@ -26,9 +26,9 @@ class FineTunedModel(nn.Module):
         # was using outputs.last_hidden_layer before but shape was eh
         outputs = F.relu(outputs)
         #outputs = self.dropout(outputs)
-        logits = self.fc2(outputs)
-
-        return logits
+        outputs = self.fc2(outputs)
+        #outputs = F.softmax(outputs[0][:, 0, :])
+        return outputs
 
 class LinearNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
