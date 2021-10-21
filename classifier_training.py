@@ -7,9 +7,14 @@ from torch.utils.data import Dataset, DataLoader
 import matplotlib.pyplot as plt
 from nltk_utils import bag_of_words, tokenize, stem
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+##################################################################
+#HYPER PARAMETERS TO CHANGE
+num_epochs = 20
+# batch size higher than 41 won't do anything because there are only 41 samples
+batch_size = 41  
+learning_rate = 0.1
+hidden_size = 8
 #####################################################################
-
-
 class ChatDataset():
 
     def __init__(self, X_train, y_train):
@@ -44,7 +49,7 @@ def train(net, device, loader, optimizer, loss_fun):
         optimizer.step()
     # return the logger array
     return loss
-
+##################################################################
 
 def evaluate(net, device, loader):
     # initialise counter
@@ -72,13 +77,7 @@ df = df.fillna(" ")
 df_train = df.iloc[4879:4922]  # the dataset kinda repeats at this point
 ix = np.random.rand(4878) > 0.8
 df_test = df.iloc[0:4878][ix]
-#####################################################################
-##################################################################
-# create training data and validation data
-# #################TO DO##################
-
-##################################################################
-#####################################################################
+######################################################################
 # Create all words array, diseases array
 all_symptoms = []  # list type
 disease_labels = []
@@ -163,6 +162,7 @@ for (pattern_sentence, label) in train_xy:
 
 X_train = np.array(X_train)
 y_train = np.array(y_train)
+
 print("Training data created for symptom classifier")
 ##################################################################
 # create training data
@@ -179,34 +179,29 @@ for (pattern_sentence, label) in test_xy:
 X_test = np.array(X_test)
 y_test = np.array(y_test)
 print("Training data created for symptom classifier")
-##################################################################
-num_epochs = 20
-batch_size = 41  # higher than 41 won't do anything because there are only 41 samples
-learning_rate = 0.1
-input_size = len(X_train[0])
-hidden_size = 8
-output_size = len(y_train)
-##################################################################
-print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 
+##################################################################
 train_dataset = ChatDataset(X_train, y_train)
 
 train_loader = DataLoader(dataset=train_dataset,
                     batch_size=batch_size,
                     shuffle=True,
                     num_workers=0)
-
+##################################################################
 test_dataset = ChatDataset(X_test, y_test)
 
 test_loader = DataLoader(dataset=test_dataset,
                     batch_size=batch_size,
                     shuffle=True,
                     num_workers=0)
+##################################################################
+input_size = len(X_train[0])
+output_size = len(y_train)
 
-
+print(f" --- input size: {input_size}; output_size: {output_size} --- ")
 model = LinearNet(input_size, hidden_size, output_size).to(device)
 # Loss and optimizer
-criterion = nn.CrossEntropyLoss()
+loss_func = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 ##################################################################
 
@@ -214,7 +209,7 @@ training_loss_logger = []
 training_acc_logger = []
 testing_acc_logger = []
 for epoch in range(num_epochs):
-    training_loss = train(model, device, train_loader, optimizer, criterion)
+    training_loss = train(model, device, train_loader, optimizer, loss_func)
     train_acc = evaluate(model, device, train_loader)
     test_acc = evaluate(model, device, test_loader)
     training_acc_logger.append(train_acc)
@@ -225,13 +220,12 @@ for epoch in range(num_epochs):
             f'| Epoch: {epoch:02} |  Train Loss: {training_loss.item():.4f} | Train Acc: {train_acc*100:05.2f}% | Test Acc: {test_acc*100:05.2f}% |')
 
 ##################################################################
-#per epoch
 plt.plot(training_loss_logger)
 plt.title('model training loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.show()
-
+##################################################################
 plt.title('model accuracy')
 plt.plot(training_acc_logger)
 plt.plot(testing_acc_logger)
@@ -246,5 +240,5 @@ chat_data = {
     "hidden_size": hidden_size,
     "output_size": output_size,
 }
-
 torch.save(chat_data, "model_symptoms.pth")
+##################################################################

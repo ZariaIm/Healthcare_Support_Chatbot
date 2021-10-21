@@ -3,13 +3,12 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-
+##################################################################
 class FineTunedModel(nn.Module):
-    def __init__(self, output_size, model_name, freeze_bert = True):
+    def __init__(self, output_size, model_name, hidden_size, freeze_bert = True):
         super(FineTunedModel, self).__init__()
         self.base_model = DistilBertModel.from_pretrained(model_name)
         #self.dropout = nn.Dropout(0.5)
-        hidden_size = 20
         self.fc1 = nn.Linear(768, hidden_size) 
         self.fc2 = nn.Linear(hidden_size, output_size) #output_size ~=263`
 
@@ -29,7 +28,7 @@ class FineTunedModel(nn.Module):
         outputs = self.fc2(outputs)
         #outputs = F.softmax(outputs[0][:, 0, :])
         return outputs
-
+##################################################################
 class LinearNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
         super(LinearNet, self).__init__()
@@ -42,3 +41,4 @@ class LinearNet(nn.Module):
         out = self.l2(out)
         # no activation and no softmax at the end
         return out
+##################################################################        
