@@ -11,14 +11,14 @@ import matplotlib.pyplot as plt
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model_name = "distilbert-base-uncased"
-########################### HYPERPARAMETERS TO PLAY WITH
+# HYPERPARAMETERS TO PLAY WITH
 #batch_size = 50
 batch_size = 500
 #learning_rate = 5e-5
 learning_rate = 1e-2
 #num_train_epochs = 2
 num_epochs = 250
-hidden_size = 512 #for the fc layers after bert
+hidden_size = 512  # for the fc layers after bert
 loss_func = nn.CrossEntropyLoss()
 ##################################################################
 
@@ -38,7 +38,7 @@ for idx, intent in enumerate(intents['intents']):
         chat_text.append(pattern)
         chat_labels.append(idx)
 
-#split into train and testing data
+# split into train and testing data
 train_chat_text = []
 test_chat_text = []
 train_chat_labels = []
@@ -73,6 +73,8 @@ def train(net, device, loader, optimizer, loss_func):
     return loss
 ########################################################################################
 # This function should perform a single evaluation epoch, it WILL NOT be used to train our model
+
+
 def evaluate(net, device, loader):
     epoch_acc = []
     net.eval()
@@ -87,6 +89,8 @@ def evaluate(net, device, loader):
             epoch_acc.append((predicted == y).cpu().numpy().mean())
     # return the accuracy from the epoch
     return np.mean(epoch_acc)
+
+
 ##################################################################
 tokenizer = DistilBertTokenizerFast.from_pretrained(model_name)
 # tokenize each word in the sentence
@@ -102,20 +106,25 @@ test_chat_encodings = tokenizer(
     padding=True,
     return_tensors='pt')
 ##################################################################
+
+
 class ChatDataset():
     def __init__(self, X_train, y_train):
         super()
         self.x_data = X_train
         self.y_data = y_train
+
     def __getitem__(self, index):
         item = {key: torch.tensor(val[index])
                 for key, val in self.x_data.items()}
         item['labels'] = torch.tensor(self.y_data[index])
         return item
+
     def __len__(self):
         return len(self.y_data)
 
 ##################################################################
+
 
 chat_train_dataset = ChatDataset(train_chat_encodings, train_chat_labels)
 chat_test_dataset = ChatDataset(test_chat_encodings, test_chat_labels)
@@ -125,11 +134,12 @@ chat_test_dataset = ChatDataset(test_chat_encodings, test_chat_labels)
 train_loader = DataLoader(dataset=chat_train_dataset,
                           batch_size=batch_size, shuffle=True, num_workers=0)
 test_loader = DataLoader(dataset=chat_test_dataset,
-                          batch_size=20, shuffle=False, num_workers=0)
+                         batch_size=20, shuffle=False, num_workers=0)
 
 ##################################################################
-#initialise model
-chat_model = FineTunedModel(len(chat_labels_str), model_name, hidden_size).to(device)
+# initialise model
+chat_model = FineTunedModel(
+    len(chat_labels_str), model_name, hidden_size).to(device)
 # print(chat_model)
 optimizer = torch.optim.AdamW(chat_model.parameters(), lr=learning_rate)
 ##################################################################
@@ -139,7 +149,8 @@ training_acc_logger = []
 testing_acc_logger = []
 start_time = process_time()
 for epoch in range(num_epochs):
-    training_loss = train(chat_model, device, train_loader, optimizer, loss_func)
+    training_loss = train(chat_model, device,
+                          train_loader, optimizer, loss_func)
     train_acc = evaluate(chat_model, device, train_loader)
     test_acc = evaluate(chat_model, device, test_loader)
     training_acc_logger.append(train_acc)
@@ -150,7 +161,8 @@ for epoch in range(num_epochs):
             f'| Epoch: {epoch:02} |  Train Loss: {training_loss.item():.4f} | Train Acc: {train_acc*100:05.2f}% | Test Acc: {test_acc*100:05.2f}% |')
 end_time = process_time()
 
-print(f"Ave training time per epoch: {(start_time-end_time)/num_epochs} seconds")
+print(
+    f"Ave training time per epoch: {(start_time-end_time)/num_epochs} seconds")
 ##################################################################
 plt.plot(training_loss_logger)
 plt.title('Model Training Loss')

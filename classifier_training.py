@@ -8,13 +8,15 @@ import matplotlib.pyplot as plt
 from nltk_utils import bag_of_words, tokenize, stem
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 ##################################################################
-#HYPER PARAMETERS TO CHANGE
+# HYPER PARAMETERS TO CHANGE
 num_epochs = 20
 # batch size higher than 41 won't do anything because there are only 41 samples
-batch_size = 41  
+batch_size = 41
 learning_rate = 0.1
 hidden_size = 8
 #####################################################################
+
+
 class ChatDataset():
 
     def __init__(self, X_train, y_train):
@@ -50,6 +52,7 @@ def train(net, device, loader, optimizer, loss_fun):
     # return the logger array
     return loss
 ##################################################################
+
 
 def evaluate(net, device, loader):
     # initialise counter
@@ -100,7 +103,7 @@ all_symptoms = sorted(set(all_symptoms))
 disease_labels = sorted(set(disease_labels))
 print("Collected all diseases and symptom ALL Words")
 #####################################################################
-#### testing set
+# testing set
 test_xy = []
 # Collect disease labels
 for row in range(len(df_test["Disease"])):
@@ -184,16 +187,16 @@ print("Training data created for symptom classifier")
 train_dataset = ChatDataset(X_train, y_train)
 
 train_loader = DataLoader(dataset=train_dataset,
-                    batch_size=batch_size,
-                    shuffle=True,
-                    num_workers=0)
+                          batch_size=batch_size,
+                          shuffle=True,
+                          num_workers=0)
 ##################################################################
 test_dataset = ChatDataset(X_test, y_test)
 
 test_loader = DataLoader(dataset=test_dataset,
-                    batch_size=batch_size,
-                    shuffle=True,
-                    num_workers=0)
+                         batch_size=batch_size,
+                         shuffle=True,
+                         num_workers=0)
 ##################################################################
 input_size = len(X_train[0])
 output_size = len(y_train)
