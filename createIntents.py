@@ -33,10 +33,12 @@ def write_json(new_data, filename='intents.json'):
 df = pd.read_csv("datasets/dataset.csv", dtype="string")
 df = df.fillna(" ")
 temp = []
+ignore_words = ["", " "]
+
 for i in range(1, 18):
     for word in df[f"Symptom_{i}"]:
         symptom = ((' '.join(word.split("_"))))
-        if symptom not in temp:
+        if symptom not in (temp or ignore_words):
             temp.append(symptom)
             add = {"labels": f"talking about {symptom}",
                    "patterns": [
@@ -150,7 +152,7 @@ add = {
 write_json(add)
 add = {
     "labels": "options",
-    "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
+    "patterns": ["What do you do?", "What help do you provide?", "How are you helpful?"],
     "responses": [
         "I will help you figure out what might possibly be the problem",
         "I am someone to talk to to learn about diseases, what to try if you have a particular disease and give you a possible idea of what disease you may have if you are experiencing symptoms."
