@@ -99,7 +99,7 @@ with open('intents.json', 'r') as json_data:
 def get_response(msg):
     # Predicting intent for chatbot
     [label_intent, prob_intent] = predict_intent(device, msg, chat_model)
-    if prob_intent.item() > 0:  # 0.75
+    if prob_intent.item() > 0.7:
         intent = intents['intents'][label_intent]
         if intent['context'] == "asking symptoms":
             disease_words = []
