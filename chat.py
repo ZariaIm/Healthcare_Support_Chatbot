@@ -16,7 +16,7 @@ classifier_model = LinearNet(input_size, hidden_size, output_size).to(device)
 classifier_model.load_state_dict(model_state)
 classifier_model.eval()
 
-data = torch.load("model_chatbot.pth")
+data = torch.load("model_chatbot.pth", map_location=torch.device('cpu'))
 output_size = data["output_size"]
 model_name = data["model_name"]
 model_state = data["model_state"]
