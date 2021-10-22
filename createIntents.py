@@ -170,10 +170,10 @@ write_json(add)
 add = {
     "labels": "ask disease",
     "patterns": [
-        "what do you think i have?",
-        "why am i sick?",
-        "What is wrong with me?",
-        "can you tell me what is wrong?"
+        "what do you think i have",
+        "why am i sick",
+        "What is wrong with me",
+        "can you tell me what is wrong"
     ],
     "context": "predicted disease"
 }
