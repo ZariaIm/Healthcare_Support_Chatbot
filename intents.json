@@ -3835,9 +3835,9 @@
         {
             "labels": "options",
             "patterns": [
-                "How you could help me?",
-                "What help you provide?",
-                "How you can be helpful?"
+                "What do you do?",
+                "What help do you provide?",
+                "How are you helpful?"
             ],
             "responses": [
                 "I will help you figure out what might possibly be the problem",
@@ -3860,10 +3860,10 @@
         {
             "labels": "ask disease",
             "patterns": [
-                "what do you think i have?",
-                "why am i sick?",
-                "What is wrong with me?",
-                "can you tell me what is wrong?"
+                "what do you think i have",
+                "why am i sick",
+                "What is wrong with me",
+                "can you tell me what is wrong"
             ],
             "context": "predicted disease"
         }

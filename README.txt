@@ -1,2 +1,1 @@
-Following link is for downloading the model state and parameters for the chatbot model:
-https://drive.google.com/file/d/1kyXYQezHHbiVg9CiWbgZg-uhV0PV7dnH/view?usp=sharing
+https://drive.google.com/file/d/1ALMpVo_N4PpxrfsPmoPv6Dr-Uy6HmsGq/view?usp=sharing
