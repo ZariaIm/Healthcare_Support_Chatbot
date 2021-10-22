@@ -16,14 +16,15 @@ df = df.iloc[0:422] # the dataset kinda repeats at this point
 #Loop through each list of symptoms for the label -  treat the row almost like a sentence
 #create training data from random rows using random.choice (set the seed)
 #create df_test by dropping rows from original - make results reproducible
+# read dataset and cast values as strings
 np.random.seed(42)
-# sample without replacement
-test_ix = np.random.choice(df.index, 60, replace=False)
-df_test = df.iloc[test_ix] # 354 rows x 18 cols
-df_train = df.drop(test_ix) # remianiig rows x 18 cols
-val_ix = np.random.choice(df_train.index, 60, replace=False)
-df_val = df.iloc[val_ix] # 354 rows x 18 cols
-df_train = df.drop(test_ix) # remaining rows x 18 cols
+
+# 4920 rows  x 18 cols
+df = pd.read_csv("datasets/dataset.csv", dtype="string")
+df = df.fillna(" ")
+df_train = df.iloc[4879:4922]  # the dataset kinda repeats at this point
+ix = np.random.rand(4878) > 0.8
+df_test = df.iloc[0:4878][ix]
 #####################################################################
 #Collect disease labels
 for row in range(len(df_train["Disease"])):
@@ -92,29 +93,6 @@ for (pattern_sentence, label) in xy:
 X_train_symptom = np.array(X_train_symptom)
 y_train_symptom = np.array(y_train_symptom)
 print("Training data created for symptom classifier")
-##################################################################
-X_val = []
-y_val = []
-for row in range(len(df_val["Disease"])):
-    value =  df_val.iloc[row,0]
-    temp_symptoms = []
-    for i in range(1,18):
-        word = df_val.iloc[row, i]
-        temp_symptoms.extend(tokenize(' '.join(word.split("_"))))
-    xy.append((temp_symptoms, value))    
-
-for (pattern_sentence, label) in xy:
-    # X: bag of words for each pattern_sentence
-    #print(type(pattern_sentence[0]))
-    #print(all_words)
-    bag = bag_of_words(pattern_sentence, all_symptoms)
-    X_val.append(bag)
-    # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
-    tag = disease_labels.index(label)
-    y_val.append(tag)
-X_val = np.array(X_val)
-y_val = np.array(y_val)
-print("Validation data created for symptom classifier")
 #################################################################
 X_test = []
 y_test =[]
@@ -135,6 +113,6 @@ for (pattern_sentence, label) in xy:
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
     tag = disease_labels.index(label)
     y_test.append(tag)
-X_test = np.array(X_test)
-y_test = np.array(y_test)
+X_test_symptom = np.array(X_test)
+y_test_symptom = np.array(y_test)
 print("Test data created for symptom classifier")
