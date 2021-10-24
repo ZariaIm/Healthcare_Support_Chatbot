@@ -9,3 +9,6 @@ Version date released: 22 Oct 2021
 
 Link for downloading the trained chatbot model:
 https://drive.google.com/file/d/1ALMpVo_N4PpxrfsPmoPv6Dr-Uy6HmsGq/view?usp=sharing
+
+Link for project video:
+https://youtu.be/8FuEMb9aqVE
